@@ -1,0 +1,8 @@
+s1|Riding in a group and a car cuts in between you? Never close up on it.
+s2|The riders behind tailgate the car to stay with the group, and the car is boxed in by bikes.
+s3|Let it in. Drop back to a safe gap behind it, like any other car.
+s4|The riders ahead of the car keep riding their own ride.
+s5|The group waits for everyone at the next turn or stop.
+s6|One car in the group is fine. A rider in its bumper isn't.
+s7|Let it in. Keep your gap.
+s8|Get the free APEX app. The link is in our bio.
