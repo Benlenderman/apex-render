@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="24.007" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="24.007" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="24.007" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="3.456" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="3.676" data-duration="3.221333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="7.067" data-duration="3.584" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="10.821" data-duration="2.197333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="13.188" data-duration="2.688" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="16.046" data-duration="3.029333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="19.245" data-duration="1.152" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="20.567" data-duration="2.24" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"s1":[0,3.626],"s2":[3.626,3.391],"s3":[7.017,3.754],"s4":[10.771,2.367],"s5":[13.138,2.858],"s6":[15.996,3.199],"s7":[19.195,1.322],"s8":[20.517,3.49]},"W":{"s1":{"dur":3.456,"words":[{"text":"Taking","start":0,"end":0.285},{"text":"a","start":0.285,"end":0.333},{"text":"passenger?","start":0.333,"end":0.809},{"text":"Never","start":0.809,"end":1.047},{"text":"hand","start":1.047,"end":1.237},{"text":"them","start":1.237,"end":1.427},{"text":"the","start":1.427,"end":1.57},{"text":"spare","start":1.57,"end":1.808},{"text":"helmet","start":1.808,"end":2.093},{"text":"without","start":2.093,"end":2.426},{"text":"checking","start":2.426,"end":2.807},{"text":"the","start":2.807,"end":2.95},{"text":"fit.","start":2.95,"end":3.14}]},"s2":{"dur":3.221333,"words":[{"text":"A","start":0,"end":0.053},{"text":"helmet","start":0.053,"end":0.368},{"text":"that's","start":0.368,"end":0.684},{"text":"too","start":0.684,"end":0.842},{"text":"big","start":0.842,"end":1},{"text":"can","start":1,"end":1.158},{"text":"roll","start":1.158,"end":1.368},{"text":"off","start":1.368,"end":1.526},{"text":"in","start":1.526,"end":1.632},{"text":"a","start":1.632,"end":1.684},{"text":"crash,","start":1.684,"end":1.947},{"text":"right","start":1.947,"end":2.211},{"text":"when","start":2.211,"end":2.421},{"text":"it's","start":2.421,"end":2.632},{"text":"needed.","start":2.632,"end":3}]},"s3":{"dur":3.584,"words":[{"text":"With","start":0,"end":0.209},{"text":"the","start":0.209,"end":0.365},{"text":"strap","start":0.365,"end":0.626},{"text":"done,","start":0.626,"end":0.887},{"text":"it","start":0.887,"end":0.992},{"text":"should","start":0.992,"end":1.305},{"text":"feel","start":1.305,"end":1.513},{"text":"snug","start":1.513,"end":1.722},{"text":"all","start":1.722,"end":1.879},{"text":"round,","start":1.879,"end":2.14},{"text":"with","start":2.14,"end":2.348},{"text":"no","start":2.348,"end":2.453},{"text":"gap","start":2.453,"end":2.609},{"text":"at","start":2.609,"end":2.714},{"text":"the","start":2.714,"end":2.87},{"text":"forehead.","start":2.87,"end":3.34}]},"s4":{"dur":2.197333,"words":[{"text":"Push","start":0,"end":0.187},{"text":"it","start":0.187,"end":0.279},{"text":"side","start":0.279,"end":0.466},{"text":"to","start":0.466,"end":0.56},{"text":"side.","start":0.56,"end":0.793},{"text":"Their","start":0.793,"end":1.025},{"text":"cheeks","start":1.025,"end":1.305},{"text":"should","start":1.305,"end":1.585},{"text":"move","start":1.585,"end":1.771},{"text":"with","start":1.771,"end":1.957},{"text":"it.","start":1.957,"end":2.097}]},"s5":{"dur":2.688,"words":[{"text":"Try","start":0,"end":0.156},{"text":"to","start":0.156,"end":0.26},{"text":"roll","start":0.26,"end":0.469},{"text":"it","start":0.469,"end":0.573},{"text":"forward","start":0.573,"end":0.938},{"text":"off","start":0.938,"end":1.094},{"text":"their","start":1.094,"end":1.354},{"text":"head.","start":1.354,"end":1.615},{"text":"It","start":1.615,"end":1.719},{"text":"must","start":1.719,"end":1.927},{"text":"not","start":1.927,"end":2.083},{"text":"come","start":2.083,"end":2.292},{"text":"off.","start":2.292,"end":2.5}]},"s6":{"dur":3.029333,"words":[{"text":"And","start":0,"end":0.168},{"text":"the","start":0.168,"end":0.335},{"text":"strap","start":0.335,"end":0.614},{"text":"stays","start":0.614,"end":0.893},{"text":"done","start":0.893,"end":1.117},{"text":"up,","start":1.117,"end":1.229},{"text":"every","start":1.229,"end":1.528},{"text":"time,","start":1.528,"end":1.791},{"text":"even","start":1.791,"end":2.014},{"text":"for","start":2.014,"end":2.182},{"text":"a","start":2.182,"end":2.238},{"text":"short","start":2.238,"end":2.521},{"text":"ride.","start":2.521,"end":2.8}]},"s7":{"dur":1.152,"words":[{"text":"Snug","start":0,"end":0.222},{"text":"fit.","start":0.222,"end":0.444},{"text":"Strap","start":0.444,"end":0.722},{"text":"done.","start":0.722,"end":1}]},"s8":{"dur":2.24,"words":[{"text":"Get","start":0,"end":0.174},{"text":"the","start":0.174,"end":0.347},{"text":"free","start":0.347,"end":0.579},{"text":"APEX","start":0.579,"end":0.81},{"text":"app.","start":0.81,"end":1.099},{"text":"The","start":1.099,"end":1.272},{"text":"link","start":1.272,"end":1.503},{"text":"is","start":1.503,"end":1.619},{"text":"in","start":1.619,"end":1.735},{"text":"our","start":1.735,"end":1.909},{"text":"bio.","start":1.909,"end":2.14}]}},"LEAD":0.05};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 24.007);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>
