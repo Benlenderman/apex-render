@@ -20,7 +20,7 @@ function tex(w, h, draw, px = 400) {
 const rr = (x, X, Y, w, h, r, col) => { x.fillStyle = col; x.beginPath(); x.roundRect(X, Y, w, h, r); x.fill(); };
 
 // ---------- road outside, dashboard, windshield ----------
-road({ lanes: 2, z0: -3, z1: -300 });
+const rd = road({ lanes: 2, z0: -3, z1: -300 });
 const mDash = std(0x221d66, 0x0c0a30, 0.7, 0.1);
 add(rbox(8, 1.25, 2.6, 0.15, mDash)).position.set(0, -0.6, 0.1);
 add(rbox(8, 0.12, 0.2, 0.05, glow(VIOLET, 0.5))).position.set(0, -0.02, 1.38); // glowing lip on the dash edge
@@ -129,6 +129,7 @@ cap("s2", "adapter", ["ONE MORE BOX"], RED, { until: ["s2", "pay"], boom: 0.4 })
 cap("s2", "pay", ["TO PAY FOR"], RED, { until: ["s2", "plug"] });
 cap("s2", "plug", ["AND PLUG IN"], RED, { until: ["s2", "your"] });
 cap("s2", "your", ["YOUR CAR HAS", "THE SCREEN"], VIOLET);
+cap("s3", "instead", ["INSTEAD"], GREEN, { until: ["s3", "diplay"] });
 cap("s3", "diplay", ["DIPLAY"], GREEN, { until: ["s3", "over"], boom: 0.5 });
 cap("s3", "over", ["OVER 13,000 STARS", "IN 7 WEEKS"], ORANGE, { until: ["s3", "you"], boom: 0.5 });
 cap("s3", "install", ["INSTALL ON THE CAR"], GREEN, { until: ["s3", "becomes"] });
@@ -139,6 +140,7 @@ cap("s5", "no", ["NO HACKING"], GREEN, { until: ["s5", "mac"] });
 cap("s5", "mac", ["NO MAC"], GREEN, { until: ["s5", "account"] });
 cap("s5", "account", ["NO ACCOUNT"], GREEN, { until: ["s5", "it's"] });
 cap("s5", "it's", ["EARLY VERSION", "NOT OFFICIAL FROM APPLE"], WHITE);
+cap("s6", "on", ["ON SOME BYDS"], WHITE, { until: ["s6", "turn"] });
 cap("s6", "turn", ["TURN ARROWS"], GREEN, { until: ["s6", "street"] });
 cap("s6", "street", ["STREET NAMES"], GREEN, { until: ["s6", "windshield"] });
 cap("s6", "windshield", ["ON THE WINDSHIELD"], GREEN, { boom: 0.4 });
@@ -173,7 +175,7 @@ const onOff = (t, a, b) => sm(a - 0.05, a + 0.2, t) * (1 - sm(b - 0.15, b, t));
 
 run("diplay-world", (t) => {
   const wrong = t < T.s3;
-  WORLD.visible = t < T.s8 - 0.1;
+  WORLD.visible = rd.visible = t < T.s8 - 0.1;
   [redCable, greenCable].forEach((b) => b.visible = b.visible && WORLD.visible);
 
   // head unit screen: Android -> DiPlay installing -> CarPlay
@@ -235,8 +237,8 @@ run("diplay-world", (t) => {
   hudArrow.scale.setScalar(Math.max(0.001, sm(T.turn - 0.1, T.turn + 0.25, t)));
   hudText.visible = t >= T.street - 0.1; hudText.material.opacity = sm(T.street - 0.1, T.street + 0.2, t);
   hudLine.scale.x = Math.max(0.001, sm(T.street - 0.1, T.street + 0.3, t));
-  const wk = sm(T.wind - 0.1, T.wind + 0.2, t) * (1 - sm(T.s7 - 0.1, T.s7 + 0.2, t));
-  mPillar.color.set(wk > 0.01 ? GREEN : VIOLET).multiplyScalar((0.9 + 0.6 * wk) * (1 - 0.75 * sm(T.s7 - 0.1, T.s7 + 0.2, t)));
+  const wk = sm(T.wind - 0.1, T.wind + 0.2, t) * (1 - sm(T.s7 - 0.45, T.s7 - 0.1, t));
+  mPillar.color.set(wk > 0.01 ? GREEN : VIOLET).multiplyScalar((0.9 + 0.6 * wk) * (1 - 0.75 * sm(T.s7 - 0.45, T.s7 - 0.1, t)));
   glass.material.opacity = 0.06 + 0.08 * wk;
 
   const { punch } = shoot(SH, t);
