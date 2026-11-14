@@ -26,7 +26,7 @@ function icon(kind) { // v = green check, x = red cross
 }
 const ITEM = {
   bubble({ text, hex = VIOLET, side = -1, y = 0, w = 1.4, at }) {
-    const bg = box(w, 0.6, 0.03, 0, 0, 0, tint(hex, 0.45), false); scene.add(bg);
+    const bg = box(w, 0.6, 0.03, 0, 0, 0, tint(hex, 0.2), false); scene.add(bg);
     const tx = fitText([text], WHITE, 1.4, w * 0.85), x = side * (1.02 - w / 2 - 0.08), t0 = tm(at);
     return (t, on) => { const a = on ? pop(t, t0) : 0; bg.visible = a > 0.01; bg.material.opacity = a; bg.position.set(x, PY + y, 0.13); bg.scale.setScalar(0.6 + 0.4 * a); put(tx, x, PY + y, 0.15, 0.6 + 0.4 * a, a); };
   },
