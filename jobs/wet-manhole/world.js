@@ -88,8 +88,8 @@ run("w", (t) => {
     sight.set(wp(Bk.visor), tgt, lk);
     spot.visible = t > tFootB - 0.2; spot.material.color.set(GREEN).multiplyScalar(2 + 3 * flash(t, g("s6", "clean")));
     const o5 = t > T5 && t < T6 ? 1 : 0;
-    oil.material.color.set(ORANGE).multiplyScalar(0.35 + 1.2 * o5 * sm(g("s5", "oil") - 0.1, g("s5", "oil") + 0.2, t));
-    mLine.color.set(WHITE).multiplyScalar(0.45 + 1.2 * o5 * sm(g("s5", "paint") - 0.1, g("s5", "paint") + 0.2, t));
+    oil.material.color.set(ORANGE).multiplyScalar(0.35 + 0.7 * o5 * sm(g("s5", "oil") - 0.1, g("s5", "oil") + 0.2, t));
+    mLine.color.set(ORANGE).multiplyScalar(0.45 + 0.35 * o5 * sm(g("s5", "paint") - 0.1, g("s5", "paint") + 0.2, t));
   }
   const shot = shoot(SH, t);
   bloom.strength = 1.0 + 1.2 * shot.punch * shot.punch + overlays(t) + (A ? 0.9 * flash(t, tFall + 0.3) : 0);
