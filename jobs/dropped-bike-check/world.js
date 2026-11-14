@@ -32,7 +32,7 @@ const tC = tNeed + 0.1;
 const vA = (t) => VA * sm(tRide, tRide + 1.4, t) * (1 - 0.25 * sm(tMom, tMom + 0.3, t)) * (1 - sm(tC, tC + 0.3, t));
 const DA = dist(vA, 0, T3 + 1);
 const aF = (t) => [...P(s0 + DA(t), 2.7 - 0.9 * sm(tRide, tRide + 1.2, t)), 0];
-const sCar = s0 + DA(tC) + 1.6 + 2.15, [xCar, zCar] = P(sCar, 1.8);
+const sCar = s0 + DA(tC) + 2.0 + 2.15, [xCar, zCar] = P(sCar, 1.8);
 
 // ---- B: parked for the check at s=300 ----
 const sB = 300, [xB, zB] = P(sB, 2.6), bF = () => [xB, zB, 0];
@@ -70,7 +70,7 @@ const SH = [
   { at: T3, K: [[0, [xB - 1.9, 1.7, zB - 2.6, bar0[0], 0.9, bar0[2], 44]], [tFoot - T3, [xB - 2.0, 1.6, zB - 2.4, bar0[0], 0.85, bar0[2], 44]],
     [tFoot - T3 + 0.4, [xB - 2.7, 1.2, zB + 0.6, xB, 0.4, zB - 0.2, 46]], [3, [xB - 2.9, 1.25, zB + 0.8, xB, 0.4, zB - 0.2, 46]]] },
   { at: T4, K: [[0, [xB - 1.5, 1.9, zB - 1.9, bar0[0] - 0.2, 1.0, bar0[2], 40]], [3, [xB - 1.4, 1.85, zB - 1.8, bar0[0] - 0.2, 1.0, bar0[2], 40]]] },
-  { at: T5, K: [[0, [xB - 3.2, 1.5, zB - 1.9, xB, 0.5, zB - 0.4, 44]], [tTurn - T5, [xB - 3.0, 1.9, zB - 1.6, xB, 0.7, zB - 0.4, 44]], [4, [xB - 1.4, 2.9, zB + 0.9, xB, 0.9, zB - 0.5, 44]]] },
+  { at: T5, K: [[0, [xB - 3.2, 1.5, zB - 1.9, xB, 0.5, zB - 0.4, 44]], [tTurn - T5, [xB - 3.0, 1.9, zB - 1.6, xB, 0.7, zB - 0.4, 44]], [2.8, [xB - 2.6, 3.4, zB + 2.4, xB + 0.4, 0.8, zB - 0.3, 46]]] },
   { at: T6, f: fol(cF), noRot: true, K: [[0, [-5.2, 2.0, 1.4, 0, 0.7, -0.2, 46]], [3, [-5.6, 2.3, 2.0, 0, 0.7, -0.6, 46]]] },
   { at: T7, f: fol(cF), noRot: true, K: [[0, [-1.5, 3.2, 8.5, 0, 0.8, -8, 46]], [6, [-1.8, 3.8, 9.5, 0, 0.8, -8, 46]]] },
 ];
@@ -88,8 +88,9 @@ run("w", (t) => {
       pose(fr, { x: bx - 1.25, z: bz + 0.35, h: hdg(1, 0), armR: 0.9 + 0.5 * (1 - down0), armL: 0.9 + 0.5 * (1 - down0), hex: VIOLET });
     } else if (kC > 0) {
       ride(BF, aF, t, RED, { lean: downLean(kC, -1), down: kC, trail: false });
-      const st = pathState(aF, t);
-      if (t > tC + 0.3) pose(fr, { x: st.x - 1.2, z: st.z + 0.7, h: -1.2, lie: 1, hex: RED }); else pose(fr, { vis: false });
+      const st = pathState(aF, t), kT = sm(tC + 0.08, tC + 0.6, t);
+      // rider is thrown back off the bike (away from the trunk) instead of vanishing into it
+      if (t > tC + 0.08) { BF.rider.visible = false; pose(fr, { x: st.x - 0.3 - 0.9 * kT, z: st.z + 0.3 + 1.5 * kT, h: -0.4, lie: sm(tC + 0.08, tC + 0.35, t), armR: 2.2, armL: 1.6, hex: RED }); } else pose(fr, { vis: false });
     } else { ride(BF, aF, t, hex, { trail: true }); pose(fr, { vis: false }); }
     bent = 1; twist = 0.28;
     if (t > tBent - 0.1) lev = [RED, 2.2 + 0.8 * Math.sin(10 * t)];
@@ -115,7 +116,7 @@ run("w", (t) => {
   const kLk = B && t > T5 ? sm(tLeak - 0.1, tLeak + 0.3, t) : 0;
   leak.set(kLk * (0.8 + 0.2 * Math.sin(6 * t)));
   drops.forEach((d, i) => { d.visible = kLk > 0.5; const ph = (t * 1.3 + i / 3) % 1; d.position.set(xB + 0.03 * (i - 1), 0.42 * (1 - ph * ph), zB - 0.1); });
-  levers.forEach((L, i) => { const s = i ? 1 : -1; lit(L.userData.m, ...lev); L.rotation.set(0, s * 0.45 * squeeze, s < 0 ? -0.5 * bent : 0); });
+  levers.forEach((L, i) => { const s = i ? 1 : -1; lit(L.userData.m, ...lev); L.rotation.set(0, -s * 0.55 * squeeze, s < 0 ? -0.5 * bent : 0); });
   pegs.forEach((p) => lit(p.userData.m, ...peg));
   if (B && mir[0] === VIOLET) mir = [VIOLET, 0.7];
   mirM.forEach((m) => lit(m, ...mir)); BF.mirL.rotation.z = wob; BF.mirR.rotation.z = -wob;
