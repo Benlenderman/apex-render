@@ -188,8 +188,8 @@ run("w", (t) => {
   // pebbles glow + edge dirt pulse
   pebbles.material.color.set(ORANGE).multiplyScalar(0.8 + 1.2 * flash(t, g("s2", "gravel")) + 1.2 * flash(t, g("s6", "gravel")));
   mEdgeDirt.opacity = 0.9 * sm(g("s3", "edges") - 0.2, g("s3", "edges") + 0.2, t) * (1 - sm(tHe - 0.3, tHe, t)) * (0.7 + 0.3 * Math.sin(t * 9));
-  tagAt3(pGravel, gx, 1.4, gz, (t > 1.5 && t < 2.9 ? 1 : 0) + (t > g("s2", "gravel") - 0.1 && t < tHe - 0.2 ? 1 : 0) + (t > g("s5", "moves") - 0.2 && t < T6 ? 1 : 0), 2.6);
-  tagAt3(pGravel2, g2x, 1.4, g2z, t > g("s6", "gravel") - 0.1 && t < tBike ? 1 : 0, 2.0);
+  tagAt3(pGravel, gx, 1.4, gz, (t > 1.5 && t < 2.9 ? 1 : 0) + (t > g("s2", "gravel") - 0.1 && t < tHe - 0.2 ? 1 : 0) + (t > g("s5", "moves") - 0.2 && t < g("s5", "from") ? 1 : 0), 2.6);
+  tagAt3(pGravel2, g2x, 1.4, g2z, t > g("s6", "gravel") - 0.1 && t < g("s6", "stays") - 0.1 ? 1 : 0, 2.0);
   const shot = shoot(SH, t);
   bloom.strength = 1.0 + 1.0 * shot.punch * shot.punch + overlays(t) + (A ? 0.7 * flash(t, g("s3", "down")) : 0);
 });
