@@ -212,8 +212,8 @@ run("anatomy-world", (t) => {
 
   // s3: the star pops in above the laptop while the star count is on screen
   const sk = sm(T.over - 0.1, T.over + 0.25, t) * (1 - sm(T.its - 0.15, T.its + 0.1, t));
-  star.visible = sk > 0.01; star.scale.setScalar(0.62 * sk * (1 + 0.08 * Math.sin(t * 6)));
-  star.position.set(0, 2.02, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.over) * 2.5);
+  star.visible = sk > 0.01; star.scale.setScalar(0.5 * sk * (1 + 0.08 * Math.sin(t * 6)));
+  star.position.set(0, 1.93, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.over) * 2.5);
 
   const { punch } = shoot(SH, t);
   const spike = overlays(t);
