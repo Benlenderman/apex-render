@@ -1,0 +1,544 @@
+{
+  "version": 1,
+  "historyId": "83cfc445-7795-4cac-8cd8-d7831e78d5aa",
+  "currentRevision": "948efc93-6736-4499-b492-75427e870f44",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/26/26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "CLAUDE.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/26/26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "SCRIPT.txt": {
+      "hash": "1063847357a5844e1a308af0cdf606143b988a30e206a9f8e58126f25bc419f3",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/10/1063847357a5844e1a308af0cdf606143b988a30e206a9f8e58126f25bc419f3"
+    },
+    "assets/vo/s1.wav": {
+      "hash": "008c56437329e36579d505b63746c818bf246a52890f8d68dc84c56bb2272cae",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/00/008c56437329e36579d505b63746c818bf246a52890f8d68dc84c56bb2272cae"
+    },
+    "assets/vo/s2.wav": {
+      "hash": "f181216ff8e6d571353415338d269987e73e0695a4a97489cbfbf8614544c73c",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/f1/f181216ff8e6d571353415338d269987e73e0695a4a97489cbfbf8614544c73c"
+    },
+    "assets/vo/s3.wav": {
+      "hash": "e6a46558f0c8c759e2c87420e0d3bec41944287ed7daccbdbb47eddb75e5a8b0",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/e6/e6a46558f0c8c759e2c87420e0d3bec41944287ed7daccbdbb47eddb75e5a8b0"
+    },
+    "assets/vo/s4.wav": {
+      "hash": "01d6aba2288820914aea1e6e7b7f229806606a2588c66a161a53033578fd65ca",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/01/01d6aba2288820914aea1e6e7b7f229806606a2588c66a161a53033578fd65ca"
+    },
+    "assets/vo/s5.wav": {
+      "hash": "fbc2c2b380ccbdb8be207d41d3e9968a58e251282a7e1493f172a1e51395ba33",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/fb/fbc2c2b380ccbdb8be207d41d3e9968a58e251282a7e1493f172a1e51395ba33"
+    },
+    "assets/vo/s6.wav": {
+      "hash": "de3ef080f3f4762af028c0c04e6e88820aeccfb71b2cf6f35d0978cafe4d16b4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/de/de3ef080f3f4762af028c0c04e6e88820aeccfb71b2cf6f35d0978cafe4d16b4"
+    },
+    "assets/vo/s7.wav": {
+      "hash": "84062a8f8612362ce7c3f00fe62693b70d9abed72b5baac8651f847e2559b762",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/84/84062a8f8612362ce7c3f00fe62693b70d9abed72b5baac8651f847e2559b762"
+    },
+    "assets/vo/s8.wav": {
+      "hash": "f2805ee34e2efd0101392f47b5f6b8db61e3864f43dad399f972b6e93fae5b2e",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/f2/f2805ee34e2efd0101392f47b5f6b8db61e3864f43dad399f972b6e93fae5b2e"
+    },
+    "assets/vo/transcript.json": {
+      "hash": "c0dd51603015af125eb3a39407f584f9b6bbe4d15ca877eec09a6213152a8e39",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/c0/c0dd51603015af125eb3a39407f584f9b6bbe4d15ca877eec09a6213152a8e39"
+    },
+    "assets/words/s1.jsonl": {
+      "hash": "c72d8a07353e0db7117a1a7601937bc1c5a94109c26e4dcc3c01865bbe4b3b81",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/c7/c72d8a07353e0db7117a1a7601937bc1c5a94109c26e4dcc3c01865bbe4b3b81"
+    },
+    "assets/words/s2.jsonl": {
+      "hash": "3fef82d79ce8d1f8f6e6b7e9b821211bc76fe114b2baa070d7a5d3dab9a1edb6",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/3f/3fef82d79ce8d1f8f6e6b7e9b821211bc76fe114b2baa070d7a5d3dab9a1edb6"
+    },
+    "assets/words/s3.jsonl": {
+      "hash": "3ec020e1e42cd408d18fdd0ec0a8dfe764d073a9ced3e713fb524d892429d2a9",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/3e/3ec020e1e42cd408d18fdd0ec0a8dfe764d073a9ced3e713fb524d892429d2a9"
+    },
+    "assets/words/s4.jsonl": {
+      "hash": "e9918c20421e97f25dcfcfc5a07131dc6398ee5ea730b2957d2715a80a5423d8",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/e9/e9918c20421e97f25dcfcfc5a07131dc6398ee5ea730b2957d2715a80a5423d8"
+    },
+    "assets/words/s5.jsonl": {
+      "hash": "ddd244c2e23b98bd4e54e52624748786c158ce0116b40d5e0ce7a1a25a429aad",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/dd/ddd244c2e23b98bd4e54e52624748786c158ce0116b40d5e0ce7a1a25a429aad"
+    },
+    "assets/words/s6.jsonl": {
+      "hash": "15f0e97dcf7ada4d70c3f89c35eae71d35407bc1311fff128952084182c6384c",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/15/15f0e97dcf7ada4d70c3f89c35eae71d35407bc1311fff128952084182c6384c"
+    },
+    "assets/words/s7.jsonl": {
+      "hash": "e0d212ee04babb1ffa5c6d41bba33daf26bdd8d08930c97baeb281ecdfd19598",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/e0/e0d212ee04babb1ffa5c6d41bba33daf26bdd8d08930c97baeb281ecdfd19598"
+    },
+    "assets/words/s8.jsonl": {
+      "hash": "5d730c5b15c78f74e97bc047c8883e3ec2d592cb58c99300f03a42a290c82341",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/5d/5d730c5b15c78f74e97bc047c8883e3ec2d592cb58c99300f03a42a290c82341"
+    },
+    "assets/words.json": {
+      "hash": "3389aa4ae93711445283bfc3842c5bf0a9e642313a535c12effc675bf4de1aa4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/33/3389aa4ae93711445283bfc3842c5bf0a9e642313a535c12effc675bf4de1aa4"
+    },
+    "build3d.mjs": {
+      "hash": "001808022b58ab22463210c7a6e22741fd597f8e9c627cd3fc331ea0f26553a3",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/00/001808022b58ab22463210c7a6e22741fd597f8e9c627cd3fc331ea0f26553a3"
+    },
+    "compositions/captions.html": {
+      "hash": "196c258ac11f7e2635e51d3910ee110d31ecf77f0e20a7dacee33e83656cb9b7",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/19/196c258ac11f7e2635e51d3910ee110d31ecf77f0e20a7dacee33e83656cb9b7"
+    },
+    "extra.js": {
+      "hash": "707627686f085e73e17933dedea27e2b09131a3d8807f8823567c826dffebbd5",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/70/707627686f085e73e17933dedea27e2b09131a3d8807f8823567c826dffebbd5"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "1b17dbee508235625f4b1ca0747709cf5731ab8b02dcffe2c84469318e3bf622",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/1b/1b17dbee508235625f4b1ca0747709cf5731ab8b02dcffe2c84469318e3bf622"
+    },
+    "kit.js": {
+      "hash": "50a502f0b025e5d9516d247de76266c91651695ecc7c1ca4d02ee9b8ebaefe4b",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/50/50a502f0b025e5d9516d247de76266c91651695ecc7c1ca4d02ee9b8ebaefe4b"
+    },
+    "make.sh": {
+      "hash": "0a37cdd9dc5211280035fb12b3d00b197c3178ac2dae6b1b1aaa71c1e8f82ec7",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/0a/0a37cdd9dc5211280035fb12b3d00b197c3178ac2dae6b1b1aaa71c1e8f82ec7"
+    },
+    "meta.json": {
+      "hash": "54c81628ce9315f3fe5de029cac8736165714b9e8919d5500d8c7af3b4b454de",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/54/54c81628ce9315f3fe5de029cac8736165714b9e8919d5500d8c7af3b4b454de"
+    },
+    "package.json": {
+      "hash": "50798bd65f5651b714d5b5f2aabed98cefd6d7871ab93f2c4271f0fffc167bc4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/50/50798bd65f5651b714d5b5f2aabed98cefd6d7871ab93f2c4271f0fffc167bc4"
+    },
+    "prep.sh": {
+      "hash": "3251c26a4e8d2a0c4fa5eb8668b0d6908903bcb592066bf0c27998288add25fe",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/32/3251c26a4e8d2a0c4fa5eb8668b0d6908903bcb592066bf0c27998288add25fe"
+    },
+    "world.js": {
+      "hash": "f6938203ceb7279f8876855dbc32b73d8d6b5c6da6f243ddc98eec4d8e7e0acd",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/f6/f6938203ceb7279f8876855dbc32b73d8d6b5c6da6f243ddc98eec4d8e7e0acd"
+    }
+  },
+  "revisions": {
+    "948efc93-6736-4499-b492-75427e870f44": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794634974017,
+      "endedAt": 1794634974021,
+      "files": {
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/5a/5a30897f09dbf613139f8d2c4eaebda21b7b681c5e887292df3878e9e92935ef",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/83cfc445-7795-4cac-8cd8-d7831e78d5aa/blobs/f6/f6938203ceb7279f8876855dbc32b73d8d6b5c6da6f243ddc98eec4d8e7e0acd"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "948efc93-6736-4499-b492-75427e870f44",
+      "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-5"
+    },
+    "revisions": {
+      "948efc93-6736-4499-b492-75427e870f44": [
+        {
+          "scope": "full",
+          "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-0",
+          "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/8b8a447d-ac27-4404-ae32-59ecd4d6dfee/frame-00-at-4.5s.png",
+          "time": 4.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794634988867,
+          "contentHash": "db8d0b9bef1024dfd37630119e5307ba6903f39677e5c27a070f480e0616eec5",
+          "revision": "948efc93-6736-4499-b492-75427e870f44",
+          "inputFingerprint": "3785911b82dadbec523453fdd134cc87b0b5ac8c0b2777fd016bd7962b1b0f22",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-1",
+          "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/8b8a447d-ac27-4404-ae32-59ecd4d6dfee/frame-01-at-6.4s.png",
+          "time": 6.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794634988867,
+          "contentHash": "a256ccd6c4fdd3521e4a4099076cb715051c4833313609c3fb3600f7b414ba82",
+          "revision": "948efc93-6736-4499-b492-75427e870f44",
+          "inputFingerprint": "3785911b82dadbec523453fdd134cc87b0b5ac8c0b2777fd016bd7962b1b0f22",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-2",
+          "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/8b8a447d-ac27-4404-ae32-59ecd4d6dfee/frame-02-at-10.5s.png",
+          "time": 10.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794634988867,
+          "contentHash": "9a90799aa50bce53e52d56e3313fb217a699bd1d00f96adf4f84f224ade62657",
+          "revision": "948efc93-6736-4499-b492-75427e870f44",
+          "inputFingerprint": "3785911b82dadbec523453fdd134cc87b0b5ac8c0b2777fd016bd7962b1b0f22",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-3",
+          "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/8b8a447d-ac27-4404-ae32-59ecd4d6dfee/frame-03-at-12s.png",
+          "time": 12,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794634988867,
+          "contentHash": "e554e4f9287af666f9888338954b003582ae62b04c380c3c34f35c3b02f53735",
+          "revision": "948efc93-6736-4499-b492-75427e870f44",
+          "inputFingerprint": "3785911b82dadbec523453fdd134cc87b0b5ac8c0b2777fd016bd7962b1b0f22",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-4",
+          "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/8b8a447d-ac27-4404-ae32-59ecd4d6dfee/frame-04-at-12.6s.png",
+          "time": 12.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794634988867,
+          "contentHash": "c6f5e2797c488e00aea4570f79eb60555a76b1725eb6257b7af9a7ce9a4def01",
+          "revision": "948efc93-6736-4499-b492-75427e870f44",
+          "inputFingerprint": "3785911b82dadbec523453fdd134cc87b0b5ac8c0b2777fd016bd7962b1b0f22",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "6240c527-9e4f-4cb1-96d2-7332cd00060f-5",
+          "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/8b8a447d-ac27-4404-ae32-59ecd4d6dfee/frame-05-at-22.904s.png",
+          "time": 22.904,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794634988868,
+          "contentHash": "b65fb068912848e057ee2eb08e7970a12206a1e02933e43d9371a206d2e5e4ed",
+          "revision": "948efc93-6736-4499-b492-75427e870f44",
+          "inputFingerprint": "3785911b82dadbec523453fdd134cc87b0b5ac8c0b2777fd016bd7962b1b0f22",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-0",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-00-at-1.5s.png",
+        "time": 1.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "5ff6283c50f7ff425e42e35c9f85b713e021e62d8e85f4bc8aa8ae7db4789445",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-1",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-01-at-4.5s.png",
+        "time": 4.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "774491308a175880bdde184638dbb8e79442c749b3a9c7fade427f6bb60dd19e",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-2",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-02-at-6.4s.png",
+        "time": 6.4,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "5115956a44555be5e61e6d5f4c899f606707961f6ed22cfabe07ad3a6c9f70c5",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-3",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-03-at-7s.png",
+        "time": 7,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "082c444a9162b0257cdae9221e898e86224f79873e5fda5331d79a6c1285a528",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-4",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-04-at-8.2s.png",
+        "time": 8.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "d0a89b58e74b0878de5a59838c81441fd5e1fe05a91943f8357da4ce9b61f007",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-5",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-05-at-10.5s.png",
+        "time": 10.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "c957f6a76ad0c2377c3e374718ab1220446e400e5f01a9a443b49daff75abb86",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-6",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-06-at-12s.png",
+        "time": 12,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "4011a85f7b4dd5342c0fe0383f77fa52b476dd77be75e0407c5d0b2444a53f35",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-7",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-07-at-14.2s.png",
+        "time": 14.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "ec072946b2dfd2f34348e18675c181a7ba37e0dab9d43b3913bef7dcb82ccd70",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-8",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-08-at-17s.png",
+        "time": 17,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "c835a035fb619efeb5a1b701f6a9de5aaa03fd7ad842bfc50c20950e66f3c549",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-9",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-09-at-18.8s.png",
+        "time": 18.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "d1711b68548bb3371c02f8389ee6dc1e1d5c1df90a9028252fab0ecc22be9370",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-10",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-10-at-20.5s.png",
+        "time": 20.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "dbc46202d2564f7bb4f8a991f1f8257f3d9f0ba67bb8cefde85a09bc08fc39c1",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "db7d7938-701c-46d8-bb1b-8752a775af8d-11",
+        "image": "/Users/benlenderman/explainers/night-high-beam/.hyperframes/artifacts/snapshots/c9e0c6d2-a5f0-4e9f-869d-4cb7eb919373/frame-11-at-22.904s.png",
+        "time": 22.904,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794634940437,
+        "contentHash": "b65fb068912848e057ee2eb08e7970a12206a1e02933e43d9371a206d2e5e4ed",
+        "revision": null,
+        "inputFingerprint": "fb326b90d9e188024d8ae1d9de87216e6b7c96cdcc6e204e96d6e8ef5c6aee3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "df370969-c32d-4111-9802-948a91ab9689",
+      "completedAt": 1793869868672,
+      "output": "/Users/benlenderman/explainers/staggered/staggered.mp4",
+      "status": "completed",
+      "revision": "043861df-35a2-4380-b249-d519e1d0dabc"
+    },
+    "retainedRevisions": [
+      "043861df-35a2-4380-b249-d519e1d0dabc",
+      "838ebbd6-bfff-410e-98dd-aa3652b82bb7"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

@@ -1,0 +1,8 @@
+s1|Riding with friends at night? Never use high beam behind another rider.
+s2|Your light fills their mirrors, and they can't see the road or the cars behind.
+s3|Behind a rider, dip your lights.
+s4|The leader can use high beam on empty roads, and dips it for oncoming traffic.
+s5|At night, leave bigger gaps too. You see less, and need longer to react.
+s6|Light the road, not your friend's mirrors.
+s7|Dip your lights. Open your gaps.
+s8|Get the free APEX app. The link is in our bio.
