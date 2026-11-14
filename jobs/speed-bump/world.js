@@ -53,7 +53,7 @@ const fol = (t) => pathState(path, t);
 const T4 = S.s4[0], T5 = S.s5[0], T6 = S.s6[0], T7 = S.s7[0];
 const SH = [
   { at: 0, f: fol, K: [[0, [0.2, 1.9, 5.0, 0.5, 0.9, -6, 46]], [TB, [0.2, 2.0, 4.6, 0.5, 0.9, -6, 46]]] },
-  { at: S.s2[0], f: fol, K: [[0, [5.0, 1.5, 0.8, 0, 0.9, -0.4, 46]], [TB - S.s2[0], [5.2, 1.6, 0.6, 0, 0.9, -0.4, 46]]] },
+  { at: S.s2[0], f: fol, K: [[0, [5.6, 1.6, 1.6, 0, 0.9, 0.3, 46]], [TB - S.s2[0], [5.8, 1.7, 1.4, 0, 0.9, 0.3, 46]]] },
   { at: TB, f: fol, K: [[0, [-2.6, 2.2, 5.2, 0, 0.9, -5, 46]], [T4 - TB, [-2.2, 2.0, 4.4, 0, 0.8, -4, 46]]] },
   { at: T4, f: fol, K: [[0, [4.6, 1.1, 0.4, 0, 0.6, -0.3, 44]], [T5 - T4, [4.8, 1.2, 0.0, 0, 0.6, -0.3, 44]]] },
   { at: T5, f: fol, K: [[0, [3.4, 1.9, 2.4, 0, 1.1, 0.0, 44]], [T6 - T5, [3.8, 1.7, 1.2, 0, 1.0, 0.0, 44]]] },
@@ -72,16 +72,16 @@ run("w", (t) => {
   const brk = !partA ? pulse(t, tSlow - 0.1, tOff - 0.3) : 0;
   B.tail.material.color.set(RED).multiplyScalar(2 + 6 * brk);
   // passenger thrown up after the rear wheel hits fast (part A), a small jolt in s6
-  const thrown = partA ? Math.max(0, Math.sin(Math.PI * Math.min(1, Math.max(0, (t - tHit) / 0.55)))) : 0;
+  const thrown = partA ? Math.max(0, Math.sin(Math.PI * Math.min(1, Math.max(0, (t - tHit) / 0.9)))) : 0;
   const jolt = id === "s6" ? pulse(t, g("s6", "hard") - 0.05, g("s6", "hard") + 0.25) * 0.08 : 0;
   const knees = id === "s5" ? sm(g("s5", "grip") - 0.1, g("s5", "grip") + 0.2, t) : 0;
-  Q.set({ look: id === "s5" ? 0.6 * pulse(t, g("s5", "warn") - 0.1, g("s5", "first") + 0.3) : 0, knees, handsGlow: knees });
+  Q.set({ look: id === "s5" ? 0.6 * pulse(t, g("s5", "warn") - 0.1, g("s5", "first") + 0.3) : 0, knees: 0.35 * knees, handsGlow: 0.35 * knees });
   Q.g.position.y = 0.97 + 0.55 * thrown + jolt; Q.g.rotation.x = -0.35 * thrown;
   Q.mats.torso.emissive.set(partA && t > S.s2[0] ? RED : id === "s6" && t > g("s6", "hard") - 0.1 ? RED : 0x000000).multiplyScalar(partA ? 0.4 + 1.2 * thrown : 0.8);
   // rider turns his head back to warn the passenger
   B.headG.rotation.y = id === "s5" ? 1.1 * pulse(t, g("s5", "warn") - 0.15, g("s5", "first") + 0.3) : 0;
   tagAt(tUp, st.x, 2.9, st.z, 0, 0.7);
-  tagAt(tBr, st.x, 2.5, st.z, id === "s3" ? pulse(t, tOff - 0.2, S.s4[0]) : 0, 0.7);
+  tagAt(tBr, st.x, 2.5, st.z, 0, 0.7);
   tagAt(tSm, st.x, 2.6, st.z, 0, 0.6); tagAt(tHard, st.x, 2.6, st.z, 0, 0.6);
   const shot = shoot(SH, t);
   bloom.strength = 1.0 + 1.2 * shot.punch * shot.punch + overlays(t) + 0.4 * thrown;
