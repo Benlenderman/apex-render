@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="he" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      @font-face { font-family: "Heebo"; src: url(assets/heebo.ttf); font-weight: 100 900; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="19.335" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="19.335" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="19.335" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="2.820998" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="3.041" data-duration="1.519002" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="4.730" data-duration="1.196372" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="6.096" data-duration="2.484943" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="8.751" data-duration="2.263878" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="11.185" data-duration="3.024218" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="14.379" data-duration="1.784603" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="16.334" data-duration="1.800771" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__hf = window.__hf || {}; window.__hf.buildReady = window.__hf.buildReady || {}; window.__hf.buildReady.boot = new Promise((r) => (window.__bootDone = r));
+      window.__EV = {"S":{"s1":[0,2.991],"s2":[2.991,1.689],"s3":[4.68,1.366],"s4":[6.046,2.655],"s5":[8.701,2.434],"s6":[11.135,3.194],"s7":[14.329,1.955],"s8":[16.284,3.051]},"W":{"s1":{"dur":2.820998,"words":[{"text":"רוצים","start":0.04,"end":0.28},{"text":"לצאת","start":0.3,"end":0.54},{"text":"הערב?","start":0.58,"end":0.98},{"text":"אף","start":1.28,"end":1.4},{"text":"פעם","start":1.5,"end":1.7},{"text":"אל","start":1.72,"end":1.8},{"text":"תגידו","start":1.84,"end":2.14},{"text":"\"נתאם\".","start":2.18,"end":2.64}]},"s2":{"dur":1.519002,"words":[{"text":"\"נתאם\"","start":0.038,"end":0.326},{"text":"נשאר","start":0.345,"end":0.594},{"text":"בצ'אט","start":0.614,"end":0.863},{"text":"שלושה","start":0.901,"end":1.189},{"text":"ימים.","start":1.208,"end":1.419}]},"s3":{"dur":1.196372,"words":[{"text":"ואף","start":0.12,"end":0.26},{"text":"אחד","start":0.261,"end":0.38},{"text":"לא","start":0.4,"end":0.46},{"text":"יוצא","start":0.48,"end":0.66},{"text":"מהבית.","start":0.72,"end":1.08}]},"s4":{"dur":2.484943,"words":[{"text":"במקום","start":0.02,"end":0.371},{"text":"זה,","start":0.43,"end":0.567},{"text":"פותחים","start":0.801,"end":1.114},{"text":"פעילות","start":1.192,"end":1.564},{"text":"ביש","start":1.74,"end":1.974},{"text":"דיבור.","start":2.072,"end":2.385}]},"s5":{"dur":2.263878,"words":[{"text":"מה,","start":0.097,"end":0.234},{"text":"מתי","start":0.546,"end":0.819},{"text":"ואיפה.","start":0.994,"end":1.365},{"text":"פחות","start":1.579,"end":1.813},{"text":"מדקה.","start":1.852,"end":2.164}]},"s6":{"dur":3.024218,"words":[{"text":"מי","start":0.02,"end":0.098},{"text":"שקרוב","start":0.137,"end":0.569},{"text":"רואה,","start":0.628,"end":0.824},{"text":"לוחץ","start":0.942,"end":1.217},{"text":"\"אני","start":1.276,"end":1.393},{"text":"בפנים\",","start":1.433,"end":1.825},{"text":"ונפגשים.","start":2.277,"end":2.924}]},"s7":{"dur":1.784603,"words":[{"text":"לא","start":0.06,"end":0.14},{"text":"מתאמים.","start":0.18,"end":0.66},{"text":"קובעים.","start":1.22,"end":1.62}]},"s8":{"dur":1.800771,"words":[{"text":"תורידו","start":0,"end":0.251},{"text":"את","start":0.29,"end":0.367},{"text":"יש","start":0.425,"end":0.522},{"text":"דיבור.","start":0.56,"end":0.889},{"text":"הלינק","start":1.082,"end":1.372},{"text":"בביו.","start":1.392,"end":1.701}]}},"LEAD":0.05,"BRAND":{"cta":["תורידו את","יש דיבור"],"sub":"הלינק בביו"}};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 19.335);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>
