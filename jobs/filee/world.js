@@ -3,29 +3,44 @@ import { THREE, S, g, sm, scene, bloom, glow, box, tube, VIOLET, ORANGE, RED, GR
   textPlane, label, beam, shoot, run } from "./kit.js";
 import { title, cap, boom, endCard, overlays, fitText } from "./extra.js";
 
-const edges = (m, hex, k = 1.6) => { const e = new THREE.LineSegments(new THREE.EdgesGeometry(m.geometry), new THREE.LineBasicMaterial({ color: new THREE.Color(hex).multiplyScalar(k), toneMapped: false })); m.add(e); return e; };
-const recolor = (e, hex, k = 1.6) => e.material.color.set(hex).multiplyScalar(k);
+import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
+const std = (c, e, r = 0.45, m = 0.25) => new THREE.MeshStandardMaterial({ color: c, emissive: e, roughness: r, metalness: m });
+const rbox = (w, h, d, r, mat) => new THREE.Mesh(new RoundedBoxGeometry(w, h, d, 4, r), mat);
+const mBody = std(0x4a42c8, 0x1c1766, 0.35, 0.35), mDark = std(0x14123a, 0x07061a, 0.6, 0.2), mLav = std(0xc9c0ff, 0x4a3fb0, 0.4, 0.1);
+
+// ---------- desk + room lights ----------
+const desk = rbox(9, 0.3, 5, 0.12, std(0x221d66, 0x0c0a30, 0.7, 0.1)); desk.position.set(0, -0.14, -0.6); scene.add(desk);
+const pl = new THREE.PointLight(0xe8e2ff, 18, 9, 1.6); pl.position.set(-1.6, 3.2, 2.2); scene.add(pl);
+const rim = new THREE.PointLight(0xff8a3a, 10, 8, 1.6); rim.position.set(2.6, 2.2, -2.4); scene.add(rim);
+const lampGlow = new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 12), glow(WHITE, 1.6)); lampGlow.position.copy(pl.position); scene.add(lampGlow);
 
 // ---------- laptop at the origin, screen faces +z ----------
-const base = box(2.6, 0.1, 1.7, 0, 0.05, 0, mSolid, false); scene.add(base);
-const baseE = edges(base, VIOLET);
+const base = rbox(2.6, 0.1, 1.7, 0.04, mBody); base.position.set(0, 0.05, 0); scene.add(base);
+const keys = rbox(2.2, 0.02, 0.8, 0.01, mDark); keys.position.set(0, 0.105, -0.2); scene.add(keys);
+const pad = rbox(0.8, 0.02, 0.45, 0.01, mDark); pad.position.set(0, 0.105, 0.5); scene.add(pad);
 const lid = new THREE.Group(); lid.position.set(0, 0.1, -0.85); lid.rotation.x = -0.12; scene.add(lid);
-const screen = box(2.6, 1.7, 0.06, 0, 0.85, 0, mSolid, false); lid.add(screen);
-const lidE = edges(screen, VIOLET);
-const mScreen = new THREE.MeshBasicMaterial({ color: new THREE.Color(VIOLET).multiplyScalar(0.18), toneMapped: false });
+const screen = rbox(2.6, 1.7, 0.06, 0.04, mBody); screen.position.set(0, 0.85, 0); lid.add(screen);
+const mScreen = new THREE.MeshBasicMaterial({ color: 0x0b0a26, toneMapped: false });
 const face = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 1.5), mScreen); face.position.set(0, 0.85, 0.035); lid.add(face);
+// screen UI: a window bar + a thin accent line under it
+const bar = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 0.12), glow(VIOLET, 0.35)); bar.position.set(0, 1.54, 0.037); lid.add(bar);
+const accent = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 0.015), glow(VIOLET, 1.6)); accent.position.set(0, 1.475, 0.038); lid.add(accent);
+[-1.08, -0.98, -0.88].forEach((x, i) => { const d = new THREE.Mesh(new THREE.CircleGeometry(0.025, 16), glow([RED, ORANGE, GREEN][i], 1.2)); d.position.set(x, 1.54, 0.039); lid.add(d); });
 const SCR = (x, y) => new THREE.Vector3(x, 0.1 + y, -0.85 + 0.12 * y + 0.25); // point just in front of the screen
 
-// ---------- file icons ----------
+// ---------- file icons: lavender card, colored band, orange folded corner ----------
 function makeFile(hex, txt) {
   const gp = new THREE.Group();
-  const b = box(0.56, 0.72, 0.04, 0, 0, 0, glow(hex, 0.3), false); gp.add(b);
-  gp.userData.e = edges(b, hex, 2.0);
-  const t = fitText([txt], WHITE, 1.0, 0.5); t.visible = true; t.position.set(0, -0.05, 0.03); gp.add(t);
-  gp.userData.t = t;
+  const b = rbox(0.56, 0.72, 0.06, 0.05, mLav); gp.add(b);
+  const band = new THREE.Mesh(new THREE.PlaneGeometry(0.46, 0.2), glow(hex, 1.1)); band.position.set(0, -0.12, 0.032); gp.add(band);
+  const corner = new THREE.Mesh(new THREE.CircleGeometry(0.09, 3), glow(ORANGE, 1.4)); corner.position.set(0.19, 0.27, 0.033); corner.rotation.z = Math.PI / 4; gp.add(corner);
+  [0.14, 0.06].forEach((y) => { const l = new THREE.Mesh(new THREE.PlaneGeometry(0.3, 0.025), new THREE.MeshBasicMaterial({ color: 0x6a5fd0 })); l.position.set(-0.05, y, 0.032); gp.add(l); });
+  const t = fitText([txt], WHITE, 1.0, 0.4); t.visible = true; t.position.set(0, -0.12, 0.034); gp.add(t);
+  gp.userData.band = band;
   scene.add(gp); gp.visible = false;
   return gp;
 }
+const setBand = (f, hex) => f.userData.band.material.color.set(hex).multiplyScalar(1.1);
 const pdf = makeFile(RED, "PDF");
 const docx = makeFile(GREEN, "DOCX");
 const copies = [makeFile(RED, "PDF"), makeFile(RED, "PDF"), makeFile(RED, "PDF")];
@@ -33,8 +48,12 @@ const copies = [makeFile(RED, "PDF"), makeFile(RED, "PDF"), makeFile(RED, "PDF")
 // ---------- the stranger's server, up and behind ----------
 const SV = new THREE.Vector3(0.9, 4.6, -5.5);
 const server = new THREE.Group(); server.position.copy(SV); scene.add(server);
-const rack = box(1.6, 2.6, 1.2, 0, 0, 0, mSolid, false); server.add(rack); edges(rack, RED, 1.8);
-for (let i = 0; i < 6; i++) server.add(box(1.3, 0.08, 0.02, 0, -1.0 + i * 0.4, 0.61, glow(RED, i % 2 ? 1.6 : 0.8), false));
+const rack = rbox(1.6, 2.6, 1.2, 0.12, mBody); server.add(rack);
+for (let i = 0; i < 5; i++) {
+  const u = rbox(1.36, 0.36, 0.06, 0.04, mDark); u.position.set(0, -0.95 + i * 0.48, 0.6); server.add(u);
+  const led = new THREE.Mesh(new THREE.SphereGeometry(0.045, 12, 8), glow(RED, 2.2)); led.position.set(0.5, -0.95 + i * 0.48, 0.65); server.add(led);
+}
+const svLight = new THREE.PointLight(0xff3040, 14, 6, 1.6); svLight.position.set(0, 0, 1.4); server.add(svLight);
 const upBeam = beam(RED, 1.6, 0.04);
 const cross = [tube([-1, -1.4, 0.7], [1, 1.4, 0.7], 0.12, glow(RED, 2.4)), tube([1, -1.4, 0.7], [-1, 1.4, 0.7], 0.12, glow(RED, 2.4))];
 cross.forEach((c) => server.add(c));
@@ -42,15 +61,16 @@ cross.forEach((c) => server.add(c));
 // ---------- ring menu + cursor ----------
 const FORMATS = ["DOCX", "PNG", "MP3", "JPG", "TXT", "MP4"];
 const ring = new THREE.Group(); scene.add(ring);
-const torus = new THREE.Mesh(new THREE.TorusGeometry(0.62, 0.025, 8, 64), glow(VIOLET, 2.2)); ring.add(torus);
+const torus = new THREE.Mesh(new THREE.TorusGeometry(0.62, 0.02, 8, 64), glow(VIOLET, 1.6)); ring.add(torus);
 const slots = FORMATS.map((f, i) => {
   const a = Math.PI / 2 - (i * Math.PI * 2) / 6, s = new THREE.Group();
   s.position.set(Math.cos(a) * 0.62, Math.sin(a) * 0.62, 0.02);
-  const d = new THREE.Mesh(new THREE.CircleGeometry(0.2, 32), glow(i ? VIOLET : GREEN, i ? 0.35 : 0.5)); s.add(d);
-  const t = fitText([f], WHITE, 1.0, 0.36); t.visible = true; t.position.z = 0.01; s.add(t);
+  const d = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 0.06, 32), i ? mBody : std(0x1f7a4a, 0x0f5a33, 0.4, 0.2)); d.rotation.x = Math.PI / 2; s.add(d);
+  const r = new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.012, 6, 32), glow(i ? VIOLET : GREEN, i ? 1.2 : 2.0)); r.position.z = 0.03; s.add(r);
+  const t = fitText([f], WHITE, 1.0, 0.3); t.visible = true; t.position.z = 0.035; s.add(t);
   ring.add(s); return s;
 });
-const cursor = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.2, 3), glow(WHITE, 0.8)); cursor.rotation.z = 0.5; scene.add(cursor);
+const cursor = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.2, 3), glow(WHITE, 1.4)); cursor.rotation.z = 0.5; scene.add(cursor);
 
 // ---------- s6: a burst of file types around the laptop ----------
 const TYPES = ["PDF", "DOCX", "PNG", "MP4", "MP3", "JPG", "GIF", "WAV", "SVG", "EPUB", "MOV", "WEBP", "CSV", "HEIC", "FLAC", "ZIP"];
@@ -88,22 +108,21 @@ const lerp3 = (a, b, k, out) => out.copy(a).lerp(b, k);
 
 // ---------- shots: [cx,cy,cz, lx,ly,lz, fov] ----------
 const SH = [
-  { at: 0, K: [[0, [0.3, 1.6, 4.6, 0, 0.9, -0.5, 48]], [S.s2[0], [0.1, 1.7, 4.0, 0, 1.0, -0.6, 48]]] },
+  { at: 0, K: [[0, [0.3, 1.8, 5.6, 0, 0.9, -0.5, 48]], [S.s2[0], [0.1, 1.8, 5.0, 0, 1.0, -0.6, 48]]] },
   { at: T.up, K: [[0, [2.4, 1.6, 5.4, 0.5, 3.1, -2.6, 58]], [3.0, [2.8, 2.0, 5.8, 0.6, 3.5, -3.2, 58]]] },
-  { at: T.copy - 0.3, K: [[0, [2.4, 4.2, 1.2, 0.9, 4.4, -5.5, 52]], [2.0, [2.0, 4.4, 0.6, 0.9, 4.4, -5.5, 50]]] },
-  { at: T.s3, K: [[0, [-0.6, 1.9, 4.8, 0, 1.0, -0.6, 48]], [3.6, [0.2, 1.6, 3.8, 0, 1.0, -0.6, 46]]] },
-  { at: S.s4[0], K: [[0, [0.5, 1.4, 4.4, 0, 0.95, -0.6, 46]], [3.5, [0.3, 1.35, 4.0, 0.1, 0.95, -0.6, 46]]] },
-  { at: S.s5[0], K: [[0, [-0.5, 1.5, 4.2, 0, 0.95, -0.6, 46]], [3.4, [-0.2, 1.6, 4.4, -0.1, 1.0, -0.6, 46]]] },
+  { at: T.copy - 0.3, K: [[0, [2.8, 4.2, 1.6, 1.4, 4.4, -5.0, 54]], [2.0, [2.5, 4.4, 1.0, 1.4, 4.4, -5.0, 52]]] },
+  { at: T.s3, K: [[0, [-0.6, 2.1, 5.8, 0, 1.0, -0.6, 48]], [3.6, [0.2, 1.8, 5.2, 0, 1.0, -0.6, 46]]] },
+  { at: S.s4[0], K: [[0, [0.5, 1.7, 5.4, 0, 0.95, -0.6, 46]], [3.5, [0.3, 1.6, 5.0, 0.1, 0.95, -0.6, 46]]] },
+  { at: S.s5[0], K: [[0, [-0.5, 1.7, 5.2, 0, 0.95, -0.6, 46]], [3.4, [-0.2, 1.8, 5.4, -0.1, 1.0, -0.6, 46]]] },
   { at: S.s6[0], K: [[0, [0, 2.6, 5.5, 0, 1.0, -0.6, 50]], [0.9, [0, 2.8, 7.4, 0, 1.75, -1.2, 50]], [3.7, [0.3, 3.0, 7.8, 0, 1.8, -1.2, 50]]] },
   { at: T.s7, calm: 1, K: [[0, [0.3, 3.0, 7.8, 0, 1.8, -1.2, 50]], [4, [0.5, 3.2, 8.4, 0, 1.8, -1.2, 50]]] },
 ];
 
 run("filee-world", (t) => {
   const wrong = t < T.s3, done = t >= T.nw;
-  // laptop color: red while uploading, green from s3
-  const hex = wrong ? RED : GREEN;
-  recolor(baseE, wrong ? VIOLET : GREEN); recolor(lidE, wrong ? VIOLET : GREEN);
-  mScreen.color.set(wrong ? VIOLET : GREEN).multiplyScalar(wrong ? 0.16 : 0.14 + 0.06 * sm(T.s3, T.s3 + 0.4, t));
+  // screen tint: red alert while uploading, green accent from s3
+  accent.material.color.set(wrong ? (t >= T.up ? RED : VIOLET) : GREEN).multiplyScalar(1.6);
+  mScreen.color.set(wrong ? 0x0b0a26 : 0x0a1a1a);
 
   // PDF: on screen, then (s1-s2) flies up the beam to the server; from s3 it is back home
   pdf.visible = t >= T.pdfIn;
@@ -114,7 +133,7 @@ run("filee-world", (t) => {
   else pdf.position.copy(HOME); // the original stays where it was
   pdf.scale.setScalar(wrong ? 1 - 0.35 * fly : 1);
   pdf.rotation.y = wrong ? fly * 0.6 : 0;
-  const pdfHex = wrong ? RED : VIOLET; recolor(pdf.userData.e, pdfHex, 2); pdf.children[0].material.color.set(pdfHex).multiplyScalar(0.3);
+  setBand(pdf, wrong ? RED : VIOLET);
 
   // the dragged ghost of the file follows the cursor, then turns into a DOCX on drop
   const ghostOn = t >= T.drag && t < T.drop + 0.25;
