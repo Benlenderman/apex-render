@@ -1,0 +1,8 @@
+s1|Need a quick product video? Never drag clips around a timeline for hours. Exploring GitHub repos.
+s2|Every cut, caption and zoom is placed by hand, and one change means doing it all again.
+s3|Instead, get HyperFrames. Over 84,000 stars on GitHub in 8 months. It's free, and your AI makes the whole video by writing code.
+s4|Ask for a 10-second product intro. It builds a web page, and the page turns into a video.
+s5|Captions, charts and maps come from about 450 ready-made pieces.
+s6|Make it twice, and you get the exact same video. It's made by the team at HeyGen.
+s7|Don't drag the clips. Write the video.
+s8|Comment REPO, and I'll send you the link.
