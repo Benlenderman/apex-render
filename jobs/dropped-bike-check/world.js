@@ -36,7 +36,7 @@ const sCar = s0 + DA(tC) + 1.6 + 2.15, [xCar, zCar] = P(sCar, 1.8);
 
 // ---- B: parked for the check at s=300 ----
 const sB = 300, [xB, zB] = P(sB, 2.6), bF = () => [xB, zB, 0];
-const leak = patch(0.7, 0.5, RED, 0.9); leak.position.set(xB, 0.03, zB - 0.7);
+const leak = patch(0.7, 0.5, RED, 0.9); leak.position.set(xB, 0.03, zB - 0.1);
 const drops = [0, 1, 2].map(() => { const d = new THREE.Mesh(new THREE.SphereGeometry(0.035, 8, 6), glow(RED, 2.4)); scene.add(d); return d; });
 
 // ---- C: slow minute, then speed up ----
@@ -65,6 +65,7 @@ const fol = (fn) => (t) => pathState(fn, t);
 const bar0 = [xB, 1.07, zB - 0.57];
 const SH = [
   { at: 0, K: [[0, [6.4, 2.4, -33, 2.4, 0.4, -40.5, 46]], [T2 - 0.2, [6.6, 2.8, -32.5, 2.0, 0.6, -43, 46]]] },
+  { at: tRide - 0.05, f: fol(aF), noRot: true, K: [[0, [3.0, 1.7, 3.0, 0, 0.8, -3, 44]], [T2 - tRide + 0.05, [2.0, 2.4, 7, 0, 0.7, -6, 46]]] },
   { at: T2, f: fol(aF), noRot: true, K: [[0, [2.0, 2.4, 7, 0, 0.7, -6, 46]], [3.5, [2.4, 2.8, 7.6, 0, 0.6, -5, 46]]] },
   { at: T3, K: [[0, [xB - 1.9, 1.7, zB - 2.6, bar0[0], 0.9, bar0[2], 44]], [tFoot - T3, [xB - 2.0, 1.6, zB - 2.4, bar0[0], 0.85, bar0[2], 44]],
     [tFoot - T3 + 0.4, [xB - 2.7, 1.2, zB + 0.6, xB, 0.4, zB - 0.2, 46]], [3, [xB - 2.9, 1.25, zB + 0.8, xB, 0.4, zB - 0.2, 46]]] },
@@ -98,11 +99,11 @@ run("w", (t) => {
     pose(fr, { x: xB + 1.9, z: zB + 0.6, h: hdg(-1, 0), armR: ARM.point, armL: 0.3, hex: GREEN });
     if (t < T4) {
       const kL = sm(tLev - 0.1, tLev + 0.2, t), kP = sm(tFoot - 0.1, tFoot + 0.2, t), snap = t > tSnap ? 0.6 + 0.4 * Math.sin(12 * t) : 1;
-      lev = [kL > 0.5 ? (t > tSnap ? ORANGE : GREEN) : VIOLET, 1.2 + 1.8 * kL * snap];
+      lev = [kL > 0.5 ? (t > tSnap ? ORANGE : GREEN) : VIOLET, 0.9 + 0.9 * kL * snap];
       peg = [kP > 0.5 ? (t > tSnap ? ORANGE : GREEN) : VIOLET, 1.0 + 2.2 * kP * snap];
     } else if (t < T5) {
       squeeze = t > tSq ? 0.5 - 0.5 * Math.cos(5 * (t - tSq)) : 0;
-      lev = [GREEN, 1.4 + 2.2 * sm(tFirm - 0.1, tFirm + 0.2, t)];
+      lev = [GREEN, 0.9 + 1.0 * sm(tFirm - 0.1, tFirm + 0.2, t)];
     } else {
       if (t > tLoose - 0.1) { mir = [ORANGE, 2.4 + 0.8 * Math.sin(11 * t)]; wob = 0.25 * Math.sin(14 * t) * (1 - sm(tTurn - 0.2, tTurn, t)); }
       steer = 0.55 * Math.sin(2.6 * (t - tTurn)) * sm(tTurn - 0.1, tTurn + 0.3, t);
@@ -113,13 +114,14 @@ run("w", (t) => {
   // leak + drips (s5 only)
   const kLk = B && t > T5 ? sm(tLeak - 0.1, tLeak + 0.3, t) : 0;
   leak.set(kLk * (0.8 + 0.2 * Math.sin(6 * t)));
-  drops.forEach((d, i) => { d.visible = kLk > 0.5; const ph = (t * 1.3 + i / 3) % 1; d.position.set(xB + 0.03 * (i - 1), 0.5 * (1 - ph * ph), zB - 0.68); });
+  drops.forEach((d, i) => { d.visible = kLk > 0.5; const ph = (t * 1.3 + i / 3) % 1; d.position.set(xB + 0.03 * (i - 1), 0.42 * (1 - ph * ph), zB - 0.1); });
   levers.forEach((L, i) => { const s = i ? 1 : -1; lit(L.userData.m, ...lev); L.rotation.set(0, s * 0.45 * squeeze, s < 0 ? -0.5 * bent : 0); });
   pegs.forEach((p) => lit(p.userData.m, ...peg));
+  if (B && mir[0] === VIOLET) mir = [VIOLET, 0.7];
   mirM.forEach((m) => lit(m, ...mir)); BF.mirL.rotation.z = wob; BF.mirR.rotation.z = -wob;
   if (bar) bar.rotation.y = twist;
   if (B) BF.fork.rotation.y = steer;
-  BF.hlight.material.color.set(0xffffff).multiplyScalar(B ? 0.35 : 1.8);
+  BF.hlight.material.color.set(0xffffff).multiplyScalar(B ? 0.15 : 1.8);
   const shot = shoot(SH, t);
-  bloom.strength = 1.0 + 1.2 * shot.punch * shot.punch + overlays(t);
+  bloom.strength = (B ? 0.55 : 1.0) + 1.2 * shot.punch * shot.punch + overlays(t);
 });

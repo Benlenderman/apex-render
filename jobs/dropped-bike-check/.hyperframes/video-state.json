@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "07226238-2420-44eb-affe-25743b546ff4",
-  "currentRevision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
+  "currentRevision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -133,8 +133,44 @@
       "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/32/3251c26a4e8d2a0c4fa5eb8668b0d6908903bcb592066bf0c27998288add25fe"
     },
     "world.js": {
-      "hash": "3976c825d62b13b25598c0cb89d3fb77faf6738f50058bad334c2f6df8390661",
-      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/39/3976c825d62b13b25598c0cb89d3fb77faf6738f50058bad334c2f6df8390661"
+      "hash": "1b54fb91bd7ff70813ab6fae9c807db172c522bb0395ca63b818495d25cccbb6",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/1b/1b54fb91bd7ff70813ab6fae9c807db172c522bb0395ca63b818495d25cccbb6"
+    },
+    "dropped-bike-check.mp4": {
+      "hash": "f48eed60587c4dd16279dfb6b981bd16709ddc0eb2d59b0d29f6c0fdfcad031a",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/f4/f48eed60587c4dd16279dfb6b981bd16709ddc0eb2d59b0d29f6c0fdfcad031a"
+    },
+    "render.log": {
+      "hash": "793fdbef38aee1f85a2b28065e9f021abb921b5f4b3a70a12b4f230a46baa9c8",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/79/793fdbef38aee1f85a2b28065e9f021abb921b5f4b3a70a12b4f230a46baa9c8"
+    },
+    "review/sheet-01.jpg": {
+      "hash": "a4cddf1a7e4f70512aa5a6909d7b4d6ed855750378580fce7ce7de9bb5e562fb",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/a4/a4cddf1a7e4f70512aa5a6909d7b4d6ed855750378580fce7ce7de9bb5e562fb"
+    },
+    "review/sheet-02.jpg": {
+      "hash": "aaa43f16c6367fc8b97e619278fe31eb87fb813c045bbfa94d50081f6ce5af93",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/aa/aaa43f16c6367fc8b97e619278fe31eb87fb813c045bbfa94d50081f6ce5af93"
+    },
+    "review/sheet-03.jpg": {
+      "hash": "628ffe1cf1229e8c533cab4e625fe17d25743b015848dd1492f88bf5324b1ab8",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/62/628ffe1cf1229e8c533cab4e625fe17d25743b015848dd1492f88bf5324b1ab8"
+    },
+    "review/sheet-04.jpg": {
+      "hash": "98afe93d3aaea47289d040e7690e065cddcbaaa8d970f120a259123a09b5961f",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/98/98afe93d3aaea47289d040e7690e065cddcbaaa8d970f120a259123a09b5961f"
+    },
+    "review/stats.txt": {
+      "hash": "8f7e729e732f8e507eb3e507d59a1c77be2f5a040948333f24dc6811e0f65c15",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/8f/8f7e729e732f8e507eb3e507d59a1c77be2f5a040948333f24dc6811e0f65c15"
+    },
+    "review/cuts.txt": {
+      "hash": "1ae8868bb2cadf8fd35e58b45326211ebf14864b856db6bd192e3e0dfcce5802",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/1a/1ae8868bb2cadf8fd35e58b45326211ebf14864b856db6bd192e3e0dfcce5802"
+    },
+    "world.pre-gate.js": {
+      "hash": "39958581d8c0b5e9a9dd4d21fc66d2bbd1c3cff72f4891ee1b8aa0d6e422c5fd",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/39/39958581d8c0b5e9a9dd4d21fc66d2bbd1c3cff72f4891ee1b8aa0d6e422c5fd"
     }
   },
   "revisions": {
@@ -167,6 +203,57 @@
           "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/39/3976c825d62b13b25598c0cb89d3fb77faf6738f50058bad334c2f6df8390661"
         }
       }
+    },
+    "4af1c671-8ddf-480e-acaa-2b528e15ec2a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794656826376,
+      "endedAt": 1794656828001,
+      "files": {
+        "dropped-bike-check.mp4": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/f4/f48eed60587c4dd16279dfb6b981bd16709ddc0eb2d59b0d29f6c0fdfcad031a"
+        },
+        "render.log": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/79/793fdbef38aee1f85a2b28065e9f021abb921b5f4b3a70a12b4f230a46baa9c8"
+        },
+        "review/cuts.txt": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/1a/1ae8868bb2cadf8fd35e58b45326211ebf14864b856db6bd192e3e0dfcce5802"
+        },
+        "review/sheet-01.jpg": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/a4/a4cddf1a7e4f70512aa5a6909d7b4d6ed855750378580fce7ce7de9bb5e562fb"
+        },
+        "review/sheet-02.jpg": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/aa/aaa43f16c6367fc8b97e619278fe31eb87fb813c045bbfa94d50081f6ce5af93"
+        },
+        "review/sheet-03.jpg": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/62/628ffe1cf1229e8c533cab4e625fe17d25743b015848dd1492f88bf5324b1ab8"
+        },
+        "review/sheet-04.jpg": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/98/98afe93d3aaea47289d040e7690e065cddcbaaa8d970f120a259123a09b5961f"
+        },
+        "review/stats.txt": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/8f/8f7e729e732f8e507eb3e507d59a1c77be2f5a040948333f24dc6811e0f65c15"
+        },
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/39/3976c825d62b13b25598c0cb89d3fb77faf6738f50058bad334c2f6df8390661",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/1b/1b54fb91bd7ff70813ab6fae9c807db172c522bb0395ca63b818495d25cccbb6"
+        },
+        "world.pre-gate.js": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/07226238-2420-44eb-affe-25743b546ff4/blobs/39/39958581d8c0b5e9a9dd4d21fc66d2bbd1c3cff72f4891ee1b8aa0d6e422c5fd"
+        }
+      }
     }
   },
   "checks": {
@@ -176,15 +263,17 @@
   },
   "snapshots": {
     "latest": {
-      "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-      "id": "71dca092-7074-4175-982a-04ff138533c8-5"
+      "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+      "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-9"
     },
     "revisions": {
-      "56a4daae-cfb1-4b7d-893b-6d135e4564f7": [
+      "56a4daae-cfb1-4b7d-893b-6d135e4564f7": [],
+      "ea6c9340-b0fb-45ca-bc67-dc93e3e44883": [],
+      "4af1c671-8ddf-480e-acaa-2b528e15ec2a": [
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-0",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-00-at-1s.png",
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-0",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-00-at-1s.png",
           "time": 1,
           "metadata": {
             "width": 1080,
@@ -194,18 +283,18 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591062,
+          "createdAt": 1794656950499,
           "contentHash": "d996967f196899d5e0ba1a7badb692eef6936b74aa15ea73ced44e7e53aad4b6",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-1",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-01-at-6.3s.png",
-          "time": 6.3,
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-1",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-01-at-1.3s.png",
+          "time": 1.3,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -214,18 +303,18 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591062,
-          "contentHash": "6aa82014fa442cc39859e0ff3f228266fa1771c13f3729be0ba9dfc9aae88d17",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "createdAt": 1794656950565,
+          "contentHash": "d6d325e17b75589fd5f1cce3f2b6f11b6c4eff3838ce7c18636ae30892517560",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-2",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-02-at-7.9s.png",
-          "time": 7.9,
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-2",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-02-at-1.6s.png",
+          "time": 1.6,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -234,18 +323,18 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591062,
-          "contentHash": "46fafa6ff5787d6ceedede6ac1519820f9333bbf1b0c7553a9b35744f9b263b6",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "createdAt": 1794656950566,
+          "contentHash": "49a6d0f113bed99063a60930aeb2ca9c181337115638f0eea47d9d15c8519882",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-3",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-03-at-8.6s.png",
-          "time": 8.6,
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-3",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-03-at-2s.png",
+          "time": 2,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -254,18 +343,18 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591062,
-          "contentHash": "ba1d934edf8e6be9cc04bafb02e8f80de7c1cc6fe1623e4f09272bfa60635e69",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "createdAt": 1794656950566,
+          "contentHash": "ef2e8e805a858ba37dbdfe9904db07fe290644033c702ffc74c59578b21d452b",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-4",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-04-at-10.5s.png",
-          "time": 10.5,
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-4",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-04-at-7s.png",
+          "time": 7,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -274,18 +363,18 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591062,
-          "contentHash": "45ee3607c62ac896b6cd973c03b895855030d7cf6f4ee40ab83c41535cfa65d2",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "createdAt": 1794656950566,
+          "contentHash": "f1de26e88a4f3488ecd3fcfc97b7ff86c2cda11f000aa706af319e3d3529762e",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-5",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-05-at-12.2s.png",
-          "time": 12.2,
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-5",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-05-at-8s.png",
+          "time": 8,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -294,17 +383,57 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591062,
-          "contentHash": "1a416cf704e279b2be4d09cf74afdc9bc5a188ef9ee35c0445b6882edbe82dbd",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "createdAt": 1794656950566,
+          "contentHash": "47332705e4391277e426c9b1deaf4d87ec725e3596ea0e2da7fe823cfc3c5d56",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-6",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-06-at-13.5s.png",
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-6",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-06-at-11.8s.png",
+          "time": 11.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794656950566,
+          "contentHash": "cbf9e1b95344384885f17606293b6914b32de399ffbfad045f7d18717df1f459",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-7",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-07-at-12.5s.png",
+          "time": 12.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794656950566,
+          "contentHash": "8fc998302e96fdbab7db92d70f081a9048f18aa4e446cb489114b1090f946435",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-8",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-08-at-13.5s.png",
           "time": 13.5,
           "metadata": {
             "width": 1080,
@@ -314,37 +443,17 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591063,
-          "contentHash": "824a37028de0badc57366a0489b09c341b7c0432af707291000cfc42c57b8150",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
+          "createdAt": 1794656950566,
+          "contentHash": "d13b5a19f5376194a7190e8254218d38cc4b1415863974a372fb053181129cf2",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-7",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-07-at-15.5s.png",
-          "time": 15.5,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645591063,
-          "contentHash": "477f60d14bfc3097ca74123facd1806911311f9b01ec4156b8a2b56954fafea7",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "c026e883-b257-4e22-9b3b-f3d195513eef-8",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/3bde63fc-5392-48de-b13a-25689f6703d9/frame-08-at-22.436s.png",
+          "id": "331e853c-2a77-4e22-82bf-f0e3ff0e0e34-9",
+          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/b79f7504-514d-4b87-a003-d5450484a752/frame-09-at-22.436s.png",
           "time": 22.436,
           "metadata": {
             "width": 1080,
@@ -354,339 +463,16 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794645591063,
+          "createdAt": 1794656950566,
           "contentHash": "b65fb068912848e057ee2eb08e7970a12206a1e02933e43d9371a206d2e5e4ed",
-          "revision": "56a4daae-cfb1-4b7d-893b-6d135e4564f7",
-          "inputFingerprint": "d62c5823bff3d6fe24f8a1711d85cf95fed2437288a8a1151b34e3fb30517230",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        }
-      ],
-      "ea6c9340-b0fb-45ca-bc67-dc93e3e44883": [
-        {
-          "scope": "full",
-          "id": "71dca092-7074-4175-982a-04ff138533c8-0",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/46d0f688-88bf-4326-8c88-a44970620624/frame-00-at-7.9s.png",
-          "time": 7.9,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645682334,
-          "contentHash": "f147e6254bc10e778e81f954485deff992a857df35a0ca3320658e047cbb1d21",
-          "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-          "inputFingerprint": "e161b678fa3485173c9ab0af69b77f920da82b040c2e716dec0ac748ebeac63f",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "71dca092-7074-4175-982a-04ff138533c8-1",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/46d0f688-88bf-4326-8c88-a44970620624/frame-01-at-8.6s.png",
-          "time": 8.6,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645682334,
-          "contentHash": "04e8ca4ac81903e2b4d5e98ffbfeb834a036abef111308ff09c79db5ffb4d71f",
-          "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-          "inputFingerprint": "e161b678fa3485173c9ab0af69b77f920da82b040c2e716dec0ac748ebeac63f",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "71dca092-7074-4175-982a-04ff138533c8-2",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/46d0f688-88bf-4326-8c88-a44970620624/frame-02-at-10.5s.png",
-          "time": 10.5,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645682337,
-          "contentHash": "18a95212fbecfc72f79396790d5c624337f2badd6ff57a707410e182cd5c9a83",
-          "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-          "inputFingerprint": "e161b678fa3485173c9ab0af69b77f920da82b040c2e716dec0ac748ebeac63f",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "71dca092-7074-4175-982a-04ff138533c8-3",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/46d0f688-88bf-4326-8c88-a44970620624/frame-03-at-12.2s.png",
-          "time": 12.2,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645682337,
-          "contentHash": "5182534c63342a53c14aa37e0aa8f9e3845ab46f7f78a44db05b6749632f0bbc",
-          "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-          "inputFingerprint": "e161b678fa3485173c9ab0af69b77f920da82b040c2e716dec0ac748ebeac63f",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "71dca092-7074-4175-982a-04ff138533c8-4",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/46d0f688-88bf-4326-8c88-a44970620624/frame-04-at-13.5s.png",
-          "time": 13.5,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645682337,
-          "contentHash": "1427f4aa913c8920a394423d2625564259c5b31710e721ee5c83ae0f972a310a",
-          "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-          "inputFingerprint": "e161b678fa3485173c9ab0af69b77f920da82b040c2e716dec0ac748ebeac63f",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "71dca092-7074-4175-982a-04ff138533c8-5",
-          "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/46d0f688-88bf-4326-8c88-a44970620624/frame-05-at-22.436s.png",
-          "time": 22.436,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794645682337,
-          "contentHash": "b65fb068912848e057ee2eb08e7970a12206a1e02933e43d9371a206d2e5e4ed",
-          "revision": "ea6c9340-b0fb-45ca-bc67-dc93e3e44883",
-          "inputFingerprint": "e161b678fa3485173c9ab0af69b77f920da82b040c2e716dec0ac748ebeac63f",
+          "revision": "4af1c671-8ddf-480e-acaa-2b528e15ec2a",
+          "inputFingerprint": "e5df98224d9ae22c5a95755023026e3198b2f493c50fb9570edc8eb722c420ae",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
       ]
     },
-    "unversioned": [
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-0",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-00-at-1s.png",
-        "time": 1,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534786,
-        "contentHash": "b424ae0132fac00a818450facd83f1d794ddda230470c61ef884b60d9c298389",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-1",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-01-at-2.5s.png",
-        "time": 2.5,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534786,
-        "contentHash": "74bacae6c5b3e03a45f4d35e088676dfd1d61509a2962f18ab3f0fe191a698eb",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-2",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-02-at-5s.png",
-        "time": 5,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534786,
-        "contentHash": "bf1b9c1d2f5e7505ddda271ce70d90ec6603f5db829a1505c6a0a73e7dd660d9",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-3",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-03-at-6.3s.png",
-        "time": 6.3,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534786,
-        "contentHash": "4007c3b027252270f235238fd520fe903d1d18920efd88cb299175246f6c1889",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-4",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-04-at-8.3s.png",
-        "time": 8.3,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534786,
-        "contentHash": "22c136564a57217a4f1b50a2c845d5ebd0eff90db7102d5aaf8ca0339fb6b6c9",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-5",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-05-at-10.5s.png",
-        "time": 10.5,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534786,
-        "contentHash": "cbb60a09ed376d502fea75851a1fb2bf450a2fd493e22693af8f48fb5dae508c",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-6",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-06-at-13s.png",
-        "time": 13,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534787,
-        "contentHash": "c84858c57ba1e9d38c7f57a6cff657bff3582abc3005caad81ecc7efa21d8c28",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-7",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-07-at-15.5s.png",
-        "time": 15.5,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534787,
-        "contentHash": "c99ec16fc0eed2982cc111e125e8d0cf725a85d44a35e9e2d7e39c879445d0f7",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-8",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-08-at-18s.png",
-        "time": 18,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534787,
-        "contentHash": "8833119880fd9bab18d7eb866eb1d2dbea6d2b62f2c36e6a83bac1ce54a01a12",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      },
-      {
-        "scope": "full",
-        "id": "67c7b604-5a09-4900-8dfe-2b43dbcd4738-9",
-        "image": "/Users/benlenderman/explainers/dropped-bike-check/.hyperframes/artifacts/snapshots/03c56252-65eb-4cbd-b948-871b8fa8b818/frame-09-at-22.436s.png",
-        "time": 22.436,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1794645534787,
-        "contentHash": "b65fb068912848e057ee2eb08e7970a12206a1e02933e43d9371a206d2e5e4ed",
-        "revision": null,
-        "inputFingerprint": "2e125ebc187665097d05804250c62348600f5719d6800c0aa65babd9f6de8446",
-        "inputScope": "local-project-files",
-        "attribution": "unversioned"
-      }
-    ]
+    "unversioned": []
   },
   "renders": {
     "latest": {
