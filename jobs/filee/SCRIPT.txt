@@ -1,0 +1,8 @@
+s1|Need a PDF as a Word file? Never upload it to a random website.
+s2|Your file lands on a stranger's server, and you have no idea who keeps a copy.
+s3|Instead, get Filee. It's free on GitHub, and it converts on your own computer.
+s4|Hold a key, drag the file, and a circle menu opens right at your mouse.
+s5|Drop it on a format, and the new file lands right next to the original.
+s6|270 file types. Nothing is uploaded. It works fully offline.
+s7|Don't upload it. Just drop it.
+s8|Comment REPO, and I'll send you the link.
