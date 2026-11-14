@@ -77,13 +77,13 @@ const tCar = tag("STOPPED CAR", RED), tStop = tag("STOPPING DISTANCE", GREEN), t
 title("NEVER RIDE INTO LOW SUN AT FULL SPEED");
 cap("s2", "can't", ["YOU CAN'T SEE", "THE STOPPED CAR"], RED, { y: 0.3, until: ["s2", "and"] });
 cap("s2", "and", ["YOU RIDE", "STRAIGHT INTO IT"], RED, { y: 0.3, boom: 0.6 });
-cap("s3", "slow", ["SLOW DOWN AS SOON", "AS THE GLARE HITS"], GREEN, { y: 0.3 });
+cap("s3", "slow", ["SLOW DOWN AS SOON", "AS THE GLARE HITS"], GREEN, { y: 0.45 });
 cap("s4", "tuck", "TUCK YOUR HEAD DOWN", GREEN, { y: 0.3, until: ["s4", "use"] });
 cap("s4", "use", ["USE YOUR VISOR'S", "SUN SHADE"], GREEN);
 cap("s5", "drivers", ["ONCOMING DRIVERS", "ARE BLIND TOO"], ORANGE, { until: ["s5", "and"] });
 cap("s5", "and", "THEY CAN'T SEE YOU", RED);
-cap("s6", "leave", "LEAVE A BIGGER GAP", GREEN, { until: ["s6", "and"] });
-cap("s6", "and", ["BE READY", "TO STOP"], GREEN);
+cap("s6", "leave", "LEAVE A BIGGER GAP", GREEN, { y: 0.3, until: ["s6", "and"] });
+cap("s6", "and", ["BE READY", "TO STOP"], GREEN, { y: 0.3 });
 endCard(["CAN'T SEE?", "SLOW DOWN."]);
 
 // ---- shots ----
@@ -125,7 +125,7 @@ run("w", (t) => {
       THROWN.g.position.y += 0.7 * u + 0.6 * Math.sin(Math.PI * u) - 0.3 * sm(0.5, 1, u) + 0.35 * sm(0.5, 1, u);
       THROWN.g.position.z -= 0.3 * sm(tHit, tHit + 0.25, t);
     } else pose(THROWN, { vis: false });
-    tagAt(tCar, 1.8, 2.6, zCarA, on(t, g("s2", "car"), tHit - 0.2) * 0.85, 2.2);
+    tagAt(tCar, 1.8, 2.6, zCarA, on(t, g("s2", "car"), Math.min(tHit - 0.2, g("s2", "and") - 0.1)) * 0.85, 2.2);
     hit.position.set(1.8, 0.03, zCarA + 2.4); hit.set(t > tHit - 0.05 ? on(t, tHit, T3) : 0);
   } else {
     pose(THROWN, { vis: false }); hit.set(0);
