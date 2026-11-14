@@ -1,0 +1,8 @@
+s1|Your friend dropped their bike? Never let them ride off without a check.
+s2|A bent brake lever or a twisted bar can fail the moment they need it.
+s3|Check the levers and the foot pegs. Bent or snapped?
+s4|Squeeze the brakes. They must feel firm, like before.
+s5|Look for leaking fluid and loose mirrors, and turn the bars lock to lock.
+s6|Then ride slowly for a minute before you speed up.
+s7|Dropped it? Check it before you ride it.
+s8|Get the free APEX app. The link is in our bio.
