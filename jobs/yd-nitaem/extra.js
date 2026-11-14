@@ -145,7 +145,7 @@ export const boom = (id, word, k = 0.8, n = 1) => BOOMS.push([g(id, word, n), k]
 export function title(text) {
   const has = W.s1.words.some((w) => /^(never|אף)/iu.test(w.text)), NW = has ? W.s1.words.find((w) => /^(never|אף)/iu.test(w.text)).text.replace(/[^\p{L}\p{N}']/gu, "") : "", T = has ? g("s1", NW) : S.s1[0] + 0.3; // script may not say "never"
   const w0 = W.s1.words[0].text.replace(/[^\p{L}\p{N}']/giu, ""), m = cap("s1", has ? NW : w0, split(text), RED, { until: "s1", w: 0.84, y: 0.6 });
-  CAPS.at(-1).st = Math.min(T - 0.1, 0.9); BOOMS.push([T, 0.45]); return m;
+  CAPS.at(-1).st = 0; BOOMS.push([T, 0.45]); return m;
 }
 export function endCard(lines) { const f = W.s7.words[0].text; cap("s7", f.replace(/[^\p{L}\p{N}']/giu, ""), lines.map((l) => (Array.isArray(l) ? l : [l, 1])), ORANGE, { y: 0.56, w: 0.9 }); }
 // call every frame; returns the bloom spike

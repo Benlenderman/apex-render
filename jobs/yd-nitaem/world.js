@@ -23,7 +23,7 @@ function bubble(text, hex, side, y, w = 1.35) {
 }
 const bQ = bubble("רוצים לצאת הערב?", VIOLET, -1, 1.45, 1.95);
 const bN = bubble("נתאם", RED, 1, 0.7, 1.2);
-const days = ["יום 1", "יום 2", "יום 3"].map((d, i) => { const m = fitText([d], RED, 1.8, 1.4); return (a) => put(m, 0, PY - 0.05 - i * 0.55, 0.15, 1, a); });
+const days = ["יום 1", "יום 2", "יום 3"].map((d, i) => { const m = fitText([d], RED, 1.8, 1.4); return (a) => put(m, 0, PY + 0.05 - i * 0.42, 0.15, 1, a); });
 const seen = fitText([["אין תגובה...", 1]], RED, 1.6, 1.8);
 
 // activity card (s4-s5)
@@ -41,7 +41,7 @@ const mWall = new THREE.MeshStandardMaterial({ color: 0x2a1030, emissive: 0x2008
 house.add(box(4, 3, 3, 0, 1.5, 0, mWall, true));
 house.add(tube([-2.2, 3, 1.6], [0, 4.4, 1.6], 0.1, glow(RED, 1.2)), tube([0, 4.4, 1.6], [2.2, 3, 1.6], 0.1, glow(RED, 1.2)));
 house.add(box(0.9, 0.9, 0.05, 1.1, 1.8, 1.52, glow(0x40101a, 1), true)); // window
-const loner = makePerson(); const lonerPhone = box(0.16, 0.28, 0.03, 0, 0, 0, glow(RED, 1.6), false); scene.add(lonerPhone);
+const loner = makePerson(); const lonerPhone = box(0.24, 0.4, 0.03, 0, 0, 0, glow(RED, 1.6), false); scene.add(lonerPhone);
 
 // ---- the map (s6-s7): people around a meeting point ----
 const MX = 24, MZ = 0;
@@ -69,7 +69,7 @@ boom("s7", "קובעים", 0.5);
 const L = (id) => S[id][1];
 const SH = [
   { at: 0, K: [[0, [0.3, 3.4, 6.6, 0, 3.4, 0, 50]], [L("s1") + L("s2"), [-0.2, 3.3, 5.6, 0, 3.3, 0, 50]]] },
-  { at: S.s3[0], K: [[0, [HX + 3.5, 2.6, 7.5, HX, 2.2, 0, 50]], [L("s3") + 0.4, [HX + 2.2, 2.3, 6.2, HX, 1.9, 0, 50]]] },
+  { at: S.s3[0], K: [[0, [HX + 3.5, 3.0, 8.6, HX, 2.9, 0, 50]], [L("s3") + 0.4, [HX + 2.2, 2.8, 7.4, HX, 2.7, 0, 50]]] },
   { at: S.s4[0], K: [[0, [-0.6, 3.4, 6.6, 0, 3.4, 0, 50]], [L("s4") + L("s5"), [0.4, 3.2, 5.6, 0, 3.2, 0, 50]]] },
   { at: S.s6[0], K: [[0, [MX, 9, MZ + 10, MX, 0.5, MZ - 1.5, 52]], [L("s6") + L("s7") + 1, [MX + 1.5, 6.5, MZ + 8, MX, 0.8, MZ - 1, 52]]] },
 ];
@@ -81,11 +81,11 @@ run("yd-nitaem-world", (t) => {
 
   // s1-s2: the chat. Question, then "נתאם", then days pile up with no reply
   const tN = T("s1", "נתאם");
-  bQ.set(chat ? pop(t, 0.35) : 0);
+  bQ.set(chat ? pop(t, 0.0) : 0);
   bN.set(chat ? pop(t, tN) : 0);
   const dT = [T("s2", "נשאר"), T("s2", "שלושה"), T("s2", "ימים")];
   days.forEach((f, i) => f(chat ? pop(t, dT[i]) : 0));
-  put(seen, 0, PY - 1.6, 0.15, 1, chat ? pop(t, dT[2] + 0.3) * (0.6 + 0.4 * Math.sin(t * 8) ** 2) : 0);
+  put(seen, 0, PY - 1.25, 0.15, 1, chat ? pop(t, dT[2] + 0.3) * (0.6 + 0.4 * Math.sin(t * 8) ** 2) : 0);
   screen.material.color.set(chat && t > dT[0] ? 0x24101e : 0x14103a);
 
   // s3: the house, person alone, looking at a dead phone
@@ -96,7 +96,7 @@ run("yd-nitaem-world", (t) => {
   lonerPhone.visible = hs; lonerPhone.material.color.set(RED).multiplyScalar(0.6 + 0.8 * (Math.sin(t * 3) > 0 ? 1 : 0.3));
 
   // s4-s5: activity card fills in, field by field, timer under a minute
-  const tC = T("s4", "פותחים");
+  const tC = S.s4[0] + 0.1;
   const ca = cardOn ? pop(t, tC) : 0;
   card.visible = ca > 0.01; card.material.opacity = ca; card.scale.setScalar(0.7 + 0.3 * ca);
   put(cardT, 0, PY + 1.25, 0.15, 1, ca);
@@ -120,12 +120,12 @@ run("yd-nitaem-world", (t) => {
     const tapped = t > tTap + i * 0.07;
     pose(p.P, { x, z, h: hdg(MX - p.x0, MZ - p.z0), vis: mapOn, armR: mapOn && pulse(t, tTap + i * 0.07, tTap + i * 0.07 + 0.5) ? ARM.up : ARM.down, hex: tapped ? GREEN : VIOLET });
     p.P.g.position.y = mapOn && k > 0 && k < 1 ? Math.abs(Math.sin(t * 9 + i)) * 0.08 : 0;
-    p.pin.visible = mapOn; p.pin.position.set(x, 2.2 + 0.1 * Math.sin(t * 4 + i), z); p.pin.material.color.set(tapped ? GREEN : VIOLET).multiplyScalar(2.2);
+    p.pin.visible = mapOn; p.pin.position.set(x, 2.2 + 0.1 * Math.sin(t * 4 + i), z); p.pin.material.color.set(tapped ? GREEN : VIOLET).multiplyScalar(1.4);
     vA.set(x, 0.1, z); vB.set(MX, 0.1, MZ);
-    p.ray.set(vA, vB, mapOn ? sm(tSee - 0.1 + i * 0.05, tSee + 0.2 + i * 0.05, t) * (1 - sm(tGo, tGo + 0.5, t)) * 0.8 : 0);
+    p.ray.set(vA, vB, mapOn ? sm(tSee - 0.1 + i * 0.05, tSee + 0.2 + i * 0.05, t) * (1 - sm(tGo, tGo + 0.5, t)) * 0.5 : 0);
   });
   const ta = mapOn ? pulse(t, tTap - 0.05, tGo - 0.1) : 0;
-  put(inTag, MX, 3.6, MZ + 0.5, 1.6 + 0.2 * Math.sin(t * 10) * ta, ta);
+  inTag.visible = false;
 
-  bloom.strength = 1.0 + 1.2 * punch * punch + overlays(t);
+  bloom.strength = (mapOn ? 0.6 : 1) * (1.0 + 1.2 * punch * punch + overlays(t));
 });
