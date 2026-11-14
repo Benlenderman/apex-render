@@ -76,12 +76,20 @@ const cursor = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.2, 3), glow(WHITE, 
 const TYPES = ["PDF", "DOCX", "PNG", "MP4", "MP3", "JPG", "GIF", "WAV", "SVG", "EPUB", "MOV", "WEBP", "CSV", "HEIC", "FLAC", "ZIP"];
 const tiles = TYPES.map((f, i) => { const m = makeFile(i % 3 ? VIOLET : GREEN, f); m.scale.setScalar(0.6); return m; });
 
+// ---------- s3: GitHub star ----------
+const starShape = new THREE.Shape();
+for (let i = 0; i < 10; i++) { const a = Math.PI / 2 + (i * Math.PI) / 5, r = i % 2 ? 0.17 : 0.4; starShape[i ? "lineTo" : "moveTo"](Math.cos(a) * r, Math.sin(a) * r); }
+const star = new THREE.Mesh(new THREE.ExtrudeGeometry(starShape, { depth: 0.08, bevelEnabled: true, bevelSize: 0.03, bevelThickness: 0.03, bevelSegments: 2 }), glow(ORANGE, 1.5));
+scene.add(star);
+
 // ---------- captions ----------
 title("NEVER UPLOAD YOUR FILES");
-cap("s1", "random", ["RANDOM WEBSITE?"], RED, { until: "s1" });
+cap("s1", "random", ["RANDOM WEBSITE?"], RED, { until: ["s1", "exploring"] });
+cap("s1", "exploring", ["EXPLORING GITHUB REPOS"], WHITE, { until: "s1" });
 cap("s2", "stranger's", ["STRANGER'S SERVER"], RED, { until: ["s2", "who"] });
 cap("s2", "who", ["WHO KEEPS A COPY?"], RED, { boom: 0.5 });
-cap("s3", "filee", ["FILEE"], GREEN, { until: ["s3", "free"], boom: 0.5 });
+cap("s3", "filee", ["FILEE"], GREEN, { until: ["s3", "almost"], boom: 0.5 });
+cap("s3", "almost", ["ALMOST 27,000 STARS", "IN 7 WEEKS"], ORANGE, { until: ["s3", "free"], boom: 0.5 });
 cap("s3", "free", ["FREE ON GITHUB"], GREEN, { until: ["s3", "converts"] });
 cap("s3", "converts", ["ON YOUR COMPUTER"], GREEN);
 cap("s4", "hold", ["HOLD A KEY"], VIOLET, { until: ["s4", "drag"] });
@@ -98,7 +106,7 @@ boom("s2", "lands", 0.6);
 // ---------- timings (global seconds) ----------
 const T = {
   pdfIn: S.s1[0] + 0.1, up: g("s1", "random"), land: g("s2", "lands"), copy: g("s2", "copy"),
-  s3: S.s3[0], hold: g("s4", "hold"), drag: g("s4", "drag"), circle: g("s4", "circle"), mouse: g("s4", "mouse"),
+  s3: S.s3[0], almost: g("s3", "almost"), free: g("s3", "free"), hold: g("s4", "hold"), drag: g("s4", "drag"), circle: g("s4", "circle"), mouse: g("s4", "mouse"),
   drop: g("s5", "drop"), nw: g("s5", "new"), orig: g("s5", "original"),
   n270: g("s6", "270"), nothing: g("s6", "nothing"), off: g("s6", "offline"), s7: S.s7[0],
 };
@@ -182,6 +190,11 @@ run("filee-world", (t) => {
     m.position.set(Math.cos(a) * 1.9, 1.0 + Math.sin(a) * 1.25, -1.6);
     m.scale.setScalar(0.6 * k);
   });
+
+  // s3: the star pops in beside the laptop while the star count is on screen
+  const sk = sm(T.almost - 0.1, T.almost + 0.25, t) * (1 - sm(T.free - 0.15, T.free + 0.1, t));
+  star.visible = sk > 0.01; star.scale.setScalar(0.62 * sk * (1 + 0.08 * Math.sin(t * 6)));
+  star.position.set(0, 2.02, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.almost) * 2.5);
 
   const { punch } = shoot(SH, t);
   const spike = overlays(t);

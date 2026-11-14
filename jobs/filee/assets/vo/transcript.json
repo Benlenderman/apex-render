@@ -1,50 +1,128 @@
 [
   {
-    "text": "Comment",
-    "start": 0.06,
-    "end": 0.34,
+    "text": "Instead,",
+    "start": 0.04,
+    "end": 0.69,
     "id": "w0"
   },
   {
-    "text": "repo",
-    "start": 0.34,
-    "end": 0.54,
+    "text": "get",
+    "start": 0.69,
+    "end": 0.81,
     "id": "w1"
   },
   {
-    "text": "and",
-    "start": 0.54,
-    "end": 0.69,
+    "text": "Philly",
+    "start": 0.92,
+    "end": 1.38,
     "id": "w2"
   },
   {
-    "text": "I'll",
-    "start": 0.69,
-    "end": 0.87,
+    "text": "almost",
+    "start": 1.38,
+    "end": 1.83,
     "id": "w3"
   },
   {
-    "text": "send",
-    "start": 0.88,
-    "end": 1.08,
+    "text": "27",
+    "start": 1.84,
+    "end": 2.29,
     "id": "w4"
   },
   {
-    "text": "you",
-    "start": 1.08,
-    "end": 1.23,
+    "text": "000",
+    "start": 2.3,
+    "end": 2.98,
     "id": "w5"
   },
   {
-    "text": "the",
-    "start": 1.23,
-    "end": 1.37,
+    "text": "stars",
+    "start": 2.99,
+    "end": 3.4,
     "id": "w6"
   },
   {
-    "text": "link.",
-    "start": 1.37,
-    "end": 1.6,
+    "text": "on",
+    "start": 3.4,
+    "end": 3.52,
     "id": "w7"
+  },
+  {
+    "text": "GitHub",
+    "start": 3.52,
+    "end": 3.92,
+    "id": "w8"
+  },
+  {
+    "text": "in",
+    "start": 3.92,
+    "end": 4.03,
+    "id": "w9"
+  },
+  {
+    "text": "7",
+    "start": 4.06,
+    "end": 4.26,
+    "id": "w10"
+  },
+  {
+    "text": "weeks.",
+    "start": 4.27,
+    "end": 4.79,
+    "id": "w11"
+  },
+  {
+    "text": "It's",
+    "start": 4.87,
+    "end": 5.05,
+    "id": "w12"
+  },
+  {
+    "text": "free",
+    "start": 5.06,
+    "end": 5.29,
+    "id": "w13"
+  },
+  {
+    "text": "and",
+    "start": 5.29,
+    "end": 5.46,
+    "id": "w14"
+  },
+  {
+    "text": "it",
+    "start": 5.46,
+    "end": 5.57,
+    "id": "w15"
+  },
+  {
+    "text": "converts",
+    "start": 5.57,
+    "end": 6.03,
+    "id": "w16"
+  },
+  {
+    "text": "on",
+    "start": 6.03,
+    "end": 6.13,
+    "id": "w17"
+  },
+  {
+    "text": "your",
+    "start": 6.16,
+    "end": 6.37,
+    "id": "w18"
+  },
+  {
+    "text": "own",
+    "start": 6.37,
+    "end": 6.54,
+    "id": "w19"
+  },
+  {
+    "text": "computer.",
+    "start": 6.54,
+    "end": 7.04,
+    "id": "w20"
   }
 ]
