@@ -179,7 +179,7 @@ run("w", (t) => {
     noGap.visible = t > g("s2", "stops") && t < tH2;
     const [bx, bz] = P(r.s, O), [cbx, cbz] = P(carB_A(t), O);
     tags.push([pNoGap, nx - 1.8, 0.4, nz, win(t, g("s3", "no"), g("s3", "had")), 0.13]);
-    tags.push([pGear, bx + 2.8, 0.4, bz + 1.8, win(t, g("s3", "not"), g("s3", "had")), 0.13], [pLook, bx - 2.6, 0.4, bz + 4.2, win(t, g("s3", "saw"), g("s3", "had")), 0.13]);
+    tags.push([pGear, bx + 1.5, 0.4, bz + 1.8, win(t, g("s3", "not"), g("s3", "had")), 0.13], [pLook, bx - 2.6, 0.4, bz + 4.2, win(t, g("s3", "saw"), g("s3", "had")), 0.13]);
     rGear.set("N", RED, -0.55, win(t, g("s2", "neutral"), g("s2", "never")));
     rCar.set("0", RED, 0.55, 0);
     gapLine.visible = false; ring.visible = false; intoPath.set(V0v, V0v, 0); sight.set(V0v, V0v, 0);
@@ -194,7 +194,7 @@ run("w", (t) => {
     gapLine.visible = ga > 0.01; gapLine.position.set((g0x + g1x) / 2, 0.03, (g0z + g1z) / 2); gapLine.scale.z = Math.abs(g1z - g0z);
     const [ix, iz] = P(sCA - 0.5, O + 2.0);
     intoPath.set(wp(Bk.hlight), new THREE.Vector3(ix, 0.3, iz), win(t, g("s4", "ride"), g("s4", "stays")) + win(t, g("s6", "blue") - 0.3, tGo + 0.3));
-    tags.push([pRoom, (g0x + g1x) / 2 - 1.6, 0.5, (g0z + g1z) / 2, ga, 0.13]);
+    tags.push([pRoom, (g0x + g1x) / 2 - 0.4, 0.5, (g0z + g1z) / 2, ga, 0.13]);
     // mirror: head turns right, sight beam back down the road
     const look = t > g("s4", "keeps") - 0.2 && t < tGo ? sm(g("s4", "keeps") - 0.2, g("s4", "keeps") + 0.1, t) : 0;
     Bk.headG.rotation.y = -0.5 * look;
