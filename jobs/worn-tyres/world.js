@@ -60,7 +60,7 @@ needleG.add(box(0.03, 0.34, 0.02, 0, 0.17, 0, glow(ORANGE, 3), false));
 const sC = 900, oC = 3.0, [xC, zC] = P(sC, oC);
 const cF = () => [xC, zC];
 
-title("NEVER KEEP QUIET ABOUT A FRIEND'S WORN TYRES");
+title("NEVER LET A FRIEND RIDE ON WORN TYRES");
 cap("s2", "wet", ["NO GRIP", "IN THE WET"], RED, { until: ["s2", "slides"] });
 cap("s2", "slides", ["THEY SLIDE DOWN", "IN FRONT OF YOU"], RED, { boom: 0.5 });
 cap("s3", "tread", ["LOOK AT THE TREAD"], GREEN, { until: ["s3", "wear"] });
