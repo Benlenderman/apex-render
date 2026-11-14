@@ -20,8 +20,9 @@ const mPad = glow(GREEN, 0.25), pad = box(0.3, 0.07, 0.32, 0, 0.99, 0.62, mPad, 
 const mPeg = glow(GREEN, 1.2);
 const pegs = [-1, 1].map((s) => { const G = new THREE.Group(); G.position.set(s * 0.2, 0.43, 0.42); G.add(box(0.16, 0.04, 0.05, s * 0.08, 0, 0, mPeg, false)); B.lean.add(G); return G; });
 // new-rider L plate on the tail
-const Lp = fitText(["L"], RED, 3.2, 0.26); Lp.renderOrder = 1; Lp.material.depthTest = true; scene.remove(Lp); B.lean.add(Lp);
-Lp.position.set(0, 0.78, 0.83); const Lb = box(0.34, 0.34, 0.01, 0, 0.78, 0.82, glow(WHITE, 0.6), false); B.lean.add(Lb);
+// L drawn from two red bars on a white plate (text "L" rendered too small)
+const Lp = new THREE.Group(), mL = glow(RED, 2.2); Lp.add(box(0.06, 0.24, 0.02, -0.06, 0, 0, mL, false), box(0.18, 0.06, 0.02, 0, -0.09, 0, mL, false));
+Lp.position.set(0, 0.78, 0.84); B.lean.add(Lp); const Lb = box(0.34, 0.34, 0.01, 0, 0.78, 0.82, glow(WHITE, 0.6), false); B.lean.add(Lb);
 
 // motion: A rolls through s1-s2; B stopped at the kerb s3-s4; C rides s5; s6 stopped, friend left standing; s7 rides
 const VA = 8, sA = (t) => 40 + VA * t, sB0 = 300, sC = (t) => 500 + 7 * Math.max(0, t - T5), sD0 = 700, sE = (t) => 900 + 7 * Math.max(0, t - T7);
