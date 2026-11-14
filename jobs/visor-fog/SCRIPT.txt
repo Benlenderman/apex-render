@@ -1,0 +1,8 @@
+s1|Cold morning? Never ride with a fogged visor.
+s2|The visor goes white, you can't see the car braking ahead, and you hit it.
+s3|Crack the visor open a little to let air in.
+s4|Use an anti fog insert, like a Pinlock.
+s5|Breathe down, not up, into the helmet.
+s6|Still fogging? Pull over and clear it.
+s7|Fogged visor? Open it, or stop.
+s8|Comment APEX and get the free riding app.
