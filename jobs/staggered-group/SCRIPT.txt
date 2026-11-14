@@ -1,0 +1,8 @@
+s1|Do you ride this close to your friends?
+s2|A car pulls out, and the front rider brakes hard. Red needs a full second to react, but he is only half a second behind.
+s3|Too close, and side by side in the same lane. He has nowhere to go.
+s4|On an open straight, ride staggered. The leader on one side, the second rider on the other, a second back, the rest two seconds behind the rider on their side.
+s5|Same car, same speed, but Blue has room. He brakes, then moves over.
+s6|In bends and on narrow roads, go single file, two seconds apart. New riders right behind the leader.
+s7|Ride staggered. Keep two seconds.
+s8|Comment APEX and get the free riding app.
