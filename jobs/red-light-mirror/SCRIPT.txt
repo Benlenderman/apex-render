@@ -1,0 +1,8 @@
+s1|Stopped at a red light? Never just stare at the light.
+s2|The car behind you is still rolling, the driver looks at their phone, and you get hit from behind.
+s3|Stop in gear, with one eye on your mirror.
+s4|Leave room ahead, and stop to one side of the lane, not in the middle.
+s5|If the car behind is not slowing, flash your brake light.
+s6|Still coming? You already have a gap to ride into.
+s7|Stay in gear. Watch your mirror.
+s8|Comment APEX and get the free riding app.
