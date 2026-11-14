@@ -1,0 +1,8 @@
+s1|Looking for a new job? Never send the same CV to every opening. Exploring GitHub repos.
+s2|Companies use AI to filter out candidates, so your CV gets dropped, and you never hear back.
+s3|Instead, get Career-Ops. Over 82,000 stars on GitHub in 7 months. It's a free AI agent that lets you filter the companies.
+s4|Paste a job ad. It checks the job is still open, then scores it against your real CV, from 1 to 5.
+s5|Under 4? It tells you to skip it. Worth it? It writes your CV, your cover letter, and your answers.
+s6|It never applies for you. You press Submit. Its maker tried it on 740 jobs, and sent only 68 applications.
+s7|Stop applying everywhere. Apply better to fewer.
+s8|Comment REPO, and I'll send you the link.
