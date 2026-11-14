@@ -1,0 +1,8 @@
+s1|Going for a ride alone? Never leave without telling someone where you're going.
+s2|If you crash on a quiet road, nobody knows where to look, or that you're missing.
+s3|Send a friend your route, and the time you'll be back.
+s4|Or share your live location with them for the ride.
+s5|When you're home, tell them. If you don't, they know to call.
+s6|Send this to the friend who rides alone.
+s7|Share your route. Say when you're home.
+s8|Get the free APEX app. The link is in our bio.
