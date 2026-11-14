@@ -1,0 +1,8 @@
+s1|Riding past parked cars? Never ride close to them.
+s2|A door opens without warning, and you hit it at full speed.
+s3|Ride a door's width away from the parked cars.
+s4|Look inside the cars for a head or brake lights.
+s5|A car pulling out with no signal? Cover your brakes and slow down.
+s6|Give yourself space, and time to react.
+s7|One door's width. Every parked car.
+s8|Comment APEX and get the free riding app.
