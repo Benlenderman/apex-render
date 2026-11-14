@@ -1,0 +1,8 @@
+s1|Asked your AI a simple question? Never dig through a wall of text to find the answer. Exploring GitHub repos.
+s2|It says "Great question!", wanders off on side notes, and hides the one step you need at the bottom.
+s3|Instead, get I Have ADHD. Over 61,000 stars on GitHub in 6 months. It's free, and it makes your coding AI put the answer first.
+s4|The next action comes first. Then the steps, numbered, one by one.
+s5|Lists stop at 5 items. It ends with one next step, and no "Hope this helps!"
+s6|Times in minutes, not "a bit." 10 rules, and you don't need ADHD to use it.
+s7|Don't dig for it. Get the answer first.
+s8|Comment REPO, and I'll send you the link.
