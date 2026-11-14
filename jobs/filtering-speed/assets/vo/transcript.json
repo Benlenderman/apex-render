@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Look",
+    "start": 0.02,
+    "end": 0.06,
+    "id": "w0"
+  },
+  {
+    "text": "for",
+    "start": 0.15,
+    "end": 0.24,
+    "id": "w1"
+  },
+  {
+    "text": "turning",
+    "start": 0.24,
+    "end": 0.49,
+    "id": "w2"
+  },
+  {
+    "text": "wheels",
+    "start": 0.49,
+    "end": 0.7,
+    "id": "w3"
+  },
+  {
+    "text": "and",
+    "start": 0.7,
+    "end": 0.8,
+    "id": "w4"
+  },
+  {
+    "text": "heads",
+    "start": 0.8,
+    "end": 0.98,
+    "id": "w5"
+  },
+  {
+    "text": "checking",
+    "start": 0.98,
+    "end": 1.27,
+    "id": "w6"
+  },
+  {
+    "text": "mirrors.",
+    "start": 1.27,
+    "end": 1.58,
+    "id": "w7"
+  }
+]

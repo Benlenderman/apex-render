@@ -1,0 +1,8 @@
+s1|Filtering between cars? Never go much faster than traffic.
+s2|A car jumps lanes in front of you, and you can't stop.
+s3|Keep your speed close to the cars around you.
+s4|Watch for gaps where a car could change lanes.
+s5|Look for turning wheels and heads checking mirrors.
+s6|Traffic speeds up? Get back in the lane.
+s7|Filter slow. Stay ready to stop.
+s8|Comment APEX and get the free riding app.
