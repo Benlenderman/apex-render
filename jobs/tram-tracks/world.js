@@ -93,7 +93,7 @@ endCard(["CROSS TRACKS STRAIGHT.", "NEVER ALONG THEM."]);
 const fol = (fn) => (t) => pathState(fn, t);
 const SH = [
   { at: 0, f: fol(aPath), noRot: true, K: [[0, [-1.2, 2.5, 6.0, -0.6, 0.4, -14, 50]], [2.6, [-1.5, 2.9, 5.6, -0.8, 0.2, -12, 50]]] },
-  { at: T2, f: fol(aPath), noRot: true, K: [[0, [3.2, 2.2, -4.6, -0.6, 0.4, 0, 50]], [1.4, [3.6, 2.4, -3.6, -0.8, 0.3, 0, 50]], [3.2, [3.8, 2.6, -2.6, -1.4, 0.3, 0, 50]]] },
+  { at: T2, f: fol(aPath), noRot: true, K: [[0, [4.2, 2.6, -4.2, -0.6, 0.4, 0, 50]], [1.4, [3.6, 2.4, -3.6, -0.8, 0.3, 0, 50]], [3.2, [3.8, 2.6, -2.6, -1.4, 0.3, 0, 50]]] },
   { at: T3, f: fol(bPath), noRot: true, K: [[0, [-1.0, 9, 9, -1.5, 0, -12, 50]], [2.2, [-1.4, 9.5, 8.5, -1.5, 0, -10, 50]]] },
   { at: T4, K: [[0, [WB1[0] - 6.5, 5.5, WB1[1] + 4.0, WB1[0] + 0.5, 0.3, WB1[1] - 1.0, 48]], [2.1, [WB1[0] - 6.0, 5.0, WB1[1] + 1.5, WB1[0] + 1.5, 0.3, WB1[1] - 2.5, 48]]] },
   { at: T5, K: [[0, [WB2[0] - 7.5, 3.0, WB2[1] - 2.5, WB2[0], 0.5, WB2[1] + 0.8, 50]], [2.1, [WB2[0] - 7.0, 3.2, WB2[1] - 4.0, WB2[0] + 1.0, 0.5, WB2[1] - 1.0, 50]]] },
@@ -111,13 +111,15 @@ run("w", (t) => {
     st = ride(Bk, aPath, t, RED, k > 0 ? { lean: downLean(k, -1) + wob(t), down: k } : { lean: wob(t) });
     Bk.fork.rotation.y = t > tDrop ? 0.15 * Math.sin((t - tDrop) * 22) * (1 - sm(tSnap - 0.1, tSnap, t)) + 0.85 * sm(tSnap - 0.05, tSnap + 0.12, t) : Bk.fork.rotation.y;
     const dip = bump(t, tDrop - 0.05, tDrop + 0.35, 0.12); Bk.g.rotation.x = -0.09 * dip; Bk.g.position.y = -0.05 * dip;
-    if (t > tFall) {
-      const u = t - tFall, p = aPath(tFall), h = p[2], d = 0.8 + 2.2 * sm(0, 0.9, u);
-      pose(THROWN, { x: p[0] - Math.sin(h) * d + 0.6, z: p[1] - Math.cos(h) * d, h, lie: sm(0, 0.35, u), armR: 2.4, armL: 1.8, hex: RED });
-      THROWN.g.position.y += 0.6 * Math.sin(Math.PI * Math.min(1, u / 0.5));
+    const tOff = (tSnap + tFall + 0.1) / 2;
+    Bk.rider.visible = t < tOff;
+    if (t > tOff) {
+      const u = t - tOff, p = aPath(t), h = p[2], d = 0.4 + 1.8 * sm(0, 1.0, u);
+      pose(THROWN, { x: p[0] - Math.sin(h) * d, z: p[1] - Math.cos(h) * d, h, lie: 0.75 + 0.25 * sm(0, 0.25, u), armR: 2.4, armL: 1.8, hex: RED });
+      THROWN.g.position.y += 0.15 * Math.sin(Math.PI * Math.min(1, u / 0.35));
     } else pose(THROWN, { vis: false });
     // s1: straight path ahead meets the rail at a shallow angle
-    const s1a = t < T2 + 0.6 ? on(t, g("s1", "cross"), T2 + 0.6) : 0;
+    const s1a = t < T2 ? on(t, g("s1", "cross"), T2) : 0;
     pathRed.set(V3(st.x, 0.05, st.z - 1), V3(WA[0], 0.05, WA[1]), s1a);
     railRed.set(V3(WA[0] - dR[0] * 9, 0.05, WA[1] - dR[1] * 9), V3(WA[0] + dR[0] * 3, 0.05, WA[1] + dR[1] * 3), s1a);
     tagAt(tShallow, WA[0] - 1.2, 1.1, WA[1], on(t, g("s1", "shallow"), T2 + 0.6), 2.0);
@@ -133,9 +135,7 @@ run("w", (t) => {
   // s4/s5: crossing marks
   const xA = Bp ? on(t, t1 - 0.15, t2 + 0.1) : 0, xB = Bp ? on(t, t2 - 0.15, T6) : 0, W = xB > 0 ? WB2 : WB1;
   hitB.position.set(W[0], 0.03, W[1]); hitB.rotation.z = 0; hitB.set(Math.max(xA, xB) * 0.8);
-  tagAt(tRight, WB1[0] - 3.2, 0.6, WB1[1] + 1.5, Bp ? on(t, g("s4", "right"), T5) : 0, 1.2);
   upBeam.set(V3(st.x, 0.1, st.z), V3(st.x, 2.6, st.z), Bp ? on(t, g("s5", "upright"), g("s5", "no")) : 0);
-  tagAt(tUp, st.x, 3.0, st.z, Bp ? on(t, g("s5", "upright"), g("s5", "no")) : 0, 1.1);
   // s6: rain, wet shine on the rails, slows down
   const wt = t > T6 ? on(t, g("s6", "wet"), T7) : 0;
   wet.position.set(WC[0], 0.025, WC[1]); wet.rotation.z = -RA; wet.set(wt * (0.5 + 0.3 * Math.sin(t * 9)));
