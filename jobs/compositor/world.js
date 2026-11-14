@@ -211,8 +211,8 @@ run("compositor-world", (t) => {
   pop(brush, brA); brush.position.copy(onScreen(sx, sy, 0.1));
   stroke.visible = t > T.s3 + 0.3 && t < T.s4; stroke.scale.set(Math.max(0.001, 1.1 * Math.max(p1, 0.001)), 1, 1);
   const sk = sm(T.over - 0.1, T.over + 0.25, t) * (1 - sm(T.its - 0.15, T.its + 0.1, t));
-  star.visible = sk > 0.01; star.scale.setScalar(0.62 * sk * (1 + 0.08 * Math.sin(t * 6)));
-  star.position.set(0, 2.02, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.over) * 2.5);
+  star.visible = sk > 0.01; star.scale.setScalar(0.5 * sk * (1 + 0.08 * Math.sin(t * 6)));
+  star.position.set(0, 1.82, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.over) * 2.5);
   ui.visible = t >= T.its && t < T.s4; ui.scale.setScalar(sm(T.its, T.its + 0.25, t) || 0.001);
 
   // s4: three layers fly out of the screen and fan apart; mask glows; blend menu rows light up in order
