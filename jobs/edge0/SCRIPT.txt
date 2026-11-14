@@ -1,0 +1,8 @@
+s1|Want a big AI model running on your own laptop? Never buy a bigger computer just to run it. Exploring GitHub repos.
+s2|Loaded the normal way, the whole model has to fit in memory at once, and a normal laptop runs out.
+s3|Instead, get Edge0. Over 11,000 stars on GitHub in 9 weeks. It runs a 35 billion parameter AI in under 3 gigs of memory.
+s4|The model is split into 256 small experts, and it only loads the few it needs right now.
+s5|They stream straight from your storage, and a predictor loads the next ones a step ahead.
+s6|That makes it up to 59% faster. It runs on Mac, iPhone, Android and Windows.
+s7|Don't buy more memory. Stream the model.
+s8|Comment REPO, and I'll send you the link.
