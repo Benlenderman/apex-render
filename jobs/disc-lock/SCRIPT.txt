@@ -1,0 +1,8 @@
+s1|Locked your bike for the night? Never ride off with the disc lock on.
+s2|The lock hits the fork, the front wheel stops dead, and the bike falls.
+s3|Clip a bright reminder cable from the lock to your handlebar.
+s4|Before you sit down, walk to the front of the bike.
+s5|Look at the front wheel, and take the lock off.
+s6|Cable off, lock off, then you ride.
+s7|Lock on the wheel? Cable on the bars.
+s8|Comment APEX and get the free riding app.
