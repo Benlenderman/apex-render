@@ -1,0 +1,5 @@
+hook=10 show_dont_tell=10 object_truth=10 readability=9.5 pacing=10 payoff=8.5 accuracy=10 save_share=10
+ 26.5 | major | Summary prompt shows a lowside crash instead of an executed turn. | Show a controlled lean and turn to match the rule.
+ 27.5 | minor | Visual clutter and collision between the CTA title text and the persistent HUD bar. | Fade out or remove the telemetry HUD before bringing in the large CTA title text.
+SCORE: 8.0/10
+VERDICT: FIX

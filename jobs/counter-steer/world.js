@@ -90,7 +90,7 @@ const dPath = (t) => { const [x, z] = P(s5s + VD * (t - T5), 1.8); return [x, z]
 const ePath = integ(T6 - 1, T7 + 0.5, 1.8, -900, () => 5, (t) => 1.8 - 1.6 * sm(T6 + 0.6, T7 - 0.2, t));
 // ---- G (s7+s8): S-bends: push left, go left; push right, go right ----
 const tP1 = g("s7", "push", 1), tP2 = g("s7", "push", 2);
-const gPath = integ(T7 - 1, TE + 1, 1.0, -1100, () => 12, (t) => 1.0 - 1.5 * sm(tP1 + 0.15, tP1 + 1.1, t) + 2.6 * sm(tP2 + 0.15, tP2 + 1.2, t));
+const gPath = integ(T7 - 1, TE + 1, 1.0, -1100, () => 12, (t) => 1.0 - 1.0 * sm(tP1 + 0.1, tP1 + 1.3, t) + 1.8 * sm(tP2 + 0.1, tP2 + 1.4, t));
 
 // ---- actors + overlays ----
 const [Bk] = bikes(1), THROWN = makePerson(), BR = makeBroom(), BC = makeBicycle(), RD = makeReadout();
@@ -127,7 +127,7 @@ const SH = [
   { at: T4, K: [[0, [-40, 3.4, -13.5, -40, 2.1, -20, 50]], [T5 - T4, [-40, 3.4, -14.5, -40, 2.1, -20, 50]]] },
   { at: T5, f: fol(dPath), K: [[0, [-1.6, 2.6, 7.0, 0.3, 0.8, -10, 50]], [T6 - T5, [-2.2, 2.8, 6.5, 0.0, 0.8, -10, 50]]] },
   { at: T6, f: fol(ePath), noRot: true, K: [[0, [2.8, 1.8, -4.5, 0, 0.9, 0, 50]], [T7 - T6, [3.2, 2.0, -4.0, 0, 0.9, 0, 50]]] },
-  { at: T7, f: fol(gPath), noRot: true, K: [[0, [0.3, 4.5, 9.0, 0.3, 1.0, -20, 50]], [TE - T7, [0.3, 6.5, 12.0, 0.3, 0.8, -25, 50]]] },
+  { at: T7, f: fol(gPath), noRot: true, K: [[0, [0.3, 2.6, 6.0, 0.3, 0.9, -4, 50]], [TE - T7, [0.3, 3.0, 7.0, 0.3, 0.9, -5, 50]]] },
 ];
 
 run("w", (t) => {
@@ -153,7 +153,9 @@ run("w", (t) => {
       fork = -0.32 * kPush(t); Bk.fork.rotation.y = fork; Bk.lean.rotation.z = 0.42 * kTip(t);
       gripL.visible = true; gripL.material.color.set(GREEN).multiplyScalar(1 + 4 * on(t, tPush, T4));
     }
-    if (t >= T7) { const left = t < tP2 - 0.1; gripL.visible = left && t > tP1 - 0.1; gripR.visible = !left; }
+    if (t >= T7) { const left = t < tP2 - 0.1; gripL.visible = left && t > tP1 - 0.1; gripR.visible = !left;
+      // counter-steer: push left = wheel right, push right = wheel left; softer lean so it reads as a turn, not a fall
+      fork = -0.3 * on(t, tP1, tP1 + 0.7) + 0.3 * on(t, tP2, tP2 + 0.7); Bk.fork.rotation.y = fork; Bk.lean.rotation.z *= 0.6; }
     if (t >= T6 && t < T7) BC.set(pathState(ePath, t));
   }
   // s3 arrows: grip pushed away, wheel to the right, tip left
@@ -172,7 +174,7 @@ run("w", (t) => {
   // s6 bicycle tag
   const e = t >= T6 && t < T7 ? pathState(ePath, t) : null;
   // readout: on the motorbike shots only
-  const showRD = st && t >= T2 && !(t >= T4 && t < T5) && !(t >= T6 && t < T7) && t < S.s8[0] + 0.2 && t > 0.3;
+  const showRD = st && t >= T2 && !(t >= T4 && t < T5) && !(t >= T6 && t < T7) && t < S.s8[0] - 0.15 && t > 0.3;
   if (showRD) {
     const ln = Math.round((Bk.lean.rotation.z * 180) / Math.PI), fy = fork ?? Bk.fork.rotation.y;
     const down = A && kD(t) > 0.5;
