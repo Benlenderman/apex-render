@@ -151,7 +151,7 @@ run("caveman-world", (t) => {
   });
 
   // s3: the rock, then the star; then say less (answer bubble shrinks) and read less (sheet shrinks)
-  const rk = sm(T.cave - 0.1, T.cave + 0.25, t) * (1 - sm(T.almost - 0.2, T.almost, t));
+  const rk = sm(T.s3 + 0.1, T.s3 + 0.45, t) * (1 - sm(T.almost - 0.2, T.almost, t));
   pop(rock, rk, 1 + 0.06 * Math.sin(t * 5)); rock.rotation.y = 0.4 * Math.sin((t - T.cave) * 2);
   const sk = sm(T.almost - 0.1, T.almost + 0.25, t) * (1 - sm(T.it - 0.15, T.it + 0.1, t));
   star.visible = sk > 0.01; star.scale.setScalar(0.52 * sk * (1 + 0.08 * Math.sin(t * 6)));
@@ -179,7 +179,7 @@ run("caveman-world", (t) => {
     const t0 = T.n20 - 0.15 + 0.06 * i, k = sm(t0, t0 + 0.25, t);
     c.visible = s5on && k > 0.01; c.position.set(0.65, 0.04 + 0.052 * i + 0.6 * (1 - k), 1.05); c.scale.setScalar(1);
   });
-  const l63 = s5on ? sm(T.n63, T.n63 + 0.3, t) : 0, l20 = s5on ? sm(T.n20, T.n20 + 0.3, t) : 0;
+  const l63 = s5on ? sm(T.n63 + 0.5, T.n63 + 0.8, t) : 0, l20 = s5on ? sm(T.n20, T.n20 + 0.3, t) : 0;
   n63.visible = l63 > 0.01; n63.position.set(-0.65, 0.95, 1.05); n63.scale.setScalar(l63);
   n20.visible = l20 > 0.01; n20.position.set(0.65, 0.42, 1.05); n20.scale.setScalar(l20);
   pop(chip, onOff(t, T.code - 0.1, S.s6[0]), 1 + 0.1 * Math.sin(t * 7));
@@ -188,7 +188,7 @@ run("caveman-world", (t) => {
   // s6: logs + tests sheets appear, squash, and the meter loses its last third
   if (t >= S.s6[0]) {
     ans1.visible = ans2.visible = false;
-    const lk = onOff(t, T.logs - 0.1, T.s7), tk = onOff(t, T.tests - 0.1, T.s7), sq = 1 - 0.33 * sm(T.shrink + 1.0, T.shrink + 1.4, t);
+    const lk = onOff(t, S.s6[0] + 0.1, T.s7), tk = onOff(t, S.s6[0] + 0.3, T.s7), sq = 1 - 0.33 * sm(T.shrink + 1.0, T.shrink + 1.4, t);
     logs.visible = lk > 0.01; logs.position.set(-0.55, 0.75 - 0.5 * (1 - sq), 0.07); logs.scale.set(lk, lk * sq, 1);
     tests.visible = tk > 0.01; tests.position.set(0.55, 0.75 - 0.5 * (1 - sq), 0.07); tests.scale.set(tk, tk * sq, 1);
   } else tests.visible = false;
