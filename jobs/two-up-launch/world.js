@@ -61,7 +61,7 @@ run("w", (t) => {
   Q.headG.rotation.x = id === "s5" ? 0.08 * pulse(t, tShift - 0.1, tShift + 0.3) : 0;
   Q.mats.torso.emissive.set(partA && t >= T2 ? RED : 0x000000).multiplyScalar(0.4 + 1.4 * slide);
   B.headG.rotation.y = id === "s4" ? 1.1 * pulse(t, g("s4", "tell") - 0.2, g("s4", "go") - 0.1) : 0; // rider looks back to tell them
-  tagAt(tWt, st.x, 2.6, st.z, id === "s2" ? pulse(t, g("s2", "extra") - 0.1, g("s2", "front")) : 0, 0.7);
+  tagAt(tWt, st.x, 2.6, st.z, 0, 0.7);
   tagAt(tGear, st.x, 2.5, st.z, 0, 0.6);
   const shot = shoot(SH, t);
   bloom.strength = 1.0 + 1.2 * shot.punch * shot.punch + overlays(t) + 0.3 * slide;
