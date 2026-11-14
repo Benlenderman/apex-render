@@ -1,0 +1,8 @@
+s1|Slow car before a hilltop? Never overtake it.
+s2|You pull out, a car comes over the top, and there's nowhere to go.
+s3|Stay behind until you can see over the crest.
+s4|Wait for a long, straight road with clear view.
+s5|Check the road ahead, check your mirror, then go.
+s6|Pass fast and get back in your lane with room to spare.
+s7|Can't see past it? Don't pass it.
+s8|Comment APEX and get the free riding app.
