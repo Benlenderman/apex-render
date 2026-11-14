@@ -1,0 +1,8 @@
+s1|He stopped at the red light. The car behind him didn't.
+s2|Night in town. He stops right behind the car ahead, in neutral, and never checks his mirror. The driver behind is looking at a phone.
+s3|No gap, not in gear, and he never saw it coming. He had nowhere to go.
+s4|Blue stops with a gap he can ride into, stays in first gear, and keeps an eye on the mirror.
+s5|A car comes up fast behind him, so he flashes his brake light. It isn't slowing.
+s6|Blue rides into the gap, and the car stops right where he was waiting.
+s7|Your stop isn't over until the car behind you stops.
+s8|Comment APEX and get the free riding app.
