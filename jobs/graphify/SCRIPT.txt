@@ -1,0 +1,8 @@
+s1|Asking your AI about your code? Never make it read every file, every time. Exploring GitHub repos.
+s2|It opens your files one by one, again and again, just to find where one thing is used.
+s3|Instead, get Graphify. Over 147,000 stars on GitHub in 7 months. It's free, and it turns your whole project into one clickable map.
+s4|Code, documents, even videos, all on the same map. Every dot is an idea.
+s5|Click one and see what it's connected to. Ask how two things connect, and it lights up the path.
+s6|It all runs on your own computer, and it works in Claude Code, Cursor and Codex.
+s7|Don't search your code. Map it.
+s8|Comment REPO, and I'll send you the link.
