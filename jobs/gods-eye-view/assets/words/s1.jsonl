@@ -1,0 +1,4 @@
+{"type":"words","model":"small.en","words":[{"text":"Wanna","start":0,"end":0.236},{"text":"see","start":0.236,"end":0.377},{"text":"what's","start":0.377,"end":0.66},{"text":"flying","start":0.66,"end":0.943},{"text":"over","start":0.943,"end":1.131},{"text":"you?","start":1.131,"end":1.32}],"through":1.32}
+{"type":"words","model":"small.en","words":[{"text":"Never","start":1.32,"end":1.636},{"text":"juggle","start":1.636,"end":2.015},{"text":"a","start":2.015,"end":2.079},{"text":"tab","start":2.079,"end":2.268},{"text":"for","start":2.268,"end":2.458},{"text":"every","start":2.458,"end":2.774},{"text":"tracker,","start":2.774,"end":3.28}],"through":3.28}
+{"type":"words","model":"small.en","words":[{"text":"exploring","start":3.28,"end":3.983},{"text":"GitHub","start":3.983,"end":4.451},{"text":"repos.","start":4.451,"end":4.92}],"through":4.92}
+{"type":"words","model":"small.en","words":[],"through":5.0798125}

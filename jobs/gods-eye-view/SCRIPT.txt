@@ -1,0 +1,8 @@
+s1|Want to see what's flying over you? Never juggle a tab for every tracker. Exploring GitHub repos.
+s2|One tab for planes, one for ships, one for earthquakes, and none of them show the same map.
+s3|Instead, get God's Eye View. Almost 65,000 stars on GitHub in under 5 months. It puts live planes, ships, satellites and earthquakes on one 3D globe.
+s4|Click any flight, and the camera locks on and draws its trail.
+s5|Then ride along inside its cockpit, with the ground right under you.
+s6|Switch the whole planet to night vision or thermal. No account or keys needed to start.
+s7|Don't juggle tabs. Watch one globe.
+s8|Comment REPO, and I'll send you the link.
