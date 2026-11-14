@@ -1,7 +1,7 @@
 // yd.js: shared Yesh Dibur reel scenes (phone / house / map) driven by a config. Lifted from reel 01 (yd-nitaem).
 // world.js: import { reel, RED, ... } from "./yd.js"; reel({ id, title, caps, end, endBoom, scenes: [...] })
 // Times: ["s2","word"] = that word, ["s2",0.4] = line start + 0.4 s.
-import { THREE, S, g, sm, pulse, scene, bloom, box, tube, glow, VIOLET, ORANGE, RED, GREEN, WHITE, shoot, run, beam, patch, hdg, label } from "./kit.js";
+import { THREE, S, g, sm, pulse, scene, camera, bloom, box, tube, glow, VIOLET, ORANGE, RED, GREEN, WHITE, shoot, run, beam, patch, hdg, label } from "./kit.js";
 import { title, endCard, cap, boom, overlays, fitText, makePerson, pose, ARM } from "./extra.js";
 export { VIOLET, ORANGE, RED, GREEN, WHITE };
 
@@ -164,9 +164,13 @@ export function reel(cfg) {
     o.t0 = S[s.from][0]; o.t1 = cfg.scenes[i + 1] ? S[cfg.scenes[i + 1].from][0] : 1e9; o.i = s.kind === "phone" ? np++ : 0;
     return o;
   });
+  // dim the 3D world behind the s7 end card so the rule reads clean
+  const dimP = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ color: 0x080622, transparent: true, opacity: 0, depthTest: false, depthWrite: false, fog: false, toneMapped: false }));
+  dimP.renderOrder = 15; dimP.position.set(0, 0, -2.2); dimP.scale.set(8, 8, 1); camera.add(dimP);
   const SH = sc.map((o) => ({ at: o.t0, K: o.cam(Math.min(o.t1, END) - o.t0, o.i) }));
   run(cfg.id + "-world", (t) => {
     const { punch } = shoot(SH, t);
+    dimP.material.opacity = 0.82 * sm(S.s7[0] + 0.1, S.s7[0] + 0.6, t); dimP.visible = dimP.material.opacity > 0.01;
     let dim = 1, ph = false;
     for (const o of sc) { const on = t >= o.t0 && t < o.t1; o.set(t, on); if (on && o.map) dim = 0.6; if (on && o.phone) ph = true; }
     phone.visible = screen.visible = ph;
