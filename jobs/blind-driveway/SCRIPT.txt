@@ -1,0 +1,8 @@
+s1|Hedge next to a driveway? Never ride past it fast.
+s2|A car backs out without looking, and you hit it.
+s3|Slow down when you can't see into a driveway.
+s4|Move away from the hedge, toward the center of your lane.
+s5|Cover your brakes, ready to stop.
+s6|Watch for reverse lights and a moving car.
+s7|Can't see in? Slow down.
+s8|Comment APEX and get the free riding app.
