@@ -67,7 +67,7 @@ const ITEM = {
     scene.add(track, bar); const t0 = tm(at), tf = fill ? tm(fill) : t0 + 0.2;
     return (t, on) => {
       const a = on ? pop(t, t0) : 0, f = Math.max(0.001, frac * sm(tf, tf + 0.9, t));
-      const k = tq ? sm(tf, tf + 0.3, t) : 1; // q = label before the number is spoken
+      const k = tq ? (t >= tf ? 1 : 0) : 1; // q = label before the number is spoken
       put(tx, 0, PY + y + 0.2, 0.15, 1, a * k); if (tq) put(tq, 0, PY + y + 0.2, 0.15, 1, a * (1 - k));
       track.visible = bar.visible = a > 0.01; track.material.opacity = bar.material.opacity = a;
       track.position.set(0, PY + y - 0.14, 0.13); track.scale.set(w, 1, 1);
