@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="20.167" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="20.167" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="20.167" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="2.474667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="2.695" data-duration="3.008" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="5.873" data-duration="2.005333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="8.048" data-duration="1.941333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="10.159" data-duration="1.898667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="12.228" data-duration="2.837333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="15.235" data-duration="1.685333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="17.090" data-duration="1.877333" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"s1":[0,2.645],"s2":[2.645,3.178],"s3":[5.823,2.175],"s4":[7.998,2.111],"s5":[10.109,2.069],"s6":[12.178,3.007],"s7":[15.185,1.855],"s8":[17.04,3.127]},"W":{"s1":{"dur":2.474667,"words":[{"text":"Tram","start":0,"end":0.197},{"text":"tracks","start":0.197,"end":0.493},{"text":"ahead?","start":0.493,"end":0.783},{"text":"Never","start":0.783,"end":1.036},{"text":"cross","start":1.036,"end":1.282},{"text":"them","start":1.282,"end":1.479},{"text":"at","start":1.479,"end":1.586},{"text":"a","start":1.586,"end":1.641},{"text":"shallow","start":1.641,"end":2.025},{"text":"angle.","start":2.025,"end":2.32}]},"s2":{"dur":3.008,"words":[{"text":"The","start":0,"end":0.153},{"text":"front","start":0.153,"end":0.409},{"text":"wheel","start":0.409,"end":0.664},{"text":"drops","start":0.664,"end":0.92},{"text":"into","start":0.92,"end":1.124},{"text":"the","start":1.124,"end":1.278},{"text":"groove,","start":1.278,"end":1.636},{"text":"the","start":1.636,"end":1.789},{"text":"bars","start":1.789,"end":1.993},{"text":"snap,","start":1.993,"end":2.198},{"text":"and","start":2.198,"end":2.351},{"text":"you","start":2.351,"end":2.504},{"text":"fall.","start":2.504,"end":2.76}]},"s3":{"dur":2.005333,"words":[{"text":"Move","start":0,"end":0.195},{"text":"over","start":0.195,"end":0.391},{"text":"first,","start":0.391,"end":0.635},{"text":"so","start":0.635,"end":0.733},{"text":"you","start":0.733,"end":0.879},{"text":"can","start":0.879,"end":1.026},{"text":"cross","start":1.026,"end":1.271},{"text":"them","start":1.271,"end":1.466},{"text":"straight.","start":1.466,"end":1.905}]},"s4":{"dur":1.941333,"words":[{"text":"Cross","start":0,"end":0.253},{"text":"as","start":0.253,"end":0.354},{"text":"close","start":0.354,"end":0.607},{"text":"to","start":0.607,"end":0.708},{"text":"a","start":0.708,"end":0.759},{"text":"right","start":0.759,"end":1.012},{"text":"angle","start":1.012,"end":1.265},{"text":"as","start":1.265,"end":1.366},{"text":"you","start":1.366,"end":1.518},{"text":"can.","start":1.518,"end":1.72}]},"s5":{"dur":1.898667,"words":[{"text":"Keep","start":0,"end":0.138},{"text":"the","start":0.138,"end":0.277},{"text":"bike","start":0.277,"end":0.461},{"text":"upright,","start":0.461,"end":0.83},{"text":"no","start":0.83,"end":0.923},{"text":"braking","start":0.923,"end":1.291},{"text":"on","start":1.291,"end":1.384},{"text":"the","start":1.384,"end":1.522},{"text":"metal.","start":1.522,"end":1.799}]},"s6":{"dur":2.837333,"words":[{"text":"In","start":0.196,"end":0.31},{"text":"the","start":0.31,"end":0.481},{"text":"rain,","start":0.481,"end":0.71},{"text":"slow","start":0.71,"end":0.939},{"text":"down","start":0.939,"end":1.167},{"text":"even","start":1.167,"end":1.396},{"text":"more.","start":1.396,"end":1.624},{"text":"Wet","start":1.624,"end":1.796},{"text":"steel","start":1.796,"end":2.094},{"text":"has","start":2.094,"end":2.309},{"text":"no","start":2.309,"end":2.451},{"text":"grip.","start":2.451,"end":2.737}]},"s7":{"dur":1.685333,"words":[{"text":"Cross","start":0,"end":0.233},{"text":"tracks","start":0.233,"end":0.466},{"text":"straight.","start":0.466,"end":0.886},{"text":"Never","start":0.886,"end":1.119},{"text":"along","start":1.119,"end":1.352},{"text":"them.","start":1.352,"end":1.585}]},"s8":{"dur":1.877333,"words":[{"text":"Comment","start":0,"end":0.363},{"text":"APEX","start":0.363,"end":0.57},{"text":"and","start":0.57,"end":0.725},{"text":"get","start":0.725,"end":0.881},{"text":"the","start":0.881,"end":1.036},{"text":"free","start":1.036,"end":1.244},{"text":"riding","start":1.244,"end":1.554},{"text":"app.","start":1.554,"end":1.76}]}},"LEAD":0.05,"BRAND":{"cta":["COMMENT","APEX"],"sub":"GET THE FREE RIDING APP","comment":{"word":"APEX","badge":"FREE RIDING APP","at":3}}};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 20.167);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>

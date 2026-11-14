@@ -1,0 +1,56 @@
+[
+  {
+    "text": "How",
+    "start": 0.06,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "many",
+    "start": 0.15,
+    "end": 0.34,
+    "id": "w1"
+  },
+  {
+    "text": "Apex",
+    "start": 0.34,
+    "end": 0.53,
+    "id": "w2"
+  },
+  {
+    "text": "and",
+    "start": 0.53,
+    "end": 0.67,
+    "id": "w3"
+  },
+  {
+    "text": "get",
+    "start": 0.68,
+    "end": 0.83,
+    "id": "w4"
+  },
+  {
+    "text": "the",
+    "start": 0.83,
+    "end": 0.96,
+    "id": "w5"
+  },
+  {
+    "text": "free",
+    "start": 1.07,
+    "end": 1.17,
+    "id": "w6"
+  },
+  {
+    "text": "writing",
+    "start": 1.17,
+    "end": 1.51,
+    "id": "w7"
+  },
+  {
+    "text": "app?",
+    "start": 1.51,
+    "end": 1.75,
+    "id": "w8"
+  }
+]
