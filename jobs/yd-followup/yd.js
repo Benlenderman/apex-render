@@ -1,7 +1,7 @@
 // yd.js: shared Yesh Dibur reel scenes (phone / house / map) driven by a config. Lifted from reel 01 (yd-nitaem).
 // world.js: import { reel, RED, ... } from "./yd.js"; reel({ id, title, caps, end, endBoom, scenes: [...] })
 // Times: ["s2","word"] = that word, ["s2",0.4] = line start + 0.4 s.
-import { THREE, S, g, sm, pulse, scene, camera, bloom, box, tube, glow, VIOLET, ORANGE, RED, GREEN, WHITE, shoot, run, beam, patch, hdg, label } from "./kit.js";
+import { THREE, S, g, sm, pulse, scene, camera, bloom, box, tube, glow, VIOLET, ORANGE, RED, GREEN, WHITE, shoot, run, beam, patch, hdg, label, mSolid } from "./kit.js";
 import { title, endCard, cap, boom, overlays, fitText, makePerson, pose, ARM } from "./extra.js";
 export { VIOLET, ORANGE, RED, GREEN, WHITE };
 
@@ -169,16 +169,95 @@ function mapScene(s, MX) {
     : [[0, [MX + 2.5, 4.8, MZ + 8, MX + 0.5, 1.0, MZ, 50]], [d + 0.5, [MX + 1.2, 3.6, MZ + 6.2, MX + 0.8, 1.0, MZ, 50]]]) };
 }
 
+
+// ================= bar: a date at a high table, talk in world bubbles =================
+// pairs: [{ x, z, gap, him:[[at,hex]..], her:[[at,hex]..], says:[{who:"him"|"her", text, at, off, hex, y}], talk:[[who, from, to]],
+//          bored: at (she turns to her phone), happy: at (she leans in), heart: at, leave: at (she walks off), slump: at (he drops his head),
+//          qs:{who, at, until, every} ("?" bubbles) }]
+// tags: [{ text, hex, at, off, x, y, z, k, w }]   clocks: [{ text, hex, at, until, x, y, z }]   cam: (BX, d) => keys
+const PINK = 0xff4d8a;
+const heartGeo = (() => { const h = new THREE.Shape(); h.moveTo(0, -0.5); h.bezierCurveTo(-0.1, -0.35, -0.6, -0.05, -0.6, 0.25); h.bezierCurveTo(-0.6, 0.55, -0.25, 0.65, 0, 0.38); h.bezierCurveTo(0.25, 0.65, 0.6, 0.55, 0.6, 0.25); h.bezierCurveTo(0.6, -0.05, 0.1, -0.35, 0, -0.5); return new THREE.ShapeGeometry(h, 16); })();
+const mctx = document.createElement("canvas").getContext("2d");
+function wbubble(text, hex = VIOLET, w = 1.9) { // a speech bubble that faces the camera, sized to its text
+  const tx = fitText([text], WHITE, 1.5, w);
+  mctx.font = "900 100px Heebo, Arial, sans-serif"; const tw = mctx.measureText(text).width, px = Math.min(190, (980 / tw) * 100), fw = (tw * px) / 100 / 1024 * w + 0.22;
+  const bg = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ color: new THREE.Color(hex).multiplyScalar(0.42), transparent: true, depthTest: false, depthWrite: false, fog: false, toneMapped: false }));
+  const tail = new THREE.Mesh(new THREE.CircleGeometry(0.09, 3), bg.material); tail.rotation.z = -Math.PI / 2; tail.position.set(0, -0.62, 0); bg.add(tail);
+  bg.renderOrder = tail.renderOrder = 19; bg.visible = false; scene.add(bg);
+  const hgt = (px / 512) * (w / 2) * 1.25 + 0.12;
+  return (x, y, z, a, tx0 = 0) => {
+    label(tx, x, y, z, 1, a); bg.visible = a > 0.01; if (!bg.visible) return;
+    const k = 0.85 + 0.15 * a; bg.position.set(x, y, z); bg.quaternion.copy(camera.quaternion); bg.scale.set(fw * k, hgt * k, 1); bg.material.opacity = 0.92 * a;
+    tail.position.x = tx0 / (fw * k); tail.scale.set(1 / (fw * k) * hgt * k * 1.2, 1, 1);
+  };
+}
+const hexAt = (L, t, d) => { let h = d; for (const [a, x] of L || []) if (t >= tm(a)) h = x; return h; };
+function pairOf(p, BX) {
+  const x0 = BX + (p.x || 0), z0 = p.z || 0, gp = p.gap || 0.72, T = (k) => (p[k] ? tm(p[k]) : 1e9);
+  const him = makePerson(), her = makePerson();
+  her.body.add(box(0.34, 0.42, 0.12, 0, 1.6, 0.1, glow(0x5a2a6a, 1.4), false), box(0.36, 0.08, 0.36, 0, 1.83, 0, glow(0x5a2a6a, 1.4), false)); // long hair
+  const tab = new THREE.Group(); scene.add(tab); tab.position.set(x0, 0, z0);
+  tab.add(box(0.72, 0.05, 0.72, 0, 1.05, 0, mSolid), tube([0, 0.02, 0], [0, 1.03, 0], 0.07, mSolid), box(0.42, 0.04, 0.42, 0, 0.02, 0, mSolid),
+    box(0.08, 0.17, 0.08, -0.2, 1.16, 0.05, glow(ORANGE, 1.5), false), box(0.08, 0.17, 0.08, 0.2, 1.16, -0.05, glow(VIOLET, 1.8), false));
+  const ph = box(0.12, 0.2, 0.02, 0, 0, 0, glow(WHITE, 1.4), false); scene.add(ph);
+  const heart = new THREE.Mesh(heartGeo, glow(PINK, 2.4)); scene.add(heart);
+  const B = (p.says || []).map((s) => ({ ...s, b: wbubble(s.text, s.hex, s.w), t0: tm(s.at), t1: s.off ? tm(s.off) : 1e9 }));
+  const qb = p.qs ? wbubble("?", p.qs.hex || VIOLET, 0.9) : null;
+  const talking = (who, t) => B.some((s) => s.who === who && t >= s.t0 && t < Math.min(s.t1, s.t0 + 1.8)) || (p.talk || []).some(([w, a, b]) => w === who && t >= tm(a) && t < tm(b));
+  return (t, on) => {
+    tab.visible = on;
+    const bored = sm(T("bored"), T("bored") + 0.5, t) * (1 - sm(T("happy") - 0.3, T("happy"), t)), happy = sm(T("happy"), T("happy") + 0.6, t), lv = sm(T("leave"), T("leave") + 1.8, t), slump = sm(T("slump"), T("slump") + 0.6, t);
+    const tH = on && talking("him", t), tS = on && talking("her", t);
+    pose(him, { x: x0 - gp, z: z0, h: -Math.PI / 2, armR: tH ? 0.95 + 0.4 * Math.sin(t * 7) : 0.35, armL: 0.2, vis: on, hex: hexAt(p.him, t, VIOLET) });
+    him.head.rotation.set(tH ? 0.12 * Math.sin(t * 9) : 0.45 * slump + 0.05 * Math.sin(t * 2), 0, 0); him.body.rotation.x = 0.1 * slump;
+    const hx = x0 + gp + 3.6 * lv, hz = z0 - 1.2 * lv;
+    pose(her, { x: hx, z: hz, h: lv > 0 ? hdg(3.6, -1.2) : Math.PI / 2 + 1.25 * bored, armL: tS ? 0.95 + 0.4 * Math.sin(t * 6.5 + 1) : 0.3 + 0.9 * bored * (1 - lv), armR: 0.2, vis: on && lv < 0.97, hex: hexAt(p.her, t, VIOLET) });
+    her.g.position.y = lv > 0 && lv < 1 ? Math.abs(Math.sin(t * 9)) * 0.07 : 0;
+    her.head.rotation.set(tS ? 0.1 * Math.sin(t * 8) : 0.5 * bored + 0.06 * Math.sin(t * 2.3 + 1), 0, 0); her.body.rotation.x = -0.16 * happy;
+    ph.visible = on && bored > 0.3 && lv < 0.5; if (ph.visible) { her.armL.userData.hand.getWorldPosition(vA); ph.position.set(vA.x, vA.y + 0.1, vA.z); ph.quaternion.copy(her.g.quaternion); ph.rotateX(-0.6); }
+    const hk = on ? pop(t, T("heart")) : 0; heart.visible = hk > 0.01;
+    if (heart.visible) { heart.position.set(x0, 2.25 + 0.05 * Math.sin(t * 3), z0); heart.quaternion.copy(camera.quaternion); heart.scale.setScalar(0.28 * hk * (1 + 0.12 * Math.max(0, Math.sin(t * 7)))); }
+    for (const s of B) {
+      const a = on ? pop(t, s.t0) * (1 - sm(s.t1 - 0.12, s.t1 + 0.08, t)) : 0, hm = s.who === "him", bx = hm ? x0 - gp + 0.45 : x0 + gp - 0.45;
+      s.b(bx, (s.y || 2.45) + 0.04 * Math.sin(t * 2), z0, a, hm ? -0.4 : 0.4);
+    }
+    if (qb) { const q = p.qs, e = q.every || 0.9, u = t - tm(q.at), a = on && u > 0 && t < tm(q.until) ? Math.max(0, Math.sin(Math.PI * ((u % e) / (e * 0.7)))) * ((u % e) < e * 0.7 ? 1 : 0) : 0;
+      qb(q.who === "him" ? x0 - gp + 0.15 : x0 + gp - 0.15, 2.3, z0, a, 0); }
+  };
+}
+function barScene(s, BX) {
+  const fl = patch(8, 6, s.floor || VIOLET, 0.3); fl.position.set(BX, 0.03, 0);
+  const bar = new THREE.Group(); scene.add(bar); bar.position.set(BX, 0, 0);
+  bar.add(box(9, 1.1, 0.7, 0, 0.55, -3.4, mSolid), box(9, 0.06, 0.8, 0, 1.12, -3.4, glow(VIOLET, 1.2), false));
+  for (let i = 0; i < 12; i++) bar.add(box(0.12, 0.12, 0.12, -4.4 + i * 0.8, 3.3 + 0.18 * Math.sin(i * 1.7), -3.0, glow(i % 3 ? ORANGE : VIOLET, 1.6), false));
+  const P = s.pairs.map((p) => pairOf(p, BX));
+  const tags = (s.tags || []).map((g0) => ({ ...g0, m: fitText([g0.text], g0.hex || WHITE, g0.k || 2.0, g0.w || 2.4), t0: tm(g0.at), t1: g0.off ? tm(g0.off) : 1e9 }));
+  const clocks = (s.clocks || []).map((c) => {
+    const G = new THREE.Group(), hp = new THREE.Group(), hx = c.hex || RED; scene.add(G);
+    G.add(new THREE.Mesh(new THREE.RingGeometry(0.24, 0.3, 40), glow(hx, 2)), hp); hp.add(box(0.045, 0.2, 0.02, 0, 0.09, 0.01, glow(WHITE, 2), false));
+    return { ...c, G, hp, m: fitText([c.text], hx, 2.0, 1.7), t0: tm(c.at), t1: c.until ? tm(c.until) : 1e9 };
+  });
+  return { set(t, on) {
+    bar.visible = on; fl.set(on ? 0.5 : 0); P.forEach((f) => f(t, on));
+    for (const g0 of tags) label(g0.m, BX + (g0.x || 0), g0.y || 3.2, g0.z || 0, 1, on ? pop(t, g0.t0) * (1 - sm(g0.t1 - 0.1, g0.t1 + 0.1, t)) : 0);
+    for (const c of clocks) {
+      const a = on ? pop(t, c.t0) * (1 - sm(c.t1 - 0.1, c.t1 + 0.1, t)) : 0; c.G.visible = a > 0.01;
+      if (c.G.visible) { c.G.position.set(BX + (c.x || 0), c.y || 2.7, c.z || 0); c.G.quaternion.copy(camera.quaternion); c.G.scale.setScalar(a); c.hp.rotation.z = -(t - c.t0) * 5; }
+      label(c.m, BX + (c.x || 0), (c.y || 2.7) - 0.52, c.z || 0, 1, a);
+    }
+  }, cam: (d) => (s.cam ? s.cam(BX, d) : [[0, [BX + 0.5, 2.1, 6.6, BX, 1.75, 0, 50]], [d + 0.4, [BX - 0.4, 1.95, 5.7, BX, 1.7, 0, 50]]]) };
+}
+
 // ================= the reel =================
 export function reel(cfg) {
   bloom.threshold = 0.95; bloom.radius = 0.3;
   title(cfg.title);
   (cfg.caps || []).forEach((c) => cap(...c));
   endCard(cfg.end); if (cfg.endBoom) boom(...cfg.endBoom);
-  let nh = 0, nm = 0, np = 0;
+  let nh = 0, nm = 0, np = 0, nb = 0;
   const END = S.s8[0] + S.s8[1];
   const sc = cfg.scenes.map((s, i) => {
-    const o = s.kind === "phone" ? phoneScene(s) : s.kind === "house" ? houseScene(s, -14 - 12 * nh++) : mapScene(s, 24 + 30 * nm++);
+    const o = s.kind === "bar" ? barScene(s, -60 - 30 * nb++) : s.kind === "phone" ? phoneScene(s) : s.kind === "house" ? houseScene(s, -14 - 12 * nh++) : mapScene(s, 24 + 30 * nm++);
     const T = (f) => (Array.isArray(f) ? tm(f) : S[f][0]); o.t0 = T(s.from); o.t1 = cfg.scenes[i + 1] ? T(cfg.scenes[i + 1].from) : 1e9; o.i = s.kind === "phone" ? np++ : 0;
     return o;
   });
@@ -188,7 +267,7 @@ export function reel(cfg) {
   const SH = sc.map((o) => ({ at: o.t0, K: o.cam(Math.min(o.t1, END) - o.t0, o.i) }));
   run(cfg.id + "-world", (t) => {
     const { punch } = shoot(SH, t);
-    dimP.material.opacity = 0.82 * sm(S.s7[0] + 0.1, S.s7[0] + 0.6, t); dimP.visible = dimP.material.opacity > 0.01;
+    dimP.material.opacity = (cfg.dim ?? 0.82) * sm(S.s7[0] + 0.1, S.s7[0] + 0.6, t); dimP.visible = dimP.material.opacity > 0.01;
     let dim = 1, ph = false;
     for (const o of sc) { const on = t >= o.t0 && t < o.t1; o.set(t, on); if (on && o.map) dim = 0.6; if (on && o.phone) ph = true; }
     phone.visible = screen.visible = ph;
