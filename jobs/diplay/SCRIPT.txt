@@ -1,0 +1,8 @@
+s1|Your BYD runs Android, and your phone is an iPhone? Never buy a gadget just to get CarPlay. Exploring GitHub repos.
+s2|A CarPlay adapter is one more box to pay for and plug in, and your car already has the screen.
+s3|Instead, get DiPlay. Over 13,000 stars on GitHub in 7 weeks. You install it on the car, and the car screen becomes Apple CarPlay.
+s4|Plug your iPhone in with a cable, or go fully wireless.
+s5|No hacking your phone. No Mac. No account. It's an early version, not official from Apple.
+s6|On some BYDs, the turn arrows and street names show up on the windshield.
+s7|Keep the screen. Skip the gadget.
+s8|Comment REPO, and I'll send you the link.
