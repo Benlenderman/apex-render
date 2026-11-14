@@ -1,0 +1,1526 @@
+{
+  "version": 1,
+  "historyId": "142fd044-fa8f-4d36-8797-8a2172183153",
+  "currentRevision": "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/26/26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "CLAUDE.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/26/26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "SCRIPT.txt": {
+      "hash": "25740e42edf94cecf3a947dccf1ea74f9d10b7352106071cce13fff2afd497c5",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/25/25740e42edf94cecf3a947dccf1ea74f9d10b7352106071cce13fff2afd497c5"
+    },
+    "assets/vo/s1.wav": {
+      "hash": "6bf1498b8b0e8f75daeb4628d8a0d02100aa429100f522ec7832609214f75d49",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/6b/6bf1498b8b0e8f75daeb4628d8a0d02100aa429100f522ec7832609214f75d49"
+    },
+    "assets/vo/s2.wav": {
+      "hash": "0480ae4e61f3a211c39838faf8064e10f3d4bdb10d0d944208d3cdad555a7bb5",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/04/0480ae4e61f3a211c39838faf8064e10f3d4bdb10d0d944208d3cdad555a7bb5"
+    },
+    "assets/vo/s3.wav": {
+      "hash": "8afa31b45dc62d458bfaccca680ecb6057a32c6eeb816f25a1e8960b5115da7b",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/8a/8afa31b45dc62d458bfaccca680ecb6057a32c6eeb816f25a1e8960b5115da7b"
+    },
+    "assets/vo/s4.wav": {
+      "hash": "7a31a549151cc8abdcb9457ddddc637e7d1b5100c985894738d1e81a2e02c73c",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/7a/7a31a549151cc8abdcb9457ddddc637e7d1b5100c985894738d1e81a2e02c73c"
+    },
+    "assets/vo/s5.wav": {
+      "hash": "c8a09f4df803eb8831c658bbab97378fd47a75f62bfe829d988511e5f7c8c427",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/c8/c8a09f4df803eb8831c658bbab97378fd47a75f62bfe829d988511e5f7c8c427"
+    },
+    "assets/vo/s6.wav": {
+      "hash": "f9d821623526587fc172b83c2f3d61deb790b8a08407762bf973c702b957d4fd",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/f9/f9d821623526587fc172b83c2f3d61deb790b8a08407762bf973c702b957d4fd"
+    },
+    "assets/vo/s7.wav": {
+      "hash": "18e9da8d5d943f1f0936a1dc740068a4c9670bc6bcf3ca9dd014137dfb8c6ec8",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/18/18e9da8d5d943f1f0936a1dc740068a4c9670bc6bcf3ca9dd014137dfb8c6ec8"
+    },
+    "assets/vo/s8.wav": {
+      "hash": "979cf7d272275d9260549808891b5e12d28687d5194ba522f267d4f9c1725483",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/97/979cf7d272275d9260549808891b5e12d28687d5194ba522f267d4f9c1725483"
+    },
+    "assets/vo/transcript.json": {
+      "hash": "7ac7fd6e3cc29205e44a42db1a9d8f70aa0d8cc4d433b5e5d38fb96e08ce9b50",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/7a/7ac7fd6e3cc29205e44a42db1a9d8f70aa0d8cc4d433b5e5d38fb96e08ce9b50"
+    },
+    "assets/words/s1.jsonl": {
+      "hash": "b2ed2c69ce8e86fd7ce78aad40f5995f401ec72a270e22b66514070d414da184",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/b2/b2ed2c69ce8e86fd7ce78aad40f5995f401ec72a270e22b66514070d414da184"
+    },
+    "assets/words/s2.jsonl": {
+      "hash": "05315b3a2e49f973189bb3f6ab80353d23fa1988391c9233950e29e0bd69e6b0",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/05/05315b3a2e49f973189bb3f6ab80353d23fa1988391c9233950e29e0bd69e6b0"
+    },
+    "assets/words/s3.jsonl": {
+      "hash": "dd2423872fa1740ccf8acabc708cdd20fe61751fe3126c19098f216c83aba2b2",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/dd/dd2423872fa1740ccf8acabc708cdd20fe61751fe3126c19098f216c83aba2b2"
+    },
+    "assets/words/s4.jsonl": {
+      "hash": "b3a8616562ede41c7536c4bc73b7af8eb0171da8994c8d6a0f25e67d9a113b7e",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/b3/b3a8616562ede41c7536c4bc73b7af8eb0171da8994c8d6a0f25e67d9a113b7e"
+    },
+    "assets/words/s5.jsonl": {
+      "hash": "ff144c5039d1517412d0220cf05adf481f9deb9bf72c1853c4968b0c06f29bfe",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/ff/ff144c5039d1517412d0220cf05adf481f9deb9bf72c1853c4968b0c06f29bfe"
+    },
+    "assets/words/s6.jsonl": {
+      "hash": "2f6f2f68d6c193a7910d9d370c89a2fafa1dea2a76af671fd3125043bce7e280",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/2f/2f6f2f68d6c193a7910d9d370c89a2fafa1dea2a76af671fd3125043bce7e280"
+    },
+    "assets/words/s7.jsonl": {
+      "hash": "1e5f96de9a6c12d4f497c813e87b748ac85b0c53b08eb139a824bae1f61ab8fc",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/1e/1e5f96de9a6c12d4f497c813e87b748ac85b0c53b08eb139a824bae1f61ab8fc"
+    },
+    "assets/words/s8.jsonl": {
+      "hash": "022c592392dadea4bd6bb376c6df31c04884100e2630e244eebaff11dbd2adc4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/02/022c592392dadea4bd6bb376c6df31c04884100e2630e244eebaff11dbd2adc4"
+    },
+    "assets/words.json": {
+      "hash": "c7025298f4e794a68d637891728ededefed915448ea22a21debcb73bd20250ee",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/c7/c7025298f4e794a68d637891728ededefed915448ea22a21debcb73bd20250ee"
+    },
+    "brand.json": {
+      "hash": "331a432707e5360bf13a72636753636b587884cddf0df06a4f52492eb32b5918",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/33/331a432707e5360bf13a72636753636b587884cddf0df06a4f52492eb32b5918"
+    },
+    "build3d.mjs": {
+      "hash": "ac7e5a9ca697ca1a7bbef5b33416b6f4c38d558e1593d8920e9e7d1a491fed48",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/ac/ac7e5a9ca697ca1a7bbef5b33416b6f4c38d558e1593d8920e9e7d1a491fed48"
+    },
+    "compositions/captions.html": {
+      "hash": "1a36baf47e1837b5c82b88ee2993c6e8e68b80b067ca6a6cbe720b6d85d4a336",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/1a/1a36baf47e1837b5c82b88ee2993c6e8e68b80b067ca6a6cbe720b6d85d4a336"
+    },
+    "extra.js": {
+      "hash": "0ee811ec7c440e6b06d78af01fea1ae15a4328e0c6c57cc1461fce154a6a1f74",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/0e/0ee811ec7c440e6b06d78af01fea1ae15a4328e0c6c57cc1461fce154a6a1f74"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "77f3e04ea886d7ba44796d35aa5d357815895bc29541aab21ad8e7f74e2b81e9",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/77/77f3e04ea886d7ba44796d35aa5d357815895bc29541aab21ad8e7f74e2b81e9"
+    },
+    "kit.js": {
+      "hash": "8ebbefdd8b79e23243c1957716dd725f4a3b7ed969e4b69205cff5979c5cedb5",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/8e/8ebbefdd8b79e23243c1957716dd725f4a3b7ed969e4b69205cff5979c5cedb5"
+    },
+    "make.sh": {
+      "hash": "60a551107f78a5080776a531a33856f9fecace5022bd7c63fc835d32acc2eaa0",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/60/60a551107f78a5080776a531a33856f9fecace5022bd7c63fc835d32acc2eaa0"
+    },
+    "meta.json": {
+      "hash": "b9ab5b15ab379d11adfb47cf79023d08bfdf8f8642a53603a96c4d383f7c5606",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/b9/b9ab5b15ab379d11adfb47cf79023d08bfdf8f8642a53603a96c4d383f7c5606"
+    },
+    "package.json": {
+      "hash": "50798bd65f5651b714d5b5f2aabed98cefd6d7871ab93f2c4271f0fffc167bc4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/50/50798bd65f5651b714d5b5f2aabed98cefd6d7871ab93f2c4271f0fffc167bc4"
+    },
+    "words.cjs": {
+      "hash": "6c52c75d65b036d3d0b24f72104428f262cecc1da4967feb7055f2da688c39b7",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/6c/6c52c75d65b036d3d0b24f72104428f262cecc1da4967feb7055f2da688c39b7"
+    },
+    "world.js": {
+      "hash": "ee50f4a3a91141cb30e1d4ab6cd5f2e0c31620ad33db29d69fd9bfcb32661c0f",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/ee/ee50f4a3a91141cb30e1d4ab6cd5f2e0c31620ad33db29d69fd9bfcb32661c0f"
+    }
+  },
+  "revisions": {
+    "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794688645563,
+      "endedAt": 1794688645566,
+      "files": {
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/96/9654f71015de56b8a16945cec2954a619da80813bf6d4c31821b784e7711f2b9",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/d1/d1cefc64d95d925e49fb3ce7a5ceddc9a926a21de367a79c80a161165abd1893"
+        }
+      }
+    },
+    "0a23ce8b-1265-454e-9c6d-d70b5a67d882": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794688793832,
+      "endedAt": 1794688794190,
+      "files": {
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/d1/d1cefc64d95d925e49fb3ce7a5ceddc9a926a21de367a79c80a161165abd1893",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/67/6774be7774c99acadc3d9dcde218e50308bdeb6fdd6e840b521e84d588c05a11"
+        }
+      }
+    },
+    "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794688915983,
+      "endedAt": 1794688916013,
+      "files": {
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/67/6774be7774c99acadc3d9dcde218e50308bdeb6fdd6e840b521e84d588c05a11",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/142fd044-fa8f-4d36-8797-8a2172183153/blobs/ee/ee50f4a3a91141cb30e1d4ab6cd5f2e0c31620ad33db29d69fd9bfcb32661c0f"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "ec3b8489-3272-4e03-967c-a15b0e5cf022"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "42354a58-ed88-4f91-b6de-45c0de29415e",
+        "scope": "project",
+        "report": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/checks/42354a58-ed88-4f91-b6de-45c0de29415e.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1794688460664,
+        "contentHash": "de01d76d24856c42f2f3a1fb838c74d055fce07b96c89a92d0c1a7a0ec58a280",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "ec3b8489-3272-4e03-967c-a15b0e5cf022",
+        "scope": "project",
+        "report": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/checks/ec3b8489-3272-4e03-967c-a15b0e5cf022.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1794688577631,
+        "contentHash": "de01d76d24856c42f2f3a1fb838c74d055fce07b96c89a92d0c1a7a0ec58a280",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba",
+      "id": "2ba7665f-a0be-4dfb-aa58-8633781cd205-3"
+    },
+    "revisions": {
+      "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093": [
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-0",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-00-at-0.4s.png",
+          "time": 0.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732204,
+          "contentHash": "11caf9ba07c173d6dbdc34c1e7072edf88fa63c18259b7e7e268857b4869ec5e",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-1",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-01-at-1.5s.png",
+          "time": 1.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732204,
+          "contentHash": "0aea3a67136e3c53e9e60f476a81e93d7709599f166edbd76191fc2b9f1fe27c",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-2",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-02-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "a4ef69d17b56f453233dd0219499d14df388a29bbacca6373c415a3ec0bfdfd6",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-3",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-03-at-4.6s.png",
+          "time": 4.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "d5c7fcdbc510e1d92aef765b15b9b6cf19bd188ff8152730e1d6c7a164110de6",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-4",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-04-at-7s.png",
+          "time": 7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "f32af03f49b35c0eb3e5ce9edcb11b178db92ffff259dfe218d17192cc1ee7c1",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-5",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-05-at-8.6s.png",
+          "time": 8.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "c59f4b6a7c86f7f75dbfb3eae6628b27f28a8fe5556542e8017bd35461e5b582",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-6",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-06-at-10.5s.png",
+          "time": 10.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "de2287663e0953f3eb0dc309322895aa816ac6fabf47fd02bd196aaffac669b5",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-7",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-07-at-13.5s.png",
+          "time": 13.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "7e0c7c2b188b04fdffe65191b64f9acbf7b316082ff091aad5cd17956c1ae835",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-8",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-08-at-15s.png",
+          "time": 15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "d4926f9c14e8c38094cc4e7f2524baa0a27ce0e77696761fcc5f202e215ccbde",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-9",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-09-at-18.5s.png",
+          "time": 18.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "f2f25a5acf55ea7af94a1d6e4e7609ee208ecf44c14238aa1401ea272d81773a",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-10",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-10-at-20.8s.png",
+          "time": 20.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "267a77034de62663414a824f9647922fc2183aac60f541b3d531a9e593faa6e9",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-11",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-11-at-21.5s.png",
+          "time": 21.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "72d080a52cb593225ad8b82b854368639f7b7e8200245a88fe1b43233175a952",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-12",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-12-at-22.2s.png",
+          "time": 22.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732205,
+          "contentHash": "6e5b4d4abde4c4a2339676d781778f42f9c106ac2bd11095d7848c6421283802",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-13",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-13-at-23s.png",
+          "time": 23,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732206,
+          "contentHash": "fff38f6858dae17b259f8d7346b132eddb9acfb1d36aafa14e76e82557da4d81",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-14",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-14-at-25.5s.png",
+          "time": 25.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732206,
+          "contentHash": "cb980a04cdb2ff494db4f4e78bcb4a156ecedfb6456ed053813a9e494bae53a5",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-15",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-15-at-26.8s.png",
+          "time": 26.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732206,
+          "contentHash": "f0e26cd12d5ad8b070f7b6e4ae2f2d3c4dd9fa728e3efa9b98c8b35089187731",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-16",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-16-at-28.5s.png",
+          "time": 28.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732206,
+          "contentHash": "e70f1ca5536bc8596614fe663cff1274c8f20ec15a471481ca2db221abf4711a",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-17",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-17-at-30.8s.png",
+          "time": 30.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732206,
+          "contentHash": "32eb86bcd5b1ce119e463366c317765e58782c42b03f3e5f7a561124df102674",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-18",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-18-at-32.5s.png",
+          "time": 32.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732206,
+          "contentHash": "2863f6cc921ecfa3845817fcb49da0116c393e57959aea4416f1fe631a5ba0ea",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-19",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-19-at-34.5s.png",
+          "time": 34.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732207,
+          "contentHash": "3c5cd230792ebf2aaa4dfcf572508216bde3828548f139f2b7f0c22510d0b88e",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51bec01d-f4e5-4c38-9525-b90eb19456e5-20",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/5b418e7e-d700-4eb0-9124-34de1deef6ba/frame-20-at-35.897s.png",
+          "time": 35.897,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688732207,
+          "contentHash": "6e31114dc6ea0a6e425ec2f95238cda7e4ed524583db040129a7f05b5a40fd08",
+          "revision": "f841c2a3-9920-4a5b-bb25-e4a0dd0f0093",
+          "inputFingerprint": "c0c06bf72fd7d15109dae7edf529715f01fc8b82d6bfe7d1ae71487d14de8d76",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "0a23ce8b-1265-454e-9c6d-d70b5a67d882": [
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-0",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-00-at-0.4s.png",
+          "time": 0.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842735,
+          "contentHash": "f76bca1812e472abf796e055f5663ad24e2fe44297e4b95465134390ade5922e",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-1",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-01-at-1.2s.png",
+          "time": 1.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842735,
+          "contentHash": "f9dac8c99d0cc16ad6ea853fe79902a4789ba6cf3ca4db426915adc206a44797",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-2",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-02-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842736,
+          "contentHash": "ee78a01ab553799cba13dc148bcce939a903c4556c03db3d558315a5ae5bee4e",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-3",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-03-at-10.5s.png",
+          "time": 10.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842736,
+          "contentHash": "b719aa0acf4e7796bdcfd76a8fdb35d7d7f3b73719ecc8d160304fb085d8cf54",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-4",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-04-at-13.5s.png",
+          "time": 13.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842736,
+          "contentHash": "f2ce5064a4353fbfbcf10c6c741c1bcde015b83c5e9a58eae83fde1bdc93734c",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-5",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-05-at-15s.png",
+          "time": 15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842736,
+          "contentHash": "dd0eabe13ff292cb03f05ca44cecdbb69c577b25391a4bc426160de627f6a571",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-6",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-06-at-18.5s.png",
+          "time": 18.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842736,
+          "contentHash": "84bad03a12fefd12b9bc448cab7d5713b51d676f3519f1ee5f81a0239bf0e509",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-7",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-07-at-21.5s.png",
+          "time": 21.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842737,
+          "contentHash": "8df6be4d9993c512aaa140aead4e23885bb0e131348fc8b047b86717071c494d",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-8",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-08-at-23s.png",
+          "time": 23,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842737,
+          "contentHash": "18e1891901e02ef3cc4b6e006353d86395031143b2b5aa62066bf34a983746b1",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-9",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-09-at-25.5s.png",
+          "time": 25.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842737,
+          "contentHash": "65e17f8232672f5642c3ffa0b5ea338d3e9976d6315719532afad96bafe99a29",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-10",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-10-at-26.8s.png",
+          "time": 26.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842787,
+          "contentHash": "716f82c63d2c6611cd525b57c9cd35f9555f30e401b1e76ee7ffdec7bdccacf5",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-11",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-11-at-28.5s.png",
+          "time": 28.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842788,
+          "contentHash": "e0cfa04c24bdd4202dc4c10b7a183407b4bbb1d91fa4cc8b974c4461b3a4d893",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-12",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-12-at-30.8s.png",
+          "time": 30.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842788,
+          "contentHash": "488bd6f6a25f779e315bdb129dc47dad1a4186be9775f4957063ee2f251ef45f",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-13",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-13-at-31.7s.png",
+          "time": 31.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842788,
+          "contentHash": "050d279c91707549f766dfb1d46fbad449b69d672c34b0c9562b2f42b0fa29fc",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-14",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-14-at-32.8s.png",
+          "time": 32.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842789,
+          "contentHash": "e7f5f8e75358a63340486b997f4b3f86ef5006a1cb2a65fd79bc372a2eae53dd",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-15",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-15-at-33.3s.png",
+          "time": 33.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842790,
+          "contentHash": "de05a7e0037249f6fa9f533981aa9ce2edaf9258d4b7e7d8350508392ffc3fb5",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fac646d9-d109-4fbf-b3c8-6265ea1de00f-16",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/d0249f8e-9839-4cb7-842b-61df28414a0b/frame-16-at-35.897s.png",
+          "time": 35.897,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688842816,
+          "contentHash": "6e31114dc6ea0a6e425ec2f95238cda7e4ed524583db040129a7f05b5a40fd08",
+          "revision": "0a23ce8b-1265-454e-9c6d-d70b5a67d882",
+          "inputFingerprint": "0ed4b6edb1e95dcebb2f7f2e976566845fe7129db896e4ff415df7a0b9ff3ce3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba": [
+        {
+          "scope": "full",
+          "id": "2ba7665f-a0be-4dfb-aa58-8633781cd205-0",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/385a8422-a91a-43af-bbaf-2ca5f371f1a1/frame-00-at-1.2s.png",
+          "time": 1.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688997642,
+          "contentHash": "34bbe839fb9ae573f4c95a035c642af3e44ff644edf2896f8d11aa92ed05a894",
+          "revision": "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba",
+          "inputFingerprint": "09aaa982150534bec37102b21de870d18caee21a419f1eb797922d190a35a1ca",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "2ba7665f-a0be-4dfb-aa58-8633781cd205-1",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/385a8422-a91a-43af-bbaf-2ca5f371f1a1/frame-01-at-15s.png",
+          "time": 15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688997643,
+          "contentHash": "6b7e5ff869dc3e0cbc8725ad09547f382190e3662c9cfd6cf4073c768969cc0e",
+          "revision": "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba",
+          "inputFingerprint": "09aaa982150534bec37102b21de870d18caee21a419f1eb797922d190a35a1ca",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "2ba7665f-a0be-4dfb-aa58-8633781cd205-2",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/385a8422-a91a-43af-bbaf-2ca5f371f1a1/frame-02-at-28.5s.png",
+          "time": 28.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688997643,
+          "contentHash": "514cb3efe7ff42e54966425b9b5004f549e796327d4677a77badb6701f55694c",
+          "revision": "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba",
+          "inputFingerprint": "09aaa982150534bec37102b21de870d18caee21a419f1eb797922d190a35a1ca",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "2ba7665f-a0be-4dfb-aa58-8633781cd205-3",
+          "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/385a8422-a91a-43af-bbaf-2ca5f371f1a1/frame-03-at-35.897s.png",
+          "time": 35.897,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794688997643,
+          "contentHash": "6e31114dc6ea0a6e425ec2f95238cda7e4ed524583db040129a7f05b5a40fd08",
+          "revision": "9ad3ee8a-eac7-4a83-9b77-18bfbf4d64ba",
+          "inputFingerprint": "09aaa982150534bec37102b21de870d18caee21a419f1eb797922d190a35a1ca",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-0",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-00-at-0.4s.png",
+        "time": 0.4,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "0aa9b82dc8a51acb63193147327d33855ee8d613965363024745949309b15669",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-1",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-01-at-1.5s.png",
+        "time": 1.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "f6542ab8c35610a84c15d0ce509705fbf0434890f454fd6ca2fa671fd306d388",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-2",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-02-at-2.5s.png",
+        "time": 2.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "82d1e486bc75b7dead457fcb28d3accf715c4ebc8873346a5c5b28e03c417a62",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-3",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-03-at-4.6s.png",
+        "time": 4.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "e8ff48d7c3a3b70d7a46b3e87ad087b6b3f08e62b0b2de0c44df0a231778da4b",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-4",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-04-at-7s.png",
+        "time": 7,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "f9e333c8e7f2dcf91b8e1bc6a90f05c24bf8c6ae8127317f26b54db555db371a",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-5",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-05-at-8.6s.png",
+        "time": 8.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "3a5e79f63ad43e9399edf879f1d84256f8c03c565dacfb411f023ac1560f9e05",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-6",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-06-at-10.5s.png",
+        "time": 10.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "b6a5b791b3ffdd5c867f7790d3f33814a09837b6de337024b9242bdbe171e860",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-7",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-07-at-13.5s.png",
+        "time": 13.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "26938a87318ac7a401519fd029d74e7d3a828e38007c55e779af33229e88ec63",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-8",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-08-at-15s.png",
+        "time": 15,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "6afa2ec189966a4d5476d784d631d28e8a17c640abc3851ac4cdae44b99d5460",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-9",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-09-at-18.5s.png",
+        "time": 18.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "3845259d3a77f1e5e37091fed94a08fa1618d6073cfd592dc3f4ef48c89ccd88",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-10",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-10-at-20.8s.png",
+        "time": 20.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "dd124b2e5680d338a7db553a1198670b3280d533a6a0665f1a4d51438bd52c2c",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-11",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-11-at-21.5s.png",
+        "time": 21.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292005,
+        "contentHash": "c4a88c2407a9ac59af58acbed738dd6756b3a8d3fa26f689e7ac5e443a5b6ab6",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-12",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-12-at-22.2s.png",
+        "time": 22.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "906fb5f249acd193b1192e9b08854bdece8fce0189a7d9275730b55b9b3518ce",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-13",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-13-at-23s.png",
+        "time": 23,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "a3109aba9d39bb2b7121fdca530eb839b10282b58559fb19689072bce9e03db6",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-14",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-14-at-25.5s.png",
+        "time": 25.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "28f3d46e82e51f941b70010989d29169ccfd13b7391b7b90c79a9a35dfb434f7",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-15",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-15-at-26.8s.png",
+        "time": 26.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "52ac6191b07e2821dbdd56a255648b59bd9c76e6a38b30a7a5cd4e2d1790c71e",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-16",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-16-at-28.5s.png",
+        "time": 28.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "335cac6f267615308cc8dce6c4298af64634b440ced9e382b3d2bfb53cfd30e2",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-17",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-17-at-30.8s.png",
+        "time": 30.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "1955c6b0db4c5de13164accf76471d8f38d9ac71395521a5e6ee80875e344f67",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-18",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-18-at-32.5s.png",
+        "time": 32.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "e93ad9d1873d388cabb6f46d1d294800a15e79de8a3280ab414f7c199c1b1421",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-19",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-19-at-34.5s.png",
+        "time": 34.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "7785a8f72cdd77d0a9e53c7e1a376320b3fea78ee6030ad01c9ab88cb5bb1bd6",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "f9e6cb66-70f5-4b32-9b93-fff47832b668-20",
+        "image": "/Users/benlenderman/aiexplorer/never/droiddeck/.hyperframes/artifacts/snapshots/9f631991-3a8d-4f63-8fa4-0bfbc2e8ed22/frame-20-at-35.897s.png",
+        "time": 35.897,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794688292006,
+        "contentHash": "6d2d5e720d21d4953092ba27c70240ccc757557b2209f95647bd6353c344941d",
+        "revision": null,
+        "inputFingerprint": "6b27a57b2224ccd8b51826f082c01614fcb6413e5a0de300d502ec543070024b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  }
+}

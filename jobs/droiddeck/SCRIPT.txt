@@ -1,0 +1,8 @@
+s1|Want your Steam games on your Android phone? Never buy a gaming handheld just to play them. Exploring GitHub repos.
+s2|A handheld is one more device to pay for and charge, and a recent Android phone already has the chip for it.
+s3|Instead, get DroidDeck. Over 20,000 stars on GitHub in 7 weeks. It brings the Steam Deck's game mode to your Android phone.
+s4|Install the app, press Play, and sign in to Steam. No hacking your phone.
+s5|Your GOG, Epic and Xbox games show up in the same library.
+s6|Plug in smart glasses like XREAL or VITURE, and play on a giant screen.
+s7|Keep the phone. Skip the handheld.
+s8|Comment REPO, and I'll send you the link.
