@@ -119,10 +119,10 @@ const back = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMa
 back.renderOrder = 30; back.visible = false; camera.add(back);
 const tDl = fitText(BRAND.cta || ["FOLLOW", "FOR MORE"], ORANGE, 2.2), tBio = fitText([[BRAND.sub || "LINK IN BIO", 0.7]], WHITE, 1.15);
 tDl.renderOrder = tBio.renderOrder = 31; // CTA covers world tags
-export function cta(a) {
+export function cta(a, z = 1) {
   back.visible = a > 0.01; back.material.opacity = a;
   const hh = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * 2.1; back.position.set(0, 0, -2.1); back.scale.set(hh * 3, hh * 3, 1);
-  hud(tDl, 0, 0.16, 0.86, a); hud(tBio, 0, -0.2, 0.62, a);
+  hud(tDl, 0, 0.16, 0.86 * z, a); hud(tBio, 0, -0.2 + 0.015 * Math.sin(z * 40), 0.62, a);
 }
 
 // ================= batch 12.11 story helpers =================
@@ -153,7 +153,7 @@ export function overlays(t) {
   let best = null;
   for (const c of CAPS) { c.m.visible = false; if (t >= c.st && t < c.en && (!best || c.st >= best.st)) best = c; }
   if (best) hud(best.m, 0, best.y, best.w, sm(best.st, best.st + 0.15, t) * (1 - sm(best.en - 0.12, best.en, t)));
-  cta(S.s8 ? sm(S.s8[0] + 0.02, S.s8[0] + 0.3, t) : 0);
+  cta(S.s8 ? sm(S.s8[0] + 0.02, S.s8[0] + 0.3, t) : 0, S.s8 ? 1 + 0.08 * sm(S.s8[0], S.s8[0] + S.s8[1] + 1, t) : 1);
   let spike = 0; for (const [T, k] of BOOMS) spike += flash(t, T) * k;
   return spike;
 }
