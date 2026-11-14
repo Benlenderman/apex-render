@@ -1,0 +1,8 @@
+s1|Building a workout app? Never film a demo for every exercise yourself. Exploring GitHub repos.
+s2|You'd need a gym, a camera and someone to act out every move, one exercise at a time.
+s3|Instead, get Exercises Dataset. Almost 24,000 stars on GitHub in 8 months. It hands you 1,324 exercises, ready to use.
+s4|Each one comes with a moving animation, a small picture, and the muscle it works.
+s5|Plus the gear you need, and step by step instructions in 10 languages.
+s6|Open one file in your browser, and search all 1,324 instantly. No server needed.
+s7|Don't film every move. Download them.
+s8|Comment REPO, and I'll send you the link.
