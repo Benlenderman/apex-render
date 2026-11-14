@@ -1,0 +1,8 @@
+s1|Turning around on a narrow road? Never grab the front brake.
+s2|With the bars turned all the way, the front wheel tucks under, and the bike drops.
+s3|Keep your fingers off the front brake.
+s4|Control your speed with the clutch and a little rear brake.
+s5|Keep the engine running a bit above idle, and turn your head to the exit.
+s6|The bike stays up and turns tight.
+s7|Tight turn? Rear brake and clutch only.
+s8|Comment APEX and get the free riding app.
