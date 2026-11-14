@@ -1,0 +1,8 @@
+s1|Stopping in the rain? Never put your foot on a manhole cover.
+s2|Your foot slides out, and the bike falls on you.
+s3|Look where your foot will land before you stop.
+s4|Stop just before or just after the metal cover.
+s5|Watch for oil and paint at the stop line too.
+s6|Put your foot down on clean dry road.
+s7|Look down before you put your foot down.
+s8|Comment APEX and get the free riding app.
