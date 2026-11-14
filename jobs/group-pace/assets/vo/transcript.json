@@ -1,0 +1,140 @@
+[
+  {
+    "text": "Lou",
+    "start": 0.05,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "lets",
+    "start": 0.18,
+    "end": 0.29,
+    "id": "w1"
+  },
+  {
+    "text": "them",
+    "start": 0.44,
+    "end": 0.66,
+    "id": "w2"
+  },
+  {
+    "text": "go,",
+    "start": 0.66,
+    "end": 0.88,
+    "id": "w3"
+  },
+  {
+    "text": "he",
+    "start": 0.97,
+    "end": 1.02,
+    "id": "w4"
+  },
+  {
+    "text": "rides",
+    "start": 1.02,
+    "end": 1.33,
+    "id": "w5"
+  },
+  {
+    "text": "his",
+    "start": 1.33,
+    "end": 1.51,
+    "id": "w6"
+  },
+  {
+    "text": "own",
+    "start": 1.51,
+    "end": 1.69,
+    "id": "w7"
+  },
+  {
+    "text": "pace,",
+    "start": 1.69,
+    "end": 2.1,
+    "id": "w8"
+  },
+  {
+    "text": "slow",
+    "start": 2.1,
+    "end": 2.31,
+    "id": "w9"
+  },
+  {
+    "text": "before",
+    "start": 2.31,
+    "end": 2.62,
+    "id": "w10"
+  },
+  {
+    "text": "the",
+    "start": 2.62,
+    "end": 2.77,
+    "id": "w11"
+  },
+  {
+    "text": "bend,",
+    "start": 2.77,
+    "end": 3.06,
+    "id": "w12"
+  },
+  {
+    "text": "look",
+    "start": 3.06,
+    "end": 3.14,
+    "id": "w13"
+  },
+  {
+    "text": "through",
+    "start": 3.23,
+    "end": 3.4,
+    "id": "w14"
+  },
+  {
+    "text": "it,",
+    "start": 3.4,
+    "end": 3.48,
+    "id": "w15"
+  },
+  {
+    "text": "press",
+    "start": 3.61,
+    "end": 3.76,
+    "id": "w16"
+  },
+  {
+    "text": "the",
+    "start": 3.76,
+    "end": 3.88,
+    "id": "w17"
+  },
+  {
+    "text": "inside",
+    "start": 3.92,
+    "end": 4.17,
+    "id": "w18"
+  },
+  {
+    "text": "grip,",
+    "start": 4.32,
+    "end": 4.74,
+    "id": "w19"
+  },
+  {
+    "text": "roll",
+    "start": 4.74,
+    "end": 5.03,
+    "id": "w20"
+  },
+  {
+    "text": "on",
+    "start": 5.03,
+    "end": 5.12,
+    "id": "w21"
+  },
+  {
+    "text": "gently.",
+    "start": 5.17,
+    "end": 5.64,
+    "id": "w22"
+  }
+]
