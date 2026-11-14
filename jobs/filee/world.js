@@ -77,7 +77,7 @@ boom("s2", "lands", 0.6);
 
 // ---------- timings (global seconds) ----------
 const T = {
-  pdfIn: S.s1[0] + 0.1, up: g("s1", "upload"), land: g("s2", "lands"), copy: g("s2", "copy"),
+  pdfIn: S.s1[0] + 0.1, up: g("s1", "random"), land: g("s2", "lands"), copy: g("s2", "copy"),
   s3: S.s3[0], hold: g("s4", "hold"), drag: g("s4", "drag"), circle: g("s4", "circle"), mouse: g("s4", "mouse"),
   drop: g("s5", "drop"), nw: g("s5", "new"), orig: g("s5", "original"),
   n270: g("s6", "270"), nothing: g("s6", "nothing"), off: g("s6", "offline"), s7: S.s7[0],
@@ -89,13 +89,13 @@ const lerp3 = (a, b, k, out) => out.copy(a).lerp(b, k);
 // ---------- shots: [cx,cy,cz, lx,ly,lz, fov] ----------
 const SH = [
   { at: 0, K: [[0, [0.3, 1.6, 4.6, 0, 0.9, -0.5, 48]], [S.s2[0], [0.1, 1.7, 4.0, 0, 1.0, -0.6, 48]]] },
-  { at: S.s2[0], K: [[0, [2.2, 1.4, 4.6, 0.4, 2.6, -2.6, 56]], [1.6, [2.6, 1.8, 5.0, 0.6, 3.2, -3.2, 56]]] },
+  { at: T.up, K: [[0, [2.4, 1.6, 5.4, 0.5, 3.1, -2.6, 58]], [3.0, [2.8, 2.0, 5.8, 0.6, 3.5, -3.2, 58]]] },
   { at: T.copy - 0.3, K: [[0, [2.4, 4.2, 1.2, 0.9, 4.4, -5.5, 52]], [2.0, [2.0, 4.4, 0.6, 0.9, 4.4, -5.5, 50]]] },
   { at: T.s3, K: [[0, [-0.6, 1.9, 4.8, 0, 1.0, -0.6, 48]], [3.6, [0.2, 1.6, 3.8, 0, 1.0, -0.6, 46]]] },
   { at: S.s4[0], K: [[0, [0.5, 1.4, 4.4, 0, 0.95, -0.6, 46]], [3.5, [0.3, 1.35, 4.0, 0.1, 0.95, -0.6, 46]]] },
   { at: S.s5[0], K: [[0, [-0.5, 1.5, 4.2, 0, 0.95, -0.6, 46]], [3.4, [-0.2, 1.6, 4.4, -0.1, 1.0, -0.6, 46]]] },
-  { at: S.s6[0], K: [[0, [0, 2.6, 5.5, 0, 1.0, -0.6, 50]], [3.7, [0.6, 3.6, 6.5, 0, 1.2, -1, 50]]] },
-  { at: T.s7, calm: 1, K: [[0, [0.6, 3.6, 6.5, 0, 1.2, -1, 50]], [4, [0.8, 4.2, 7.2, 0, 1.2, -1, 50]]] },
+  { at: S.s6[0], K: [[0, [0, 2.6, 5.5, 0, 1.0, -0.6, 50]], [0.9, [0, 2.8, 7.4, 0, 1.75, -1.2, 50]], [3.7, [0.3, 3.0, 7.8, 0, 1.8, -1.2, 50]]] },
+  { at: T.s7, calm: 1, K: [[0, [0.3, 3.0, 7.8, 0, 1.8, -1.2, 50]], [4, [0.5, 3.2, 8.4, 0, 1.8, -1.2, 50]]] },
 ];
 
 run("filee-world", (t) => {
@@ -119,19 +119,20 @@ run("filee-world", (t) => {
   // the dragged ghost of the file follows the cursor, then turns into a DOCX on drop
   const ghostOn = t >= T.drag && t < T.drop + 0.25;
   // server + beam + copies
-  server.visible = wrong || (t >= T.nothing && t < T.s7);
-  server.scale.setScalar(wrong ? 1 : 0.8);
+  server.visible = (wrong && t >= T.up - 0.05) || (t >= T.nothing && t < T.s7);
+  server.scale.setScalar(wrong ? 1 : 0.42);
+  if (!wrong) server.position.set(0, 2.75, -1.6); else server.position.copy(SV);
   cross.forEach((c) => (c.visible = !wrong));
-  upBeam.set(v.copy(HOME).add(new THREE.Vector3(0, 0.3, 0)), v2.copy(SV).add(new THREE.Vector3(0, -1.4, 0.6)), wrong ? sm(T.up - 0.1, T.up + 0.2, t) * 0.8 : 0);
+  upBeam.set(v.copy(HOME).add(new THREE.Vector3(0, 0.3, 0)), v2.copy(SV).add(new THREE.Vector3(0, -1.4, 0.6)), wrong ? sm(T.up - 0.1, T.up + 0.2, t) * 0.8 * (1 - sm(T.copy - 0.5, T.copy - 0.2, t)) : 0);
   copies.forEach((c, i) => {
     const k = sm(T.copy + 0.12 * i, T.copy + 0.3 + 0.12 * i, t);
     c.visible = wrong && k > 0.01;
-    c.position.set(SV.x + 1.2 + 0.5 * i, SV.y - 0.6 + 0.5 * i, SV.z + 0.8); c.scale.setScalar(0.7 * k); c.rotation.y = -0.4;
+    c.position.set(SV.x + 1.45, SV.y + 0.75 - 0.8 * i, SV.z + 1.0); c.scale.setScalar(0.45 * k); c.rotation.y = 0.3;
   });
 
   // ring menu + cursor
   const ringA = sm(T.circle - 0.1, T.circle + 0.25, t) * (1 - sm(T.drop + 0.1, T.drop + 0.4, t));
-  ring.visible = ringA > 0.01; ring.position.copy(DRAG); ring.position.z += 0.05; ring.rotation.x = -0.12; ring.scale.setScalar(0.3 + 0.7 * ringA);
+  ring.visible = ringA > 0.01; ring.position.copy(DRAG); ring.position.z += 0.05; ring.rotation.x = -0.12; ring.scale.setScalar(0.8 * (0.3 + 0.7 * ringA));
   slots[0].scale.setScalar(1 + 0.35 * sm(T.drop - 0.3, T.drop, t));
   const curOn = t >= T.hold - 0.1 && t < T.drop + 0.5;
   cursor.visible = curOn;
@@ -142,7 +143,12 @@ run("filee-world", (t) => {
   cursor.position.copy(cp);
 
   // dragged copy rides with the cursor (reuse copies[0] style: the PDF itself stays home on drop)
-  if (ghostOn && t < T.drop) pdf.position.copy(cursor.position).add(new THREE.Vector3(-0.2, 0.25, -0.06));
+  if (ghostOn && t < T.drop) {
+    const inRing = sm(T.circle - 0.1, T.circle + 0.25, t);
+    if (t < T.circle - 0.1) pdf.position.copy(cursor.position).add(new THREE.Vector3(-0.2, 0.25, -0.06));
+    else pdf.position.copy(DRAG).add(new THREE.Vector3(0, 0, 0.03));
+    pdf.scale.setScalar(1 - 0.5 * inRing);
+  }
 
   // DOCX lands next to the original
   const dk = sm(T.nw - 0.1, T.nw + 0.3, t);
@@ -151,10 +157,10 @@ run("filee-world", (t) => {
 
   // s6: file-type tiles burst out around the laptop
   tiles.forEach((m, i) => {
-    const k = sm(T.n270 + 0.04 * i, T.n270 + 0.4 + 0.04 * i, t) * (1 - sm(T.s7 - 0.3, T.s7, t));
+    const k = sm(T.n270 + 0.03 * i, T.n270 + 0.35 + 0.03 * i, t) * (1 - sm(T.nothing - 0.2, T.nothing + 0.1, t));
     m.visible = k > 0.01;
-    const a = (i / tiles.length) * Math.PI * 2 + t * 0.25, r = 2.0 + 0.4 * (i % 2);
-    m.position.set(Math.cos(a) * r, 1.0 + Math.sin(a) * r * 0.75, -0.4 + 0.3 * Math.sin(a * 2));
+    const a = (i / tiles.length) * Math.PI * 2 + t * 0.25;
+    m.position.set(Math.cos(a) * 1.9, 1.0 + Math.sin(a) * 1.25, -1.6);
     m.scale.setScalar(0.6 * k);
   });
 
