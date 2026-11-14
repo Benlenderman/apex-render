@@ -1,0 +1,8 @@
+s1|Small animal on the road? Never swerve hard.
+s2|You yank the bars, run wide, and hit the oncoming car.
+s3|Brake hard in a straight line.
+s4|Keep your eyes on where you want to go, not on the animal.
+s5|If you have to hit it, keep the bike upright and the throttle steady.
+s6|A small bump is safer than an oncoming lane.
+s7|Brake straight. Don't swerve.
+s8|Comment APEX and get the free riding app.

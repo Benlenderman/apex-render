@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Rick",
+    "start": 0.04,
+    "end": 0.17,
+    "id": "w0"
+  },
+  {
+    "text": "Strait,",
+    "start": 0.17,
+    "end": 0.51,
+    "id": "w1"
+  },
+  {
+    "text": "don't",
+    "start": 0.51,
+    "end": 0.72,
+    "id": "w2"
+  },
+  {
+    "text": "swerve.",
+    "start": 0.72,
+    "end": 1,
+    "id": "w3"
+  }
+]
