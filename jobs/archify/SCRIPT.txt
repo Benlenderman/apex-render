@@ -1,0 +1,8 @@
+s1|Your AI just planned four days in Shanghai. Never scroll through that wall of text. Exploring GitHub repos.
+s2|Four days of stops in one long reply, and you lose your place by day two.
+s3|Instead, get Archify. Over 96,000 stars on GitHub in 7 months. It's a free skill that makes your AI answer with a page you can click.
+s4|Switch from day one to day four. Tap a stop, and it jumps straight to the map.
+s5|Trips, school subjects, whole systems. You describe it in one sentence.
+s6|Click any step, and it lights up everything that comes after. It's one file you can send to a friend.
+s7|Don't read the answer. Explore it.
+s8|Comment REPO, and I'll send you the link.
