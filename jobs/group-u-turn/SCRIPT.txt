@@ -1,0 +1,8 @@
+s1|Riding in a group and missed the turn? Never U-turn all together.
+s2|Ten bikes swing round at once, cross the traffic, and block both lanes.
+s3|Pull over somewhere safe, fully off the road.
+s4|Turn one rider at a time, only when the road is clear both ways.
+s5|Regroup off the road, and go again.
+s6|Or ride on to the next roundabout and come back. That's easier.
+s7|Pull over. Turn one at a time.
+s8|Get the free APEX app. The link is in our bio.
