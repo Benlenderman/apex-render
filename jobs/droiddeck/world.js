@@ -70,7 +70,7 @@ const stores = STORES.map((s, i) => {
   const t = txt(s, WHITE, SW * 0.18, 1.0); t.position.z = 0.03; gp.add(t);
   S0.add(gp); return gp;
 });
-const finger = new THREE.Mesh(new THREE.CapsuleGeometry(0.11, 0.5, 6, 12), mSkin); finger.rotation.x = Math.PI / 2 - 0.3; ROOT.add(finger);
+const finger = new THREE.Mesh(new THREE.CapsuleGeometry(0.11, 0.5, 6, 12), mSkin); finger.rotation.set(Math.PI / 2 - 0.9, 0, -0.5); ROOT.add(finger);
 
 // ---------- s1 game cards floating above the phone ----------
 const cards = [0, 1, 2].map((i) => {
@@ -211,7 +211,7 @@ run("droiddeck-world", (t) => {
   // finger taps PLAY
   const fk = sm(T.press - 0.3, T.play, t) * (1 - sm(T.play + 0.2, T.play + 0.5, t));
   finger.visible = fk > 0.01 && t < T.sign;
-  finger.position.set(0.3, 0.98, 0.5 + 1.0 * (1 - fk));
+  finger.position.set(0.3, 0.92, 0.55 + 1.0 * (1 - fk));
   // s5: store tiles drop into the first three small slots
   [T.gog, T.epic, T.xbox].forEach((T0, i) => {
     const k = sm(T0 - 0.1, T0 + 0.25, t);
@@ -234,7 +234,7 @@ run("droiddeck-world", (t) => {
   coins.forEach((c, i) => {
     const k = sm(T.pay + 0.06 * i, T.pay + 0.25 + 0.06 * i, t);
     c.visible = k > 0.01 && t < T.recent;
-    c.position.set(HX - 0.62, 2.0 + 0.09 * i + 0.8 * (1 - k), 0.3);
+    c.position.set(HX - 0.62, 2.0 + 0.09 * i, 0.3); c.scale.setScalar(Math.max(k, 0.001)); // pop in place, never crosses the title
   });
   const bk = sm(T.charge - 0.1, T.charge + 0.2, t);
   show(batt, bk * (t < T.recent ? 1 : 0)); batt.position.set(HX + 0.62, 2.18, 0.3);
