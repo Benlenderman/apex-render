@@ -1,0 +1,8 @@
+s1|A car signals right in front of you? Never trust it.
+s2|You pull out, the driver goes straight, and they hit you.
+s3|Watch the wheels, not the light.
+s4|Wait until the car slows down and the wheels start to turn.
+s5|Check the driver's head, are they looking where they signal?
+s6|Only go when the car is really turning.
+s7|Signals lie. Wheels don't.
+s8|Comment APEX and get the free riding app.
