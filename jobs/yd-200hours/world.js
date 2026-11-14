@@ -12,10 +12,10 @@ reel({
   end: ["חברות זה לא קליק.", "זה שעות."],
   endBoom: ["s7", "קליק", 0.3],
   scenes: [
-    { from: "s1", kind: "map", mode: "alone", ball: false, leave: ["s1", "חזר"] },
+    { from: "s1", kind: "map", mode: "alone", ball: false, group: 4, leave: ["s1", "חזר"] },
     { from: "s2", kind: "phone", items: [
       { type: "row", text: "קנזס, 2018", hex: VIOLET, y: 1.75, k: 1.6, w: 1.4, at: ["s2", 0.2] },
-      { type: "bar", text: "מכרים: 50 שעות", q: "מכרים: ?", hex: GREEN, y: 1.15, frac: 0.25, at: ["s2", 0.7], fill: ["s3", "חמישים"] },
+      { type: "bar", text: "חברים רחוקים: 50 שעות", q: "חברים רחוקים: ?", hex: GREEN, y: 1.15, frac: 0.25, at: ["s2", 0.7], fill: ["s3", "חמישים"] },
       { type: "bar", text: "חברים: 90 שעות", q: "חברים: ?", hex: GREEN, y: 0.45, frac: 0.45, at: ["s2", "בדק"], fill: ["s3", "תשעים"] },
       { type: "bar", text: "חבר קרוב: 200+ שעות", q: "חבר קרוב: ?", hex: VIOLET, y: -0.25, frac: 1, at: ["s2", "זמן"], fill: ["s3", "ממאתיים"] },
     ] },

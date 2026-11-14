@@ -63,7 +63,7 @@ const ITEM = {
     };
   },
   bar({ text, q, hex = GREEN, y = 0, frac = 1, at, fill, w = 1.7 }) {
-    const tx = fitText([text], hex, 1.3, w), tq = q ? fitText([q], WHITE, 1.3, w) : null, track = box(1, 0.14, 0.03, 0, 0, 0, tint(WHITE, 0.15), false), bar = box(1, 0.14, 0.03, 0, 0, 0, tint(hex, 1.3), false);
+    const tx = fitText([text], hex, 1.3, w), tq = q ? fitText([q], WHITE, 1.3, w) : null, track = box(1, 0.14, 0.03, 0, 0, 0, tint(WHITE, 0.15), false), bar = box(1, 0.14, 0.03, 0, 0, 0, tint(hex, 0.85), false);
     scene.add(track, bar); const t0 = tm(at), tf = fill ? tm(fill) : t0 + 0.2;
     return (t, on) => {
       const a = on ? pop(t, t0) : 0, f = Math.max(0.001, frac * sm(tf, tf + 0.9, t));
@@ -131,19 +131,24 @@ function mapScene(s, MX) {
   return { set(t, on) {
     const tSee = T0("see"), tTap = T0("tap"), tGo = T0("go");
     meet.set(on ? (mode === "gather" ? 0.6 + 0.4 * pulse(t, tSee - 0.2, 99) : mode === "alone" ? 0.5 * (1 - sm(T0("leave"), T0("leave") + 1, t)) : 0.5) : 0);
-    pin.visible = head.visible = on && !s.court; head.rotation.y = t * 1.5; hoop.forEach((m) => (m.visible = on));
+    pin.visible = head.visible = on && !s.court && mode === "gather"; head.rotation.y = t * 1.5; hoop.forEach((m) => (m.visible = on));
     ring.set(on && mode === "gather" ? sm(tSee - 0.6, tSee, t) * (1 - sm(tGo, tGo + 0.6, t)) : 0);
     if (tg) label(tg, MX, 3.9, MZ, 1, on ? pop(t, s.tagAt ? tm(s.tagAt) : tSee) : 0);
     // the ball: bounced by the solo player, or held by the first person after the meet
     ball.visible = on && ((mode === "alone" && s.ball !== false) || (s.court && mode === "gather"));
     if (mode === "alone") {
-      const tL = T0("leave"), k = sm(tL, tL + 2.2, t), x = MX + 0.3 + 4.5 * k, z = MZ + 0.8 + 1.5 * k;
-      pose(solo, { x, z, h: k > 0 ? hdg(4.5, 1.5) : Math.PI * 0.85, vis: on && k < 0.98, armR: k > 0 ? 0.6 : 0.3, hex: RED });
+      const tL = T0("leave"), k = sm(tL, tL + 2.2, t), G = s.group ? 1 : 0, x = MX + 0.3 + 1.4 * G + 4.5 * k, z = MZ + 0.8 + 0.6 * G + 1.5 * k;
+      pose(solo, { x, z, h: k > 0 ? hdg(4.5, 1.5) : G ? hdg(-2.2, -1.6) : Math.PI * 0.85, vis: on && k < 0.98, armR: k > 0 ? 0.6 : 0.3, hex: RED });
       solo.g.position.y = on && k > 0 && k < 1 ? Math.abs(Math.sin(t * 9)) * 0.08 : 0;
       if (on && s.ball !== false) { solo.armR.userData.hand.getWorldPosition(vA); ball.position.set(vA.x, k > 0 ? vA.y - 0.15 : 0.17 + Math.abs(Math.sin(t * 5)) * (vA.y - 0.4), vA.z); ball.visible = k < 0.98; }
     } else if (ball.visible) ball.position.set(MX + 0.25, 0.17 + Math.abs(Math.sin(t * 6)) * 0.9 * sm(tGo + 1.6, tGo + 2, t), MZ + 0.9);
     ppl.forEach((p, i) => {
-      if (mode === "alone") { pose(p.P, { vis: false }); p.pin.visible = false; p.ray.set(vA, vB, 0); return; }
+      if (mode === "alone") {
+        const gi = i < (s.group || 0), a = (i / (s.group || 1)) * Math.PI * 2, x = MX - 0.7 + Math.cos(a) * 0.75, z = MZ - 0.5 + Math.sin(a) * 0.75;
+        pose(p.P, { x, z, h: hdg(MX - 0.7 - x, MZ - 0.5 - z) + 0.25 * Math.sin(t * 2 + i), vis: on && gi, armR: on && gi && Math.sin(t * 3 + i * 2) > 0.6 ? 1.2 : 0.2, hex: VIOLET });
+        p.P.g.position.y = on && gi ? Math.abs(Math.sin(t * 7 + i * 1.3)) * 0.06 : 0; // jogging in place
+        p.pin.visible = false; p.ray.set(vA, vB, 0); return;
+      }
       if (mode === "wait") {
         const empty = i === n - 1, x = MX + Math.cos(p.a) * 1.1, z = MZ + Math.sin(p.a) * 1.1;
         pose(p.P, { x, z, h: hdg(x - MX, z - MZ) + 0.6 * Math.sin(t * 1.3 + i * 1.7), vis: on && !empty, armL: i === 0 && on ? 1.6 : 0, hex: RED });
@@ -166,6 +171,7 @@ function mapScene(s, MX) {
 
 // ================= the reel =================
 export function reel(cfg) {
+  bloom.threshold = 0.95; bloom.radius = 0.3;
   title(cfg.title);
   (cfg.caps || []).forEach((c) => cap(...c));
   endCard(cfg.end); if (cfg.endBoom) boom(...cfg.endBoom);
@@ -186,6 +192,6 @@ export function reel(cfg) {
     let dim = 1, ph = false;
     for (const o of sc) { const on = t >= o.t0 && t < o.t1; o.set(t, on); if (on && o.map) dim = 0.6; if (on && o.phone) ph = true; }
     phone.visible = screen.visible = ph;
-    bloom.strength = dim * (1.0 + 1.2 * punch * punch + overlays(t));
+    bloom.strength = dim * (0.4 + 0.5 * punch * punch + 0.4 * overlays(t));
   });
 }

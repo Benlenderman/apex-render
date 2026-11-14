@@ -17,7 +17,7 @@ for (const id of Object.keys(W)) {
 const TOTAL = +t.toFixed(3);
 
 // whisper mishears the first word of a line; take it from SCRIPT.txt
-const SCRIPT = Object.fromEntries(fs.readFileSync("SCRIPT.txt", "utf8").trim().split("\n").map((l) => l.split("|")));
+const SCRIPT = Object.fromEntries(fs.readFileSync("SCRIPT.txt", "utf8").replace(/[\u0591-\u05C7]/g, "").trim().split("\n").map((l) => l.split("|")));
 const fixFirst = (id, txt) => { const f = SCRIPT[id].split(" ")[0]; return f.toLowerCase().replace(/[^a-z]/g, "") === txt.toLowerCase().replace(/[^a-z]/g, "") ? f : txt.replace(/^the$/i, f); };
 // captions: 1-3 words per pill, broken at punctuation
 const groups = [];

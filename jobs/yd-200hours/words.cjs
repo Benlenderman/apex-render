@@ -2,7 +2,7 @@
 // Same word count -> 1:1; else each script word takes the time at its char position in the whisper text.
 const fs=require("fs"),{execSync}=require("child_process");const out={};
 const norm=(s)=>s.toLowerCase().replace(/[^a-z0-9]/g,"");
-for (const l of fs.readFileSync("SCRIPT.txt","utf8").trim().split("\n")) {
+for (const l of fs.readFileSync("SCRIPT.txt","utf8").replace(/[\u0591-\u05C7]/g,"").trim().split("\n")) {
   const [id,line]=l.split("|");
   const ww=fs.readFileSync(`assets/words/${id}.jsonl`,"utf8").trim().split("\n").flatMap(x=>JSON.parse(x).words);
   const dur=+execSync(`ffprobe -v error -show_entries format=duration -of csv=p=0 assets/vo/${id}.wav`).toString();
