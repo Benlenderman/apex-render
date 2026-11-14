@@ -1,0 +1,8 @@
+s1|Taking a passenger? Never pull away hard.
+s2|The extra weight sits behind you. The front goes light, and your passenger slides back.
+s3|Pull away gently. Roll on the throttle slowly through the first gears.
+s4|Tell them to hold on before you go.
+s5|Change gear smoothly, so their helmet doesn't bang into yours.
+s6|Smooth starts keep them in place.
+s7|Gentle on the throttle. Smooth on the gears.
+s8|Get the free APEX app. The link is in our bio.
