@@ -1,0 +1,8 @@
+s1|Want an AI copy of your voice? Never make it on a website. Exploring GitHub repos.
+s2|Upload your voice online, and a copy of it now lives on someone else's server.
+s3|Instead, get VoiceStudio. Over 110,000 stars on GitHub in 7 months. It's free, and it does it all on your own device.
+s4|Give it one clear recording, and it talks in that voice.
+s5|It can translate videos, and read whole books out loud, in 646 languages.
+s6|No account. It runs on your laptop, or even your phone.
+s7|Clone it at home. Your voice stays yours.
+s8|Comment REPO, and I'll send you the link.
