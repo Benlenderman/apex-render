@@ -1,0 +1,8 @@
+s1|Want to know how a rocket engine works? Never settle for a wall of text. Exploring GitHub repos.
+s2|An AI hands you four long paragraphs, and you still can't picture a single part.
+s3|Instead, get Anatomy. Over 27,000 stars on GitHub in 5 weeks. It's a free skill for Claude that explains an idea by building it.
+s4|Ask about a rocket engine, and you get a 3D rocket engine, firing.
+s5|Move your mouse over it, and it splits into its 11 main parts.
+s6|It makes flat drawings or full 3D models, and there is nothing to install.
+s7|Don't read about it. Build it.
+s8|Comment REPO, and I'll send you the link.
