@@ -146,7 +146,6 @@ cap("s4", "no", ["NO PATCHED DRIVER"], GREEN, { n: 2, until: ["s4", "no"], until
 cap("s4", "no", ["NO BIOS FLASH"], GREEN, { n: 3 });
 cap("s5", "tensor", ["TENSOR CORES"], VIOLET, { until: ["s5", "double"] });
 cap("s5", "double", ["DOUBLE THE RATE"], GREEN, { until: ["s5", "an"], boom: 0.5 });
-cap("s5", "rtx", ["RTX 4090"], WHITE, { until: ["s5", "165"] });
 cap("s5", "165", ["165 TO 329"], GREEN, { until: ["s5", "trillion"], boom: 0.4 });
 cap("s5", "trillion", ["TRILLION OPERATIONS", "A SECOND"], GREEN);
 cap("s6", "ai", ["AI IMAGES", "UP TO 55% FASTER"], GREEN, { until: ["s6", "same"], boom: 0.4 });
@@ -234,7 +233,7 @@ run("gpu-unlock-world", (t) => {
   die.visible = s5on && dk > 0.01; die.scale.setScalar(dk);
   const full = t >= T.dbl;
   cores.forEach((c, i) => { const lit = full ? t >= T.dbl + 0.025 * i : i % 2 === Math.floor(i / 4) % 2; c.material = lit ? (full ? coreM.on : coreM.half) : coreM.off; });
-  const rk = sm(T.r165 - 0.1, T.r165 + 0.4, t), gk2 = sm(T.r329 - 0.1, T.r329 + 0.6, t);
+  const rk = sm(T.an, T.an + 0.5, t), gk2 = sm(T.r329 - 0.1, T.r329 + 0.6, t);
   const barsOn = s5on && t >= T.an - 0.1;
   barR.visible = barsOn && rk > 0.01; barG.visible = barsOn && gk2 > 0.01;
   barR.scale.y = Math.max(0.01, 0.8 * rk); barR.position.y = 0.4 + 0.4 * rk;
