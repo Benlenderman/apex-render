@@ -1,0 +1,8 @@
+s1|Training your own AI model? Never tune it by hand all night. Exploring GitHub repos.
+s2|You change one line, wait for the run, check the score, and by morning you have tried only a few ideas.
+s3|Instead, get Autoresearch. Over 100,000 stars on GitHub in 8 months. It's free, from Andrej Karpathy, and an AI agent runs the experiments for you.
+s4|The agent edits the training code, then trains a small model for exactly 5 minutes.
+s5|Better score? It keeps the change. Worse? It throws it out and starts over.
+s6|About 12 experiments an hour, on one GPU, with one file and one score.
+s7|Go to sleep. Let it experiment.
+s8|Comment REPO, and I'll send you the link.
