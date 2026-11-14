@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Comment",
+    "start": 0.06,
+    "end": 0.34,
+    "id": "w0"
+  },
+  {
+    "text": "repo",
+    "start": 0.34,
+    "end": 0.54,
+    "id": "w1"
+  },
+  {
+    "text": "and",
+    "start": 0.54,
+    "end": 0.69,
+    "id": "w2"
+  },
+  {
+    "text": "I'll",
+    "start": 0.69,
+    "end": 0.87,
+    "id": "w3"
+  },
+  {
+    "text": "send",
+    "start": 0.88,
+    "end": 1.08,
+    "id": "w4"
+  },
+  {
+    "text": "you",
+    "start": 1.08,
+    "end": 1.23,
+    "id": "w5"
+  },
+  {
+    "text": "the",
+    "start": 1.23,
+    "end": 1.37,
+    "id": "w6"
+  },
+  {
+    "text": "link.",
+    "start": 1.37,
+    "end": 1.6,
+    "id": "w7"
+  }
+]

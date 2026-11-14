@@ -1,0 +1,8 @@
+s1|You paid for your TV. Never let it show you ads. Exploring GitHub repos.
+s2|Many smart TVs fill the home screen with sponsored rows, tracking, and apps you never asked for.
+s3|Instead, get CleanYourTV. Over 57,000 stars on GitHub in 4 weeks. It's free, and it cleans any Android or Google TV from your computer.
+s4|Over your home Wi-Fi, it turns off the ads, the tracking, and the junk apps.
+s5|Your home screen goes pitch black, with your four favorite apps in one row.
+s6|No root, no cable, nothing uninstalled. One command puts it all back.
+s7|Same TV. No ads.
+s8|Comment REPO, and I'll send you the link.
