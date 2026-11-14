@@ -1,0 +1,8 @@
+s1|Riding behind a truck? Never stay close.
+s2|You can't see the road ahead, and the truck can't see you.
+s3|Drop back so you can see its mirrors.
+s4|If you see the driver's mirrors, they can see you.
+s5|Hang back, and you'll see the hole in the road before you hit it.
+s6|Passing it? Don't wait beside it. Pass quickly.
+s7|See the mirrors. Or drop back.
+s8|Comment APEX and get the free riding app.
