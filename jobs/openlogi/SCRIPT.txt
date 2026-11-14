@@ -1,0 +1,8 @@
+s1|Own a Logitech mouse? Never install a heavy app just to set your buttons. Exploring GitHub repos.
+s2|The usual app runs in the background, asks you to sign in, and doesn't run on Linux at all.
+s3|Instead, get OpenLogi. Over 25,000 stars on GitHub in under 6 months. It's free and light, and it needs no account.
+s4|Set any mouse button to a shortcut, a piece of text, or a whole list of steps.
+s5|Press one button, and a ring of 8 actions opens around your cursor.
+s6|Switch apps, and your buttons switch too. It runs on Mac, Windows and Linux.
+s7|Keep the mouse. Lose the app.
+s8|Comment REPO, and I'll send you the link.
