@@ -1,0 +1,8 @@
+s1|Low sun in your eyes? Never keep your speed.
+s2|You can't see the car stopped ahead, and you ride straight into it.
+s3|Slow down as soon as the glare hits.
+s4|Tuck your head down, use your visor's sun shade.
+s5|Drivers coming at you are blind too, and can't see you.
+s6|Leave a bigger gap, and be ready to stop.
+s7|Can't see? Slow down.
+s8|Comment APEX and get the free riding app.
