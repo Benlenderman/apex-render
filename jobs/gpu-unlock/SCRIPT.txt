@@ -1,0 +1,8 @@
+s1|Your GeForce runs AI at half speed. Never buy a pro card just to fix it. Exploring GitHub repos.
+s2|The pro card is the exact same chip, sold at a much higher price, only to get full speed.
+s3|Instead, get GPU Unlock. Over 19,000 stars on GitHub in under 4 weeks. It's free, and it removes the half speed cap on your GeForce.
+s4|It runs at boot, before the normal NVIDIA driver loads. No patched driver, and no BIOS flash.
+s5|The tensor cores double their rate. An RTX 4090 goes from 165 to 329 trillion operations a second.
+s6|AI images up to 55% faster. Same results, bit for bit. Built for RTX 20, 30 and 40, on Linux.
+s7|Don't buy the pro card. Unlock the one you have.
+s8|Comment REPO, and I'll send you the link.
