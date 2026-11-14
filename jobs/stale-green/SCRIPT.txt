@@ -1,0 +1,8 @@
+s1|Green light far ahead? Never speed up to make it.
+s2|It turns red, a car turns in front of you, and you hit it.
+s3|A green that has been green a while will change soon.
+s4|Ease off the throttle and cover your brakes.
+s5|Watch for cars waiting to turn across your lane.
+s6|If it turns yellow, you can stop calmly.
+s7|Old green? Slow down.
+s8|Comment APEX and get the free riding app.
