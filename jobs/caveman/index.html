@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="35.336" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="35.336" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="35.336" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="5.12" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="5.340" data-duration="4.309333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="9.819" data-duration="8.234667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="18.224" data-duration="3.968" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="22.362" data-duration="4.565333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="27.097" data-duration="3.626667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="30.894" data-duration="1.365333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="32.429" data-duration="1.706667" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"s1":[0,5.29],"s2":[5.29,4.479],"s3":[9.769,8.405],"s4":[18.174,4.138],"s5":[22.312,4.735],"s6":[27.047,3.797],"s7":[30.844,1.535],"s8":[32.379,2.957]},"W":{"s1":{"dur":5.12,"words":[{"text":"Asked","start":0,"end":0.196},{"text":"your","start":0.196,"end":0.458},{"text":"AI","start":0.458,"end":0.589},{"text":"a","start":0.589,"end":0.654},{"text":"quick","start":0.654,"end":0.981},{"text":"coding","start":0.981,"end":1.374},{"text":"question?","start":1.374,"end":1.962},{"text":"Never","start":1.962,"end":2.289},{"text":"pay","start":2.289,"end":2.485},{"text":"for","start":2.485,"end":2.682},{"text":"an","start":2.682,"end":2.812},{"text":"essay","start":2.812,"end":3.139},{"text":"back.","start":3.139,"end":3.466},{"text":"Exploring","start":3.466,"end":4.055},{"text":"GitHub","start":4.055,"end":4.448},{"text":"repos.","start":4.448,"end":4.84}]},"s2":{"dur":4.309333,"words":[{"text":"It","start":0,"end":0.119},{"text":"opens","start":0.119,"end":0.418},{"text":"with","start":0.418,"end":0.657},{"text":"a","start":0.657,"end":0.716},{"text":"greeting,","start":0.716,"end":1.254},{"text":"ends","start":1.254,"end":1.493},{"text":"with","start":1.493,"end":1.731},{"text":"a","start":1.731,"end":1.791},{"text":"recap,","start":1.791,"end":2.149},{"text":"and","start":2.149,"end":2.329},{"text":"every","start":2.329,"end":2.627},{"text":"extra","start":2.627,"end":2.926},{"text":"word","start":2.926,"end":3.164},{"text":"costs","start":3.164,"end":3.463},{"text":"you","start":3.463,"end":3.642},{"text":"tokens.","start":3.642,"end":4.06}]},"s3":{"dur":8.234667,"words":[{"text":"Instead,","start":0,"end":0.815},{"text":"get","start":0.815,"end":1.121},{"text":"Caveman.","start":1.121,"end":1.834},{"text":"Almost","start":1.834,"end":2.445},{"text":"120,000","start":2.445,"end":3.057},{"text":"stars","start":3.057,"end":3.566},{"text":"on","start":3.566,"end":3.77},{"text":"GitHub","start":3.77,"end":4.381},{"text":"in","start":4.381,"end":4.585},{"text":"7","start":4.585,"end":4.687},{"text":"months.","start":4.687,"end":5.4},{"text":"It","start":5.4,"end":5.526},{"text":"makes","start":5.526,"end":5.843},{"text":"your","start":5.843,"end":6.096},{"text":"AI","start":6.096,"end":6.222},{"text":"agent","start":6.222,"end":6.538},{"text":"say","start":6.538,"end":6.728},{"text":"less","start":6.728,"end":6.981},{"text":"and","start":6.981,"end":7.171},{"text":"read","start":7.171,"end":7.424},{"text":"less.","start":7.424,"end":7.74}]},"s4":{"dur":3.968,"words":[{"text":"One","start":0,"end":0.225},{"text":"command","start":0.225,"end":0.62},{"text":"installs","start":0.62,"end":1.071},{"text":"it.","start":1.071,"end":1.24},{"text":"Your","start":1.24,"end":1.465},{"text":"agent","start":1.465,"end":1.747},{"text":"answers","start":1.747,"end":2.142},{"text":"first,","start":2.142,"end":2.424},{"text":"with","start":2.424,"end":2.649},{"text":"one","start":2.649,"end":2.818},{"text":"idea","start":2.818,"end":3.044},{"text":"per","start":3.044,"end":3.213},{"text":"sentence.","start":3.213,"end":3.72}]},"s5":{"dur":4.565333,"words":[{"text":"Same","start":0,"end":0.383},{"text":"fix,","start":0.383,"end":0.766},{"text":"but","start":0.766,"end":1.053},{"text":"63","start":1.053,"end":1.244},{"text":"tokens","start":1.244,"end":1.819},{"text":"become","start":1.819,"end":2.393},{"text":"20.","start":2.393,"end":2.68},{"text":"Your","start":2.68,"end":2.901},{"text":"code","start":2.901,"end":3.121},{"text":"and","start":3.121,"end":3.287},{"text":"commands","start":3.287,"end":3.728},{"text":"stay","start":3.728,"end":3.949},{"text":"exact.","start":3.949,"end":4.28}]},"s6":{"dur":3.626667,"words":[{"text":"It","start":0,"end":0.119},{"text":"also","start":0.119,"end":0.358},{"text":"shrinks","start":0.358,"end":0.775},{"text":"logs","start":0.775,"end":1.014},{"text":"and","start":1.014,"end":1.133},{"text":"test","start":1.133,"end":1.372},{"text":"output,","start":1.372,"end":1.789},{"text":"so","start":1.789,"end":1.909},{"text":"your","start":1.909,"end":2.147},{"text":"agent","start":2.147,"end":2.446},{"text":"reads","start":2.446,"end":2.744},{"text":"a","start":2.744,"end":2.804},{"text":"third","start":2.804,"end":3.102},{"text":"less.","start":3.102,"end":3.4}]},"s7":{"dur":1.365333,"words":[{"text":"Skip","start":0,"end":0.149},{"text":"the","start":0.149,"end":0.298},{"text":"essay.","start":0.298,"end":0.595},{"text":"Get","start":0.595,"end":0.744},{"text":"the","start":0.744,"end":0.893},{"text":"answer.","start":0.893,"end":1.24}]},"s8":{"dur":1.706667,"words":[{"text":"Comment","start":0,"end":0.339},{"text":"REPO,","start":0.339,"end":0.533},{"text":"and","start":0.533,"end":0.679},{"text":"I'll","start":0.679,"end":0.873},{"text":"send","start":0.873,"end":1.067},{"text":"you","start":1.067,"end":1.212},{"text":"the","start":1.212,"end":1.358},{"text":"link.","start":1.358,"end":1.6}]}},"LEAD":0.05,"BRAND":{"cta":["COMMENT","\"REPO\""],"sub":"AND I'LL SEND THE LINK"}};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 35.336);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+s1|Asked your AI a quick coding question? Never pay for an essay back. Exploring GitHub repos.
+s2|It opens with a greeting, ends with a recap, and every extra word costs you tokens.
+s3|Instead, get Caveman. Almost 120,000 stars on GitHub in 7 months. It makes your AI agent say less and read less.
+s4|One command installs it. Your agent answers first, with one idea per sentence.
+s5|Same fix, but 63 tokens become 20. Your code and commands stay exact.
+s6|It also shrinks logs and test output, so your agent reads a third less.
+s7|Skip the essay. Get the answer.
+s8|Comment REPO, and I'll send you the link.
