@@ -15,9 +15,9 @@ reel({
     { from: "s1", kind: "map", mode: "alone", ball: false, leave: ["s1", "חזר"] },
     { from: "s2", kind: "phone", items: [
       { type: "row", text: "קנזס, 2018", hex: VIOLET, y: 1.75, k: 1.6, w: 1.4, at: ["s2", 0.2] },
-      { type: "bar", text: "מכרים: 50 שעות", hex: GREEN, y: 1.15, frac: 0.25, at: ["s3", "חמישים"] },
-      { type: "bar", text: "חברים: 90 שעות", hex: GREEN, y: 0.45, frac: 0.45, at: ["s3", "תשעים"] },
-      { type: "bar", text: "חבר קרוב: 200+ שעות", hex: VIOLET, y: -0.25, frac: 1, at: ["s3", "ממאתיים"] },
+      { type: "bar", text: "מכרים: 50 שעות", q: "מכרים: ?", hex: GREEN, y: 1.15, frac: 0.25, at: ["s2", 0.7], fill: ["s3", "חמישים"] },
+      { type: "bar", text: "חברים: 90 שעות", q: "חברים: ?", hex: GREEN, y: 0.45, frac: 0.45, at: ["s2", "בדק"], fill: ["s3", "תשעים"] },
+      { type: "bar", text: "חבר קרוב: 200+ שעות", q: "חבר קרוב: ?", hex: VIOLET, y: -0.25, frac: 1, at: ["s2", "זמן"], fill: ["s3", "ממאתיים"] },
     ] },
     { from: "s4", kind: "phone", tint: ["s4", "אחת"], items: [
       { type: "bar", text: "חבר קרוב: 200 שעות", hex: VIOLET, y: 1.2, frac: 1, at: ["s4", 0.05], fill: ["s4", 0.05] },

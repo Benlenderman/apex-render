@@ -62,12 +62,13 @@ const ITEM = {
       const r = on ? sm(tp - 0.05, tp + 0.5, t) : 0; ring.visible = r > 0.01 && r < 0.99; ring.position.set(0.3, PY + y - 0.05, 0.17); ring.scale.setScalar(0.5 + 2 * r); ring.material.opacity = 1 - r;
     };
   },
-  bar({ text, hex = GREEN, y = 0, frac = 1, at, fill, w = 1.7 }) {
-    const tx = fitText([text], hex, 1.3, w), track = box(1, 0.14, 0.03, 0, 0, 0, tint(WHITE, 0.15), false), bar = box(1, 0.14, 0.03, 0, 0, 0, tint(hex, 1.3), false);
+  bar({ text, q, hex = GREEN, y = 0, frac = 1, at, fill, w = 1.7 }) {
+    const tx = fitText([text], hex, 1.3, w), tq = q ? fitText([q], WHITE, 1.3, w) : null, track = box(1, 0.14, 0.03, 0, 0, 0, tint(WHITE, 0.15), false), bar = box(1, 0.14, 0.03, 0, 0, 0, tint(hex, 1.3), false);
     scene.add(track, bar); const t0 = tm(at), tf = fill ? tm(fill) : t0 + 0.2;
     return (t, on) => {
       const a = on ? pop(t, t0) : 0, f = Math.max(0.001, frac * sm(tf, tf + 0.9, t));
-      put(tx, 0, PY + y + 0.2, 0.15, 1, a);
+      const k = tq ? sm(tf, tf + 0.3, t) : 1; // q = label before the number is spoken
+      put(tx, 0, PY + y + 0.2, 0.15, 1, a * k); if (tq) put(tq, 0, PY + y + 0.2, 0.15, 1, a * (1 - k));
       track.visible = bar.visible = a > 0.01; track.material.opacity = bar.material.opacity = a;
       track.position.set(0, PY + y - 0.14, 0.13); track.scale.set(w, 1, 1);
       bar.position.set(w / 2 - (w * f) / 2, PY + y - 0.14, 0.14); bar.scale.set(w * f, 1, 1);
