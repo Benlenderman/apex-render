@@ -1,0 +1,8 @@
+s1|Need to edit a photo on your Mac? Never pay a monthly bill just to use layers. Exploring GitHub repos.
+s2|A Photoshop plan bills you every month, even in the months you barely open it.
+s3|Instead, get Compositor. Over 18,000 stars on GitHub in 8 weeks. It's a full image editor for your Mac, and it's completely free.
+s4|Layers, masks, and all of Photoshop's blend modes, in the same order.
+s5|Fix spots, copy parts of a photo, or grow the photo past its edges.
+s6|It opens your Photoshop files, and the shortcuts are the ones your hands already know.
+s7|Keep the shortcuts. Drop the bill.
+s8|Comment REPO, and I'll send you the link.
