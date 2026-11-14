@@ -1,0 +1,8 @@
+s1|Riding next to a car on the highway? Never stay beside its back door.
+s2|The driver checks the mirror, doesn't see you, and moves into your lane.
+s3|That spot next to the back door is where the driver can't see you.
+s4|Either drop back, or pass the car quickly.
+s5|Stay where you can see the driver's face in their mirror.
+s6|If you see their eyes, they can see you.
+s7|Don't sit beside the back door. Pass or drop back.
+s8|Comment APEX and get the free riding app.
