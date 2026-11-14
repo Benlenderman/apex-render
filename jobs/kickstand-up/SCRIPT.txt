@@ -1,0 +1,8 @@
+s1|About to ride off? Never leave the kickstand down.
+s2|You lean into the first turn, the stand digs in, and throws you off.
+s3|Before you roll, check the stand with your foot.
+s4|Flip it up, and feel it lock against the bike.
+s5|Look down once, every single time.
+s6|Make it part of your start up routine.
+s7|Stand up. Then ride.
+s8|Comment APEX and get the free riding app.

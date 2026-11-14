@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="17.607" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="17.607" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="17.607" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="2.197333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="2.417" data-duration="3.029333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="5.616" data-duration="1.92" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="7.706" data-duration="1.962667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="9.839" data-duration="1.536" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="11.545" data-duration="1.6" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="13.315" data-duration="1.045333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="14.530" data-duration="1.877333" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"s1":[0,2.367],"s2":[2.367,3.199],"s3":[5.566,2.09],"s4":[7.656,2.133],"s5":[9.789,1.706],"s6":[11.495,1.77],"s7":[13.265,1.215],"s8":[14.48,3.127]},"W":{"s1":{"dur":2.197333,"words":[{"text":"About","start":0,"end":0.243},{"text":"to","start":0.243,"end":0.34},{"text":"ride","start":0.34,"end":0.534},{"text":"off?","start":0.534,"end":0.729},{"text":"Never","start":0.729,"end":0.971},{"text":"leave","start":0.971,"end":1.214},{"text":"the","start":1.214,"end":1.36},{"text":"kickstand","start":1.36,"end":1.797},{"text":"down.","start":1.797,"end":2.04}]},"s2":{"dur":3.029333,"words":[{"text":"You","start":0,"end":0.153},{"text":"lean","start":0.153,"end":0.358},{"text":"into","start":0.358,"end":0.562},{"text":"the","start":0.562,"end":0.716},{"text":"first","start":0.716,"end":0.971},{"text":"turn,","start":0.971,"end":1.227},{"text":"the","start":1.227,"end":1.38},{"text":"stand","start":1.38,"end":1.636},{"text":"digs","start":1.636,"end":1.84},{"text":"in,","start":1.84,"end":1.942},{"text":"and","start":1.942,"end":2.096},{"text":"throws","start":2.096,"end":2.402},{"text":"you","start":2.402,"end":2.556},{"text":"off.","start":2.556,"end":2.76}]},"s3":{"dur":1.92,"words":[{"text":"Before","start":0,"end":0.144},{"text":"you","start":0.144,"end":0.335},{"text":"roll,","start":0.335,"end":0.575},{"text":"check","start":0.575,"end":0.814},{"text":"the","start":0.814,"end":0.958},{"text":"stand","start":0.958,"end":1.197},{"text":"with","start":1.197,"end":1.389},{"text":"your","start":1.389,"end":1.581},{"text":"foot.","start":1.581,"end":1.82}]},"s4":{"dur":1.962667,"words":[{"text":"Flip","start":0,"end":0.198},{"text":"it","start":0.198,"end":0.297},{"text":"up,","start":0.297,"end":0.396},{"text":"and","start":0.396,"end":0.544},{"text":"feel","start":0.544,"end":0.742},{"text":"it","start":0.742,"end":0.841},{"text":"lock","start":0.841,"end":1.038},{"text":"against","start":1.038,"end":1.384},{"text":"the","start":1.384,"end":1.533},{"text":"bike.","start":1.533,"end":1.78}]},"s5":{"dur":1.536,"words":[{"text":"Look","start":0,"end":0.186},{"text":"down","start":0.186,"end":0.371},{"text":"once,","start":0.371,"end":0.557},{"text":"every","start":0.557,"end":0.789},{"text":"single","start":0.789,"end":1.068},{"text":"time.","start":1.068,"end":1.3}]},"s6":{"dur":1.6,"words":[{"text":"Make","start":0,"end":0.191},{"text":"it","start":0.191,"end":0.286},{"text":"part","start":0.286,"end":0.477},{"text":"of","start":0.477,"end":0.573},{"text":"your","start":0.573,"end":0.764},{"text":"start","start":0.764,"end":1.003},{"text":"up","start":1.003,"end":1.098},{"text":"routine.","start":1.098,"end":1.48}]},"s7":{"dur":1.045333,"words":[{"text":"Stand","start":0,"end":0.281},{"text":"up.","start":0.281,"end":0.394},{"text":"Then","start":0.394,"end":0.619},{"text":"ride.","start":0.619,"end":0.9}]},"s8":{"dur":1.877333,"words":[{"text":"Comment","start":0,"end":0.363},{"text":"APEX","start":0.363,"end":0.57},{"text":"and","start":0.57,"end":0.725},{"text":"get","start":0.725,"end":0.881},{"text":"the","start":0.881,"end":1.036},{"text":"free","start":1.036,"end":1.244},{"text":"riding","start":1.244,"end":1.554},{"text":"app.","start":1.554,"end":1.76}]}},"LEAD":0.05,"BRAND":{"cta":["COMMENT","APEX"],"sub":"GET THE FREE RIDING APP","comment":{"word":"APEX","badge":"FREE RIDING APP","at":3}}};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 17.607);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>
