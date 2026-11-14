@@ -1,0 +1,68 @@
+[
+  {
+    "text": "Get",
+    "start": 0.03,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "the",
+    "start": 0.15,
+    "end": 0.3,
+    "id": "w1"
+  },
+  {
+    "text": "free",
+    "start": 0.3,
+    "end": 0.45,
+    "id": "w2"
+  },
+  {
+    "text": "Apex",
+    "start": 0.51,
+    "end": 0.7,
+    "id": "w3"
+  },
+  {
+    "text": "apps,",
+    "start": 0.7,
+    "end": 1.04,
+    "id": "w4"
+  },
+  {
+    "text": "the",
+    "start": 1.08,
+    "end": 1.24,
+    "id": "w5"
+  },
+  {
+    "text": "link",
+    "start": 1.24,
+    "end": 1.51,
+    "id": "w6"
+  },
+  {
+    "text": "is",
+    "start": 1.51,
+    "end": 1.63,
+    "id": "w7"
+  },
+  {
+    "text": "in",
+    "start": 1.64,
+    "end": 1.77,
+    "id": "w8"
+  },
+  {
+    "text": "our",
+    "start": 1.77,
+    "end": 1.95,
+    "id": "w9"
+  },
+  {
+    "text": "bio.",
+    "start": 1.95,
+    "end": 2.23,
+    "id": "w10"
+  }
+]
