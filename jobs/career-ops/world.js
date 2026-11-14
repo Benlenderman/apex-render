@@ -203,7 +203,7 @@ run("career-world", (t) => {
   // s3: three jobs on screen; on "filter" two go red and shrink, the middle one turns green
   pick.forEach((j, i) => {
     const k = sm(T.agent - 0.1 + 0.08 * i, T.agent + 0.2 + 0.08 * i, t), f = sm(T.filt3, T.filt3 + 0.4, t);
-    j.visible = k > 0.01 && t < S.s4[0];
+    j.visible = k > 0.01 && t < T.paste - 0.15;
     j.position.copy(SCR(-0.75 + 0.75 * i, 0.85)); j.rotation.x = -0.12;
     j.scale.setScalar(0.75 * k * (i === 1 ? 1 + 0.25 * f : 1 - 0.3 * f));
     tint(j, i === 1 ? (f > 0.5 ? GREEN : VIOLET) : (f > 0.5 ? RED : VIOLET), i === 1 ? 1.1 : 1 - 0.5 * f);
@@ -215,9 +215,9 @@ run("career-world", (t) => {
   job.visible = jobOn; job.rotation.x = -0.12;
   const sideBySide = sm(T.scores - 0.2, T.scores + 0.2, t);
   const inS5 = t >= T.worth;
-  job.position.copy(SCR(-1.6 * (1 - pk) - 0.55 * sideBySide * (inS5 ? 0 : 1), 0.95));
+  job.position.copy(SCR(-0.5 * (1 - pk) - 0.55 * sideBySide * (inS5 ? 0 : 1), 0.95));
   if (inS5) job.position.copy(SCR(0, 0.95));
-  job.scale.setScalar(1.05 * (inS5 ? 1 - sm(T.writes - 0.1, T.writes + 0.2, t) : 1));
+  job.scale.setScalar(1.05 * pk * (inS5 ? 1 - sm(T.writes - 0.1, T.writes + 0.2, t) : 1));
   tint(job, inS5 ? GREEN : VIOLET, 1.0);
   const ob = sm(T.open - 0.15, T.open + 0.15, t);
   openB.visible = ob > 0.01; openB.scale.setScalar(ob * (1 + 0.25 * Math.max(0, 1 - Math.abs(t - T.open) / 0.3)));
@@ -253,12 +253,12 @@ run("career-world", (t) => {
   cursor.visible = t >= T.s6 + 0.1 && t < T.its6;
   cursor.position.copy(SCR(0.9, 0.3)).lerp(SCR(0.25, 0.68).add(new THREE.Vector3(0, 0, 0.1)), sm(T.s6 + 0.4, T.press - 0.05, t));
   // 740 jobs -> 68 applications
-  const dOn = t >= T.n740 - 0.3 && t < T.s8;
+  const D0 = T.its6 + 0.3, dOn = t >= D0 && t < T.s8; // grow in while "its maker tried it on 740" is spoken
   dots.visible = dOn;
   if (dOn) {
     const cut = sm(T.n68 - 0.1, T.n68 + 0.4, t);
     for (let i = 0; i < N; i++) {
-      const k = sm(T.n740 - 0.3 + i * 0.0012, T.n740 + i * 0.0012, t);
+      const k = sm(D0 + i * (T.n740 - D0) / N, D0 + 0.3 + i * (T.n740 - D0) / N, t);
       const [x, y, z] = dotPos(i);
       M4.makeScale(k, k, k).setPosition(x, y, z); dots.setMatrixAt(i, M4);
       dots.setColorAt(i, C3.copy(DIM).lerp(kept(i) ? ON : OFF, cut));
