@@ -153,7 +153,7 @@ export function overlays(t) {
   let best = null;
   for (const c of CAPS) { c.m.visible = false; if (t >= c.st && t < c.en && (!best || c.st >= best.st)) best = c; }
   if (best) hud(best.m, 0, best.y, best.w, sm(best.st, best.st + 0.15, t) * (1 - sm(best.en - 0.12, best.en, t)));
-  cta(S.s8 ? sm(S.s8[0] - 0.1, S.s8[0] + 0.25, t) : 0);
+  cta(S.s8 ? sm(S.s8[0] + 0.02, S.s8[0] + 0.3, t) : 0);
   let spike = 0; for (const [T, k] of BOOMS) spike += flash(t, T) * k;
   return spike;
 }
