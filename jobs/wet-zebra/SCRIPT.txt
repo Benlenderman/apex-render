@@ -1,0 +1,8 @@
+s1|Rain, and a crossing ahead? Never brake on the white paint.
+s2|Wet paint is slick, the front wheel locks, and the bike goes down.
+s3|Do your braking before the paint, on the dark road.
+s4|On the stripes, keep the bike straight and the brakes light.
+s5|Roll over the paint, then brake again on the far side.
+s6|Same for arrows, words and lines on the road.
+s7|Wet paint is ice. Brake before it.
+s8|Comment APEX and get the free riding app.
