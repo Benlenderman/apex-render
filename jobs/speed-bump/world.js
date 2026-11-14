@@ -52,9 +52,9 @@ endCard(["SLOW BEFORE THE BUMP.", "BRAKES OFF ON IT."]);
 const fol = (t) => pathState(path, t);
 const T4 = S.s4[0], T5 = S.s5[0], T6 = S.s6[0], T7 = S.s7[0];
 const SH = [
-  { at: 0, f: fol, K: [[0, [0.2, 1.9, 5.0, 0.5, 0.9, -6, 46]], [TB, [0.2, 2.0, 4.6, 0.5, 0.9, -6, 46]]] },
+  { at: 0, f: fol, K: [[0, [1.6, 1.9, 4.6, 0.2, 0.9, -4, 46]], [TB, [1.4, 2.0, 4.2, 0.2, 0.9, -4, 46]]] },
   { at: S.s2[0], f: fol, K: [[0, [5.6, 1.6, 1.6, 0, 0.9, 0.3, 46]], [TB - S.s2[0], [5.8, 1.7, 1.4, 0, 0.9, 0.3, 46]]] },
-  { at: TB, f: fol, K: [[0, [-2.6, 2.2, 5.2, 0, 0.9, -5, 46]], [T4 - TB, [-2.2, 2.0, 4.4, 0, 0.8, -4, 46]]] },
+  { at: TB, f: fol, K: [[0, [-2.6, 2.2, 5.2, 0.4, 0.9, -2.5, 50]], [T4 - TB, [-2.2, 2.0, 4.4, 0.4, 0.8, -2, 50]]] },
   { at: T4, f: fol, K: [[0, [4.6, 1.1, 0.4, 0, 0.6, -0.3, 44]], [T5 - T4, [4.8, 1.2, 0.0, 0, 0.6, -0.3, 44]]] },
   { at: T5, f: fol, K: [[0, [3.4, 1.9, 2.4, 0, 1.1, 0.0, 44]], [T6 - T5, [3.8, 1.7, 1.2, 0, 1.0, 0.0, 44]]] },
   { at: T6, f: fol, K: [[0, [-4.2, 1.6, 1.2, 0, 1.0, 0.0, 44]], [T7 - T6, [-4.4, 1.8, 0.6, 0, 1.0, 0.0, 44]]] },
@@ -77,7 +77,7 @@ run("w", (t) => {
   const knees = id === "s5" ? sm(g("s5", "grip") - 0.1, g("s5", "grip") + 0.2, t) : 0;
   Q.set({ look: id === "s5" ? 0.6 * pulse(t, g("s5", "warn") - 0.1, g("s5", "first") + 0.3) : 0, knees: 0.35 * knees, handsGlow: 0.35 * knees });
   Q.g.position.y = 0.97 + 0.55 * thrown + jolt; Q.g.rotation.x = -0.35 * thrown;
-  Q.mats.torso.emissive.set(partA && t > S.s2[0] ? RED : id === "s6" && t > g("s6", "hard") - 0.1 ? RED : 0x000000).multiplyScalar(partA ? 0.4 + 1.2 * thrown : 0.8);
+  Q.mats.torso.emissive.set(RED).multiplyScalar(0.45 + 1.2 * thrown); // same pink passenger in every shot
   // rider turns his head back to warn the passenger
   B.headG.rotation.y = id === "s5" ? 1.1 * pulse(t, g("s5", "warn") - 0.15, g("s5", "first") + 0.3) : 0;
   tagAt(tUp, st.x, 2.9, st.z, 0, 0.7);
