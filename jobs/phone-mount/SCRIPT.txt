@@ -1,0 +1,8 @@
+s1|Phone on your handlebar? Never bolt it straight on.
+s2|Engine vibration shakes the camera inside, and it breaks.
+s3|Use a mount with a vibration damper.
+s4|The damper takes the shaking, not the phone.
+s5|Lock the phone in tight, so it can't fly off.
+s6|Set the route before you ride.
+s7|Phone on the bars? Use a damper.
+s8|Comment APEX and get the free riding app.
