@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="19.804" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="19.804" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="19.804" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="3.2" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="3.420" data-duration="2.730667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="6.321" data-duration="2.005333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="8.496" data-duration="1.728" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="10.394" data-duration="2.261333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="12.825" data-duration="1.173333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="14.168" data-duration="2.389333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="16.727" data-duration="1.877333" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"s1":[0,3.37],"s2":[3.37,2.901],"s3":[6.271,2.175],"s4":[8.446,1.898],"s5":[10.344,2.431],"s6":[12.775,1.343],"s7":[14.118,2.559],"s8":[16.677,3.127]},"W":{"s1":{"dur":3.2,"words":[{"text":"Slow","start":0,"end":0.232},{"text":"car","start":0.232,"end":0.406},{"text":"ahead","start":0.406,"end":0.696},{"text":"and","start":0.696,"end":0.813},{"text":"a","start":0.813,"end":0.871},{"text":"side","start":0.871,"end":1.103},{"text":"road","start":1.103,"end":1.335},{"text":"coming","start":1.335,"end":1.683},{"text":"up?","start":1.683,"end":1.857},{"text":"Never","start":1.857,"end":2.147},{"text":"overtake","start":2.147,"end":2.612},{"text":"there.","start":2.612,"end":2.96}]},"s2":{"dur":2.730667,"words":[{"text":"The","start":0,"end":0.168},{"text":"car","start":0.168,"end":0.335},{"text":"turns","start":0.335,"end":0.615},{"text":"left","start":0.615,"end":0.839},{"text":"into","start":0.839,"end":1.062},{"text":"the","start":1.062,"end":1.23},{"text":"side","start":1.23,"end":1.454},{"text":"road,","start":1.454,"end":1.677},{"text":"right","start":1.677,"end":1.957},{"text":"across","start":1.957,"end":2.296},{"text":"you.","start":2.296,"end":2.52}]},"s3":{"dur":2.005333,"words":[{"text":"Junctions","start":0,"end":0.405},{"text":"are","start":0.405,"end":0.54},{"text":"where","start":0.54,"end":0.765},{"text":"cars","start":0.765,"end":0.945},{"text":"turn","start":0.945,"end":1.125},{"text":"without","start":1.125,"end":1.44},{"text":"warning.","start":1.44,"end":1.8}]},"s4":{"dur":1.728,"words":[{"text":"Wait","start":0,"end":0.206},{"text":"until","start":0.206,"end":0.465},{"text":"you","start":0.465,"end":0.619},{"text":"are","start":0.619,"end":0.774},{"text":"past","start":0.774,"end":0.981},{"text":"the","start":0.981,"end":1.135},{"text":"side","start":1.135,"end":1.342},{"text":"road.","start":1.342,"end":1.6}]},"s5":{"dur":2.261333,"words":[{"text":"Check","start":0,"end":0.282},{"text":"for","start":0.282,"end":0.451},{"text":"clear","start":0.451,"end":0.732},{"text":"road,","start":0.732,"end":1.014},{"text":"no","start":1.014,"end":1.126},{"text":"turns,","start":1.126,"end":1.464},{"text":"no","start":1.464,"end":1.577},{"text":"driveways.","start":1.577,"end":2.14}]},"s6":{"dur":1.173333,"words":[{"text":"Then","start":0,"end":0.129},{"text":"overtake","start":0.129,"end":0.472},{"text":"on","start":0.472,"end":0.558},{"text":"the","start":0.558,"end":0.687},{"text":"straight.","start":0.687,"end":1.073}]},"s7":{"dur":2.389333,"words":[{"text":"No","start":0,"end":0.104},{"text":"overtaking","start":0.104,"end":0.625},{"text":"at","start":0.625,"end":0.729},{"text":"side","start":0.729,"end":0.938},{"text":"roads.","start":0.938,"end":1.25},{"text":"Wait","start":1.25,"end":1.459},{"text":"for","start":1.459,"end":1.615},{"text":"the","start":1.615,"end":1.771},{"text":"straight.","start":1.771,"end":2.24}]},"s8":{"dur":1.877333,"words":[{"text":"Comment","start":0,"end":0.363},{"text":"APEX","start":0.363,"end":0.57},{"text":"and","start":0.57,"end":0.725},{"text":"get","start":0.725,"end":0.881},{"text":"the","start":0.881,"end":1.036},{"text":"free","start":1.036,"end":1.244},{"text":"riding","start":1.244,"end":1.554},{"text":"app.","start":1.554,"end":1.76}]}},"LEAD":0.05,"BRAND":{"cta":["COMMENT","APEX"],"sub":"GET THE FREE RIDING APP","comment":{"word":"APEX","badge":"FREE RIDING APP","at":3}}};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 19.804);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>

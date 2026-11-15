@@ -1,0 +1,8 @@
+s1|Slow car ahead and a side road coming up? Never overtake there.
+s2|The car turns left into the side road, right across you.
+s3|Junctions are where cars turn without warning.
+s4|Wait until you are past the side road.
+s5|Check for clear road, no turns, no driveways.
+s6|Then overtake on the straight.
+s7|No overtaking at side roads. Wait for the straight.
+s8|Comment APEX and get the free riding app.
