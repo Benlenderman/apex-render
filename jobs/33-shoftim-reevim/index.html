@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="he" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800;900&display=block" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="54.518" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="54.518" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="54.518" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-h1" class="clip" src="assets/vo/h1.mp3" data-start="0.050" data-duration="2.994036" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.mp3" data-start="3.444" data-duration="5.154512" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.mp3" data-start="8.999" data-duration="4.398526" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.mp3" data-start="13.798" data-duration="3.423107" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.mp3" data-start="17.621" data-duration="5.364671" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.mp3" data-start="23.386" data-duration="2.160726" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.mp3" data-start="25.947" data-duration="3.352494" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.mp3" data-start="29.699" data-duration="3.900884" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.mp3" data-start="34.000" data-duration="6.062562" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s9" class="clip" src="assets/vo/s9.mp3" data-start="40.463" data-duration="6.401066" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s10" class="clip" src="assets/vo/s10.mp3" data-start="47.264" data-duration="6.053968" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"h1":[0,3.394],"s1":[3.394,5.555],"s2":[8.949,4.799],"s3":[13.748,3.823],"s4":[17.571,5.765],"s5":[23.336,2.561],"s6":[25.897,3.752],"s7":[29.649,4.301],"s8":[33.95,6.463],"s9":[40.413,6.801],"s10":[47.214,7.304]},"W":{"h1":{"dur":2.994036,"words":[{"text":"אם","start":0.08,"end":0.18},{"text":"אתם","start":0.2,"end":0.4},{"text":"עומדים","start":0.401,"end":0.68},{"text":"מול","start":0.7,"end":0.82},{"text":"שופט,","start":0.88,"end":1.28},{"text":"תקוו","start":1.46,"end":1.78},{"text":"שהוא","start":1.84,"end":2.02},{"text":"הרגע","start":2.06,"end":2.36},{"text":"אכל.","start":2.4,"end":2.78}]},"s1":{"dur":5.154512,"words":[{"text":"ב2011","start":0.06,"end":1.1},{"text":"שלושה","start":1.34,"end":1.64},{"text":"חוקרים","start":1.68,"end":2.06},{"text":"בדקו","start":2.18,"end":2.4},{"text":"יותר","start":2.44,"end":2.68},{"text":"מאלף","start":2.72,"end":3.08},{"text":"החלטות","start":3.12,"end":3.54},{"text":"של","start":3.58,"end":3.7},{"text":"ועדות","start":3.74,"end":4.019},{"text":"שחרורים","start":4.059,"end":4.42},{"text":"בישראל.","start":4.46,"end":5}]},"s2":{"dur":4.398526,"words":[{"text":"שמונה","start":0.06,"end":0.34},{"text":"שופטים,","start":0.38,"end":0.82},{"text":"עשרה","start":1.08,"end":1.44},{"text":"חודשים,","start":1.48,"end":1.98},{"text":"ואסירים","start":2.32,"end":2.8},{"text":"שמבקשים","start":2.86,"end":3.38},{"text":"שחרור","start":3.44,"end":3.74},{"text":"מוקדם.","start":3.78,"end":4.2}]},"s3":{"dur":3.423107,"words":[{"text":"בתחילת","start":0.08,"end":0.48},{"text":"היום,","start":0.52,"end":0.8},{"text":"בערך","start":1.06,"end":1.38},{"text":"שתיים","start":1.42,"end":1.72},{"text":"מכל","start":1.74,"end":2.04},{"text":"שלוש","start":2.1,"end":2.4},{"text":"בקשות","start":2.44,"end":2.86},{"text":"אושרו.","start":2.9,"end":3.28}]},"s4":{"dur":5.364671,"words":[{"text":"ככל","start":0.12,"end":0.4},{"text":"שהזמן","start":0.46,"end":0.82},{"text":"עבר,","start":0.84,"end":1.16},{"text":"הסיכויים","start":1.32,"end":1.8},{"text":"צנחו.","start":1.84,"end":2.24},{"text":"ממש","start":2.52,"end":2.8},{"text":"לפני","start":2.84,"end":3.08},{"text":"ההפסקה","start":3.12,"end":3.72},{"text":"הם","start":3.74,"end":3.88},{"text":"הגיעו","start":3.9,"end":4.22},{"text":"כמעט","start":4.26,"end":4.56},{"text":"לאפס.","start":4.6,"end":5.18}]},"s5":{"dur":2.160726,"words":[{"text":"ואז","start":0.12,"end":0.34},{"text":"השופטים","start":0.36,"end":0.76},{"text":"יצאו","start":0.8,"end":1.14},{"text":"להפסקת","start":1.18,"end":1.7},{"text":"אוכל.","start":1.72,"end":2.12}]},"s6":{"dur":3.352494,"words":[{"text":"וכשהם","start":0.02,"end":0.36},{"text":"חזרו","start":0.4,"end":0.66},{"text":"מההפסקה,","start":0.7,"end":1.22},{"text":"שוב","start":1.58,"end":1.76},{"text":"אושרו","start":1.78,"end":2.1},{"text":"שתיים","start":2.16,"end":2.46},{"text":"מכל","start":2.48,"end":2.76},{"text":"שלוש.","start":2.82,"end":3.28}]},"s7":{"dur":3.900884,"words":[{"text":"המחקר","start":0.06,"end":0.46},{"text":"הזה","start":0.48,"end":0.66},{"text":"התפרסם","start":0.661,"end":1.14},{"text":"בכל","start":1.16,"end":1.44},{"text":"העולם","start":1.46,"end":1.84},{"text":"בשם","start":2.06,"end":2.42},{"text":"\"השופטים","start":2.64,"end":3.22},{"text":"הרעבים\".","start":3.28,"end":3.82}]},"s8":{"dur":6.062562,"words":[{"text":"אבל","start":0.1,"end":0.28},{"text":"חוקרים","start":0.32,"end":0.6},{"text":"אחרים","start":0.62,"end":1.04},{"text":"מצאו","start":1.16,"end":1.52},{"text":"עוד","start":1.54,"end":1.74},{"text":"פרט:","start":1.78,"end":2.08},{"text":"אסירים","start":2.3,"end":2.72},{"text":"בלי","start":2.76,"end":2.9},{"text":"עורך","start":2.92,"end":3.2},{"text":"דין","start":3.24,"end":3.44},{"text":"נשפטו","start":3.7,"end":4.08},{"text":"בדרך","start":4.12,"end":4.46},{"text":"כלל","start":4.5,"end":4.72},{"text":"בסוף","start":4.84,"end":5.24},{"text":"כל","start":5.28,"end":5.48},{"text":"סבב.","start":5.54,"end":5.96}]},"s9":{"dur":6.401066,"words":[{"text":"אז","start":0.1,"end":0.2},{"text":"אולי","start":0.22,"end":0.56},{"text":"זה","start":0.74,"end":0.82},{"text":"לא","start":0.86,"end":0.96},{"text":"רק","start":1,"end":1.14},{"text":"הרעב.","start":1.18,"end":1.56},{"text":"אבל","start":1.86,"end":1.98},{"text":"השאלה","start":2.02,"end":2.34},{"text":"נשארה:","start":2.38,"end":2.78},{"text":"כמה","start":3.2,"end":3.38},{"text":"מההחלטות","start":3.44,"end":3.9},{"text":"שלנו","start":3.96,"end":4.34},{"text":"תלויות","start":4.36,"end":4.7},{"text":"פשוט","start":4.74,"end":5.16},{"text":"בשעה","start":5.2,"end":5.56},{"text":"ובבטן?","start":5.76,"end":6.34}]},"s10":{"dur":6.053968,"words":[{"text":"אז","start":0.06,"end":0.24},{"text":"בפעם","start":0.28,"end":0.58},{"text":"הבאה","start":0.581,"end":0.9},{"text":"שהכל","start":1.08,"end":1.4},{"text":"נראה","start":1.44,"end":1.64},{"text":"לכם","start":1.68,"end":1.92},{"text":"שחור","start":1.96,"end":2.36},{"text":"ואתם","start":2.66,"end":2.9},{"text":"צריכים","start":2.96,"end":3.24},{"text":"לקבל","start":3.28,"end":3.6},{"text":"החלטה","start":3.62,"end":3.98},{"text":"גדולה,","start":4.019,"end":4.3},{"text":"קודם","start":4.54,"end":4.82},{"text":"כל","start":4.86,"end":5.08},{"text":"תאכלו","start":5.3,"end":5.58},{"text":"משהו.","start":5.62,"end":6}]}},"LEAD":0.05};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 54.518);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>
