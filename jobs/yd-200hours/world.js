@@ -29,10 +29,10 @@ reel({
         him: [[["s3", "ממאתיים"], GREEN]], her: [[["s3", "ממאתיים"], GREEN]], happy: ["s3", "קרוב"] }],
       tags: [{ text: "זר", hex: RED, at: ["s2", "זר"], off: ["s3", "חמישים"], y: 3.3, w: 1.0 },
              { text: "חברים רחוקים", at: ["s3", "חמישים"], off: ["s3", "תשעים"], y: 3.3, w: 1.9 },
-             { text: "חברים", hex: GREEN, at: ["s3", "תשעים"], off: ["s3", "ממאתיים"], y: 3.3, w: 1.3 },
+             { text: "חברים", hex: GREEN, at: ["s3", "כדי", 2], off: ["s3", "ויותר"], y: 3.3, w: 1.3 },
              { text: "חבר קרוב", hex: GREEN, at: ["s3", "ממאתיים"], y: 3.3, w: 1.6 }],
       clocks: [{ text: "50 שעות", hex: VIOLET, at: ["s3", "חמישים"], until: ["s3", "תשעים"], x: 0, y: 2.45 },
-               { text: "90 שעות", hex: VIOLET, at: ["s3", "תשעים"], until: ["s3", "ממאתיים"], x: 0, y: 2.45 },
+               { text: "90 שעות", hex: VIOLET, at: ["s3", "כדי", 2], until: ["s3", "ויותר"], x: 0, y: 2.45 },
                { text: "200+ שעות", hex: GREEN, at: ["s3", "ממאתיים"], x: 0, y: 2.45 }] },
     // s4: close friends (200h) next to Danny alone (1h)
     { from: "s4", kind: "bar", noBar: true, floor: GREEN, cam: far,
@@ -63,6 +63,5 @@ reel({
       pairs: [{ x: -1.3, gap: 0.55, her2: "m", him: [[["s7", 0], GREEN]], talk: [["him", ["s7", 0], ["s7", "חברות"]]], happy: ["s7", 0.1] },
               { x: 1.3, gap: 0.55, her: [[["s7", 0], GREEN]], talk: [["her", ["s7", 0.4], ["s7", "קליק"]]], happy: ["s7", 0.1] }],
       clocks: [{ text: "50 שעות בשנה", hex: GREEN, at: ["s7", "חמישים"], until: ["s7", "חברות"], x: 0, y: 2.6 }] },
-    { from: "s8", kind: "map", see: ["s8", 0], tap: ["s8", 0.4], go: ["s8", 0.6] },
   ],
 });
