@@ -40,7 +40,7 @@ reel({
         says: [{ who: "him", text: "בטח השתעמם ממני", hex: RED, at: ["s4", "כולם"], off: ["s4", "כיוון"] },
                { who: "her", text: "היה ממש כיף!", hex: GREEN, at: ["s4", "הצד"], off: ["s5", 0] }],
         him: [[["s4", "כולם"], RED]], her: [[["s4", "הצד"], GREEN]], happy: ["s4", "אהב"], heart: ["s4", "יותר"] }],
-      tags: [{ text: "מה שחשבו", hex: RED, at: ["s4", "טעו"], off: ["s4", "הצד"], y: 3.4, w: 1.4 },
+      tags: [{ text: "מה שחשבו", hex: RED, at: ["s4", "טעו"], off: ["s4", "כיוון"], y: 3.4, w: 1.4 },
              { text: "מה שהיה באמת", hex: GREEN, at: ["s4", "הצד"], y: 3.4, w: 1.8 }] },
     // s5: the liking gap, even between friends of months
     { from: "s5", kind: "bar", cam: far,
