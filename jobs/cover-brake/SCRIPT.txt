@@ -1,0 +1,8 @@
+s1|Riding through town? Never keep your fingers off the brake.
+s2|A car pulls out, you move your hand to the lever, and you stop too late.
+s3|Every second counts in town.
+s4|Rest two fingers on the front brake lever.
+s5|When something happens, you're already braking.
+s6|You stop much shorter.
+s7|In town? Two fingers on the brake.
+s8|Comment APEX and get the free riding app.
