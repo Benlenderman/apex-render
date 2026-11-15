@@ -124,7 +124,7 @@ function makeFile(hex, txt) {
 }
 const docx = makeFile(VIOLET, "DOCX"); lid.add(docx);
 const check = new THREE.Group(); docx.add(check); check.position.set(0.24, -0.32, 0.07);
-check.add(new THREE.Mesh(new THREE.CircleGeometry(0.13, 32), glow(GREEN, 1.3)));
+check.add(new THREE.Mesh(new THREE.CircleGeometry(0.13, 32), glow(GREEN, 0.8)));
 const ck = new THREE.Shape(); ck.moveTo(-0.07, 0); ck.lineTo(-0.02, -0.05); ck.lineTo(0.08, 0.06); ck.lineTo(0.06, 0.08); ck.lineTo(-0.02, -0.01); ck.lineTo(-0.05, 0.02); ck.closePath();
 const ckm = new THREE.Mesh(new THREE.ShapeGeometry(ck), new THREE.MeshBasicMaterial({ color: 0x0a2a18 })); ckm.position.z = 0.002; check.add(ckm);
 
@@ -135,9 +135,9 @@ const wBad = wt(["SPELING"], RED, 1.3, 0.5); wBad.position.set(-0.15, 0, 0); spe
 const wGood = wt(["SPELLING"], 0x14a050, 1.0, 0.54); wGood.position.set(-0.15, 0, 0); spell.add(wGood);
 const sq = new THREE.Group(); spell.add(sq);
 for (let i = 0; i < 12; i++) { const s = plane(0.04, 0.012, glow(RED, 1.3), -0.37 + i * 0.037, -0.07, 0.002, sq); s.rotation.z = i % 2 ? -0.6 : 0.6; }
-const wifi = new THREE.Group(); wifi.position.set(0.86, 0.55, 0.15); lid.add(wifi);
-[0.12, 0.22, 0.32].forEach((r) => { const a = new THREE.Mesh(new THREE.TorusGeometry(r, 0.028, 8, 32, Math.PI / 2), glow(VIOLET, 1.4)); a.rotation.z = Math.PI / 4; wifi.add(a); });
-wifi.add(new THREE.Mesh(new THREE.CircleGeometry(0.04, 16), glow(VIOLET, 1.4)));
+const wifi = new THREE.Group(); wifi.position.set(0.18, 0.5, 0.15); lid.add(wifi);
+[0.12, 0.22, 0.32].forEach((r) => { const a = new THREE.Mesh(new THREE.TorusGeometry(r, 0.028, 8, 32, Math.PI / 2), glow(0x3a2f9a, 1)); a.rotation.z = Math.PI / 4; wifi.add(a); });
+wifi.add(new THREE.Mesh(new THREE.CircleGeometry(0.04, 16), glow(0x3a2f9a, 1)));
 const slash = new THREE.Mesh(new THREE.PlaneGeometry(0.06, 0.55), glow(ORANGE, 1.6)); slash.position.set(0, 0.16, 0.02); slash.rotation.z = 0.75; wifi.add(slash);
 const OS = ["MAC", "WINDOWS", "LINUX", "BROWSER"];
 const osTiles = OS.map((n, i) => { const gp = new THREE.Group(); gp.add(rbox(0.72, 0.4, 0.06, 0.06, mBody)); plane(0.66, 0.03, glow(GREEN, 1.4), 0, -0.15, 0.035, gp); const t = wt([n], WHITE, 1.0, 0.6); t.position.z = 0.04; gp.add(t); gp.position.set(i % 2 ? 0.42 : -0.42, i < 2 ? 1.0 : 0.52, 0.16); lid.add(gp); gp.visible = false; return gp; });
@@ -238,7 +238,7 @@ run("wordcraft-world", (t) => {
   btns.forEach((b, i) => { const p = s4on ? Math.max(0, 1 - Math.abs(t - T.s4 - 0.08 - 0.05 * i) / 0.18) : 0; b.scale.setScalar(1 + 0.45 * p); b.position.z = 0.003 + 0.05 * p; });
   tabHi.position.x = TX(s4on && t >= T.track ? 5 : 1);
   const pick = s4on && t >= T.styles + 0.15 ? 1 : 0;
-  sty.forEach((r, i) => r.material.color.set(i === 1 && pick ? GREEN : VIOLET).multiplyScalar(i === 1 && pick ? 0.9 : 0.45));
+  sty.forEach((r, i) => r.material.color.set(i === 1 && pick ? GREEN : VIOLET).multiplyScalar(i === 1 && pick ? 0.4 : 0.45));
   const hk = s4on ? sm(T.styles + 0.15, T.styles + 0.4, t) : 0;
   head.scale.setScalar(1 + 0.35 * hk); head.position.x = -0.17 + 0.05 * hk;
   const tk = s4on ? sm(T.track - 0.05, T.track + 0.15, t) : 0;
@@ -260,13 +260,13 @@ run("wordcraft-world", (t) => {
   const lastI = s5type ? Math.min(7, 3 + Math.max(0, Math.floor((t - T.type) / 0.35))) : -1;
   caret.visible = s5type && Math.floor(t * 4) % 2 === 0;
   if (lastI >= 0) caret.position.set(-0.49 + LW[lastI] + 0.02, 0.2 - lastI * 0.075, 0.004);
-  show(ms, sm(T.updates - 0.05, T.updates + 0.1, t) * (1 - sm(T.s6 - 0.12, T.s6, t)), 1); ms.position.set(0.68, 0.38, 0.24);
+  show(ms, sm(T.updates - 0.05, T.updates + 0.1, t) * (1 - sm(T.s6 - 0.12, T.s6, t)), 1); ms.position.set(0.5, 0.4, 0.24);
 
   // s6: misspelled word with a red squiggle, fixed on "works"; offline badge; four platform tiles
   const s6on = t >= T.s6 - 0.05 && t < T.mac - 0.05;
   spell.visible = s6on; const fixed = t >= T.works;
   wBad.visible = !fixed; sq.visible = !fixed; wGood.visible = fixed;
-  show(wifi, sm(T.offline - 0.08, T.offline + 0.08, t) * (1 - sm(T.mac - 0.15, T.mac - 0.05, t)), 1);
+  show(wifi, sm(T.offline - 0.08, T.offline + 0.08, t) * (t < T.it ? 1 : 0), 1);
   const tilesOn = t >= T.mac - 0.1 && t < T.s7;
   doc.visible = doc.visible && !tilesOn; panel.visible = panel.visible && !tilesOn;
   osTiles.forEach((m, i) => show(m, sm(OS_AT[i] - 0.08, OS_AT[i] + 0.08, t) * (1 - sm(T.s7 - 0.12, T.s7, t)), 0.8));
