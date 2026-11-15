@@ -1,0 +1,8 @@
+s1|Your chain is slapping? Never ignore it.
+s2|A loose chain jumps off the sprocket, and the back wheel locks.
+s3|Once a week, push the chain up and down in the middle.
+s4|Check it moves only as much as your manual says.
+s5|Then clean it and put on chain lube.
+s6|A tight, oiled chain keeps the back wheel turning.
+s7|Check the chain. Lube the chain.
+s8|Comment APEX and get the free riding app.
