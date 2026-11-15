@@ -1,0 +1,8 @@
+s1|Making a product demo? Never pay a motion designer for the zooms. Exploring GitHub repos.
+s2|You send off your recording, wait for days, and wait again for every small change.
+s3|Instead, get Recordly. Over 36,000 stars on GitHub in 8 months. It's free, and it adds the zooms to your screen recordings.
+s4|Record your screen and hit stop. It watches your cursor and suggests where to zoom.
+s5|Your mouse moves smoothly, with a little bounce on every click.
+s6|Add your face in a bubble and a colorful background. Save it as a video or a GIF, on Mac, Windows or Linux.
+s7|Don't pay for zooms. Just hit record.
+s8|Comment REPO, and I'll send you the link.
