@@ -104,8 +104,8 @@ cap("s2", "slide", ["SLIDE IN A T-SHIRT"], RED, { y: 0.3, until: ["s2", "and"] }
 cap("s2", "takes", ["THE ROAD TAKES", "YOUR SKIN OFF"], RED, { y: 0.3, boom: 0.6 });
 cap("s3", "jacket", ["JACKET WITH", "AIR VENTS"], GREEN, { y: 0.3 });
 cap("s4", "open", ["OPEN THE VENTS", "NOT THE ZIP"], GREEN, { y: 0.3 });
-cap("s5", "drink", ["DRINK AT EVERY STOP"], GREEN, { y: 0.3, until: ["s5", "before"] });
-cap("s5", "before", ["BEFORE YOU", "GET THIRSTY"], GREEN, { y: 0.3 });
+cap("s5", "drink", ["DRINK AT EVERY STOP"], GREEN, { y: 0.2, until: ["s5", "before"] });
+cap("s5", "before", ["BEFORE YOU", "GET THIRSTY"], GREEN, { y: 0.2 });
 cap("s6", "keeps", ["COOL AND", "PROTECTED"], GREEN, { y: 0.3 });
 endCard(["HOT DAY?", "OPEN THE VENTS, NOT THE JACKET."]);
 
@@ -165,8 +165,9 @@ run("w", (t) => {
     }
     const drink = sm(tDrink + 0.05, tDrink + 0.5, t) * (1 - sm(tBefore + 0.35, tBefore + 0.75, t));
     pose(STAND, { x: STOP.x + 0.9, z: STOP.z - 0.4, h: 0.35, armR: 0, armL: 0.1, vis: park });
-    STAND.armR.rotation.set(2.05 * drink, 0, 0.45 * drink);
-    bottle.rotation.x = 1.3 * drink; water.scale.y = 1 - 0.55 * sm(tDrink + 0.4, tBefore + 0.3, t); water.position.y = -0.11 * 0.55 * sm(tDrink + 0.4, tBefore + 0.3, t);
+    STAND.armR.rotation.set(2.1 * drink, 0, -0.55 * drink); STAND.armR.scale.y = 1 - 0.45 * drink; bottle.scale.y = 1 / STAND.armR.scale.y;
+    STAND.head.rotation.x = -0.35 * drink;
+    bottle.rotation.x = 1.0 * drink; water.scale.y = 1 - 0.55 * sm(tDrink + 0.4, tBefore + 0.3, t); water.position.y = -0.11 * 0.55 * sm(tDrink + 0.4, tBefore + 0.3, t);
   }
   const shot = shoot(SH, t);
   bloom.strength = 0.8 + 1.0 * shot.punch * shot.punch + overlays(t) + (isA ? 0.5 * flash(t, tSlide) : 0);

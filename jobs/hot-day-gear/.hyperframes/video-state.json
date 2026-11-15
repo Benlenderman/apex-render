@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "0d37c193-35e9-4a0b-bd88-d473ab13f6e5",
-  "currentRevision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
+  "currentRevision": "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -133,8 +133,16 @@
       "content": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/6c/6c52c75d65b036d3d0b24f72104428f262cecc1da4967feb7055f2da688c39b7"
     },
     "world.js": {
-      "hash": "a9cabb5e9ec84f673e947cfaeac252af63ed8326a2c743f2da1391e46a0ecbe0",
-      "content": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/a9/a9cabb5e9ec84f673e947cfaeac252af63ed8326a2c743f2da1391e46a0ecbe0"
+      "hash": "0aa1a81bfe1d7e3d8194352f4a897ee7f6fdcb20b95be166aa2eb4c3a283859a",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/0a/0aa1a81bfe1d7e3d8194352f4a897ee7f6fdcb20b95be166aa2eb4c3a283859a"
+    },
+    "hot-day-gear.mp4": {
+      "hash": "34283941ab54d9b7291caed29807a2f3fbd83d3bcb9da2cf612f90fe4af058ab",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/34/34283941ab54d9b7291caed29807a2f3fbd83d3bcb9da2cf612f90fe4af058ab"
+    },
+    "hot-day-gear.mp4.gemini.json": {
+      "hash": "3183bae4a20710fde3c0d083d1eae03118622b864c4a57cfaafc783f6d3580dd",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/31/3183bae4a20710fde3c0d083d1eae03118622b864c4a57cfaafc783f6d3580dd"
     }
   },
   "revisions": {
@@ -152,6 +160,44 @@
           "after": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/a9/a9cabb5e9ec84f673e947cfaeac252af63ed8326a2c743f2da1391e46a0ecbe0"
         }
       }
+    },
+    "41ed79f9-b79d-424c-b17d-cbd02e6043c5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794708224265,
+      "endedAt": 1794708224314,
+      "files": {
+        "hot-day-gear.mp4": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/34/34283941ab54d9b7291caed29807a2f3fbd83d3bcb9da2cf612f90fe4af058ab"
+        },
+        "hot-day-gear.mp4.gemini.json": {
+          "before": null,
+          "after": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/31/3183bae4a20710fde3c0d083d1eae03118622b864c4a57cfaafc783f6d3580dd"
+        },
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/a9/a9cabb5e9ec84f673e947cfaeac252af63ed8326a2c743f2da1391e46a0ecbe0",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/ec/ecf5b8c60374a30e6050318d39c1dcfad27edd11c002715fd5ecd1354fbb13d7"
+        }
+      }
+    },
+    "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794708255235,
+      "endedAt": 1794708255240,
+      "files": {
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/ec/ecf5b8c60374a30e6050318d39c1dcfad27edd11c002715fd5ecd1354fbb13d7",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/0d37c193-35e9-4a0b-bd88-d473ab13f6e5/blobs/0a/0aa1a81bfe1d7e3d8194352f4a897ee7f6fdcb20b95be166aa2eb4c3a283859a"
+        }
+      }
     }
   },
   "checks": {
@@ -161,16 +207,18 @@
   },
   "snapshots": {
     "latest": {
-      "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-      "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-9"
+      "revision": "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8",
+      "id": "15866581-a63d-4c8d-a646-03f110e75922-2"
     },
     "revisions": {
-      "1ebde9b4-c861-4a94-94b8-2b74d4e4c193": [
+      "1ebde9b4-c861-4a94-94b8-2b74d4e4c193": [],
+      "41ed79f9-b79d-424c-b17d-cbd02e6043c5": [],
+      "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8": [
         {
           "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-0",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-00-at-0.4s.png",
-          "time": 0.4,
+          "id": "15866581-a63d-4c8d-a646-03f110e75922-0",
+          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/fe1a9e0e-f9f4-4430-a089-aaa6a223d7cc/frame-00-at-8.9s.png",
+          "time": 8.9,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -179,18 +227,18 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794707550211,
-          "contentHash": "28e6ea25b10a8b04bdd8c9dbbd871b08a29ac096c8c66256e09cd33d8d611fcf",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
+          "createdAt": 1794708264500,
+          "contentHash": "9bfd61c8c7d73663af2e92b976435adbab9de50da185b5eb8efaac361e0db9e3",
+          "revision": "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8",
+          "inputFingerprint": "93160ccf72d5cbaa390c7d30f09bd5de75ad9d861823fb723355d999b0775e67",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-1",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-01-at-3.6s.png",
-          "time": 3.6,
+          "id": "15866581-a63d-4c8d-a646-03f110e75922-1",
+          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/fe1a9e0e-f9f4-4430-a089-aaa6a223d7cc/frame-01-at-9.6s.png",
+          "time": 9.6,
           "metadata": {
             "width": 1080,
             "height": 1920,
@@ -199,157 +247,17 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794707550211,
-          "contentHash": "49ebe58db2ec87a14d8fcf7d25259feb09fe437e02aaaba38fe5e76772121ac6",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
+          "createdAt": 1794708264501,
+          "contentHash": "570791c291f895bd028b923e0fd0f45379515907235c306fd1b738545853c39d",
+          "revision": "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8",
+          "inputFingerprint": "93160ccf72d5cbaa390c7d30f09bd5de75ad9d861823fb723355d999b0775e67",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         },
         {
           "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-2",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-02-at-4.9s.png",
-          "time": 4.9,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550211,
-          "contentHash": "e6803f2c10b8183db64cadef7848e7b62b45176771b4ca32b1e8170911db0578",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-3",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-03-at-6s.png",
-          "time": 6,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550211,
-          "contentHash": "75c974ce48c49dbfcfa43c4bf2d140473612b884dcdcb34129a0dbb9dcf7302b",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-4",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-04-at-8.6s.png",
-          "time": 8.6,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550211,
-          "contentHash": "8a4c2fc727269d5c3d75b59a52624929cceb08e3a95aef660ab74aa81f0f90a9",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-5",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-05-at-9.4s.png",
-          "time": 9.4,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550211,
-          "contentHash": "f2453d94f4eeb930fac0a2f107e120e642287818f19449edab8f6f05d4a9ebd1",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-6",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-06-at-10.4s.png",
-          "time": 10.4,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550218,
-          "contentHash": "26cc0d5ea692e9314b93c0d3ac1053f0411c8bfe4026ddf413dbbf756156fa62",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-7",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-07-at-11.6s.png",
-          "time": 11.6,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550218,
-          "contentHash": "3affd3e05fdac456f9aaaded9d257905bc73ce2f608d2ec4af3ebb7ac2f5ec72",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-8",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-08-at-13.5s.png",
-          "time": 13.5,
-          "metadata": {
-            "width": 1080,
-            "height": 1920,
-            "zoomScale": 1,
-            "browserGpuMode": "auto",
-            "warnings": [],
-            "partial": false
-          },
-          "createdAt": 1794707550218,
-          "contentHash": "b349a37043c7754548c0163047985eef0a1ecdd2dd03579cbf56ce5b197cd1f4",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
-          "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
-        },
-        {
-          "scope": "full",
-          "id": "48c9588c-0554-4dee-8c76-45fa3c5d6bb8-9",
-          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/0d04cd74-8575-4a41-8839-84c1277553a0/frame-09-at-17.614s.png",
+          "id": "15866581-a63d-4c8d-a646-03f110e75922-2",
+          "image": "/Users/benlenderman/explainers/hot-day-gear/.hyperframes/artifacts/snapshots/fe1a9e0e-f9f4-4430-a089-aaa6a223d7cc/frame-02-at-17.614s.png",
           "time": 17.614,
           "metadata": {
             "width": 1080,
@@ -359,10 +267,10 @@
             "warnings": [],
             "partial": false
           },
-          "createdAt": 1794707550219,
-          "contentHash": "06e50a9e8108019146a371fdf420f64b7f8e17816b8292549c1dd826a0157477",
-          "revision": "1ebde9b4-c861-4a94-94b8-2b74d4e4c193",
-          "inputFingerprint": "a1e44caa8153ca6dc56a4b55a64686e4377a5d2ead4bd84741755e7d77b65ea5",
+          "createdAt": 1794708264501,
+          "contentHash": "c7d85c7126dc0946f24345f5999c24338d434f2123759ae63518ca149db1a09d",
+          "revision": "9d84dd9a-ff5a-4673-bfa8-e8ed677b85b8",
+          "inputFingerprint": "93160ccf72d5cbaa390c7d30f09bd5de75ad9d861823fb723355d999b0775e67",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
