@@ -1,0 +1,8 @@
+s1|Parking on a hill? Never leave the bike in neutral.
+s2|The bike rolls forward, comes off the kickstand, and falls.
+s3|Park with the bike in first gear.
+s4|Turn the bars toward the kickstand side.
+s5|Now the bike can't roll, even on a slope.
+s6|Next time, start the engine in neutral.
+s7|On a hill? Park in first gear.
+s8|Comment APEX and get the free riding app.
