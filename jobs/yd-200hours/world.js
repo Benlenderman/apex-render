@@ -16,7 +16,6 @@ reel({
     ["s6", "בשם", ["קראו לו בשם"], GREEN, { boom: 0.3 }],
   ],
   end: ["חברות זה לא קליק.", "זה שעות."],
-  endBoom: ["s7", "קליק", 0.3],
   scenes: [
     // s1: Danny alone, then a running group that talks among itself; he leaves
     { from: "s1", kind: "bar", noBar: true, floor: GREEN, cam: far,
@@ -46,14 +45,19 @@ reel({
       pairs: [...group(null, ["s5", 0], ["s6", 0]),
         { x: 0.3, z: 0.9, gap: 0.01, solo: true, noTab: true, come: ["s5", "חזר"] }],
       tags: [{ text: "אותה ריצה, אותה שעה", hex: GREEN, at: ["s5", "ריצה"], y: 3.6, z: -1.6, w: 2.4 }] },
-    // s6: week 3 someone greets him by name, month 3 coffee after
-    { from: "s6", kind: "bar", cam: far,
+    // s6a: week 3 at the run, someone greets him by name
+    { from: "s6", kind: "bar", noBar: true, floor: GREEN, cam: far,
+      pairs: [...group(null, ["s6", 0], ["s6", "בחודש"]),
+        { x: 0, z: 0.9, gap: 0.6, noTab: true, her2: "m",
+          says: [{ who: "her", text: "בוקר טוב, דני!", hex: GREEN, at: ["s6", "בשם"] }],
+          him: [[["s6", "בשם"], GREEN]], happy: ["s6", "בשם"] }],
+      tags: [{ text: "שבוע 3", hex: VIOLET, at: ["s6", 0.05], y: 3.6, z: -1.6, w: 1.2 }] },
+    // s6b: month 3, coffee after the run
+    { from: ["s6", "בחודש"], kind: "bar", cam: far,
       pairs: [{ gap: 0.6, her2: "m",
-        says: [{ who: "her", text: "בוקר טוב, דני!", hex: GREEN, at: ["s6", "בשם"], off: ["s6", "בחודש"] },
-               { who: "her", text: "קפה אחרי הריצה?", hex: GREEN, at: ["s6", "קפה"], off: ["s7", 0] }],
-        him: [[["s6", "בשם"], GREEN]], happy: ["s6", "קפה"], talk: [["him", ["s6", "השלישי"], ["s6", "מישהו"]]] }],
-      tags: [{ text: "שבוע 3", hex: VIOLET, at: ["s6", 0.05], off: ["s6", "בחודש"], y: 3.4, w: 1.2 },
-             { text: "חודש 3", hex: VIOLET, at: ["s6", "בחודש"], y: 3.4, w: 1.2 }] },
+        says: [{ who: "her", text: "קפה אחרי הריצה?", hex: GREEN, at: ["s6", "קפה"], off: ["s7", 0] }],
+        him: [[["s6", "בחודש"], GREEN]], her: [[["s6", "בחודש"], GREEN]], happy: ["s6", "קפה"], talk: [["him", ["s6", "בחודש"], ["s6", "קפה"]]] }],
+      tags: [{ text: "חודש 3", hex: VIOLET, at: ["s6", "בחודש"], y: 3.4, w: 1.2 }] },
     // s7: a table of friends, 50 hours a year
     { from: "s7", kind: "bar", cam: far,
       pairs: [{ x: -1.3, gap: 0.55, her2: "m", him: [[["s7", 0], GREEN]], talk: [["him", ["s7", 0], ["s7", "חברות"]]], happy: ["s7", 0.1] },
