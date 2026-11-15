@@ -217,7 +217,7 @@ run("plfm-radar-world", (t) => {
   // --- s6: 3 km vs 20 km, then boards + code ---
   const s6 = t >= T.s6 && t < T.s7, swap = sm(T.every - 0.15, T.every + 0.15, t);
   [small, big].forEach((R, i) => {
-    R.visible = s6 && swap < 0.99; R.scale.setScalar((i ? 0.9 : 0.55) * (1 - swap) * sm(T.s6 - 0.05, T.s6 + 0.25, t));
+    R.visible = s6 && swap < 0.99; R.scale.setScalar((i ? 0.9 : 0.55) * (1 - swap) * sm(T.s6 - 0.2, T.s6 + 0.05, t));
     R.userData.panel.rotation.x = -0.3; R.userData.yaw.rotation.y = 1.0;
     R.setBeam(1 - swap, i ? sm(T.bigger - 0.1, T.bigger + 0.4, t) * 0.5 : 0.42 * sm(T.s6 + 0.2, T.s6 + 0.6, t));
   });
