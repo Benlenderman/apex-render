@@ -1,0 +1,8 @@
+s1|Wet metal bridge ahead? Never fight the bike on it.
+s2|The tyres slide on the metal, the rider grabs the brake, and the bike goes down.
+s3|Get your speed down before the bridge.
+s4|On the metal, keep the bike straight and the throttle steady.
+s5|The bike will wiggle a little. Keep your arms loose and let it.
+s6|No braking and no turning until you're back on the road.
+s7|Wet metal? Straight, steady, loose arms.
+s8|Comment APEX and get the free riding app.
