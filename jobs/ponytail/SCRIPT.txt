@@ -1,0 +1,8 @@
+s1|Asking AI for a date picker? Never let it bloat your code. Exploring GitHub repos.
+s2|It installs a library or builds a whole calendar by hand. 335 lines you now have to maintain.
+s3|Instead, get Ponytail. Over 190,000 stars on GitHub in 5 months. It's free, and it makes your AI think like the laziest senior dev in the room.
+s4|Before it writes anything, it checks what's already there. Your project has an input box, and every browser has a date picker.
+s5|It puts the two together. One file, 10 lines.
+s6|In tests, 53% less code. It never cuts security, and 98% of risky code ships with a test.
+s7|Don't build it. Reuse it.
+s8|Comment REPO, and I'll send you the link.
