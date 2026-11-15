@@ -131,7 +131,7 @@ run("w", (t) => {
     plate.visible = false; arrow.visible = false;
     // owner walks away from the bike in s2
     const w = sm(T2, T2 + 2.5, t);
-    MAN.set({ x: MANX - 1.6 * w, z: MANZ + 2.6 * w, h: Math.PI * 0.8, walk: t > T2 ? 1 : 0, ph: t * 9, vis: t > T2 });
+    MAN.set({ x: PX - 0.8 - 0.8 * w, z: -0.3 - 3.4 * w, h: 0.22, walk: t > T2 ? 1 : 0, ph: t * 9, vis: t > T2 });
     tagAt(tPlateTag, 0, 0, 0, 0); tagAt(tStill6, 0, 0, 0, 0);
   } else {
     const sp = spot();
