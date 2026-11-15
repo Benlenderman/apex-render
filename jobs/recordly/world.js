@@ -79,7 +79,7 @@ function frameAt(u, v, wu, hv, a) {
 
 // cursor: a white arrow pointer + a click ring
 const arrow = new THREE.Shape(); [[0, 0], [0, -0.2], [0.05, -0.15], [0.09, -0.24], [0.12, -0.225], [0.08, -0.14], [0.14, -0.14]].forEach(([a, b], i) => arrow[i ? "lineTo" : "moveTo"](a, b));
-const cursor = new THREE.Mesh(new THREE.ShapeGeometry(arrow), glow(WHITE, 1.3)); demoHolder.add(cursor);
+const cursor = new THREE.Mesh(new THREE.ShapeGeometry(arrow), glow(WHITE, 0.95)); demoHolder.add(cursor);
 const ring = new THREE.Mesh(new THREE.RingGeometry(0.07, 0.095, 40), new THREE.MeshBasicMaterial({ color: new THREE.Color(GREEN).multiplyScalar(2), toneMapped: false, transparent: true })); demoHolder.add(ring);
 const trail = Array.from({ length: 10 }, () => { const d = new THREE.Mesh(new THREE.CircleGeometry(0.018, 12), glow(VIOLET, 1.6)); demoHolder.add(d); return d; });
 
@@ -261,8 +261,8 @@ run("recordly-world", (t) => {
   // s3: icon on "Instead", $0 on "free", then the demo zooms itself on "adds"
   show(icon, sm(T.s3, T.s3 + 0.2, t) * (1 - sm(T.over - 0.1, T.over + 0.05, t)), 1);
   icon.position.set(0, 0.84, 0.25); icon.rotation.y = 0.25 * Math.sin((t - T.s3) * 2);
-  show(zero, sm(T.free - 0.1, T.free + 0.15, t) * (1 - sm(T.adds - 0.15, T.adds, t)), 1); zero.position.set(0, 0.84, 0.22);
-  const demoOff = (t >= T.s3 && t < T.over + 0.05) || (t >= T.free - 0.1 && t < T.adds);
+  show(zero, sm(T.free - 0.12, T.free + 0.05, t) * (1 - sm(T.adds - 0.15, T.adds, t)), 1); zero.position.set(0, 0.84, 0.22);
+  const demoOff = (t >= T.s3 && t < T.over + 0.05) || (t >= T.free - 0.02 && t < T.adds);
   demo.visible = !demoOff;
 
   // zoom state per line
@@ -319,7 +319,7 @@ run("recordly-world", (t) => {
   void s6b;
 
   // s3: the star pops in above the laptop while the star count is on screen (2-line caption: small and low)
-  const sk = sm(T.over - 0.1, T.over + 0.25, t) * (1 - sm(T.free - 0.15, T.free + 0.1, t));
+  const sk = t < T.free - 0.12 ? sm(T.over - 0.1, T.over + 0.25, t) : 0; // off in one frame: no half-faded star over "free"
   star.visible = sk > 0.01; star.scale.setScalar(0.38 * sk * (1 + 0.08 * Math.sin(t * 6)));
   star.position.set(0, 1.92, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.over) * 2.5);
 
