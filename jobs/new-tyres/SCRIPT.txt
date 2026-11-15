@@ -1,0 +1,8 @@
+s1|Fresh new tyres? Never lean hard on the first ride.
+s2|New tyres are slippery from the factory, and the bike slides out in the first corner.
+s3|They need a few rides to get grip.
+s4|Ride gently at first, no hard braking or hard throttle.
+s5|Lean a bit more each corner, little by little.
+s6|Soon the shiny edge wears off and the tyre grips.
+s7|New tyres are slippery. Break them in.
+s8|Comment APEX and get the free riding app.
