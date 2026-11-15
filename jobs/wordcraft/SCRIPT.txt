@@ -1,0 +1,8 @@
+s1|Paying every month just to write documents? Never pay just to type. Exploring GitHub repos.
+s2|Stop paying, and Word only lets you read your own files. You can't edit a single word.
+s3|Instead, get WordCraft. Over 18,000 stars on GitHub in 5 weeks. It's free, and it's a word processor rebuilt from scratch, with none of Microsoft's code.
+s4|Same ribbon, same styles, same track changes, right where you expect them.
+s5|It opens and saves your Word files. Type in a 188-page document, and it updates in just over a millisecond.
+s6|Spell check works offline. It runs on Mac, Windows, Linux and in your browser.
+s7|Don't rent your words. Own them.
+s8|Comment REPO, and I'll send you the link.
