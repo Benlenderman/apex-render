@@ -18,7 +18,7 @@ const edgeMat = (hex, k = 1.6) => new THREE.LineBasicMaterial({ color: new THREE
 // ---------- desk + room lights ----------
 const desk = rbox(10, 0.3, 5, 0.12, std(0x221d66, 0x0c0a30, 0.7, 0.1)); desk.position.set(1.4, -0.14, -0.6); root.add(desk);
 const pl = new THREE.PointLight(0xe8e2ff, 18, 9, 1.6); pl.position.set(-1.6, 3.2, 2.2); root.add(pl);
-const rim = new THREE.PointLight(0xff8a3a, 10, 8, 1.6); rim.position.set(2.6, 2.2, -2.4); root.add(rim);
+const rim = new THREE.PointLight(0xff8a3a, 10, 8, 1.6); rim.position.set(-0.5, 2.2, -2.6); root.add(rim);
 const pl2 = new THREE.PointLight(0xe8e2ff, 14, 8, 1.6); pl2.position.set(5.0, 3.0, 2.0); root.add(pl2);
 
 // ---------- laptop at the origin, screen faces +z ----------
@@ -126,9 +126,9 @@ function makeFile(hex, txt) {
 }
 const fSTL = makeFile(GREEN, "STL"), fSTEP = makeFile(GREEN, "STEP");
 const check = new THREE.Group(); root.add(check);
-check.add(put(new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.26, 0.05), glow(GREEN, 2.0)), -0.1, -0.04, 0, 0.75));
-check.add(put(new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.5, 0.05), glow(GREEN, 2.0)), 0.1, 0.08, 0, -0.6));
-const scan = new THREE.Mesh(new THREE.BoxGeometry(1.0, 0.02, 0.7), glow(GREEN, 1.8)); root.add(scan);
+check.add(put(new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.26, 0.05), glow(GREEN, 1.4)), -0.1, -0.04, 0, 0.75));
+check.add(put(new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.5, 0.05), glow(GREEN, 1.4)), 0.1, 0.08, 0, -0.6));
+const scan = new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.015, 0.015), glow(GREEN, 1.4)); root.add(scan);
 
 // ---------- captions ----------
 title("NEVER LET AI JUST DESCRIBE IT");
@@ -252,10 +252,10 @@ run("text-to-cad-world", (t) => {
   const fo = 1 - sm(T.checks - 0.15, T.checks + 0.05, t);
   show(fSTL, sm(T.s6 + 0.7, T.s6 + 1.0, t) * fo * (t < T.then ? 1 : 0), 0.95); fSTL.position.set(-0.72, 1.0, 0.35); fSTL.rotation.y = 0.25;
   show(fSTEP, sm(T.step - 0.1, T.step + 0.2, t) * fo * (t < T.then ? 1 : 0), 0.95); fSTEP.position.set(0.72, 1.0, 0.45); fSTEP.rotation.y = -0.25;
-  const sc = sm(T.checks, T.made, t);
-  scan.visible = t >= T.checks && t < T.made + 0.05; scan.position.set(0, 0.45 + 0.75 * sc, -0.4); scan.rotation.x = 0.2;
-  const ck = sm(T.made - 0.05, T.made + 0.2, t) * (1 - sm(T.then - 0.3, T.then - 0.1, t));
-  show(check, ck, 1.3); check.position.set(0.8, 1.15, 0.45);
+  const sc = sm(T.checks, T.checks + 0.7, t);
+  scan.visible = t >= T.checks && t < T.checks + 0.75; scan.position.set(0, 0.4 + 0.8 * sc, 0.75);
+  const ck = sm(T.checks + 0.6, T.checks + 0.85, t) * (1 - sm(T.then - 0.15, T.then - 0.02, t));
+  show(check, ck, 1.1); check.position.set(0.92, 1.25, 0.6);
 
   // s6 "then" -> s7: the printer prints the stand, nozzle sweeping
   const pk = sm(T.then, T.s7 + 0.3, t);
