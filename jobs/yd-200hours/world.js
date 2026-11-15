@@ -13,7 +13,7 @@ reel({
     ["s2", "קנזס", ["מחקר: קנזס, 2018"], VIOLET],
     ["s4", "אחת", ["שעה אחת"], RED, { boom: 0.4 }],
     ["s5", "שבת", ["כל שבת"], GREEN],
-    ["s6", "בשם", ["קראו לו בשם"], GREEN, { boom: 0.3 }],
+    ["s6", "בשם", ["קראו לו בשם"], GREEN, { boom: 0.3, until: ["s6", "בחודש"] }],
   ],
   end: ["חברות זה לא קליק.", "זה שעות."],
   scenes: [
@@ -57,7 +57,7 @@ reel({
       pairs: [{ gap: 0.6, her2: "m",
         says: [{ who: "her", text: "קפה אחרי הריצה?", hex: GREEN, at: ["s6", "קפה"], off: ["s7", 0] }],
         him: [[["s6", "בחודש"], GREEN]], her: [[["s6", "בחודש"], GREEN]], happy: ["s6", "קפה"], talk: [["him", ["s6", "בחודש"], ["s6", "קפה"]]] }],
-      tags: [{ text: "חודש 3", hex: VIOLET, at: ["s6", "בחודש"], y: 3.4, w: 1.2 }] },
+      tags: [{ text: "חודש 3", hex: GREEN, at: ["s6", "בחודש"], y: 3.4, k: 2.6, w: 1.6 }] },
     // s7: a table of friends, 50 hours a year
     { from: "s7", kind: "bar", cam: far,
       pairs: [{ x: -1.3, gap: 0.55, her2: "m", him: [[["s7", 0], GREEN]], talk: [["him", ["s7", 0], ["s7", "חברות"]]], happy: ["s7", 0.1] },
