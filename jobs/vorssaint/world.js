@@ -108,13 +108,13 @@ function panel(w, h, cx, cy) {
 }
 // volume mixer: three apps, each with its own slider
 const mix = panel(1.5, 1.05, 0.35, 0.9);
-const mFill = glow(GREEN, 1.2), mTrack = new THREE.MeshBasicMaterial({ color: 0x3a3570, toneMapped: false });
+const mFill = glow(GREEN, 0.5), mTrack = new THREE.MeshBasicMaterial({ color: 0x3a3570, toneMapped: false });
 const sliders = ["music", "play", "call"].map((k, i) => {
   const y = 0.3 - i * 0.3;
   plane(0.22, 0.22, iconMat(k, BGS[i]), -0.55, y, 0.02, mix);
   plane(0.95, 0.04, mTrack, 0.12, y, 0.02, mix);
   const fill = plane(1, 0.045, mFill, 0, y, 0.022, mix);
-  const knob = new THREE.Mesh(new THREE.CircleGeometry(0.055, 24), glow(WHITE, 1.0)); knob.position.set(0, y, 0.025); mix.add(knob);
+  const knob = new THREE.Mesh(new THREE.CircleGeometry(0.055, 24), glow(WHITE, 0.5)); knob.position.set(0, y, 0.025); mix.add(knob);
   return { fill, knob, to: [0.85, 0.3, 0.6][i] };
 });
 const setSlider = (s, v) => { const x0 = -0.355, L = 0.95 * v; s.fill.scale.x = Math.max(1e-3, L); s.fill.position.x = x0 + L / 2; s.knob.position.x = x0 + L; };
@@ -126,7 +126,7 @@ function winTex(hex) {
   const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 const wins = ["#6a5ff0", "#3a8fd8"].map((h) => { const m = plane(1, 1, new THREE.MeshBasicMaterial({ map: winTex(h), color: 0xb0b0b0, toneMapped: false }), 0, 0.8, 0.05, lid); m.visible = false; return m; });
-const snapLine = plane(0.02, 1.34, glow(GREEN, 2.0), 0, 0.79, 0.06, lid);
+const snapLine = plane(0.02, 1.34, glow(GREEN, 0.9), 0, 0.79, 0.06, lid);
 // clipboard history: a search field with "link", three copied items, the match glows green
 const clipP = panel(1.5, 1.2, 0.35, 0.85);
 plane(1.3, 0.2, new THREE.MeshBasicMaterial({ color: 0x2c2766, toneMapped: false }), 0, 0.42, 0.02, clipP);
@@ -216,7 +216,7 @@ const BAR = [0.37, 1.72, 3.1, 0.37, 1.42, -1.0, 46];
 const SH = [
   { at: 0, K: [[0, [0.3, 1.8, 5.6, 0, 0.9, -0.5, 48]], [T.s2, [0.1, 1.8, 5.1, 0, 0.95, -0.6, 47]]] },
   { at: T.s2, K: [[0, LAP(-0.4, 1.7, 5.1)], [T.menu - T.s2, LAP(0.2, 1.7, 4.9)]] },
-  { at: T.menu - 0.1, K: [[0, BAR], [2, [0.47, 1.74, 2.9, 0.42, 1.42, -1.0, 46]]] },
+  { at: T.menu + 0.3, K: [[0, BAR], [2, [0.47, 1.74, 2.9, 0.42, 1.42, -1.0, 46]]] },
   { at: T.s3, K: [[0, [-0.6, 2.1, 5.8, 0, 1.0, -0.6, 48]], [3.6, [0.2, 1.8, 5.2, 0, 1.0, -0.6, 46]]] },
   { at: T.puts - 0.1, K: [[0, LAP(0.5, 1.7, 5.0)], [T.one - T.puts, LAP(0.2, 1.65, 4.8)]] },
   { at: T.one - 0.1, K: [[0, BAR], [1.4, [0.55, 1.74, 2.8, 0.5, 1.42, -1.0, 46]]] },
@@ -237,7 +237,7 @@ run("vorssaint-world", (t) => {
   apps.forEach((a, i) => {
     const t0 = 0.15 + i * 0.12, k = sm(t0, t0 + 0.15, t);
     a.visible = wrong && k > 0.01;
-    const fly = sm(T.menu - 0.1 + i * 0.04, T.menu + 0.4 + i * 0.04, t);
+    const fly = sm(T.menu - 0.25 + i * 0.02, T.menu + 0.15 + i * 0.02, t);
     a.position.lerpVectors(a.userData.home, a.userData.bar, fly);
     const hl = i < 3 ? sm([T.vol, T.win, T.clip][i] - 0.1, [T.vol, T.win, T.clip][i] + 0.1, t) * (1 - sm([T.win, T.clip, T.costs][i] - 0.15, [T.win, T.clip, T.costs][i], t)) : 0;
     a.scale.setScalar(Math.max(1e-3, pop(k) * (1 + 0.35 * hl) * (1 - 0.7 * fly)));
@@ -284,8 +284,8 @@ run("vorssaint-world", (t) => {
   snapLine.visible = in4 && t >= T.lay && t < T.search - 0.05;
   const ck = sm(T.search - 0.05, T.search + 0.15, t);
   clipP.visible = in4 && t >= T.search - 0.05; clipP.scale.set(1, Math.max(1e-3, pop(ck)), 1); clipP.position.y = 0.85 + 0.6 * (1 - pop(ck));
-  q.visible = t >= T.search + 0.1;
-  rows.forEach((r, i) => { const k = sm(T.search + 0.15 + 0.12 * i, T.search + 0.3 + 0.12 * i, t); r.visible = k > 0.01; r.scale.setScalar(Math.max(1e-3, pop(k))); });
+  q.visible = t >= T.search;
+  rows.forEach((r, i) => { const k = sm(T.search + 0.12 * i, T.search + 0.15 + 0.12 * i, t); r.visible = k > 0.01; r.scale.setScalar(Math.max(1e-3, pop(k))); });
 
   // s5: music beams to the speaker, the call beams to the headset
   const in5 = t >= T.s5 && t < T.s6;
