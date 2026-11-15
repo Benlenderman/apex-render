@@ -1,0 +1,8 @@
+s1|Just changed your brake pads? Never ride off right away.
+s2|The first squeeze goes all the way to the bar, and the bike does not stop.
+s3|New pads push the brake pistons back.
+s4|Before you ride, pump the brake lever a few times.
+s5|Wait until the lever feels firm again.
+s6|Then test the brakes slowly before you ride for real.
+s7|New pads? Pump the lever first.
+s8|Comment APEX and get the free riding app.
