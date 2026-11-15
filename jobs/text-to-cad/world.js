@@ -255,7 +255,7 @@ run("text-to-cad-world", (t) => {
   const sc = sm(T.checks, T.checks + 0.7, t);
   scan.visible = t >= T.checks && t < T.checks + 0.75; scan.position.set(0, 0.4 + 0.8 * sc, 0.75);
   const ck = sm(T.checks + 0.6, T.checks + 0.85, t) * (1 - sm(T.then - 0.15, T.then - 0.02, t));
-  show(check, ck, 1.1); check.position.set(0.92, 1.25, 0.6);
+  show(check, ck, 0.85); check.position.set(0.3, 1.5, 0.6);
 
   // s6 "then" -> s7: the printer prints the stand, nozzle sweeping
   const pk = sm(T.then, T.s7 + 0.3, t);
