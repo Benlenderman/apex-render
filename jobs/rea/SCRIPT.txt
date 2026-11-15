@@ -1,0 +1,8 @@
+s1|See a feature you love in someone else's app? Never guess how it works. Exploring GitHub repos.
+s2|You copy what you can see, miss what happens inside, and your version never behaves the same.
+s3|Instead, get REA. Almost 460,000 stars on GitHub in 7 months. It's free, and it lets your AI look inside an app without its source code.
+s4|Ask your AI how a feature works. It opens the app and reads it, down to the binary.
+s5|It explains the feature, shows you the evidence, and builds a version for your project.
+s6|Native apps, Electron apps and websites. It all runs on your own computer, with Claude Code, Codex or Cursor.
+s7|Don't guess how it works. Look inside.
+s8|Comment REPO, and I'll send you the link.
