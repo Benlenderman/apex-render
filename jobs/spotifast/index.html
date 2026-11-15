@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="importmap">
+      { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+      } }
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #080622; }
+      #world { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="36.83" data-width="1080" data-height="1920">
+      <div id="stage" class="clip" data-start="0" data-duration="36.83" data-track-index="1" style="position:absolute;inset:0"><canvas id="world" width="1080" height="1920" data-layout-allow-overflow></canvas></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="36.83" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <audio id="vo-s1" class="clip" src="assets/vo/s1.wav" data-start="0.050" data-duration="5.909333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s2" class="clip" src="assets/vo/s2.wav" data-start="6.129" data-duration="3.541333" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s3" class="clip" src="assets/vo/s3.wav" data-start="9.840" data-duration="9.152" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s4" class="clip" src="assets/vo/s4.wav" data-start="19.162" data-duration="3.84" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s5" class="clip" src="assets/vo/s5.wav" data-start="23.172" data-duration="3.178667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s6" class="clip" src="assets/vo/s6.wav" data-start="26.521" data-duration="5.354667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s7" class="clip" src="assets/vo/s7.wav" data-start="32.046" data-duration="1.706667" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-s8" class="clip" src="assets/vo/s8.wav" data-start="33.923" data-duration="1.706667" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__EV = {"S":{"s1":[0,6.079],"s2":[6.079,3.711],"s3":[9.79,9.322],"s4":[19.112,4.01],"s5":[23.122,3.349],"s6":[26.471,5.525],"s7":[31.996,1.877],"s8":[33.873,2.957]},"W":{"s1":{"dur":5.909333,"words":[{"text":"Want","start":0,"end":0.228},{"text":"Spotify","start":0.228,"end":0.626},{"text":"on","start":0.626,"end":0.74},{"text":"your","start":0.74,"end":0.968},{"text":"computer?","start":0.968,"end":1.48},{"text":"Never","start":1.48,"end":1.795},{"text":"run","start":1.795,"end":1.984},{"text":"a","start":1.984,"end":2.047},{"text":"whole","start":2.047,"end":2.362},{"text":"web","start":2.362,"end":2.551},{"text":"browser","start":2.551,"end":2.992},{"text":"just","start":2.992,"end":3.244},{"text":"to","start":3.244,"end":3.37},{"text":"play","start":3.37,"end":3.622},{"text":"music.","start":3.622,"end":4},{"text":"Exploring","start":4,"end":4.703},{"text":"GitHub","start":4.703,"end":5.171},{"text":"repos.","start":5.171,"end":5.64}]},"s2":{"dur":3.541333,"words":[{"text":"The","start":0,"end":0.161},{"text":"usual","start":0.161,"end":0.43},{"text":"app","start":0.43,"end":0.591},{"text":"hides","start":0.591,"end":0.86},{"text":"a","start":0.86,"end":0.914},{"text":"web","start":0.914,"end":1.075},{"text":"browser","start":1.075,"end":1.452},{"text":"inside,","start":1.452,"end":1.828},{"text":"just","start":1.828,"end":2.043},{"text":"to","start":2.043,"end":2.151},{"text":"show","start":2.151,"end":2.366},{"text":"you","start":2.366,"end":2.527},{"text":"your","start":2.527,"end":2.742},{"text":"playlists.","start":2.742,"end":3.28}]},"s3":{"dur":9.152,"words":[{"text":"Instead,","start":0,"end":0.772},{"text":"get","start":0.772,"end":1.063},{"text":"Spotifast.","start":1.063,"end":1.932},{"text":"Over","start":1.932,"end":2.318},{"text":"10,000","start":2.318,"end":2.801},{"text":"stars","start":2.801,"end":3.283},{"text":"on","start":3.283,"end":3.476},{"text":"GitHub","start":3.476,"end":4.055},{"text":"in","start":4.055,"end":4.249},{"text":"11","start":4.249,"end":4.464},{"text":"weeks.","start":4.464,"end":5.01},{"text":"It's","start":5.01,"end":5.244},{"text":"free,","start":5.244,"end":5.498},{"text":"and","start":5.498,"end":5.707},{"text":"it's","start":5.707,"end":5.945},{"text":"a","start":5.945,"end":6.009},{"text":"Spotify","start":6.009,"end":6.454},{"text":"app","start":6.454,"end":6.645},{"text":"built","start":6.645,"end":6.963},{"text":"in","start":6.963,"end":7.091},{"text":"Rust,","start":7.091,"end":7.346},{"text":"with","start":7.346,"end":7.6},{"text":"no","start":7.6,"end":7.727},{"text":"browser","start":7.727,"end":8.175},{"text":"inside.","start":8.175,"end":8.62}]},"s4":{"dur":3.84,"words":[{"text":"Shrink","start":0,"end":0.275},{"text":"the","start":0.275,"end":0.441},{"text":"window,","start":0.441,"end":0.771},{"text":"and","start":0.771,"end":0.936},{"text":"it","start":0.936,"end":1.046},{"text":"turns","start":1.046,"end":1.322},{"text":"into","start":1.322,"end":1.542},{"text":"a","start":1.542,"end":1.597},{"text":"Winamp","start":1.597,"end":1.928},{"text":"mini","start":1.928,"end":2.148},{"text":"player,","start":2.148,"end":2.478},{"text":"with","start":2.478,"end":2.699},{"text":"the","start":2.699,"end":2.864},{"text":"classic","start":2.864,"end":3.25},{"text":"skins.","start":3.25,"end":3.58}]},"s5":{"dur":3.178667,"words":[{"text":"An","start":0,"end":0.16},{"text":"equalizer,","start":0.16,"end":0.695},{"text":"a","start":0.695,"end":0.748},{"text":"playlist,","start":0.748,"end":1.176},{"text":"and","start":1.176,"end":1.336},{"text":"sound","start":1.336,"end":1.604},{"text":"bars","start":1.604,"end":1.817},{"text":"that","start":1.817,"end":2.031},{"text":"bounce","start":2.031,"end":2.352},{"text":"to","start":2.352,"end":2.459},{"text":"the","start":2.459,"end":2.619},{"text":"music.","start":2.619,"end":2.94}]},"s6":{"dur":5.354667,"words":[{"text":"More","start":0,"end":0.35},{"text":"than","start":0.35,"end":0.701},{"text":"10,000","start":0.701,"end":1.138},{"text":"visuals","start":1.138,"end":1.751},{"text":"react","start":1.751,"end":2.189},{"text":"to","start":2.189,"end":2.364},{"text":"your","start":2.364,"end":2.715},{"text":"songs.","start":2.715,"end":3.24},{"text":"It","start":3.24,"end":3.375},{"text":"runs","start":3.375,"end":3.646},{"text":"on","start":3.646,"end":3.781},{"text":"Mac,","start":3.781,"end":4.051},{"text":"Windows","start":4.051,"end":4.592},{"text":"and","start":4.592,"end":4.794},{"text":"Linux.","start":4.794,"end":5.2}]},"s7":{"dur":1.706667,"words":[{"text":"Don't","start":0,"end":0.236},{"text":"run","start":0.236,"end":0.378},{"text":"a","start":0.378,"end":0.425},{"text":"browser.","start":0.425,"end":0.803},{"text":"Just","start":0.803,"end":0.992},{"text":"play","start":0.992,"end":1.181},{"text":"the","start":1.181,"end":1.323},{"text":"music.","start":1.323,"end":1.607}]},"s8":{"dur":1.706667,"words":[{"text":"Comment","start":0,"end":0.339},{"text":"REPO,","start":0.339,"end":0.533},{"text":"and","start":0.533,"end":0.679},{"text":"I'll","start":0.679,"end":0.873},{"text":"send","start":0.873,"end":1.067},{"text":"you","start":1.067,"end":1.212},{"text":"the","start":1.212,"end":1.358},{"text":"link.","start":1.358,"end":1.6}]}},"LEAD":0.05,"BRAND":{"cta":["COMMENT","\"REPO\""],"sub":"AND I'LL SEND THE LINK"}};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 36.83);
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="world.js"></script>
+  </body>
+</html>

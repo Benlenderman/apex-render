@@ -1,0 +1,202 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    .cg { position: absolute; left: 0; right: 0; top: 1480px; display: flex; justify-content: center; visibility: hidden; }
+    .pill { display: inline-block; background: #ffffff; color: #0b0920; font: 800 60px Inter, sans-serif; letter-spacing: -0.01em; padding: 16px 38px 20px; border-radius: 999px; box-shadow: 0 0 40px rgba(170, 150, 255, 0.55); white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cg0" class="cg"><span id="cp0" class="pill">Want Spotify on</span></div>
+    <div id="cg1" class="cg"><span id="cp1" class="pill">your computer?</span></div>
+    <div id="cg2" class="cg"><span id="cp2" class="pill">Never run a</span></div>
+    <div id="cg3" class="cg"><span id="cp3" class="pill">whole web browser</span></div>
+    <div id="cg4" class="cg"><span id="cp4" class="pill">just to play</span></div>
+    <div id="cg5" class="cg"><span id="cp5" class="pill">music</span></div>
+    <div id="cg6" class="cg"><span id="cp6" class="pill">Exploring GitHub repos</span></div>
+    <div id="cg7" class="cg"><span id="cp7" class="pill">The usual app</span></div>
+    <div id="cg8" class="cg"><span id="cp8" class="pill">hides a web</span></div>
+    <div id="cg9" class="cg"><span id="cp9" class="pill">browser inside</span></div>
+    <div id="cg10" class="cg"><span id="cp10" class="pill">just to show</span></div>
+    <div id="cg11" class="cg"><span id="cp11" class="pill">you your playlists</span></div>
+    <div id="cg12" class="cg"><span id="cp12" class="pill">Instead</span></div>
+    <div id="cg13" class="cg"><span id="cp13" class="pill">get Spotifast</span></div>
+    <div id="cg14" class="cg"><span id="cp14" class="pill">Over 10,000 stars</span></div>
+    <div id="cg15" class="cg"><span id="cp15" class="pill">on GitHub in</span></div>
+    <div id="cg16" class="cg"><span id="cp16" class="pill">11 weeks</span></div>
+    <div id="cg17" class="cg"><span id="cp17" class="pill">It's free</span></div>
+    <div id="cg18" class="cg"><span id="cp18" class="pill">and it's a</span></div>
+    <div id="cg19" class="cg"><span id="cp19" class="pill">Spotify app built</span></div>
+    <div id="cg20" class="cg"><span id="cp20" class="pill">in Rust</span></div>
+    <div id="cg21" class="cg"><span id="cp21" class="pill">with no browser</span></div>
+    <div id="cg22" class="cg"><span id="cp22" class="pill">inside</span></div>
+    <div id="cg23" class="cg"><span id="cp23" class="pill">Shrink the window</span></div>
+    <div id="cg24" class="cg"><span id="cp24" class="pill">and it turns</span></div>
+    <div id="cg25" class="cg"><span id="cp25" class="pill">into a Winamp</span></div>
+    <div id="cg26" class="cg"><span id="cp26" class="pill">mini player</span></div>
+    <div id="cg27" class="cg"><span id="cp27" class="pill">with the classic</span></div>
+    <div id="cg28" class="cg"><span id="cp28" class="pill">skins</span></div>
+    <div id="cg29" class="cg"><span id="cp29" class="pill">An equalizer</span></div>
+    <div id="cg30" class="cg"><span id="cp30" class="pill">a playlist</span></div>
+    <div id="cg31" class="cg"><span id="cp31" class="pill">and sound bars</span></div>
+    <div id="cg32" class="cg"><span id="cp32" class="pill">that bounce to</span></div>
+    <div id="cg33" class="cg"><span id="cp33" class="pill">the music</span></div>
+    <div id="cg34" class="cg"><span id="cp34" class="pill">More than 10,000</span></div>
+    <div id="cg35" class="cg"><span id="cp35" class="pill">visuals react to</span></div>
+    <div id="cg36" class="cg"><span id="cp36" class="pill">your songs</span></div>
+    <div id="cg37" class="cg"><span id="cp37" class="pill">It runs on</span></div>
+    <div id="cg38" class="cg"><span id="cp38" class="pill">Mac</span></div>
+    <div id="cg39" class="cg"><span id="cp39" class="pill">Windows and Linux</span></div>
+    <div id="cg40" class="cg"><span id="cp40" class="pill">Don't run a</span></div>
+    <div id="cg41" class="cg"><span id="cp41" class="pill">browser</span></div>
+    <div id="cg42" class="cg"><span id="cp42" class="pill">Just play the</span></div>
+    <div id="cg43" class="cg"><span id="cp43" class="pill">music</span></div>
+    <div id="cg44" class="cg"><span id="cp44" class="pill">Comment REPO</span></div>
+    <div id="cg45" class="cg"><span id="cp45" class="pill">and I'll send</span></div>
+    <div id="cg46" class="cg"><span id="cp46" class="pill">you the link</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#cg0", { visibility: "visible" }, 0.010);
+    tl.fromTo("#cp0", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 0.010);
+    tl.set("#cg0", { visibility: "hidden" }, 0.750);
+    tl.set("#cg1", { visibility: "visible" }, 0.750);
+    tl.fromTo("#cp1", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 0.750);
+    tl.set("#cg1", { visibility: "hidden" }, 1.490);
+    tl.set("#cg2", { visibility: "visible" }, 1.490);
+    tl.fromTo("#cp2", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 1.490);
+    tl.set("#cg2", { visibility: "hidden" }, 2.057);
+    tl.set("#cg3", { visibility: "visible" }, 2.057);
+    tl.fromTo("#cp3", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 2.057);
+    tl.set("#cg3", { visibility: "hidden" }, 3.002);
+    tl.set("#cg4", { visibility: "visible" }, 3.002);
+    tl.fromTo("#cp4", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 3.002);
+    tl.set("#cg4", { visibility: "hidden" }, 3.632);
+    tl.set("#cg5", { visibility: "visible" }, 3.632);
+    tl.fromTo("#cp5", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 3.632);
+    tl.set("#cg5", { visibility: "hidden" }, 4.010);
+    tl.set("#cg6", { visibility: "visible" }, 4.010);
+    tl.fromTo("#cp6", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 4.010);
+    tl.set("#cg6", { visibility: "hidden" }, 6.089);
+    tl.set("#cg7", { visibility: "visible" }, 6.089);
+    tl.fromTo("#cp7", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 6.089);
+    tl.set("#cg7", { visibility: "hidden" }, 6.680);
+    tl.set("#cg8", { visibility: "visible" }, 6.680);
+    tl.fromTo("#cp8", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 6.680);
+    tl.set("#cg8", { visibility: "hidden" }, 7.164);
+    tl.set("#cg9", { visibility: "visible" }, 7.164);
+    tl.fromTo("#cp9", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 7.164);
+    tl.set("#cg9", { visibility: "hidden" }, 7.917);
+    tl.set("#cg10", { visibility: "visible" }, 7.917);
+    tl.fromTo("#cp10", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 7.917);
+    tl.set("#cg10", { visibility: "hidden" }, 8.455);
+    tl.set("#cg11", { visibility: "visible" }, 8.455);
+    tl.fromTo("#cp11", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 8.455);
+    tl.set("#cg11", { visibility: "hidden" }, 9.800);
+    tl.set("#cg12", { visibility: "visible" }, 9.800);
+    tl.fromTo("#cp12", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 9.800);
+    tl.set("#cg12", { visibility: "hidden" }, 10.572);
+    tl.set("#cg13", { visibility: "visible" }, 10.572);
+    tl.fromTo("#cp13", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 10.572);
+    tl.set("#cg13", { visibility: "hidden" }, 11.732);
+    tl.set("#cg14", { visibility: "visible" }, 11.732);
+    tl.fromTo("#cp14", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 11.732);
+    tl.set("#cg14", { visibility: "hidden" }, 13.083);
+    tl.set("#cg15", { visibility: "visible" }, 13.083);
+    tl.fromTo("#cp15", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 13.083);
+    tl.set("#cg15", { visibility: "hidden" }, 14.049);
+    tl.set("#cg16", { visibility: "visible" }, 14.049);
+    tl.fromTo("#cp16", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 14.049);
+    tl.set("#cg16", { visibility: "hidden" }, 14.810);
+    tl.set("#cg17", { visibility: "visible" }, 14.810);
+    tl.fromTo("#cp17", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 14.810);
+    tl.set("#cg17", { visibility: "hidden" }, 15.298);
+    tl.set("#cg18", { visibility: "visible" }, 15.298);
+    tl.fromTo("#cp18", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 15.298);
+    tl.set("#cg18", { visibility: "hidden" }, 15.809);
+    tl.set("#cg19", { visibility: "visible" }, 15.809);
+    tl.fromTo("#cp19", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 15.809);
+    tl.set("#cg19", { visibility: "hidden" }, 16.763);
+    tl.set("#cg20", { visibility: "visible" }, 16.763);
+    tl.fromTo("#cp20", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 16.763);
+    tl.set("#cg20", { visibility: "hidden" }, 17.146);
+    tl.set("#cg21", { visibility: "visible" }, 17.146);
+    tl.fromTo("#cp21", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 17.146);
+    tl.set("#cg21", { visibility: "hidden" }, 17.975);
+    tl.set("#cg22", { visibility: "visible" }, 17.975);
+    tl.fromTo("#cp22", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 17.975);
+    tl.set("#cg22", { visibility: "hidden" }, 18.960);
+    tl.set("#cg23", { visibility: "visible" }, 19.122);
+    tl.fromTo("#cp23", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 19.122);
+    tl.set("#cg23", { visibility: "hidden" }, 19.893);
+    tl.set("#cg24", { visibility: "visible" }, 19.893);
+    tl.fromTo("#cp24", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 19.893);
+    tl.set("#cg24", { visibility: "hidden" }, 20.444);
+    tl.set("#cg25", { visibility: "visible" }, 20.444);
+    tl.fromTo("#cp25", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 20.444);
+    tl.set("#cg25", { visibility: "hidden" }, 21.050);
+    tl.set("#cg26", { visibility: "visible" }, 21.050);
+    tl.fromTo("#cp26", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 21.050);
+    tl.set("#cg26", { visibility: "hidden" }, 21.600);
+    tl.set("#cg27", { visibility: "visible" }, 21.600);
+    tl.fromTo("#cp27", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 21.600);
+    tl.set("#cg27", { visibility: "hidden" }, 22.372);
+    tl.set("#cg28", { visibility: "visible" }, 22.372);
+    tl.fromTo("#cp28", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 22.372);
+    tl.set("#cg28", { visibility: "hidden" }, 23.132);
+    tl.set("#cg29", { visibility: "visible" }, 23.132);
+    tl.fromTo("#cp29", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 23.132);
+    tl.set("#cg29", { visibility: "hidden" }, 23.827);
+    tl.set("#cg30", { visibility: "visible" }, 23.827);
+    tl.fromTo("#cp30", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 23.827);
+    tl.set("#cg30", { visibility: "hidden" }, 24.308);
+    tl.set("#cg31", { visibility: "visible" }, 24.308);
+    tl.fromTo("#cp31", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 24.308);
+    tl.set("#cg31", { visibility: "hidden" }, 24.949);
+    tl.set("#cg32", { visibility: "visible" }, 24.949);
+    tl.fromTo("#cp32", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 24.949);
+    tl.set("#cg32", { visibility: "hidden" }, 25.591);
+    tl.set("#cg33", { visibility: "visible" }, 25.591);
+    tl.fromTo("#cp33", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 25.591);
+    tl.set("#cg33", { visibility: "hidden" }, 26.481);
+    tl.set("#cg34", { visibility: "visible" }, 26.481);
+    tl.fromTo("#cp34", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 26.481);
+    tl.set("#cg34", { visibility: "hidden" }, 27.619);
+    tl.set("#cg35", { visibility: "visible" }, 27.619);
+    tl.fromTo("#cp35", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 27.619);
+    tl.set("#cg35", { visibility: "hidden" }, 28.845);
+    tl.set("#cg36", { visibility: "visible" }, 28.845);
+    tl.fromTo("#cp36", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 28.845);
+    tl.set("#cg36", { visibility: "hidden" }, 29.721);
+    tl.set("#cg37", { visibility: "visible" }, 29.721);
+    tl.fromTo("#cp37", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 29.721);
+    tl.set("#cg37", { visibility: "hidden" }, 30.262);
+    tl.set("#cg38", { visibility: "visible" }, 30.262);
+    tl.fromTo("#cp38", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 30.262);
+    tl.set("#cg38", { visibility: "hidden" }, 30.532);
+    tl.set("#cg39", { visibility: "visible" }, 30.532);
+    tl.fromTo("#cp39", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 30.532);
+    tl.set("#cg39", { visibility: "hidden" }, 32.006);
+    tl.set("#cg40", { visibility: "visible" }, 32.006);
+    tl.fromTo("#cp40", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 32.006);
+    tl.set("#cg40", { visibility: "hidden" }, 32.431);
+    tl.set("#cg41", { visibility: "visible" }, 32.431);
+    tl.fromTo("#cp41", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 32.431);
+    tl.set("#cg41", { visibility: "hidden" }, 32.809);
+    tl.set("#cg42", { visibility: "visible" }, 32.809);
+    tl.fromTo("#cp42", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 32.809);
+    tl.set("#cg42", { visibility: "hidden" }, 33.329);
+    tl.set("#cg43", { visibility: "visible" }, 33.329);
+    tl.fromTo("#cp43", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 33.329);
+    tl.set("#cg43", { visibility: "hidden" }, 33.883);
+    tl.set("#cg44", { visibility: "visible" }, 33.883);
+    tl.fromTo("#cp44", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 33.883);
+    tl.set("#cg44", { visibility: "hidden" }, 34.416);
+    tl.set("#cg45", { visibility: "visible" }, 34.416);
+    tl.fromTo("#cp45", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 34.416);
+    tl.set("#cg45", { visibility: "hidden" }, 34.950);
+    tl.set("#cg46", { visibility: "visible" }, 34.950);
+    tl.fromTo("#cp46", { scale: 0.86 }, { scale: 1, duration: 0.1, ease: "back.out(2.2)" }, 34.950);
+    tl.set("#cg46", { visibility: "hidden" }, 35.923);
+    tl.set({}, {}, 36.83);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

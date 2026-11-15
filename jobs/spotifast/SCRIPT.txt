@@ -1,0 +1,8 @@
+s1|Want Spotify on your computer? Never run a whole web browser just to play music. Exploring GitHub repos.
+s2|The usual app hides a web browser inside, just to show you your playlists.
+s3|Instead, get Spotifast. Over 10,000 stars on GitHub in 11 weeks. It's free, and it's a Spotify app built in Rust, with no browser inside.
+s4|Shrink the window, and it turns into a Winamp mini player, with the classic skins.
+s5|An equalizer, a playlist, and sound bars that bounce to the music.
+s6|More than 10,000 visuals react to your songs. It runs on Mac, Windows and Linux.
+s7|Don't run a browser. Just play the music.
+s8|Comment REPO, and I'll send you the link.
