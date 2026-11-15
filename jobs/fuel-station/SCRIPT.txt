@@ -1,0 +1,8 @@
+s1|Pulling into a gas station? Never brake hard there.
+s2|Spilled fuel on the ground is slippery, the front wheel slides, and you fall.
+s3|Look for wet, rainbow patches near the pumps.
+s4|Ride in slow and straight.
+s5|Brake gently, before the pumps, on clean ground.
+s6|Stop with the bike upright.
+s7|Gas station? Slow, straight, gentle brakes.
+s8|Comment APEX and get the free riding app.
