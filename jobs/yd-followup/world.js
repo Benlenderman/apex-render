@@ -1,7 +1,7 @@
 import { reel, RED, GREEN, VIOLET, WHITE } from "./yd.js";
 const lab = [];
 [[-1.45, 0.4], [1.45, 0.4], [-1.45, -2.0], [1.45, -2.0]].forEach(([x, z], i) =>
-  lab.push({ x, z, gap: 0.6, qs: { who: i % 2 ? "her" : "him", at: ["s3", 0.3 + i * 0.25], until: ["s4", 0], every: 1.1, hex: GREEN }, talk: [["him", ["s3", 0], ["s4", 0]]] }));
+  lab.push({ x, z, gap: 0.6, her2: i === 1 ? "m" : "f", him2: i === 2 ? "f" : "m", qs: { who: i % 2 ? "her" : "him", at: ["s3", 0.3 + i * 0.25], until: ["s4", 0], every: 1.1, hex: GREEN }, talk: [["him", ["s3", 0], ["s4", 0]]] }));
 reel({
   id: "yd-followup",
   title: "אף פעם אל תענו בסיפור משלכם",
@@ -34,8 +34,9 @@ reel({
     { from: "s5", kind: "bar", pairs: [{
       says: [{ who: "her", text: "היה לי יום קשה", at: ["s5", "שאלה"] },
              { who: "him", text: "מה קרה?", hex: GREEN, at: ["s5", "השני"], y: 2.0 }],
-      him: [[["s5", "השני"], GREEN]], talk: [["him", ["s5", "שעבדו"], ["s5", "שאלות"]]] }],
-      tags: [{ text: "שאלת המשך", hex: GREEN, at: ["s5", "המשך"], y: 3.35, k: 2.4 }] },
+      him: [[["s5", "השני"], GREEN]], talk: [["him", ["s5", "שעבדו"], ["s5", "שאלות"]]],
+      her2: "m" }],
+      tags: [{ text: "גם בין חברים", at: ["s5", 0.05], y: 3.95, w: 2.0 }, { text: "שאלת המשך", hex: GREEN, at: ["s5", "המשך"], y: 3.35, k: 2.4 }] },
     { from: "s6", kind: "bar", pairs: [{
       says: [{ who: "her", text: "חזרתי עכשיו מהודו", at: ["s6", "סיפרה"], off: ["s6", "שאל"] },
              { who: "him", text: "מה גרם לך לנסוע לבד?", hex: GREEN, at: ["s6", "שאל"], off: ["s7", 0] }],

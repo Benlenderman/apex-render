@@ -195,7 +195,8 @@ const hexAt = (L, t, d) => { let h = d; for (const [a, x] of L || []) if (t >= t
 function pairOf(p, BX) {
   const x0 = BX + (p.x || 0), z0 = p.z || 0, gp = p.gap || 0.72, T = (k) => (p[k] ? tm(p[k]) : 1e9);
   const him = makePerson(), her = makePerson();
-  her.body.add(box(0.34, 0.42, 0.12, 0, 1.6, 0.1, glow(0x5a2a6a, 1.4), false), box(0.36, 0.08, 0.36, 0, 1.83, 0, glow(0x5a2a6a, 1.4), false)); // long hair
+  const hair = (P) => P.body.add(box(0.34, 0.42, 0.12, 0, 1.6, 0.1, glow(0x5a2a6a, 1.4), false), box(0.36, 0.08, 0.36, 0, 1.83, 0, glow(0x5a2a6a, 1.4), false)); // long hair
+  if (p.her2 !== "m") hair(her); if (p.him2 === "f") hair(him); // her2:"m" / him2:"f" = friends, not a date
   const tab = new THREE.Group(); scene.add(tab); tab.position.set(x0, 0, z0);
   tab.add(box(0.72, 0.05, 0.72, 0, 1.05, 0, mSolid), tube([0, 0.02, 0], [0, 1.03, 0], 0.07, mSolid), box(0.42, 0.04, 0.42, 0, 0.02, 0, mSolid),
     box(0.08, 0.17, 0.08, -0.2, 1.16, 0.05, glow(ORANGE, 1.5), false), box(0.08, 0.17, 0.08, 0.2, 1.16, -0.05, glow(VIOLET, 1.8), false));
