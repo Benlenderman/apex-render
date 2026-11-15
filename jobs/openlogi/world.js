@@ -133,7 +133,7 @@ cap("s1", "exploring", ["EXPLORING GITHUB REPOS"], WHITE, { until: "s1" });
 cap("s2", "runs", ["RUNS IN THE BACKGROUND"], RED, { until: ["s2", "asks"] });
 cap("s2", "asks", ["SIGN IN?"], RED, { until: ["s2", "doesn't"] });
 cap("s2", "doesn't", ["NO LINUX"], RED, { boom: 0.5 });
-cap("s3", "openlogi", ["OPENLOGI"], GREEN, { until: ["s3", "over"], boom: 0.5 });
+cap("s3", "instead", ["OPENLOGI"], GREEN, { until: ["s3", "over"], boom: 0.5 });
 cap("s3", "over", ["OVER 25,000 STARS", "IN UNDER 6 MONTHS"], ORANGE, { until: ["s3", "it's"], boom: 0.5 });
 cap("s3", "it's", ["FREE AND LIGHT"], GREEN, { until: ["s3", "needs"] });
 cap("s3", "needs", ["NO ACCOUNT"], GREEN);
@@ -206,7 +206,7 @@ run("openlogi-world", (t) => {
   thumb.position.x = -0.29 + 0.02 * Math.max(0, 1 - Math.abs(t - g("s5", "press") - 0.2) / 0.15);
 
   // s3: green OpenLogi chip on screen while the app is gone, star on the star line
-  const lk = sm(T.logi - 0.1, T.logi + 0.2, t) * (1 - sm(T.s4 - 0.1, T.s4 + 0.1, t));
+  const lk = sm(T.s3 - 0.05, T.s3 + 0.25, t) * (1 - sm(T.s4 - 0.1, T.s4 + 0.1, t));
   lite.visible = lk > 0.01; lite.position.copy(SCR(0, 0.85, 0.1)); lite.scale.setScalar(lk * (1 + 0.04 * Math.sin(t * 5)));
   const sk = sm(T.over - 0.1, T.over + 0.25, t) * (1 - sm(T.free - 0.15, T.free + 0.1, t));
   star.visible = sk > 0.01; star.scale.setScalar(0.42 * sk * (1 + 0.08 * Math.sin(t * 6)));
