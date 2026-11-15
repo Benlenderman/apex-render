@@ -12,7 +12,7 @@ hill.add(box(4.2, 0.04, 60, 0.4, -0.02, -10, mAs, false));
 const mSoil = new THREE.MeshStandardMaterial({ color: 0x18240f, emissive: 0x0a1406, roughness: 1 });
 hill.add(box(12, 0.04, 60, -7.7, -0.03, -10, mSoil, false), box(12, 0.04, 60, 8.5, -0.03, -10, mSoil, false));
 for (let i = 0; i < 16; i++) hill.add(box(0.1, 0.012, 1.4, 0.4, 0.005, 12 - i * 3.2, glow(WHITE, 0.9), false)); // centre dashes
-for (let i = 0; i < 12; i++) { const z = 10 - i * 4; hill.add(box(0.12, 0.8, 0.12, -1.9, 0.4, z, glow(VIOLET, 0.9), false), box(0.16, 0.12, 0.04, -1.9, 0.72, z, glow(ORANGE, 2), false)); } // roadside posts show the slope
+for (let i = 0; i < 12; i++) { const z = 10 - i * 4; hill.add(box(0.12, 0.8, 0.12, 2.5, 0.4, z, glow(VIOLET, 0.9), false), box(0.16, 0.12, 0.04, 2.5, 0.72, z, glow(ORANGE, 2), false)); } // roadside posts show the slope
 
 // ---- side stand (from kickstand-up) + gear lever on the left ----
 function addStand(B) {
