@@ -108,8 +108,8 @@ const fol = (fn) => (t) => { const s = pathState(fn, t); return { x: s.x, z: s.z
 const folA = (t) => ({ x: LX, z: zA(Math.min(t, tS)), h: 0 });
 const SH = [
   { at: 0, f: folA, K: [[0, [1.1, 1.5, 4.4, 0.3, 0.8, -5, 44]], [T2 - 0.6, [0.9, 1.2, 3.6, 0.3, 0.6, -5, 44]]] },
-  { at: T2 - 0.6, K: [[0, [LX - 1.9, 1.0, ZA - 5.6, LX - 0.25, 0.6, ZA, 40]], [T3 - T2 + 0.6, [LX - 1.5, 0.8, ZA - 4.8, LX - 0.3, 0.5, ZA, 40]]] },
-  { at: T3, f: fol(fA3), K: [[0, [1.7, 1.5, 1.2, 0.3, 0.36, 0.05, 42]], [T4 - T3, [1.45, 1.3, 1.0, 0.3, 0.36, 0.05, 40]]] },
+  { at: T2 - 0.6, K: [[0, [LX - 1.9, 1.0, ZA - 5.6, LX - 0.25, 0.6, ZA, 40]], [T3 - T2 + 0.6, [LX - 1.6, 0.7, ZA - 4.6, LX - 0.35, 0.45, ZA, 40]]] },
+  { at: T3, f: fol(fA3), K: [[0, [2.3, 1.7, 1.5, 0.25, 0.4, 0.0, 42]], [T4 - T3, [1.9, 1.45, 1.2, 0.28, 0.38, 0.03, 40]]] },
   { at: T4, f: fol(fB), K: [[0, [1.9, 1.6, 1.4, 0.3, 0.45, 0.05, 42]], [T5 - T4, [1.6, 1.4, 1.1, 0.3, 0.45, 0.05, 40]]] },
   { at: T5, K: [[0, [LX - 1.9, 1.0, ZB - 5.6, LX - 0.25, 0.6, ZB, 40]], [T6 - T5, [LX - 1.5, 0.8, ZB - 4.8, LX - 0.3, 0.5, ZB, 40]]] },
   { at: T6, f: fol(fB6), K: [[0, [1.1, 1.6, 4.6, 0.3, 0.9, -6, 44]], [T7 - T6, [0.9, 1.4, 4.0, 0.3, 0.8, -6, 44]]] },
@@ -142,10 +142,12 @@ run("w", (t) => {
   footR.visible = !booted; footL.visible = !booted && down < 0.5;
   legL.visible = down < 0.5; DL.visible = down >= 0.5;
   snkD.visible = !booted; bootD.visible = booted;
-  const psi = -0.28 + (0.62 + 0.28) * roll;                                 // world leg angle: out to the side, then shoved under the bike
+  const psi = -0.28 + 0.28 * roll;                                 // world leg angle: out to the side, then shoved under the bike
   DL.rotation.z = psi - theta;
-  FT.rotation.z = 1.0 * roll;
-  mSnk.emissive.set(0x77779a).lerp(new THREE.Color(RED), Math.min(1, 1.2 * flash(t, tSneak) + (t < T3 ? 0.8 * sm(tBreak - 0.1, tBreak + 0.2, t) : 0)));
+  FT.rotation.z = 1.5 * roll;
+  DL.scale.y = 1; FT.scale.y = 1;
+  if (DL.visible) { Bk.g.updateMatrixWorld(true); DL.getWorldPosition(wp); const sc = Math.min(1.2, Math.max(0.5, (wp.y - 0.06) / (0.93 * Math.cos(psi)))); DL.scale.y = sc; FT.scale.y = 1 / sc; }
+  mSnk.emissive.set(0x77779a).lerp(new THREE.Color(RED), Math.min(1, 1.2 * flash(t, tSneak) + 1.0 * flash(t, tRoll) + (t < T3 ? 0.8 * sm(tBreak - 0.1, tBreak + 0.2, t) : 0)));
 
   // ankle ring: red break in s2, green protect in s5
   if (t < T3 && t > tAnkA - 0.1) { ank.visible = true; mAnk.color.set(RED).multiplyScalar(0.8 + 2.2 * flash(t, tBreak)); }
