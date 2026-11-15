@@ -37,7 +37,7 @@ reel({
     // s4: what they thought vs how much the other side liked them
     { from: "s4", kind: "bar", cam: far,
       pairs: [{ gap: 0.6, her2: "m",
-        says: [{ who: "him", text: "בטח השתעמם ממני", hex: RED, at: ["s4", "כולם"], off: ["s4", "הצד"] },
+        says: [{ who: "him", text: "בטח השתעמם ממני", hex: RED, at: ["s4", "כולם"], off: ["s4", "כיוון"] },
                { who: "her", text: "היה ממש כיף!", hex: GREEN, at: ["s4", "הצד"], off: ["s5", 0] }],
         him: [[["s4", "כולם"], RED]], her: [[["s4", "הצד"], GREEN]], happy: ["s4", "אהב"], heart: ["s4", "יותר"] }],
       tags: [{ text: "מה שחשבו", hex: RED, at: ["s4", "טעו"], off: ["s4", "הצד"], y: 3.4, w: 1.4 },
