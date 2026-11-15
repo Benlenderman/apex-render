@@ -1,0 +1,8 @@
+s1|Stopping at a junction? Never put your foot down in the middle of the lane.
+s2|Cars drip oil there, your boot slips, and the bike falls.
+s3|Look for the dark stripe in the middle of the lane.
+s4|Stop in the tyre tracks, where cars drive.
+s5|Put your foot down on clean road.
+s6|Ride off with your boot on solid ground.
+s7|Stop in the tyre tracks. Avoid the oily middle.
+s8|Comment APEX and get the free riding app.
