@@ -77,7 +77,7 @@ function avatarTex() {
 const avatar = new THREE.Mesh(new THREE.PlaneGeometry(0.82, 0.82), new THREE.MeshBasicMaterial({ map: avatarTex(), transparent: true, toneMapped: false, color: 0xc0c0c0 }));
 lid.add(avatar);
 const plate = (txt, hex, w = 0.9, h = 0.52) => { const gp = new THREE.Group(); gp.add(rbox(w, h, 0.05, 0.06, mDark)); plane(w + 0.03, h + 0.03, glow(hex, 0.9), 0, 0, -0.03, gp); const t = wt([txt], hex, 1.4, w * 0.9); t.position.z = 0.03; gp.add(t); lid.add(gp); gp.visible = false; return gp; };
-const zero = plate("$0", GREEN);
+const zero = plate("$0", GREEN, 1.1, 0.62);
 
 // ---------- s4: project files, a magnifier, the Input tile, a browser with its date picker ----------
 const FILES = ["APP", "INPUT", "BUTTON", "FORM", "API", "UTILS"];
@@ -91,9 +91,9 @@ const tiles = FILES.map((n, i) => {
 });
 const inputTile = tiles[1];
 const mag = grp(lid, 0, 0, 0.2);
-mag.add(new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.035, 10, 32), glow(WHITE, 1.2)));
+mag.add(new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.035, 10, 32), glow(WHITE, 0.5)));
 const lens = new THREE.Mesh(new THREE.CircleGeometry(0.15, 32), new THREE.MeshBasicMaterial({ color: 0x9a8cff, transparent: true, opacity: 0.18, toneMapped: false, depthWrite: false })); mag.add(lens);
-const handle = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.26, 10), glow(WHITE, 1.0)); handle.position.set(0.19, -0.19, 0); handle.rotation.z = Math.PI / 4; mag.add(handle);
+const handle = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.26, 10), glow(WHITE, 0.5)); handle.position.set(0.19, -0.19, 0); handle.rotation.z = Math.PI / 4; mag.add(handle);
 const browser = grp(lid, 0.55, 0.8, 0.08);
 browser.add(rbox(0.95, 0.85, 0.04, 0.05, mDark));
 plane(0.95, 0.14, glow(VIOLET, 0.5), 0, 0.355, 0.025, browser);
@@ -217,10 +217,10 @@ run("ponytail-world", (t) => {
   lid.position.x = wrong && t >= T.maintain ? 0.015 * Math.sin(t * 45) * (1 - sm(T.maintain + 0.6, T.maintain + 1.0, t)) : 0;
 
   // s3: avatar on "Instead" (no empty screen), $0 on "free", avatar back on "makes"
-  const avA = sm(T.s3 - 0.12, T.s3 + 0.08, t) * (1 - sm(T.free - 0.15, T.free, t)) + sm(T.makes - 0.1, T.makes + 0.2, t) * (1 - sm(T.s4 - 0.15, T.s4, t));
+  const avA = sm(T.s3 - 0.12, T.s3 + 0.08, t) * (1 - sm(T.free - 0.2, T.free - 0.05, t)) + sm(T.makes - 0.1, T.makes + 0.2, t) * (1 - sm(T.s4 - 0.15, T.s4, t));
   show(avatar, avA, T.over <= t && t < T.free ? 0.85 : 1);
   avatar.position.set(0, 0.84, 0.25); avatar.rotation.y = 0.2 * Math.sin((t - T.s3) * 2);
-  show(zero, sm(T.free - 0.1, T.free + 0.15, t) * (1 - sm(T.makes - 0.15, T.makes, t)), 1); zero.position.set(0, 0.82, 0.22);
+  show(zero, sm(T.free - 0.32, T.free - 0.14, t) * (1 - sm(T.makes - 0.15, T.makes, t)), 1); zero.position.set(0, 0.82, 0.22);
 
   // s4: project tiles, magnifier scans, INPUT lights green; browser + date picker
   const pA = sm(T.s4 - 0.05, T.s4 + 0.25, t) * (1 - sm(T.s5 + 0.5, T.s5 + 0.8, t));
@@ -250,16 +250,16 @@ run("ponytail-world", (t) => {
   tenRows.forEach((r, i) => (r.visible = t >= Math.min(T.one, T.n10 - 0.25) + 0.05 * i));
 
   // s6: bars on "53" (green shrinks to 47%), shield on "never", ring on "98"
-  const chA = sm(T.n53 - 0.25, T.n53, t) * (1 - sm(T.never - 0.15, T.never, t));
+  const chA = sm(T.s6 - 0.1, T.s6 + 0.15, t) * (1 - sm(T.never - 0.15, T.never, t));
   show(chart, chA, 1);
-  const shrink = 1 - 0.53 * sm(T.n53, T.n53 + 0.5, t);
+  const shrink = 1 - 0.53 * sm(T.n53 - 0.1, T.n53 + 0.4, t);
   barG.scale.y = shrink; barG.position.y = shrink / 2; lblG.position.y = shrink + 0.1;
   show(shield, sm(T.never - 0.1, T.never + 0.2, t) * (1 - sm(T.s7 - 0.15, T.s7, t)), 1); shield.rotation.y = 0.3 * Math.sin((t - T.never) * 2);
   show(ring98, sm(T.n98 - 0.1, T.n98 + 0.2, t) * (1 - sm(T.s7 - 0.15, T.s7, t)), 1);
   arc.scale.setScalar(1 + 0.06 * Math.max(0, 1 - Math.abs(t - T.test - 0.1) / 0.2));
 
   // s3: the star pops in above the laptop while the star count is on screen (2-line caption: small and low)
-  const sk = sm(T.over - 0.1, T.over + 0.25, t) * (1 - sm(T.free - 0.15, T.free + 0.1, t));
+  const sk = sm(T.over - 0.1, T.over + 0.25, t) * (1 - sm(T.free - 0.2, T.free - 0.05, t));
   star.visible = sk > 0.01; star.scale.setScalar(0.42 * sk * (1 + 0.08 * Math.sin(t * 6)));
   star.position.set(0, 1.97, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.over) * 2.5);
 
