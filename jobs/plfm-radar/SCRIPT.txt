@@ -1,0 +1,8 @@
+s1|Want to build your own radar? Never start from scratch. Exploring GitHub repos.
+s2|You hunt for parts, guess at every circuit, and end up with a box that sees nothing.
+s3|Instead, get PLFM Radar. Over 27,000 stars on GitHub in 8 months. It's open source, and it's a full radar you build yourself.
+s4|A flat panel aims its beam left, right, up and down, without moving.
+s5|A motor spins it all the way around. A chip turns the echoes into dots on a map.
+s6|One version sees 3 kilometers, the bigger one 20. Every board and all the code are free.
+s7|Don't start from scratch. Start from the plans.
+s8|Comment REPO, and I'll send you the link.
