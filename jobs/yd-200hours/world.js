@@ -1,7 +1,13 @@
 import { reel, RED, GREEN, VIOLET, WHITE } from "./yd.js";
+const far = (BX, d) => [[0, [BX, 2.7, 9.8, BX, 1.6, -0.4, 50]], [d + 0.4, [BX, 2.55, 9.0, BX, 1.6, -0.4, 50]]];
+const group = (at, t0, t1, ex = {}) => [
+  { x: -1.4, z: -1.6, gap: 0.55, noTab: true, at, her2: "m", talk: [["him", t0, t1], ["her", t0, t1]], ...ex },
+  { x: 1.4, z: -1.6, gap: 0.55, noTab: true, at, talk: [["her", t0, t1]], ...ex },
+];
 reel({
   id: "yd-200hours",
   title: "כמה שעות לוקח להפוך זר לחבר?",
+  dim: 0.35,
   caps: [
     ["s1", "דיבר", ["אף אחד לא דיבר"], RED, { boom: 0.3 }],
     ["s2", "קנזס", ["מחקר: קנזס, 2018"], VIOLET],
@@ -12,24 +18,47 @@ reel({
   end: ["חברות זה לא קליק.", "זה שעות."],
   endBoom: ["s7", "קליק", 0.3],
   scenes: [
-    { from: "s1", kind: "map", mode: "alone", ball: false, group: 4, leave: ["s1", "חזר"] },
-    { from: "s2", kind: "phone", items: [
-      { type: "row", text: "קנזס, 2018", hex: VIOLET, y: 1.75, k: 1.6, w: 1.4, at: ["s2", 0.2] },
-      { type: "bar", text: "חברים רחוקים: 50 שעות", q: "חברים רחוקים: ?", hex: GREEN, y: 1.15, frac: 0.25, at: ["s2", 0.7], fill: ["s3", "חמישים"] },
-      { type: "bar", text: "חברים: 90 שעות", q: "חברים: ?", hex: GREEN, y: 0.45, frac: 0.45, at: ["s2", "בדק"], fill: ["s3", "תשעים"] },
-      { type: "bar", text: "חבר קרוב: 200+ שעות", q: "חבר קרוב: ?", hex: VIOLET, y: -0.25, frac: 1, at: ["s2", "זמן"], fill: ["s3", "ממאתיים"] },
-    ] },
-    { from: "s4", kind: "phone", tint: ["s4", "אחת"], items: [
-      { type: "bar", text: "חבר קרוב: 200 שעות", hex: VIOLET, y: 1.2, frac: 1, at: ["s4", 0.05], fill: ["s4", 0.05] },
-      { type: "bar", text: "דני: שעה אחת", hex: RED, y: 0.3, frac: 0.02, at: ["s4", "אחת"] },
-    ] },
-    { from: "s5", kind: "map", see: ["s5", 0.2], tap: ["s5", "שבת"], go: ["s5", "ריצה"] },
-    { from: "s6", kind: "phone", items: [
-      { type: "row", text: "שבוע 3", hex: VIOLET, y: 1.6, k: 1.6, w: 1.2, at: ["s6", 0.05] },
-      { type: "bubble", text: "בוקר טוב, דני!", hex: GREEN, side: -1, y: 1.0, w: 1.8, at: ["s6", "בשם"] },
-      { type: "row", text: "חודש 3", hex: VIOLET, y: 0.35, k: 1.6, w: 1.2, at: ["s6", "בחודש"] },
-      { type: "bubble", text: "קפה אחרי הריצה?", hex: GREEN, side: 1, y: -0.25, w: 1.8, at: ["s6", "קפה"] },
-    ] },
-    { from: "s7", kind: "map", see: ["s7", 0], tap: ["s7", 0.4], go: ["s7", 0.6] },
+    // s1: Danny alone, then a running group that talks among itself; he leaves
+    { from: "s1", kind: "bar", noBar: true, floor: GREEN, cam: far,
+      pairs: [...group(["s1", "הצטרף"], ["s1", "ריצה"], ["s2", 0]),
+        { x: 0.3, z: 0.9, gap: 0.01, solo: true, noTab: true, him: [[["s1", "דיבר"], RED]], slump: ["s1", "דיבר"], leave: ["s1", "חזר"] }],
+      tags: [{ text: "דני, חיפה", at: ["s1", 0.1], off: ["s1", "הצטרף"], x: 0.3, y: 2.6, z: 0.9, w: 1.4 },
+             { text: "קבוצת ריצה", hex: GREEN, at: ["s1", "ריצה"], y: 3.6, z: -1.6, w: 1.8 }] },
+    // s2-s3: two strangers at a cafe table become friends, the hours tick up
+    { from: "s2", kind: "bar", cam: far,
+      pairs: [{ gap: 0.6, her2: "m", talk: [["him", ["s2", "בדק"], ["s2", "זר"]], ["her", ["s3", 0], ["s3", "רחוקים"]], ["him", ["s3", "תשעים"], ["s3", "ויותר"]], ["her", ["s3", "ממאתיים"], ["s4", 0]]],
+        him: [[["s3", "ממאתיים"], GREEN]], her: [[["s3", "ממאתיים"], GREEN]], happy: ["s3", "קרוב"] }],
+      tags: [{ text: "זר", hex: RED, at: ["s2", "זר"], off: ["s3", "חמישים"], y: 3.3, w: 1.0 },
+             { text: "חברים רחוקים", at: ["s3", "חמישים"], off: ["s3", "תשעים"], y: 3.3, w: 1.9 },
+             { text: "חברים", hex: GREEN, at: ["s3", "תשעים"], off: ["s3", "ממאתיים"], y: 3.3, w: 1.3 },
+             { text: "חבר קרוב", hex: GREEN, at: ["s3", "ממאתיים"], y: 3.3, w: 1.6 }],
+      clocks: [{ text: "50 שעות", hex: VIOLET, at: ["s3", "חמישים"], until: ["s3", "תשעים"], x: 0, y: 2.45 },
+               { text: "90 שעות", hex: VIOLET, at: ["s3", "תשעים"], until: ["s3", "ממאתיים"], x: 0, y: 2.45 },
+               { text: "200+ שעות", hex: GREEN, at: ["s3", "ממאתיים"], x: 0, y: 2.45 }] },
+    // s4: close friends (200h) next to Danny alone (1h)
+    { from: "s4", kind: "bar", noBar: true, floor: GREEN, cam: far,
+      pairs: [{ x: -1.55, gap: 0.5, noTab: true, her2: "m", him: [[["s4", 0], GREEN]], her: [[["s4", 0], GREEN]], talk: [["him", ["s4", 0], ["s5", 0]]], happy: ["s4", 0.05] },
+              { x: 1.55, gap: 0.01, solo: true, noTab: true, him: [[["s4", 0], RED]], slump: ["s4", "אחת"] }],
+      tags: [{ text: "200 שעות", hex: GREEN, at: ["s4", 0.05], x: -1.55, y: 2.85, w: 1.3 },
+             { text: "1 שעה", hex: RED, at: ["s4", "אחת"], x: 1.55, y: 2.85, w: 1.1 }] },
+    // s5: he comes back to the same run
+    { from: "s5", kind: "bar", noBar: true, floor: GREEN, cam: far,
+      pairs: [...group(null, ["s5", 0], ["s6", 0]),
+        { x: 0.3, z: 0.9, gap: 0.01, solo: true, noTab: true, come: ["s5", "חזר"] }],
+      tags: [{ text: "אותה ריצה, אותה שעה", hex: GREEN, at: ["s5", "ריצה"], y: 3.6, z: -1.6, w: 2.4 }] },
+    // s6: week 3 someone greets him by name, month 3 coffee after
+    { from: "s6", kind: "bar", cam: far,
+      pairs: [{ gap: 0.6, her2: "m",
+        says: [{ who: "her", text: "בוקר טוב, דני!", hex: GREEN, at: ["s6", "בשם"], off: ["s6", "בחודש"] },
+               { who: "her", text: "קפה אחרי הריצה?", hex: GREEN, at: ["s6", "קפה"], off: ["s7", 0] }],
+        him: [[["s6", "בשם"], GREEN]], happy: ["s6", "קפה"], talk: [["him", ["s6", "השלישי"], ["s6", "מישהו"]]] }],
+      tags: [{ text: "שבוע 3", hex: VIOLET, at: ["s6", 0.05], off: ["s6", "בחודש"], y: 3.4, w: 1.2 },
+             { text: "חודש 3", hex: VIOLET, at: ["s6", "בחודש"], y: 3.4, w: 1.2 }] },
+    // s7: a table of friends, 50 hours a year
+    { from: "s7", kind: "bar", cam: far,
+      pairs: [{ x: -1.3, gap: 0.55, her2: "m", him: [[["s7", 0], GREEN]], talk: [["him", ["s7", 0], ["s7", "חברות"]]], happy: ["s7", 0.1] },
+              { x: 1.3, gap: 0.55, her: [[["s7", 0], GREEN]], talk: [["her", ["s7", 0.4], ["s7", "קליק"]]], happy: ["s7", 0.1] }],
+      clocks: [{ text: "50 שעות בשנה", hex: GREEN, at: ["s7", "חמישים"], until: ["s7", "חברות"], x: 0, y: 2.6 }] },
+    { from: "s8", kind: "map", see: ["s8", 0], tap: ["s8", 0.4], go: ["s8", 0.6] },
   ],
 });
