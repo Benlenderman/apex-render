@@ -1,0 +1,8 @@
+s1|Need a part for your 3D printer? Never let your AI just describe it. Exploring GitHub repos.
+s2|Ask for a phone stand, and you get a paragraph of text. Nothing you can print.
+s3|Instead, get Text-to-CAD. Over 26,000 stars on GitHub in 7 months. It's free, and it makes your AI design the actual part.
+s4|Describe what you need in plain words, or show it a photo.
+s5|It builds the part from code. Change one thing, and only that part updates.
+s6|Out come real STL and STEP files. It checks the part can be made, then sends it to your Bambu Lab printer.
+s7|Don't describe it. Print it.
+s8|Comment REPO, and I'll send you the link.
