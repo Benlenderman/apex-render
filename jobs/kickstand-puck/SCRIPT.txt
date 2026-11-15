@@ -1,0 +1,8 @@
+s1|Parking on hot road or grass? Never put the stand straight down.
+s2|The kickstand sinks into the soft ground, and the bike falls over.
+s3|Carry a small flat plate in your bag.
+s4|Put it under the kickstand before you lean the bike.
+s5|The plate spreads the weight, so the stand doesn't sink.
+s6|Your bike is still standing when you come back.
+s7|Soft ground? Plate under the stand.
+s8|Comment APEX and get the free riding app.
