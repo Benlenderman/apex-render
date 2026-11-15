@@ -232,7 +232,7 @@ run("rea-world", (t) => {
   qMine.visible = qMine.visible && t < T.same - 0.1;
 
   // s3: icon on "Instead", star on "Almost", $0 on "free", lens looks inside on "look", code plate on "without"
-  show(icon, sm(T.s3, T.s3 + 0.25, t) * (1 - sm(T.free - 0.15, T.free, t)), 1);
+  show(icon, sm(T.s3, T.s3 + 0.25, t) * (1 - sm(T.free - 0.08, T.free, t)), 1);
   icon.position.set(0, 0.84, 0.25); icon.rotation.y = 0.25 * Math.sin((t - T.s3) * 2);
   show(zero, sm(T.free - 0.1, T.free + 0.15, t) * (1 - sm(T.look - 0.15, T.look, t)), 1); zero.position.set(0, 0.82, 0.22);
   const lk = sm(T.look - 0.1, T.look + 0.2, t) * (1 - sm(T.without - 0.15, T.without, t));
@@ -241,11 +241,11 @@ run("rea-world", (t) => {
   show(lens, lk, 1); lens.position.set(-0.9 + 0.9 * sweep, 0.78, 0.3);
   show(g3, lk * sweep, 0.75); g3.position.set(0, 0.78, 0.16); g3.userData.spin(t);
   app3.userData.knob.visible = app3.userData.track.visible = sweep < 0.6;
-  show(code, sm(T.without - 0.1, T.without + 0.15, t) * (1 - sm(T.s4 - 0.15, T.s4, t)), 1); code.position.set(0, 0.82, 0.22);
+  show(code, sm(T.without - 0.1, T.without + 0.15, t) * (1 - sm(T.s4 - 0.08, T.s4, t)), 1); code.position.set(0, 0.82, 0.22);
 
   // s4: bubble asks; the card on screen splits into UI / gears / binary
   const s4on = win(t, T.s4 - 0.05, T.s5);
-  show(bubble, sm(T.s4, T.s4 + 0.25, t) * (1 - sm(T.opens - 0.1, T.opens + 0.1, t)), 1); bubble.position.set(-0.2, 1.3, 0.12);
+  show(bubble, sm(T.s4 - 0.05, T.s4 + 0.15, t) * (1 - sm(T.opens - 0.1, T.opens + 0.1, t)), 1); bubble.position.set(-0.2, 1.3, 0.12);
   L4.visible = s4on; L4.scale.setScalar(Math.max(1e-3, sm(T.s4 - 0.05, T.s4 + 0.2, t)));
   const ex = sm(T.opens, T.opens + 0.5, t) * (1 - sm(T.s5 - 0.25, T.s5, t));
   lUI.position.z = 0.03 + 1.0 * ex; lGear.position.z = 0.02 + 0.5 * ex; lGear.userData.spin(t); lGear.scale.setScalar(0.9);
@@ -265,7 +265,7 @@ run("rea-world", (t) => {
 
   // s6: three kinds of targets, then a green shield on the screen, then the three agents
   kinds.forEach((p, i) => show(p, sm(KI_AT[i] - 0.1, KI_AT[i] + 0.15, t) * (1 - sm(T.runs - 0.15, T.runs, t)), 1));
-  show(shield, sm(T.runs - 0.1, T.runs + 0.2, t) * (1 - sm(T.claude - 0.15, T.claude, t)), 1.6); shield.position.set(0, 0.85, 0.15);
+  show(shield, sm(T.runs - 0.1, T.runs + 0.2, t) * (1 - sm(T.claude - 0.08, T.claude, t)), 1.6); shield.position.set(0, 0.85, 0.15);
   shield.rotation.y = 0.3 * Math.sin((t - T.runs) * 2.5);
   agents.forEach((p, i) => show(p, sm(AG_AT[i] - 0.1, AG_AT[i] + 0.15, t) * (1 - sm(T.s7 - 0.15, T.s7, t)), 1));
 
@@ -277,7 +277,7 @@ run("rea-world", (t) => {
   }
 
   // s3: the star pops in above the laptop while the star count is on screen (2-line caption: smaller + lower)
-  const sk = sm(T.almost - 0.1, T.almost + 0.25, t) * (1 - sm(T.free - 0.15, T.free + 0.1, t));
+  const sk = sm(T.almost - 0.1, T.almost + 0.25, t) * (1 - sm(T.free - 0.1, T.free, t));
   star.visible = sk > 0.01; star.scale.setScalar(0.42 * sk * (1 + 0.08 * Math.sin(t * 6)));
   star.position.set(0, 1.97, -0.3); star.rotation.y = 0.35 * Math.sin((t - T.almost) * 2.5);
 
