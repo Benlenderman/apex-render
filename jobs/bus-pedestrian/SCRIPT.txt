@@ -1,0 +1,8 @@
+s1|A bus stopped at the side of the road? Never ride fast past it.
+s2|Someone steps out from in front of the bus, right in front of you.
+s3|Slow down before you reach the bus.
+s4|Move a bit further from the bus.
+s5|Look under the bus, and at its front, for feet.
+s6|Cover your brakes until you're past it.
+s7|Stopped bus? Slow down, watch for people.
+s8|Comment APEX and get the free riding app.
