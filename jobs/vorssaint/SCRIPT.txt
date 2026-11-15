@@ -1,0 +1,8 @@
+s1|Buying little Mac apps one by one? Never pay for a dozen of them. Exploring GitHub repos.
+s2|A volume app, a window app, a clipboard app. Each one costs money, and your menu bar fills up with icons.
+s3|Instead, get Vorssaint. Almost 35,000 stars on GitHub in 5 months. It's free, and it puts all of those tools behind one menu bar icon.
+s4|Set the volume for each app, snap windows into layouts, and search everything you copied.
+s5|Play music on your speakers while a call stays in your headset.
+s6|Install only what you use. The rest disappears. No account, no tracking, no subscription.
+s7|Don't buy a dozen apps. Get one icon.
+s8|Comment REPO, and I'll send you the link.
