@@ -1,0 +1,8 @@
+s1|Paying every month just to edit photos? Never rent your photo editor. Exploring GitHub repos.
+s2|Stop paying, and the app you made every file in stops opening.
+s3|Instead, get PhotoCraft. Over 79,000 stars on GitHub in 6 weeks. It's free, and it's Photoshop rebuilt from scratch, with none of Adobe's code.
+s4|Same menus, same shortcuts, right where your hands expect them.
+s5|It opens real Photoshop files. Saved again, 307 of 309 test files look exactly the same.
+s6|Stack 16 kinds of edits, and your original photo never changes. It works offline on Mac, Windows and Linux.
+s7|Don't rent it. Own it.
+s8|Comment REPO, and I'll send you the link.
