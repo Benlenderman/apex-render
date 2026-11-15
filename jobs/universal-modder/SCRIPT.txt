@@ -1,0 +1,8 @@
+s1|Want a new mod for a game you own? Never mod it blind. Exploring GitHub repos.
+s2|Guess at the game files, and one wrong edit can crash the game or wipe your saves.
+s3|Instead, get Universal Modder. Almost 9,700 stars on GitHub in 6 weeks. It's free, and it lets your AI agent mod almost any PC game you own.
+s4|It backs up your saves first, works out the game's engine, and reads the real code.
+s5|Then it makes the art, the 3D models and the sounds, and tests the mod in the running game.
+s6|Every finished mod leaves notes, so the next AI starts where the last one left off.
+s7|Don't guess. Read the code.
+s8|Comment REPO, and I'll send you the link.
