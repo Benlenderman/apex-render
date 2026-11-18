@@ -53,7 +53,7 @@ const tExit = tag("EXIT", ORANGE, 1.4);
 const fnLot = (t) => { const a = 0.8 * (t - tLot) + 0.6; return [X0 + 5 * Math.cos(a), -2 - 5 * Math.sin(a)]; };
 // day 1: four lurches toward the exit, each dies, then she finally rolls out
 const stalls = [0, 0.42, 0.84, 1.26].map((d) => tStall - 0.1 + d);
-const fn2 = (t) => [X0, -22.5 - stalls.reduce((a, s) => a + 1.2 * sm(s, s + 0.16, t), 0) - 9 * Math.max(0, t - tOut + 0.1) ** 2, 0];
+const fn2 = (t) => [X0, -22.5 - stalls.reduce((a, s) => a + 1.2 * sm(s, s + 0.16, t), 0) - 4 * Math.max(0, t - tOut + 0.1) ** 2, 0];
 // day 3: standing still, the bike tips over; she ends up standing next to it
 const B3 = [X0 + 8, 4], fn3 = () => [B3[0], B3[1], 0.5];
 const maya = makePerson();
@@ -108,20 +108,20 @@ const corner = (fn) => (t) => { const [x, z] = fn(t); return [cx + 7, 7, cz + 12
 const SH = [
   { at: 0, f: fol(fnA), K: [[0, [0.9, 2.6, 6.5, 1.5, 1.0, -10, 50]], [tStops1, [0.6, 2.2, 5.0, 1.5, 1.0, -10, 50]]] },
   W(tStops1 - 0.25, [-5.5, 1.8, -J + 11, 2.6, 0.8, -J + 2.6, 50], [-4.6, 2.3, -J + 9.5, 2.0, 0.8, -J + 2.6, 50], tLot - tStops1 + 0.25),
-  W(tLot, [X0 + 9, 6, 11, X0, 0.5, -2, 50], [X0 + 7, 7.5, 12, X0, 0.5, -2, 50], T2 - tLot),
-  W(T2, [X0 + 12, 2.0, -24.5, X0, 0.9, -25, 50], [X0 + 11, 2.3, -26.5, X0, 0.9, -26.5, 50], T3 - T2),
+  W(tLot, [X0 + 6, 4, 7, X0, 0.5, -2, 50], [X0 + 5, 4.8, 8, X0, 0.5, -2, 50], T2 - tLot),
+  W(T2, [X0 + 12, 2.0, -24.5, X0, 0.9, -25, 50], [X0 + 11, 2.3, -28.5, X0, 0.9, -29.5, 50], T3 - T2),
   W(T3, [B3[0] + 2.6, 1.5, B3[1] + 4.2, B3[0], 0.8, B3[1], 50], [B3[0] + 6.5, 6.5, B3[1] + 11, B3[0], 0.4, B3[1], 50], T4 - T3),
   { at: T4, f: fol(fn4), K: [[0, [0.3, 2.3, 6.0, 0.6, 1.0, -8, 50]], [tGrab - T4, [0.2, 2.0, 5.0, 0.6, 1.0, -8, 50]]] },
   { at: tGrab - 0.1, f: world, noRot: true, cam: corner(fn4) },
   { at: tHeart - 0.1, f: fol(fn4), K: [[0, [1.6, 1.5, -4.6, 0, 1.2, 0, 44]], [T5 - tHeart + 0.1, [1.0, 1.6, -3.6, 0, 1.25, 0, 44]]] },
-  { at: T5, f: fol(fn5), K: [[0, [1.9, 1.7, 3.6, -0.3, 0.4, -4.5, 50]], [tStarts - T5, [1.5, 1.9, 4.2, -0.3, 0.5, -5, 50]]] },
+  { at: T5, f: fol(fn5), K: [[0, [1.2, 1.9, 4.6, -0.2, 0.5, -4.5, 50]], [tStarts - T5, [1.0, 2.1, 5.2, -0.2, 0.6, -5, 50]]] },
   { at: tStarts - 0.1, f: fol(fn5), K: [[0, [0.4, 3.0, 6.5, 0.8, 0.8, -12, 50]], [T6 - tStarts + 0.1, [0.4, 3.6, 7.5, 1.6, 0.8, -14, 50]]] },
   { at: T6, f: world, noRot: true, cam: corner(fn6) },
   { at: tJ, f: fol(fnJ), K: [[0, [0.9, 2.6, 6.5, 1.5, 1.0, -10, 50]], [tTwo - tJ, [0.6, 2.2, 5.0, 1.5, 1.0, -10, 50]]] },
   { at: tTwo - 0.05, f: fol(fnJ), K: [[0, [1.5, 2.7, 1.5, 0.35, 0.9, -0.9, 40]], [tStops6 - tTwo, [1.3, 2.5, 1.2, 0.35, 0.9, -0.9, 40]]] }, // the hand on the lever
   W(tStops6 - 0.1, [-5.5, 1.8, -J + 11, 2.6, 0.8, -J + 2.6, 50], [-4.6, 2.3, -J + 9.5, 2.0, 0.8, -J + 2.6, 50], tRides - tStops6 + 0.1),
   { at: tRides - 0.1, f: laneJ, K: [[0, [-0.8, 2.0, 5.5, 0.3, 0.9, -6, 50]], [T8 - tRides + 0.1, [-0.8, 3.6, 8.5, 0.3, 0.9, -7, 50]]] },
-  { at: T8 - 0.05, f: laneJ, K: [[0, [0.0, 6.5, 6.5, 0, 0, 2.5, 50]], [TE - T8, [0.0, 7.5, 7.5, 0, 0, 3.0, 50]]] }, // CTA: she rides on above the text
+  { at: T8 - 0.05, f: laneJ, K: [[0, [-2.0, 6.5, 6.0, 0, 0, 2.5, 50]], [TE - T8, [1.6, 7.5, 7.0, 0, 0, 3.0, 50]]] }, // CTA: she rides on above the text, camera arcs so the card never stands still
 ];
 
 run("w", (t) => {
@@ -130,20 +130,20 @@ run("w", (t) => {
   car.set(eC == null ? null : carSt(eC));
   // red Maya: the first twelve days
   const k3 = t >= T3 && t < T4 ? sm(tDrops, tDrops + 0.45, t) : 0;
-  const fR = t >= tLot && t < T2 ? fnLot : t >= T2 && t < T3 ? fn2 : t >= T3 && t < T4 ? fn3 : t >= T4 && t < T5 ? fn4 : null;
+  const fR = t >= tLot && t < T2 ? fnLot : t >= T2 && t < T3 ? fn2 : t >= T3 && t < T4 ? fn3 : t >= T4 && t < T5 ? fn4 : t >= T5 && t < tStarts - 0.1 ? fn5 : null;
   const stR = ride(Br, fR, t, RED, fR === fn3 ? { lean: downLean(k3, -1), down: k3, still: true, trail: false } : { trail: fR !== fn2 });
   if (fR !== fn3) Br.lean.rotation.z = Math.max(-0.5, Math.min(0.5, Br.lean.rotation.z));
   pose(maya, { x: B3[0] + 1.25, z: B3[1] + 0.2, h: 0.5 + Math.PI / 2, vis: k3 >= 0.5, hex: RED, armR: 0.35 * sm(tNobody, tNobody + 0.4, t), armL: 0.35 * sm(tNobody, tNobody + 0.4, t) });
   // green Maya: day 30 on (and the opening)
-  const fG = t < tLot ? fnA : t >= T5 && t < T6 ? fn5 : t >= T6 && t < tJ ? fn6 : t >= tJ ? fnJ : null;
+  const fG = t < tLot ? fnA : t >= tStarts - 0.1 && t < T6 ? fn5 : t >= T6 && t < tJ ? fn6 : t >= tJ ? fnJ : null;
   const stG = ride(Bg, fG, t, GREEN, { trail: t < T8 - 0.05 }); // no trail under the CTA text
   Bg.lean.rotation.z = Math.max(-0.5, Math.min(0.5, Bg.lean.rotation.z));
   hand.visible = t >= tTwo - 0.1;
   // day 12: where she ends up, on the wrong side of the road
   const [wx, wz] = fn4(T5); wide.position.set(wx, 0.03, wz); wide.set(t >= T4 && t < T5 ? 0.9 * sm(tStands + 0.3, tStands + 0.8, t) : 0);
   // day 30: the sight line lifts from the front wheel to the corner exit
-  if (stG && fG === fn5) {
-    const k = sm(tStarts, tLooking + 0.25, t), q = s5(t) + 3.2 + 30 * k, [fx, fz] = Pc(q, 1.8), A = v3(stG.x, 1.6, stG.z), B = v3(fx, 0.05 + 0.3 * k, fz);
+  const st5 = stG || stR; if (st5 && t >= T5 && t < T6) {
+    const k = sm(tStarts, tLooking + 0.25, t), q = s5(t) + 3.2 + 30 * k, [fx, fz] = Pc(q, 1.8), A = v3(st5.x, 1.6, st5.z), B = v3(fx, 0.05 + 0.3 * k, fz);
     bR.set(A, B, 0.9 * (1 - k)); bG.set(A, B, 0.9 * k);
     exitP.position.set(fx, 0.03, fz); exitP.set(0.9 * k);
   } else { bR.set(v3(0, 0, 0), v3(0, 0, 1), 0); bG.set(v3(0, 0, 0), v3(0, 0, 1), 0); exitP.set(0); }
