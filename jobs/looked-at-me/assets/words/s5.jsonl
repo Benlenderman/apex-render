@@ -1,0 +1,5 @@
+{"type":"words","model":"small.en","words":[{"text":"For","start":0,"end":0.144},{"text":"a","start":0.144,"end":0.193},{"text":"moment,","start":0.193,"end":0.53},{"text":"the","start":0.53,"end":0.674},{"text":"windshield","start":0.674,"end":1.156},{"text":"pillar","start":1.156,"end":1.445},{"text":"covers","start":1.445,"end":1.734},{"text":"it","start":1.734,"end":1.83},{"text":"completely.","start":1.83,"end":2.36}],"through":2.36}
+{"type":"words","model":"small.en","words":[{"text":"He","start":2.36,"end":2.61},{"text":"looks.","start":2.61,"end":3.36}],"through":3.36}
+{"type":"words","model":"small.en","words":[{"text":"He","start":3.36,"end":3.471},{"text":"sees","start":3.471,"end":3.693},{"text":"an","start":3.693,"end":3.804},{"text":"empty","start":3.804,"end":4.082},{"text":"road.","start":4.082,"end":4.36}],"through":4.36}
+{"type":"words","model":"small.en","words":[{"text":"He","start":4.36,"end":4.36},{"text":"goes.","start":4.36,"end":4.36}],"through":4.36}
+{"type":"words","model":"small.en","words":[],"through":4.8664375}

@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Ride",
+    "start": 0.05,
+    "end": 0.17,
+    "id": "w0"
+  },
+  {
+    "text": "like",
+    "start": 0.17,
+    "end": 0.34,
+    "id": "w1"
+  },
+  {
+    "text": "you're",
+    "start": 0.34,
+    "end": 0.58,
+    "id": "w2"
+  },
+  {
+    "text": "invisible,",
+    "start": 0.58,
+    "end": 1.03,
+    "id": "w3"
+  },
+  {
+    "text": "get",
+    "start": 1.12,
+    "end": 1.27,
+    "id": "w4"
+  },
+  {
+    "text": "the",
+    "start": 1.27,
+    "end": 1.46,
+    "id": "w5"
+  },
+  {
+    "text": "free",
+    "start": 1.46,
+    "end": 1.72,
+    "id": "w6"
+  },
+  {
+    "text": "Apex",
+    "start": 1.72,
+    "end": 1.98,
+    "id": "w7"
+  },
+  {
+    "text": "app,",
+    "start": 1.98,
+    "end": 2.31,
+    "id": "w8"
+  },
+  {
+    "text": "the",
+    "start": 2.31,
+    "end": 2.48,
+    "id": "w9"
+  },
+  {
+    "text": "link",
+    "start": 2.48,
+    "end": 2.71,
+    "id": "w10"
+  },
+  {
+    "text": "is",
+    "start": 2.71,
+    "end": 2.81,
+    "id": "w11"
+  },
+  {
+    "text": "in",
+    "start": 2.82,
+    "end": 2.91,
+    "id": "w12"
+  },
+  {
+    "text": "our",
+    "start": 2.95,
+    "end": 3.1,
+    "id": "w13"
+  },
+  {
+    "text": "bio.",
+    "start": 3.1,
+    "end": 3.32,
+    "id": "w14"
+  }
+]
