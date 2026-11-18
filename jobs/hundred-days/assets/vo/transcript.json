@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Track",
+    "start": 0.08,
+    "end": 0.17,
+    "id": "w0"
+  },
+  {
+    "text": "your",
+    "start": 0.26,
+    "end": 0.39,
+    "id": "w1"
+  },
+  {
+    "text": "own",
+    "start": 0.39,
+    "end": 0.52,
+    "id": "w2"
+  },
+  {
+    "text": "hundred",
+    "start": 0.52,
+    "end": 0.83,
+    "id": "w3"
+  },
+  {
+    "text": "days,",
+    "start": 0.83,
+    "end": 1.1,
+    "id": "w4"
+  },
+  {
+    "text": "get",
+    "start": 1.16,
+    "end": 1.31,
+    "id": "w5"
+  },
+  {
+    "text": "the",
+    "start": 1.31,
+    "end": 1.5,
+    "id": "w6"
+  },
+  {
+    "text": "free",
+    "start": 1.5,
+    "end": 1.76,
+    "id": "w7"
+  },
+  {
+    "text": "Apex",
+    "start": 1.76,
+    "end": 2.02,
+    "id": "w8"
+  },
+  {
+    "text": "app,",
+    "start": 2.02,
+    "end": 2.25,
+    "id": "w9"
+  },
+  {
+    "text": "the",
+    "start": 2.33,
+    "end": 2.46,
+    "id": "w10"
+  },
+  {
+    "text": "link",
+    "start": 2.46,
+    "end": 2.7,
+    "id": "w11"
+  },
+  {
+    "text": "is",
+    "start": 2.7,
+    "end": 2.82,
+    "id": "w12"
+  },
+  {
+    "text": "in",
+    "start": 2.82,
+    "end": 2.93,
+    "id": "w13"
+  },
+  {
+    "text": "our",
+    "start": 2.94,
+    "end": 3.12,
+    "id": "w14"
+  },
+  {
+    "text": "bio.",
+    "start": 3.12,
+    "end": 3.32,
+    "id": "w15"
+  }
+]
