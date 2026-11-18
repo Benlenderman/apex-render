@@ -120,7 +120,7 @@ back.renderOrder = 30; back.visible = false; camera.add(back);
 const tDl = fitText(["DOWNLOAD", "APEX"], ORANGE, 2.2), tBio = fitText([["LINK IN BIO", 0.7]], WHITE, 1.15);
 tDl.renderOrder = tBio.renderOrder = 31; // CTA covers world tags
 export function cta(a) {
-  back.visible = a > 0.01; back.material.opacity = a;
+  back.visible = a > 0.01; back.material.opacity = a * 0.78; // scene keeps riding, dimmed, behind the CTA
   const hh = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * 2.1; back.position.set(0, 0, -2.1); back.scale.set(hh * 3, hh * 3, 1);
   hud(tDl, 0, 0.16, 0.86, a); hud(tBio, 0, -0.2, 0.62, a);
 }

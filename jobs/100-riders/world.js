@@ -115,6 +115,7 @@ const SH = [
   { at: tLook6 - 0.15, f: fol(gPath), K: [[0, [1.2, 2.8, 4.6, -2.0, 0.8, -9, 50]], [tLeans - 0.1 - tLook6 + 0.15, [1.5, 3.1, 5.2, -2.0, 0.8, -9, 50]]] },
   { at: tLeans - 0.1, f: fol(gPath), K: [[0, [-1.4, 1.0, -5.5, 0, 0.9, 0, 50]], [tRolls - tLeans, [-1.8, 1.2, -4.6, 0, 0.9, 0, 50]]] },
   { at: tRolls - 0.1, f: fol(gPath), K: [[0, [0.0, 2.6, 6.0, 0, 1.0, -5, 50]], [TE - tRolls + 0.1, [0.0, 4.2, 8.5, 0, 1.0, -6, 50]]] },
+  { at: S.s8[0] - 0.05, f: fol(gPath), K: [[0, [0.0, 6.5, 6.5, 0, 0, 2.5, 50]], [TE - S.s8[0], [0.0, 7.5, 7.5, 0, 0, 3.0, 50]]] }, // CTA: rider rides on above the text
 ];
 
 run("w", (t) => {
@@ -136,7 +137,7 @@ run("w", (t) => {
   mkR.position.set(edge[0], 0.03, edge[1]); mkR.set(showH && !rep ? on(t, tLook, tGrav) : 0);
   hit.position.set(stopSt.x, 0.03, stopSt.z); hit.rotation.z = stopSt.h; hit.set(showH && !rep ? on(t, tGrav) : 0);
   // rider 61, second run
-  const showG = t >= T6, stG = showG ? ride(Bg, gPath, t, GREEN, { lean: -0.12 * (1 - sm(tLeans - 0.1, tLeans + 0.5, t)) * sm(tGIn, tGIn + 0.5, t) }) : ride(Bg, null, t, GREEN);
+  const showG = t >= T6, stG = showG ? ride(Bg, gPath, t, GREEN, { lean: -0.12 * (1 - sm(tLeans - 0.1, tLeans + 0.5, t)) * sm(tGIn, tGIn + 0.5, t), trail: t < S.s8[0] - 0.05 }) : ride(Bg, null, t, GREEN); // no trail under the CTA text
   Bg.headG.rotation.y = 0.45 * sm(tLook6 - 0.15, tLook6 + 0.25, t) * (1 - sm(tRolls, tRolls + 0.6, t));
   const lookG = showG ? on(t, tLook6, tLeans - 0.1) : 0, [lx, lz] = P(Math.min(SC + 60, sG(t) + 24), 1.8);
   if (stG) eyeG.set(v3(stG.x, 1.55, stG.z), v3(lx, 0.1, lz), 0.7 * lookG);
