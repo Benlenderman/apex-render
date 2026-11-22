@@ -15,7 +15,7 @@ const leg = new THREE.Group(); leg.position.set(-0.14, 0, 0); Q.g.add(leg);
 leg.add(tube([0, 0, 0], [0, -0.92, 0], 0.11, glow(RED, 1.6)), box(0.12, 0.08, 0.26, 0, -0.93, -0.06, glow(RED, 2)));
 const seatedLeft = [2, 4, 6].map((i) => Q.g.children[i]); // left thigh, shin, foot of addPillion
 // glowing pegs under the passenger's feet
-const pegs = [-1, 1].map((s) => { const p = box(0.2, 0.06, 0.3, s * 0.25, 0.44, 0.42, glow(GREEN, 3), false); B.lean.add(p); return p; });
+const pegs = [-1, 1].map((s) => { const p = box(0.2, 0.06, 0.3, s * 0.25, 0.44, 0.42, glow(GREEN, 1.3), false); B.lean.add(p); return p; });
 const spot = patch(0.7, 0.7, RED, 1.2); spot.position.set(-0.5, 0.02, 0.6);
 const feetZ = [-1, 1].map((s) => { const p = patch(0.55, 0.6, GREEN, 1.2); p.position.set(s * 0.43, 0.03, 0); return p; });
 
@@ -37,15 +37,15 @@ endCard(["RIDER HOLDS THE BIKE.", "PASSENGER FEET UP."]);
 
 // s1-s2: roll in and stop at the line; s5: pull away
 const T0 = g("s2", "stop"), T1 = g("s5", "pull");
-const path = (u) => [0, u < T0 ? 0.25 * (T0 - u) ** 2 : u > T1 && u < S.s6[0] ? -0.9 * (u - T1) ** 2 : 0];
+const path = (u) => [0, u < T0 ? 0.25 * (T0 - u) ** 2 : u > T1 && u < S.s6[0] ? -0.45 * (u - T1) ** 2 : 0];
 
 const SH = [
-  { at: 0, K: [[0, [-5.2, 2.0, 2.6, 0, 0.8, 1.2, 46]], [3, [-4.6, 2.0, 0.8, 0, 0.8, 0.2, 44]]] },
-  { at: S.s2[0], K: [[0, [-3.2, 1.4, 2.0, -0.3, 0.6, 0.5, 44]], [2, [-2.9, 1.3, 1.6, -0.3, 0.6, 0.5, 44]]] },
+  { at: 0, K: [[0, [-6.2, 2.0, 1.4, 0, 0.9, 1.0, 50]], [3, [-5.2, 2.0, 0.3, 0, 0.9, 0.2, 48]]] },
+  { at: S.s2[0], K: [[0, [-3.8, 1.6, 2.4, -0.3, 0.8, 0.5, 46]], [2, [-3.4, 1.5, 2.0, -0.3, 0.75, 0.5, 46]]] },
   { at: g("s2", "tips") - 0.35, K: [[0, [-0.6, 2.6, -4.6, -0.5, 0.5, 0.3, 46]], [3, [-0.2, 3.2, -4.4, -0.6, 0.4, 0.3, 46]]] },
   { at: S.s3[0], K: [[0, [3.9, 1.8, -3.6, 0, 0.9, 0.1, 44]], [4, [3.4, 1.9, -3.0, 0, 0.8, 0.1, 44]]] },
-  { at: S.s4[0], K: [[0, [-3.0, 1.3, 2.2, 0, 0.6, 0.4, 44]], [3, [-2.6, 1.3, 1.8, 0, 0.6, 0.4, 44]]] },
-  { at: S.s5[0], K: [[0, [-4.0, 2.0, 1.6, 0, 0.8, 0.0, 44]], [3, [-4.6, 2.4, -0.4, 0, 0.8, -2.0, 46]]] },
+  { at: S.s4[0], K: [[0, [-3.6, 1.6, 2.6, 0, 0.8, 0.4, 46]], [3, [-3.2, 1.5, 2.2, 0, 0.75, 0.4, 46]]] },
+  { at: S.s5[0], K: [[0, [-4.6, 2.0, 1.4, 0, 0.8, 0.0, 46]], [3, [-5.2, 2.4, -0.6, 0, 0.8, -1.4, 48]]] },
   { at: S.s6[0], K: [[0, [-3.6, 2.4, 3.6, 0, 0.9, 0, 44]], [4, [-4.2, 2.4, 2.4, 0, 0.9, 0, 44]]] },
   { at: S.s7[0], K: [[0, [3.4, 4.2, 4.6, 0, 0.5, 0, 46]], [6, [-1.5, 4.6, 5.8, 0, 0.5, 0, 46]]] },
 ];
@@ -67,7 +67,7 @@ run("w", (t) => {
   feet.visible = stopped && lean < 0.3;
   lever.visible = !wrong && stopped && (id !== "s3" || t > g("s3", "front") - 0.1);
   const kP = id === "s4" ? sm(g("s4", "pegs") - 0.2, g("s4", "pegs") + 0.1, t) : ["s5", "s6", "s7"].includes(id) ? 1 : 0;
-  pegs.forEach((p) => { p.visible = kP > 0.01; p.scale.setScalar(0.6 + 0.6 * kP + 0.3 * flash(t, g("s4", "pegs"))); });
+  pegs.forEach((p) => { p.visible = kP > 0.01; p.scale.setScalar(0.7 + 0.3 * kP + 0.2 * flash(t, g("s4", "pegs"))); });
   spot.set(id === "s2" ? sm(g("s2", "foot") - 0.1, g("s2", "foot") + 0.2, t) * (1 - sm(g("s2", "tips"), g("s2", "tips") + 0.3, t)) : 0);
   const kF = id === "s3" ? sm(g("s3", "feet") - 0.1, g("s3", "feet") + 0.2, t) : 0;
   feetZ.forEach((p) => p.set(kF * (1 - 0.6 * sm(g("s3", "front"), g("s3", "front") + 0.3, t))));
