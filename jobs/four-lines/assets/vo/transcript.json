@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Find",
+    "start": 0.04,
+    "end": 0.22,
+    "id": "w0"
+  },
+  {
+    "text": "your",
+    "start": 0.22,
+    "end": 0.44,
+    "id": "w1"
+  },
+  {
+    "text": "line,",
+    "start": 0.44,
+    "end": 0.77,
+    "id": "w2"
+  },
+  {
+    "text": "get",
+    "start": 0.77,
+    "end": 0.93,
+    "id": "w3"
+  },
+  {
+    "text": "the",
+    "start": 0.93,
+    "end": 1.09,
+    "id": "w4"
+  },
+  {
+    "text": "free",
+    "start": 1.09,
+    "end": 1.31,
+    "id": "w5"
+  },
+  {
+    "text": "Apex",
+    "start": 1.31,
+    "end": 1.52,
+    "id": "w6"
+  },
+  {
+    "text": "app.",
+    "start": 1.6,
+    "end": 1.72,
+    "id": "w7"
+  },
+  {
+    "text": "The",
+    "start": 1.76,
+    "end": 1.9,
+    "id": "w8"
+  },
+  {
+    "text": "link",
+    "start": 1.9,
+    "end": 2.14,
+    "id": "w9"
+  },
+  {
+    "text": "is",
+    "start": 2.14,
+    "end": 2.26,
+    "id": "w10"
+  },
+  {
+    "text": "in",
+    "start": 2.26,
+    "end": 2.38,
+    "id": "w11"
+  },
+  {
+    "text": "our",
+    "start": 2.38,
+    "end": 2.51,
+    "id": "w12"
+  },
+  {
+    "text": "bio.",
+    "start": 2.62,
+    "end": 2.96,
+    "id": "w13"
+  }
+]
