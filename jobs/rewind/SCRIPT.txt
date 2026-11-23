@@ -1,0 +1,8 @@
+s1|A rider is on the ground at a quiet intersection. The crash took one second. The mistake took ten. Rewind.
+s2|One second before. A car pulls out. He brakes hard, too late. Nowhere to go.
+s3|Three seconds before. He sees the car waiting at the side street, and decides the driver has seen him.
+s4|Five seconds before. He rolls on the throttle to make the green light.
+s5|Eight seconds before. He is riding right beside a van. From the side street, the van hides him completely.
+s6|Now play it forward again. He drops back from the van, rolls off, and covers the brake. The car pulls out. He is already slowing.
+s7|Crashes start early. So does the save.
+s8|Ride ten seconds ahead. Get the free APEX app. The link is in our bio.
