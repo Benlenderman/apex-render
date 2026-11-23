@@ -1,0 +1,710 @@
+{
+  "version": 1,
+  "historyId": "edb7ab23-0a61-4680-b5ba-eee4e66505b5",
+  "currentRevision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/26/26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "CLAUDE.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/26/26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "SCRIPT.txt": {
+      "hash": "24dadba4d6872b0794706508bc280a8dc24fae454b0013150822bab006eaaf69",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/24/24dadba4d6872b0794706508bc280a8dc24fae454b0013150822bab006eaaf69"
+    },
+    "assets/vo/s1.wav": {
+      "hash": "54c87c7114058322315a85776e175b8c38960b710cedf40104baea4c0b682b4a",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/54/54c87c7114058322315a85776e175b8c38960b710cedf40104baea4c0b682b4a"
+    },
+    "assets/vo/s2.wav": {
+      "hash": "b2cab2c564af1739b7545c41e8e995b31de6c18f825811ae51388c969aa70e2c",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/b2/b2cab2c564af1739b7545c41e8e995b31de6c18f825811ae51388c969aa70e2c"
+    },
+    "assets/vo/s3.wav": {
+      "hash": "f827c808e149f4ab096c5b5042e11f0e5f4858651a0473484d2707225a2a68cc",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/f8/f827c808e149f4ab096c5b5042e11f0e5f4858651a0473484d2707225a2a68cc"
+    },
+    "assets/vo/s4.wav": {
+      "hash": "7c5fd8d26eb2270ebf68c564c748c91c77d24b9d604aa71475b176e59ec7c55d",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/7c/7c5fd8d26eb2270ebf68c564c748c91c77d24b9d604aa71475b176e59ec7c55d"
+    },
+    "assets/vo/s5.wav": {
+      "hash": "81e81d7b05bf650448186d5604560f85899678249162e82a05550c7e89c579ff",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/81/81e81d7b05bf650448186d5604560f85899678249162e82a05550c7e89c579ff"
+    },
+    "assets/vo/s6.wav": {
+      "hash": "d85f77d8e5e66d5ffa896b5b35d658370dff51862e1ab2c01a614c43a78f802b",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/d8/d85f77d8e5e66d5ffa896b5b35d658370dff51862e1ab2c01a614c43a78f802b"
+    },
+    "assets/vo/s7.wav": {
+      "hash": "0e8c2a49183b8b1bad2f5e6e31b54ea22ea53ee765da20b7779387a081c68f5b",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/0e/0e8c2a49183b8b1bad2f5e6e31b54ea22ea53ee765da20b7779387a081c68f5b"
+    },
+    "assets/vo/s8.wav": {
+      "hash": "f844210711a24200df68c0db506ae89b626b19539b87fde2ea967fff452492e5",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/f8/f844210711a24200df68c0db506ae89b626b19539b87fde2ea967fff452492e5"
+    },
+    "assets/vo/transcript.json": {
+      "hash": "44c59d6e26e22d272d3c42d1fc954d62a0e355157e3cb2c0621298f415e42f6e",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/44/44c59d6e26e22d272d3c42d1fc954d62a0e355157e3cb2c0621298f415e42f6e"
+    },
+    "assets/words/s1.jsonl": {
+      "hash": "0f5e2aec3a005f668dc5e7e4496b4416e9548f39aae5dcd1ab306ec286b7496c",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/0f/0f5e2aec3a005f668dc5e7e4496b4416e9548f39aae5dcd1ab306ec286b7496c"
+    },
+    "assets/words/s2.jsonl": {
+      "hash": "63ddd77fe0dac81ae253a0acf97a07eaa50fd6d947d1895b51bbd30266422a76",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/63/63ddd77fe0dac81ae253a0acf97a07eaa50fd6d947d1895b51bbd30266422a76"
+    },
+    "assets/words/s3.jsonl": {
+      "hash": "60db053cda7d234f287e1ba3c6300fc1edec4fefe13dc5c6ea27782e420618da",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/60/60db053cda7d234f287e1ba3c6300fc1edec4fefe13dc5c6ea27782e420618da"
+    },
+    "assets/words/s4.jsonl": {
+      "hash": "97d720892cd2a2165d60d347347a687baf5976ad30a9ccb0c378b089b1c94165",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/97/97d720892cd2a2165d60d347347a687baf5976ad30a9ccb0c378b089b1c94165"
+    },
+    "assets/words/s5.jsonl": {
+      "hash": "240ccad5d582e137f0a42ff7b51e401718cdafa1d6201c4818a4dee5cb862a24",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/24/240ccad5d582e137f0a42ff7b51e401718cdafa1d6201c4818a4dee5cb862a24"
+    },
+    "assets/words/s6.jsonl": {
+      "hash": "d6fd169cec27ba7dbf9fdc9e2ec35a03942168b12ff9eff26314dfa018a11684",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/d6/d6fd169cec27ba7dbf9fdc9e2ec35a03942168b12ff9eff26314dfa018a11684"
+    },
+    "assets/words/s7.jsonl": {
+      "hash": "52290daac0e9a5a9bfa346b04359c4f411204cbb239c4c3faaa3dd8b7c9b2736",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/52/52290daac0e9a5a9bfa346b04359c4f411204cbb239c4c3faaa3dd8b7c9b2736"
+    },
+    "assets/words/s8.jsonl": {
+      "hash": "df59e088a08126e704b40a0e1273242a6c35b73d7be047460245a1fde8f8e9a1",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/df/df59e088a08126e704b40a0e1273242a6c35b73d7be047460245a1fde8f8e9a1"
+    },
+    "assets/words.json": {
+      "hash": "3ceeb6055ba039fb2ced74a69b150a608f38da6178e915e976c089e46c0b1ce4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/3c/3ceeb6055ba039fb2ced74a69b150a608f38da6178e915e976c089e46c0b1ce4"
+    },
+    "build3d.mjs": {
+      "hash": "001808022b58ab22463210c7a6e22741fd597f8e9c627cd3fc331ea0f26553a3",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/00/001808022b58ab22463210c7a6e22741fd597f8e9c627cd3fc331ea0f26553a3"
+    },
+    "compositions/captions.html": {
+      "hash": "df82575709aab7916ea81084e7e951cf9e1aac3830d561a8adaff746ee3df134",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/df/df82575709aab7916ea81084e7e951cf9e1aac3830d561a8adaff746ee3df134"
+    },
+    "extra.js": {
+      "hash": "15c51536f8f4f094575f5761b98a037f08d1048902732bf334ad255df4c7af9e",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/15/15c51536f8f4f094575f5761b98a037f08d1048902732bf334ad255df4c7af9e"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "ba47e8a9a9f2c3f21aa4fd950ae7be2f49aedb1e4c11bbe5eebd8dc4087759d0",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/ba/ba47e8a9a9f2c3f21aa4fd950ae7be2f49aedb1e4c11bbe5eebd8dc4087759d0"
+    },
+    "kit.js": {
+      "hash": "50a502f0b025e5d9516d247de76266c91651695ecc7c1ca4d02ee9b8ebaefe4b",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/50/50a502f0b025e5d9516d247de76266c91651695ecc7c1ca4d02ee9b8ebaefe4b"
+    },
+    "make.sh": {
+      "hash": "54d9868adf35c814aa8711cb2dc9745e8fcd45729eae79156b57f6cd5ddf505c",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/54/54d9868adf35c814aa8711cb2dc9745e8fcd45729eae79156b57f6cd5ddf505c"
+    },
+    "meta.json": {
+      "hash": "3929570e8c9707088f3ee747d3d6afa870220dfca91aea788f2bb02b9d76e62a",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/39/3929570e8c9707088f3ee747d3d6afa870220dfca91aea788f2bb02b9d76e62a"
+    },
+    "package.json": {
+      "hash": "50798bd65f5651b714d5b5f2aabed98cefd6d7871ab93f2c4271f0fffc167bc4",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/50/50798bd65f5651b714d5b5f2aabed98cefd6d7871ab93f2c4271f0fffc167bc4"
+    },
+    "words.cjs": {
+      "hash": "6c52c75d65b036d3d0b24f72104428f262cecc1da4967feb7055f2da688c39b7",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/6c/6c52c75d65b036d3d0b24f72104428f262cecc1da4967feb7055f2da688c39b7"
+    },
+    "world.js": {
+      "hash": "d69233b9f5308ab68455990e4d82585860e4d7c0be64c3b25faa73a3ecc2e886",
+      "content": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/d6/d69233b9f5308ab68455990e4d82585860e4d7c0be64c3b25faa73a3ecc2e886"
+    }
+  },
+  "revisions": {
+    "9dc4024e-443e-4c76-9da2-57c0793ca3a7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795429476335,
+      "endedAt": 1795429476340,
+      "files": {
+        "world.js": {
+          "before": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/9e/9ee6e6fdd404ecb81ca0f71ad7fcdbd98d8346ec335b01c108fdd94582dfb382",
+          "after": "/Users/benlenderman/.cache/hyperframes/history/edb7ab23-0a61-4680-b5ba-eee4e66505b5/blobs/d6/d69233b9f5308ab68455990e4d82585860e4d7c0be64c3b25faa73a3ecc2e886"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+      "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-8"
+    },
+    "revisions": {
+      "9dc4024e-443e-4c76-9da2-57c0793ca3a7": [
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-0",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-00-at-4.4s.png",
+          "time": 4.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503276,
+          "contentHash": "642a893358ad10a26628ccf930f57909a0f736b9c40b5e155bdb98716115bbbd",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-1",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-01-at-5.2s.png",
+          "time": 5.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503277,
+          "contentHash": "8891be6913ea41b863acdc130b18d414b6374f2ac69b4088ed447f6c7c3517e5",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-2",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-02-at-6.3s.png",
+          "time": 6.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503277,
+          "contentHash": "6ecb0b6f75ec67537c0be92121466dfaa7fe0bc3c957291ec6ca1cf95c90564d",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-3",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-03-at-9.3s.png",
+          "time": 9.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503280,
+          "contentHash": "db133e1d0d493602a17455b64615986a3fb9c308ad49ba86339c18d8d6c166d3",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-4",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-04-at-16.3s.png",
+          "time": 16.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503280,
+          "contentHash": "fa077880ee0bed680109d50583ad5555884214f6bcef08c493acba6b5a892a1a",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-5",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-05-at-21.6s.png",
+          "time": 21.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503280,
+          "contentHash": "3f1528dcf08199684d5d659522262ce90584ff30c65a0935e6d8efc05b83665e",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-6",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-06-at-22.6s.png",
+          "time": 22.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503280,
+          "contentHash": "64cc0879cd530549b5fcab30c90297f3138b956f96b4b4df963df6251ba7fcca",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-7",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-07-at-24.3s.png",
+          "time": 24.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503281,
+          "contentHash": "ff4d242aff2eda95881e30a606dcedd8ecf9fdc2f51299be4de6675c9e1915e1",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8034845a-b9b6-4429-8d1f-eba5dbf3c8cc-8",
+          "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/d3a0a072-2fb8-4aea-ae41-1b676a064827/frame-08-at-29.923s.png",
+          "time": 29.923,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795429503281,
+          "contentHash": "66051d01d097128dc4423950d96689ac4dc51a1570a845ebf840e0150a459e1e",
+          "revision": "9dc4024e-443e-4c76-9da2-57c0793ca3a7",
+          "inputFingerprint": "7e997be26c7396ea5637d73b98894305223a197a4b9a0cd65b429a0834b29b79",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-0",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-00-at-0.8s.png",
+        "time": 0.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441852,
+        "contentHash": "9d1485ea475362c708e9213e1c7755467e9937ad3bb5b11ea6b6e92982a7809d",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-1",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-01-at-2.6s.png",
+        "time": 2.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441852,
+        "contentHash": "a1db13d1bdc25850a949527937d28f5a8b8a234ac4d0e55b3e3310dbe362669e",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-2",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-02-at-4.6s.png",
+        "time": 4.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441852,
+        "contentHash": "4be5b3d7d18cc0b4142fd9fa40bd0819c656a82dc5d4d970f2c3876f385b4c73",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-3",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-03-at-6.3s.png",
+        "time": 6.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441852,
+        "contentHash": "84817d984b3555f6eef46cc1b42a0985e3d63c1716ad889c4552d32879bc4701",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-4",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-04-at-8.2s.png",
+        "time": 8.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441852,
+        "contentHash": "32329cd0158c6522a3a05081b31586d5b41cc8a5bc6873d2e67f6dcca5fb7395",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-5",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-05-at-9.3s.png",
+        "time": 9.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "d0a0693867512821cb621ac6702587c2e1c57dac9de32eddb6c26e1af96e1957",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-6",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-06-at-10.5s.png",
+        "time": 10.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "9ca61229b1d87fdbc8ef8818687928defae2b2b95d9092d73ddf484c9195ef73",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-7",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-07-at-12.6s.png",
+        "time": 12.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "c26b271998305e76bc88eed776f383d6e2ea9f5f3ec8686f2e6b088f34eb8298",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-8",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-08-at-14.5s.png",
+        "time": 14.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "92562f8189542579a11971caf5d982044463bb04559f0238dd46d49bd82699fe",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-9",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-09-at-16.3s.png",
+        "time": 16.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "e3cbec9bbd74988b7d54d93f1ee93b0199e98140604d534e551ff50b50e6f82e",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-10",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-10-at-18.3s.png",
+        "time": 18.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "5bf9074ae3b2d70f4f4b33b1b4724498e1ad5a3531271a37fc85564018ec841d",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-11",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-11-at-19.6s.png",
+        "time": 19.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "e008c45cd55ab7a98541aed59d49ac8ab24eb3caafcfcdcd9328922119cff122",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-12",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-12-at-21s.png",
+        "time": 21,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441853,
+        "contentHash": "4c6be89267d097814158e99ae00654c69b5037b15285368ca7474c0ae5a85dfe",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-13",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-13-at-22.6s.png",
+        "time": 22.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441854,
+        "contentHash": "9599f0bbc1c3a03ee4afcdd6f8af62c663fded04785d002ce82d356790fe4206",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-14",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-14-at-24.3s.png",
+        "time": 24.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441854,
+        "contentHash": "ef69bde3e1037ad5762f61eb20cb0d1e048dc47bf36a9f872566301f45590750",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-15",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-15-at-26s.png",
+        "time": 26,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441854,
+        "contentHash": "9ff955f55d111243e1f5c987746f4a80cb626800a9cd3d24ff524cff95aa413c",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-16",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-16-at-28.5s.png",
+        "time": 28.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441854,
+        "contentHash": "50a30a6210cb388451da7163e4b4de6d93058d32892b679cf6223c395ba93256",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6650a2f8-a28b-48a3-a238-f2df9ef3cf43-17",
+        "image": "/Users/benlenderman/explainers/truck-mirrors/.hyperframes/artifacts/snapshots/5dd76373-69b2-4ec6-8a6f-0289e844dbe0/frame-17-at-29.923s.png",
+        "time": 29.923,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795429441854,
+        "contentHash": "e2921eb45c14fa287dc9131919febcf9ffcb95b047b7703ef83610eea87f8edc",
+        "revision": null,
+        "inputFingerprint": "a38b223e11090ba9f8fcf0bf7709bc64a5f043566790904b2c1922ce8f979af6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  }
+}
