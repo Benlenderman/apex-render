@@ -1,0 +1,8 @@
+s1|One rider. One car pulling out. Five ways to brake. Watch which ones stop in time.
+s2|One. Rear brake only. The back wheel locks, the bike slides, and it barely slows down.
+s3|Two. He grabs the front, hard and sudden. The wheel locks before the tire can grip, and the bike goes down.
+s4|Three. Both brakes, but too gentle. He stays up. He just runs out of road.
+s5|Four. The same sudden grab, with ABS. The system saves him. He stays up, and stops close.
+s6|Five. He squeezes the front, feels the weight load the tire, then squeezes harder. A little rear with it. He stops with room to spare.
+s7|Same rider. Same bike. Squeeze, don't grab.
+s8|Practice it before you need it. Get the free APEX app. The link is in our bio.
